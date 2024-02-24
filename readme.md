@@ -1,8 +1,9 @@
 Nix :3
 
-not done, is bad, dont judge
+other dots: https://github.com/cmrcrabs/dotfiles
 
-actually real dots: https://github.com/cmrcrabs/dotfiles
+TODO:
+- fix error where tty dies when exiting hyprland
 
 Credits To:
 - LibrePhoenix
