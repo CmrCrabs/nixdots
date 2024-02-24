@@ -1,0 +1,15 @@
+{ pkgs, config, inputs, ...}:
+{
+  xdg.configFile."hypr/hyprpaper.conf".text = ''
+    # preload
+    home
+    preload = /home/zayaan/.config/wallpapers/tn-shipU.png
+    
+    preload = /home/zayaan/.config/wallpapers/tn-shipL.png
+    
+    # load
+    
+    wallpaper = eDP-1,/home/zayaan/.config/wallpapers/tn-shipU.png
+    wallpaper = DP-3,/home/zayaan/.config/wallpapers/tn-shipL.png
+  '';
+}
