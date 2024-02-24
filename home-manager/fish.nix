@@ -14,14 +14,12 @@ let
     "rbt" = "sudo reboot";
     "nm" = "sudo nmtui";
     "wft" = "ping gnu.org -c 1";
-    "sch" = "grim -g $("slurp")";
   };
 
 in {
-  programs.fish {
+  programs.fish = {
     enable = true;
     shellAbbrs = aliases;
-    shellInit = "starship init fish | source "
+    shellInit = "starship init fish | source ";
   };
-  xdg,configFile."fish/dd
 }
