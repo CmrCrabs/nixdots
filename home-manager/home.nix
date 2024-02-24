@@ -6,7 +6,6 @@
     inputs.nix-colors.homeManagerModules.default
 
     # Files
-    ./colors.nix
     ./fish.nix
     ./git.nix
     ./hyprland.nix
