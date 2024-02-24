@@ -25,6 +25,7 @@
           modules = [ 
 	    ./nixos/configuration.nix
 	  ];
+          specialArgs = { inherit inputs; };
         };
       };
       homeConfigurations = {
