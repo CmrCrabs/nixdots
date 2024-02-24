@@ -57,13 +57,13 @@
   programs.hyprland.enable = true;
 
   # Touchpad
-  services.xserver.libinput.enable = true;
+  # services.xserver.libinput.enable = true;
   
   console.keyMap = "uk";
 
   # Services
-  services.printing.enable = true;
-  services.tlp.enable = true;
+  #services.printing.enable = true;
+  #services.tlp.enable = true;
   
 
   # Sound (Pipewire)
@@ -95,6 +95,7 @@
     discord
     wezterm
     kitty
+    rofi-wayland
     
     # Term
     vim
@@ -112,7 +113,6 @@
     grim
     slurp
     wl-clipboard
-    tlp
   ];
 
   # Some programs need SUID wrappers, can be configured further or are started in user sessions. 
