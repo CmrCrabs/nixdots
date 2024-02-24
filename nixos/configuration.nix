@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 { 
   imports = [
@@ -14,7 +14,7 @@
   boot.loader.grub.device = "nodev";
   boot.loader.grub.configurationLimit = 3;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot/efi";
+  boot.loader.efi.efiSysMountPoint = "/boot";
 
   networking.hostName = "zyn-nixos";
   # networking.wireless.enable = true;
@@ -54,7 +54,15 @@
   # services.xserver.desktopManager.gnome.enable = true;
 
   # Hyprland
-  programs.hyprland.enable = true;
+    programs.hyprland = {
+      enable = true;
+      package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    };
+  
+
+
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
   # Touchpad
   # services.xserver.libinput.enable = true;
@@ -96,6 +104,7 @@
     wezterm
     kitty
     rofi-wayland
+    dunst
     
     # Term
     vim
@@ -113,6 +122,7 @@
     grim
     slurp
     wl-clipboard
+    libnotify
   ];
 
   # Some programs need SUID wrappers, can be configured further or are started in user sessions. 
