@@ -8,7 +8,7 @@
         
     settings = {
       "$mainMod" = "ALT";
-      "$terminal" = "kitty";
+      "$terminal" = "wezterm";
       "$filebrowser" = "spacefm";
       "$launcher" = "rofi -show drun";
       "$screenshot" = "grim -g \"$(slurp -d)\" - | wl-copy";

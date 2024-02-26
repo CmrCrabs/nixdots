@@ -1,27 +1,33 @@
-return {
-    enable_wayland = true,
-    color_schemes = {
-        ["nix-col-theme"] = require("theme"),
-    },
-    color_scheme = "nix-col-theme",
-    cell_width = 0.9,
-    default_cursor_style = "BlinkingBar",
+local wezterm = require("wezterm");
+local config = {}
 
-    window_close_confirmation = "NeverPrompt",
-    hide_tab_bar_if_only_one_tab = true,
+if wezterm.config_builder then
+  config = wezterm.config_builder()
+end
 
-    window_padding = {
-        top = "1cell",
-        right = "3cell",
-        bottom = "1cell",
-        left = "3cell",
-    },
-
-    inactive_pane_hsb = {
-        saturation = 0.9,
-        brightness = 0.8,
-    },
-
-    window_background_opacity = 0.4,
-    text_background_opacity = 1.0,
+config.enable_wayland = false
+config.color_schemes = {
+  ["nix-col-theme"] = require("theme")
 }
+config.color_scheme = "nix-col-theme"
+config.cell_width = 0.9
+config.default_cursor_style = "BlinkingBar"
+
+config.window_close_confirmation = "NeverPrompt"
+config.hide_tab_bar_if_only_one_tab = true
+
+config.window_padding = {
+  top = "1cell",
+  right = "3cell",
+  bottom = "1cell",
+  left = "3cell",
+}
+
+config.inactive_pane_hsb = {
+  saturation = 0.9,
+  brightness = 0.8,
+}
+config.window_background_opacity = 0.4
+config.text_background_opacity = 1.0
+
+return config
