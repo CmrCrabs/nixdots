@@ -3,13 +3,13 @@
   xdg.configFile."hypr/hyprpaper.conf".text = ''
     # preload
     home
-    preload = /home/zayaan/.config/wallpapers/tn-shipU.png
+    preload = /home/zyn/wallpapertemp.jpg 
     
-    preload = /home/zayaan/.config/wallpapers/tn-shipL.png
+    preload = /home/zyn/wallpapertemp.jpg
     
     # load
     
-    wallpaper = eDP-1,/home/zayaan/.config/wallpapers/tn-shipU.png
-    wallpaper = DP-3,/home/zayaan/.config/wallpapers/tn-shipL.png
+    wallpaper = eDP-1,/home/zyn/wallpapertemp.jpg
+    wallpaper = DP-3,/home/zyn/wallpapertemp.jpg
   '';
 }
