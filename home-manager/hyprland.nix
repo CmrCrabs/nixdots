@@ -16,7 +16,7 @@
       "$browser" = "firefox-developer-edition";
 
       exec-once = [
-	# "hyprpaper"
+	"hyprpaper"
         "waybar"
         "sudo tlp start" 
       ];
@@ -26,8 +26,8 @@
         "DP-3, 1920x515@60, 0x1080, 1"
       ];
       workspace = [
-        "eDP-1, 1, 1"
-        "DP-3, 1, 11"
+        "eDP-1, 1"
+        "DP-3, 11"
       ];
       
       general = { 
@@ -36,8 +36,8 @@
       };
       
       misc = {
+        disable_hyprland_logo = "yes";
         disable_splash_rendering = "yes";
-        force_default_wallpaper = 1;
         mouse_move_enables_dpms = "yes";
         animate_manual_resizes = "yes";
       };

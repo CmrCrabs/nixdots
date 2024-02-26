@@ -43,21 +43,15 @@
   nix.settings = { 
     experimental-features = [ "nix-command" "flakes"];
     auto-optimise-store = true;
+    substituters = ["https://hyprland.cachix.org"];
+    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
   };
 
-  # # X11;
-  # services.xserver.enable = true;
-  # services.xserver = { layout = "gb"; xkbVariant = "";
-
-  # # Gnome
-  # services.xserver.displayManager.gdm.enable = true; 
-  # services.xserver.desktopManager.gnome.enable = true;
-
   # Hyprland
-    programs.hyprland = {
-      enable = true;
-      package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-    };
+  programs.hyprland = {
+    enable = true;
+    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+  };
   
 
 
@@ -65,13 +59,13 @@
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
   # Touchpad
-  # services.xserver.libinput.enable = true;
+   services.xserver.libinput.enable = true;
   
   console.keyMap = "uk";
 
   # Services
-  #services.printing.enable = true;
-  #services.tlp.enable = true;
+  services.printing.enable = true;
+  services.tlp.enable = true;
   
 
   # Sound (Pipewire)
@@ -87,7 +81,6 @@
   };
 
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.zyn = { 
    isNormalUser = true; 
    description = "zyn user acc"; 
@@ -105,6 +98,8 @@
     kitty
     rofi-wayland
     dunst
+    waybar
+    kicad
     
     # Term
     vim
@@ -117,6 +112,8 @@
     eza
     starship
     hyprpaper
+    brightnessctl
+    pamixer
 
     # Libs / Utils
     grim
