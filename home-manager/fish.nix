@@ -21,5 +21,6 @@ in {
     enable = true;
     shellAbbrs = aliases;
     shellInit = "starship init fish | source ";
+    extraConfig = 
   };
 }
