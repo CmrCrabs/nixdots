@@ -24,21 +24,11 @@ Colours base00 to base07 are typically variations of a shade and run from darkes
 - **base0E** - Keywords, Storage, Selector, Markup Italic, Diff Changed
 - **base0F** - Deprecated, Opening/Closing Embedded Language Tags, e.g. `<?php ?>`
 
-    'black',
-    'maroon',
-    'green',
-    'olive',
-    'navy',
-    'purple',
-    'teal',
-    'silver',
-
-    'grey',
-    'red',
-    'lime',
-    'yellow',
-    'blue',
-    'fuchsia',
-    'aqua',
-    'white',
-corresponds ton wezterm colours
+black = '0x{{base00-hex}}'
+red = '0x{{base08-hex}}'
+green = '0x{{base0B-hex}}'
+yellow = '0x{{base0A-hex}}'
+blue = '0x{{base0D-hex}}'
+magenta = '0x{{base0E-hex}}'
+cyan = '0x{{base0C-hex}}'
+white = '0x{{base05-hex}}'
