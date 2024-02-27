@@ -23,3 +23,22 @@ Colours base00 to base07 are typically variations of a shade and run from darkes
 - **base0D** - Functions, Methods, Attribute IDs, Headings
 - **base0E** - Keywords, Storage, Selector, Markup Italic, Diff Changed
 - **base0F** - Deprecated, Opening/Closing Embedded Language Tags, e.g. `<?php ?>`
+
+    'black',
+    'maroon',
+    'green',
+    'olive',
+    'navy',
+    'purple',
+    'teal',
+    'silver',
+
+    'grey',
+    'red',
+    'lime',
+    'yellow',
+    'blue',
+    'fuchsia',
+    'aqua',
+    'white',
+corresponds ton wezterm colours
