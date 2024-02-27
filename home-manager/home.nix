@@ -22,8 +22,8 @@
   
   systemd.user.startServices = "sd-switch";
 
-  colorScheme = inputs.nix-colors.colorSchemes.everforest-dark-hard;
-  #colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
+  # colorScheme = inputs.nix-colors.colorSchemes.everforest-dark-hard;
+  colorScheme = inputs.nix-colors.colorSchemes.tokyo-night-storm;
 
   home.packages = [
   ];
