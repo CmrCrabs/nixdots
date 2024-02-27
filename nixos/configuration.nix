@@ -59,7 +59,7 @@
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
   # Touchpad
-   services.xserver.libinput.enable = true;
+  services.xserver.libinput.enable = true;
   
   console.keyMap = "uk";
 
@@ -88,6 +88,10 @@
    packages = with pkgs; [];
   };
 
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "JetBrainsMono" "Iosevka" ]; })
+  ];
+  
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     # Apps

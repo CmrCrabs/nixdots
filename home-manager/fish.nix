@@ -20,7 +20,9 @@ in {
   programs.fish = {
     enable = true;
     shellAbbrs = aliases;
-    shellInit = "starship init fish | source ";
-    extraConfig = 
+    shellInit = ''
+      set -g fish_greeting
+      starship init fish | source 
+    '';
   };
 }
