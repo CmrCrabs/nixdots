@@ -32,7 +32,7 @@ config.inactive_pane_hsb = {
   saturation = 0.9,
   brightness = 0.8,
 }
-config.window_background_opacity = 0.4
+config.window_background_opacity = 0.2
 config.text_background_opacity = 1.0
 
 return config

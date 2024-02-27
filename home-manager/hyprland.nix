@@ -33,6 +33,11 @@
       general = { 
         layout = "dwindle";
         resize_on_border = "yes";
+        gaps_in = 5;
+        gaps_out = 12;
+        border_size = 1;
+        "col.active_border" = "rgba(${config.colorScheme.palette.base05}cc)";
+        "col.inactive_border" = "rgba(${config.colorScheme.palette.base00}cc)";
       };
       
       misc = {
@@ -60,20 +65,23 @@
       decoration = {
         rounding = "0";
         drop_shadow = "yes";
-        shadow_range = "20";
-        shadow_render_power = "3";
-        "col.shadow" = "0x22000000";
+        shadow_range = "50";
+        shadow_render_power = "9";
+        "col.shadow" = "rgba(${config.colorScheme.palette.base00}cc)";
         dim_inactive = "no";
         dim_strength = "0.1";
 
         blur = {
           enabled = "yes";
-          size = "8";
-          passes = "3";
+          size = "4";
+          passes = "4";
           new_optimizations = "on";
-          noise = "0.01";
-          contrast = "0.9";
-          brightness = "0.8";
+
+          ignore_opacity = "yes";
+          
+          noise = "0.0117";
+          contrast = "1.0";
+          brightness = "1.0";
         };
       };
       
@@ -99,7 +107,7 @@
         "float, class:(firefoxdeveloperedition), title:(Picture-in-Picture)"
         "pin, class:(firefoxdeveloperedition), title:(Picture-in-Picture)" 
       ];
-      windowrule = "minsize 720 457,^(Alacritty)$";
+      windowrule = "minsize 720 457,^(WezTerm)$";
       bindm = [
         "$mainMod, mouse:272, movewindow"
         "$mainMod, mouse:273, resizewindow"
