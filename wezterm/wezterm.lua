@@ -12,6 +12,9 @@ config.color_schemes = {
   ["nix-col-theme"] = require("theme")
 }
 config.color_scheme = "nix-col-theme"
+
+config.font = wezterm.font('JetBrains Mono', { weight = 'Medium', italic = false })
+
 config.cell_width = 0.9
 config.default_cursor_style = "BlinkingBar"
 
