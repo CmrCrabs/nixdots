@@ -6,6 +6,8 @@ if wezterm.config_builder then
 end
 
 config.enable_wayland = false
+config.default_prog = { "fish" }
+
 config.color_schemes = {
   ["nix-col-theme"] = require("theme")
 }
