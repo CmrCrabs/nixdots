@@ -3,9 +3,10 @@ let
   aliases = {
     "v" = "vim";
     "nv" = "nvim";
-    "ls" = "eza";
-    "ll" = "eza -l";
-    "lla" = "eza -la";
+    "ls" = "eza --icons";
+    "ll" = "eza -l --icons";
+    "lt" = "eza -l --icons -T";
+    "lla" = "eza -la --icons";
     "sda" = "alacritty &";
     "rgr" = "ranger";
     "hx" = "helix";
