@@ -118,6 +118,9 @@
     hyprpaper
     brightnessctl
     pamixer
+    yarn
+    nodePackages.npm
+    nodejs_21
 
     # Libs / Utils
     grim
