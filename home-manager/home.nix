@@ -32,5 +32,6 @@
     EDITOR = "nvim";
     TERMINAL = "wezterm";
     BROWSER = "firefox-developer-edition";
+    DOTNET_CLI_TELEMETRY_OPTOUT = "1";
   };
 }
