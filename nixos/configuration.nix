@@ -118,9 +118,13 @@
     hyprpaper
     brightnessctl
     pamixer
+ 
     yarn
     nodePackages.npm
     nodejs_21
+    
+    dotnet-sdk_7
+    dotnet-runtime_7
 
     # Libs / Utils
     grim
