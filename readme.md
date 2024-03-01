@@ -2,7 +2,7 @@ NixOS Environment - Frosted Neumorphism
 
 > [!Under Construction]
 >
-> Very much under construction; lots of work to do
+> Very much under construction; lots of work to do.
 > Old Dotfile: https://github.com/cmrcrabs/dotfiles
 
 
@@ -35,9 +35,10 @@ NixOS Environment - Frosted Neumorphism
 - [ ] Write Up README.md
 
 # Credits:
+for their great configs / learning resources / software
+
 - LibrePhoenix
 - Misterio77
 - datsfilipe
 - Aylur
 - ChadCat7
-for their great configs / learning resources / software
