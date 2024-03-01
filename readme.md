@@ -1,6 +1,6 @@
 NixOS Environment - Frosted Neumorphism
 
-> [!Under Construction]
+> [!Caution]
 >
 > Very much under construction; lots of work to do.
 > Old Dotfile: https://github.com/cmrcrabs/dotfiles
