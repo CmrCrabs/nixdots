@@ -23,7 +23,7 @@
         zyn-nixos = lib.nixosSystem {
 	  inherit system;
           modules = [ 
-	    ./nixos/configuration.nix
+	    ./hosts/nixos/configuration.nix
 	  ];
           specialArgs = { inherit inputs; };
         };
@@ -31,7 +31,7 @@
       homeConfigurations = {
       	zyn = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-   	  modules = [ ./home-manager/home.nix ]; 
+   	  modules = [ ./home/home.nix ]; 
 	  extraSpecialArgs = { inherit inputs; };
         };
       };
