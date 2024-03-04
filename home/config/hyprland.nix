@@ -11,7 +11,7 @@
       "$terminal" = "wezterm";
       "$filebrowser" = "spacefm";
       "$launcher" = "rofi -show drun";
-      "$screenshot" = "grim -g \"$(slurp -d)\" - | wl-copy";
+      "$screenshot" = "grim -g \"$(slurp -d)\" - | wl-copy -t image/png";
       # "screenshotsave" = "grim -g $(\"slurp\")";
       "$browser" = "firefox-developer-edition";
 
@@ -45,6 +45,7 @@
         disable_splash_rendering = "yes";
         mouse_move_enables_dpms = "yes";
         animate_manual_resizes = "yes";
+        vfr = "yes";
       };
       
       input = {

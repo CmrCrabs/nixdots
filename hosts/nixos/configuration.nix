@@ -6,24 +6,24 @@
   ];
 
   # Bootloader.
-  #boot.loader.systemd-boot.enable = true; 
-  #boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader = {
+    systemd-boot.enable = false;
+    grub = { 
+      enable = true;
+      efiSupport = true;
+      device = "nodev";
+      configurationLimit = 3;
+    };
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot";
+    };
+  };
 
-  boot.loader.grub.enable = true;
-  boot.loader.grub.efiSupport = true;
-  boot.loader.grub.device = "nodev";
-  boot.loader.grub.configurationLimit = 3;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot";
-
-  networking.hostName = "zyn-nixos";
-  # networking.wireless.enable = true;
-  # Enables wireless support via wpa_supplicant.
-
-  # Configure network proxy if necessary networking.proxy.default = "http://user:password@proxy:port/"; 
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  networking.networkmanager.enable = true;
+  networking = { 
+    hostName = "zyn-nixos";
+    networkmanager.enable = true;
+  };
 
   time.timeZone = "Europe/London";
   i18n.defaultLocale = "en_GB.UTF-8";
@@ -53,57 +53,79 @@
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
   };
   
-
-
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  };
 
   # Touchpad
   services.xserver.libinput.enable = true;
-  
   console.keyMap = "uk";
 
   # Services
-  services.printing.enable = true;
-  services.tlp.enable = true;
-  
+  services.tlp = {
+    enable = true;
+    settings = {
+      INTEL_GPU_MIN_FREQ_ON_AC = 500;
+      INTEL_GPU_MIN_FREQ_ON_BAT = 500;
 
-  # Sound (Pipewire)
-  sound.enable = true; 
-  hardware.pulseaudio.enable = false; 
-  security.rtkit.enable = true; 
-  services.pipewire = {
-    enable = true; 
-    alsa.enable = true; 
-    alsa.support32Bit = true; 
-    pulse.enable = true;
-    #media-session.enable = true;
+      CPU_SCALING_GOVERNOR_ON_AC = "performance";
+      CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
+
+      CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
+      CPU_ENERGY_PERF_POLICY_ON_AC = "performance";
+    };
   };
 
 
+  # Sound
+  sound.enable = true; 
+  hardware.pulseaudio.enable = true; 
+  hardware.pulseaudio.extraConfig = "load-module module-combine-sink"; 
+  security.rtkit.enable = true; 
+
+  # services.pipewire = {
+  #   enable = true; 
+  #   alsa.enable = true; 
+  #   alsa.support32Bit = true; 
+  #   pulse.enable = true;
+  #   #media-session.enable = true;
+  # };
+
+  # users
   users.users.zyn = { 
    isNormalUser = true; 
    description = "zyn user acc"; 
-   extraGroups = [ "networkmanager" "wheel" ]; 
+   extraGroups = [ "networkmanager" "wheel" "audio" ]; 
    packages = with pkgs; [];
   };
 
+  # visual
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "JetBrainsMono" "Iosevka" ]; })
   ];
+  fonts.fontconfig = {
+    defaultFonts = {
+      sansSerif = [ "Jetbrains Mono Nerd Font" ];
+      monospace = [ "Jetbrains Mono Nerd FOnt" ]; 
+    };
+  };
   
+  # pkgs
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     # Apps
     firefox
-    firefox-devedition
+    firefox-devedition-bin
     discord
+    vesktop
     wezterm
     kitty
     rofi-wayland
     dunst
     waybar
     kicad
+    feh
     
     # Term
     vim
@@ -116,9 +138,17 @@
     eza
     starship
     hyprpaper
+
     brightnessctl
     pamixer
+    alsa-tools
  
+    # Libs / Utils
+    grim
+    slurp
+    wl-clipboard
+    libnotify
+
     yarn
     nodePackages.npm
     nodejs_21
@@ -126,25 +156,9 @@
     dotnet-sdk_7
     dotnet-runtime_7
 
-    # Libs / Utils
-    grim
-    slurp
-    wl-clipboard
-    libnotify
+    gcc
+
   ];
-
-  # Some programs need SUID wrappers, can be configured further or are started in user sessions. 
-  # programs.mtr.enable = true; programs.gnupg.agent = {
-  #   enable = true; enableSSHSupport = true;
-  # };
-  # Enable the OpenSSH daemon. 
-  # services.openssh.enable = true;
-
-  # Open ports in the firewall. 
-  # networking.firewall.allowedTCPPorts = [ ... ]; 
-  # networking.firewall.allowedUDPPorts = [ ... ]; 
-  # Or disable the firewall altogether. 
-  # networking.firewall.enable = false;
 
   # dont touch
   system.stateVersion = "23.11";
