@@ -7,9 +7,8 @@ let
     "ll" = "eza -l --icons";
     "lt" = "eza -l --icons -T";
     "lla" = "eza -la --icons";
-    "sda" = "alacritty &";
+    "sdt" = "$TERMINAL &";
     "rgr" = "ranger";
-    "hx" = "helix";
     "cl" = "clear";
     "cln" = "clear && ls";
     "rbt" = "sudo reboot";

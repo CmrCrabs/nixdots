@@ -6,12 +6,12 @@
     inputs.nix-colors.homeManagerModules.default
 
     # Files
-    ./fish.nix
-    ./git.nix
-    ./hyprland.nix
-    ./hyprpaper.nix
-    ./wezterm.nix
-    ./starship.nix
+    ./config/fish.nix
+    ./config/git.nix
+    ./config/hyprland.nix
+    ./config/hyprpaper.nix
+    ./config/wezterm.nix
+    ./config/starship.nix
   ];
 
   programs.home-manager.enable = true;
@@ -23,7 +23,7 @@
   systemd.user.startServices = "sd-switch";
 
   colorScheme = inputs.nix-colors.colorSchemes.everforest-dark-hard;
-  # colorScheme = inputs.nix-colors.colorSchemes.tokyo-night-dark;
+  # colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
 
   home.packages = [
   ];
@@ -31,7 +31,8 @@
   home.sessionVariables = {
     EDITOR = "nvim";
     TERMINAL = "wezterm";
-    BROWSER = "firefox-developer-edition";
+    BROWSER = "firefox";
     DOTNET_CLI_TELEMETRY_OPTOUT = "1";
+    NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM= 1;
   };
 }
