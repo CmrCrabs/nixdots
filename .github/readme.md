@@ -10,7 +10,7 @@ NixOS Environment - Frosted Neumorphism
 
 - [X] look into matugen
 - [ ] Setup Matugen
-- [ ] hyprland hall of fame
+- [X] hyprland hall of fame
 - [ ] login manager
 - [ ] Setup refind 
 - [ ] import / convert refind-minimal to nix
