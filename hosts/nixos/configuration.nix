@@ -135,10 +135,13 @@
     git
     gh
     neofetch
-    eza
     starship
-    hyprpaper
+    btop
 
+    eza
+    zoxide
+
+    hyprpaper
     brightnessctl
     pamixer
     alsa-tools
