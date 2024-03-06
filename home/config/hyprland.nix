@@ -5,6 +5,10 @@
     systemd.enable = true;
     xwayland.enable = true;
     
+    plugins = [
+      inputs.hyprland-plugins.packages.${pkgs.system}.hypridle
+    ];
+    
         
     settings = {
       "$mainMod" = "ALT";
@@ -14,11 +18,13 @@
       "$screenshot" = "grim -g \"$(slurp -d)\" - | wl-copy -t image/png";
       # "screenshotsave" = "grim -g $(\"slurp\")";
       "$browser" = "firefox-developer-edition";
+      "$locker" = "hyprlock";
 
       exec-once = [
 	"hyprpaper"
         "waybar"
         "sudo tlp start" 
+        "hypridle"
       ];
 
       monitor = [
@@ -35,9 +41,9 @@
         resize_on_border = "yes";
         gaps_in = 5;
         gaps_out = 12;
-        border_size = 1;
-        "col.active_border" = "rgba(${config.colorScheme.palette.base05}cc)";
-        "col.inactive_border" = "rgba(${config.colorScheme.palette.base00}cc)";
+        border_size = 0;
+        "col.active_border" = "rgba(ffffffcc)";
+        "col.inactive_border" = "rgba(ffffffcc)";
       };
       
       misc = {
@@ -64,12 +70,12 @@
       };
     
       decoration = {
-        rounding = "0";
+        rounding = "10";
         drop_shadow = "yes";
         shadow_range = "50";
         shadow_render_power = "9";
         "col.shadow" = "rgba(${config.colorScheme.palette.base00}cc)";
-        dim_inactive = "no";
+        dim_inactive = "yes";
         dim_strength = "0.1";
 
         blur = {
@@ -124,8 +130,10 @@
         "$mainMod, P, pseudo, # dwindle"
         "$mainMod, B, togglesplit, # dwindle"
         "$mainMod, M, fullscreen"
+
         "$mainMod SHIFT, S, exec, $screenshot"
         "$mainMod SHIFT, W, exec, $screenshotsave"
+        "$mainMod, L, $locker"
         "$mainMod, H, movefocus, l"
         "$mainMod, L, movefocus, r"
         "$mainMod, K, movefocus, u"
@@ -176,6 +184,7 @@
         
         ",XF86MonBrightnessUp,exec,brightnessctl s 5%+"
         ",XF86MonBrightnessDown,exec,brightnessctl s 5%-"
+
       ];
     };
   };

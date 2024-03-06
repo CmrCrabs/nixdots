@@ -126,6 +126,8 @@
     waybar
     kicad
     feh
+    swaylock-effects
+    dolphin
     
     # Term
     vim
@@ -137,9 +139,9 @@
     neofetch
     starship
     btop
+    ranger
 
     eza
-    zoxide
 
     hyprpaper
     brightnessctl
