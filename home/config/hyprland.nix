@@ -1,12 +1,14 @@
 { pkgs, config, inputs, ...}:
-{
+let
+  wal = "~/wallpapertest.jpg";
+in {
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = true;
     xwayland.enable = true;
     
     plugins = [
-      inputs.hyprland-plugins.packages.${pkgs.system}.hypridle
+      # inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
     ];
     
         
@@ -18,13 +20,16 @@
       "$screenshot" = "grim -g \"$(slurp -d)\" - | wl-copy -t image/png";
       # "screenshotsave" = "grim -g $(\"slurp\")";
       "$browser" = "firefox-developer-edition";
-      "$locker" = "hyprlock";
 
       exec-once = [
-	"hyprpaper"
+	# "hyprpaper"
+        "swww init &"
         "waybar"
         "sudo tlp start" 
         "hypridle"
+      ];
+      exec = [
+        "swww img ${wal}"
       ];
 
       monitor = [
@@ -133,7 +138,6 @@
 
         "$mainMod SHIFT, S, exec, $screenshot"
         "$mainMod SHIFT, W, exec, $screenshotsave"
-        "$mainMod, L, $locker"
         "$mainMod, H, movefocus, l"
         "$mainMod, L, movefocus, r"
         "$mainMod, K, movefocus, u"

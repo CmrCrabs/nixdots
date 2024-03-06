@@ -3,18 +3,21 @@
 {
   imports = [
     # flake inputs
+    inputs.matugen.nixosModules.default
+
     inputs.nix-colors.homeManagerModules.default
-    inputs.matugen.homeManagerModules.default
 
     # Files
     ./config/fish.nix
     ./config/git.nix
+
     ./config/hyprland.nix
     ./config/hyprpaper.nix
+
     ./config/wezterm.nix
     ./config/starship.nix
     ./config/neofetch.nix
-    ./config/hypridle.nix
+    ./config/helix.nix
     # ./config/ranger.nix
   ];
 
@@ -27,8 +30,7 @@
   systemd.user.startServices = "sd-switch";
 
   colorScheme = inputs.nix-colors.colorSchemes.everforest-dark-hard;
-  # colorScheme = inputs.nix-colors.colorSchemes.onedark;
-
+  # colorScheme = nix-colors.lib.schemeFromYAML "pywal" (builtins.readFile ~/.cache/wal/colors.yml);
 
   home.packages = [
   ];
