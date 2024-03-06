@@ -8,8 +8,15 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     nix-colors.url = "github:misterio77/nix-colors";
+    matugen.url = "github:InioX/matugen";
 
     hyprland.url = "github:hyprwm/hyprland";
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
+  
+
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
@@ -23,7 +30,7 @@
         zyn-nixos = lib.nixosSystem {
 	  inherit system;
           modules = [ 
-	    ./hosts/nixos/configuration.nix
+	    ./nixos/configuration.nix
 	  ];
           specialArgs = { inherit inputs; };
         };

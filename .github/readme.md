@@ -8,22 +8,15 @@ NixOS Environment - Frosted Neumorphism
 
 # TODO: 
 
-- [X] look into matugen
-- [ ] Setup Matugen
-- [X] hyprland hall of fame
-- [ ] login manager
-- [ ] Setup refind 
-- [ ] import / convert refind-minimal to nix
-- [ ] Setup Zoxide
-- [ ] Properly Edit & Setup Wallpapers
 - [ ] Implement Hyprlock / Swaylockfx
-- [ ] Theme lockscreen W/ Matugen
 - [ ] Implement HyprIdle to trigger lockscreen (& lockbind)
+- [ ] Setup Matugen
+    - [ ] Lockscreen
+    - [ ] Terminal
+    - [ ] AGS
+    - [ ] Browser
+    - [ ] GTK/QT
 - [ ] Implement Existing Neofetch Config
-- [ ] Setup Nix-Secrets
-- [ ] Setup Dolphin / PCManFM / GUI File Manager
-- [ ] Setup GTK / QT Theme Based on Matugen
-- [ ] Implement Firefox CSS (matugen)
 - [ ] borrow matugen guys prompt
 - [ ] implement cursor theme
 - [ ] AGS Setup
@@ -37,21 +30,25 @@ NixOS Environment - Frosted Neumorphism
     - [ ] Calendar / Date / Music
     - [ ] Drun / Run Menu / Launcher
 - [ ] Neovim Configuration
+- [ ] Setup Nix-Secrets (agenix)
 - [ ] Wine Setup
 - [ ] Dual Jack Microphone / Audio Setup
 - [ ] Setup Stylus Functionality & Pressure / Tilt
 - [ ] Setup Asus Dial Control Panel 
 - [ ] setup gamescope
+- [ ] Setup refind 
+- [ ] Properly Edit & Setup Wallpapers
+- [ ] import / convert refind-minimal to nix
 - [ ] Preview Images
-- [ ] Write Up README.md
+- [ ] Write Up README.md (use kaku as ref)
 - [ ] Package whole rice as a derivation
 
 # Credits:
 for their great configs / learning resources / software
 
-
 - LibrePhoenix
 - Misterio77
+- InioX
 - datsfilipe
 - Aylur
 - ChadCat7

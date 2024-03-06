@@ -4,6 +4,7 @@
   imports = [
     # flake inputs
     inputs.nix-colors.homeManagerModules.default
+    inputs.matugen.homeManagerModules.default
 
     # Files
     ./config/fish.nix
@@ -12,6 +13,9 @@
     ./config/hyprpaper.nix
     ./config/wezterm.nix
     ./config/starship.nix
+    ./config/neofetch.nix
+    ./config/hypridle.nix
+    # ./config/ranger.nix
   ];
 
   programs.home-manager.enable = true;
@@ -23,7 +27,8 @@
   systemd.user.startServices = "sd-switch";
 
   colorScheme = inputs.nix-colors.colorSchemes.everforest-dark-hard;
-  # colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
+  # colorScheme = inputs.nix-colors.colorSchemes.onedark;
+
 
   home.packages = [
   ];
