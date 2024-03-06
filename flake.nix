@@ -11,12 +11,11 @@
     matugen.url = "github:InioX/matugen";
 
     hyprland.url = "github:hyprwm/hyprland";
+
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
-  
-
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:

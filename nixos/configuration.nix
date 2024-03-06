@@ -77,6 +77,8 @@
     };
   };
 
+  security.pam.services.swaylock = {};
+
 
   # Sound
   sound.enable = true; 
@@ -118,13 +120,12 @@
     firefox
     firefox-devedition-bin
     discord
-    vesktop
+    # vesktop
     wezterm
     kitty
     rofi-wayland
     dunst
     waybar
-    kicad
     feh
     swaylock-effects
     dolphin
@@ -144,6 +145,8 @@
     eza
 
     hyprpaper
+    swww
+    pywal
     brightnessctl
     pamixer
     alsa-tools
