@@ -1,6 +1,7 @@
 { config, pkgs, inputs, ... }:
-
-{ 
+let
+  system = "x86_64-linux";
+in { 
   imports = [
     ./hardware-configuration.nix 
   ];
@@ -116,6 +117,9 @@
   # pkgs
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    # flake imports
+    inputs.matugen.packages.${system}.default
+    
     # Apps
     firefox
     firefox-devedition-bin

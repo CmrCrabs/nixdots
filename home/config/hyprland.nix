@@ -1,4 +1,4 @@
-{ pkgs, config, inputs, wal, ...}:
+{ config, wal, ...}:
 {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -12,21 +12,21 @@
         
     settings = {
       "$mainMod" = "ALT";
-      "$terminal" = "wezterm";
-      "$filebrowser" = "spacefm";
+      "$terminal" = "kitty";
+      "$filebrowser" = "dolphin";
       "$launcher" = "rofi -show drun";
       "$screenshot" = "grim -g \"$(slurp -d)\" - | wl-copy -t image/png";
       # "screenshotsave" = "grim -g $(\"slurp\")";
       "$browser" = "firefox-developer-edition";
 
       exec-once = [
-	# "hyprpaper"
         "swww init &"
         "waybar"
         "sudo tlp start" 
         "hypridle"
       ];
       exec = [
+        "matugen image -m ${wal}"
         "swww img ${wal} --transition-type center"
       ];
 
@@ -117,7 +117,7 @@
         "float, class:(firefoxdeveloperedition), title:(Picture-in-Picture)"
         "pin, class:(firefoxdeveloperedition), title:(Picture-in-Picture)" 
       ];
-      windowrule = "minsize 720 457,^(WezTerm)$";
+      windowrule = "size 720 550,^(kitty)$";
       bindm = [
         "$mainMod, mouse:272, movewindow"
         "$mainMod, mouse:273, resizewindow"
