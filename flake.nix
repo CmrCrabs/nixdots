@@ -23,7 +23,7 @@
       lib = nixpkgs.lib;
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-
+      wal = "~/.dotfiles/home/images/wallpapers/lambo.jpg";
     in {
       nixosConfigurations = {
         zyn-nixos = lib.nixosSystem {
@@ -38,7 +38,7 @@
       	zyn = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
    	  modules = [ ./home/home.nix ]; 
-	  extraSpecialArgs = { inherit inputs; };
+	  extraSpecialArgs = { inherit inputs; inherit wal; };
         };
       };
     };

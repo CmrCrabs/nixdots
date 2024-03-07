@@ -1,7 +1,5 @@
-{ pkgs, config, inputs, ...}:
-let
-  wal = "~/wallpapertest.jpg";
-in {
+{ pkgs, config, inputs, wal, ...}:
+{
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = true;
@@ -29,7 +27,7 @@ in {
         "hypridle"
       ];
       exec = [
-        "swww img ${wal}"
+        "swww img ${wal} --transition-type center"
       ];
 
       monitor = [

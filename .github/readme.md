@@ -8,15 +8,17 @@ NixOS Environment - Frosted Neumorphism
 
 # TODO: 
 
-- [ ] Implement Hyprlock / Swaylockfx
-- [ ] Implement HyprIdle to trigger lockscreen (& lockbind)
+- [ ] switch to kitty
+- [ ] setup ranger image preview on kitty
 - [ ] Setup Matugen
     - [ ] Lockscreen
     - [ ] Terminal
     - [ ] AGS
     - [ ] Browser
     - [ ] GTK/QT
-- [ ] Implement Existing Neofetch Config
+- [ ] Implement Hyprlock / Swaylockfx
+- [ ] Implement HyprIdle to trigger lockscreen (& lockbind)
+- [X] Implement Existing Neofetch Config
 - [ ] borrow matugen guys prompt
 - [ ] implement cursor theme
 - [ ] AGS Setup
