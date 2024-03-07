@@ -1,4 +1,5 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, wal, ... }:
+
 
 {
   imports = [
@@ -29,8 +30,7 @@
   
   systemd.user.startServices = "sd-switch";
 
-  colorScheme = inputs.nix-colors.colorSchemes.everforest-dark-hard;
-  # colorScheme = nix-colors.lib.schemeFromYAML "pywal" (builtins.readFile ~/.cache/wal/colors.yml);
+  colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
 
   home.packages = [
   ];

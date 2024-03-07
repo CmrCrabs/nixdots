@@ -146,7 +146,7 @@
 
     hyprpaper
     swww
-    pywal
+    flavours
     brightnessctl
     pamixer
     alsa-tools
