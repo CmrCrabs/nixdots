@@ -16,6 +16,7 @@
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
+    
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
@@ -23,7 +24,6 @@
       lib = nixpkgs.lib;
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-      wal = "~/.dotfiles/home/images/wallpapers/lambo.jpg";
     in {
       nixosConfigurations = {
         zyn-nixos = lib.nixosSystem {
@@ -38,7 +38,7 @@
       	zyn = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
    	  modules = [ ./home/home.nix ]; 
-	  extraSpecialArgs = { inherit inputs; inherit wal; };
+	  extraSpecialArgs = { inherit inputs;};
         };
       };
     };
