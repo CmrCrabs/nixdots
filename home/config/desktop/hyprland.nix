@@ -1,4 +1,4 @@
-{ config, wal, ...}:
+{ config, wal, style, ...}:
 {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -25,7 +25,7 @@
         "hypridle"
       ];
       exec = [
-        "matugen image -m dark ${wal}"
+        "matugen image -m ${style} ${wal}"
         "swww img ${wal} --transition-type center"
       ];
 

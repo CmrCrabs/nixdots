@@ -1,18 +1,23 @@
-{ config, wal, templateDir, ... }:
+{ config, wal, style, templateDir, ... }:
 {
-  programs.matugen = {
-    enable = true;
-    variant = "dark";
-    jsonFormat = "hex";
-    type = "scheme-tonal-spot";
+
+  xdg.configFile."matugen/config.toml".text = ''
+    [config]
+    variant = '${style}'
+    jsonFormat = 'hex'
+    type = 'scheme-tonal-spot'
+    reload_apps = true
+   
+    [templates.kitty]
+    input_path = "${templateDir}/kitty.conf"
+    output_path = "${config.home.homeDirectory}/.config/kitty/colors.conf"
+  
+
+    [config.reload_apps_list]
+    kitty = true
     
-    templates = {
-      "kitty" = {
-        input_path = "${templateDir}/kitty.conf";
-        output_path = "${config.home.homeDirectory}/.config/kitty/colors.conf";
-      }; 
-    };
-  };
+    
+  '';
   home.file."kitty/colors.conf".source = "${config.programs.matugen.theme.files}/.config/kitty/colors.conf";
 
   xdg.configFile."test.txt".text = ''
