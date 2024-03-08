@@ -1,6 +1,7 @@
 { config, pkgs, inputs, wal, ... }:
 let
-  wal = "~/.dotfiles/home/images/wallpapers/audi.jpg";
+  wal = "~/.dotfiles/home/images/wallpapers/aenami_horizon.jpg";
+  style = "dark";
   templateDir = "${config.home.homeDirectory}/.dotfiles/home/templates";
 in
 {
@@ -17,8 +18,8 @@ in
     inputs.nix-colors.homeManagerModules.default
 
     # Files (w/ Inputs)
-     (import ./matugen.nix { inherit wal config templateDir; })
-     (import ./config/desktop/hyprland.nix { inherit wal config; })
+     (import ./matugen.nix { inherit wal style config templateDir; })
+     (import ./config/desktop/hyprland.nix { inherit wal style config; })
 
     # Files 
      ./config/apps/kitty.nix
