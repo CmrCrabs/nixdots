@@ -2,7 +2,7 @@
 {
   programs.wezterm = {
     enable = true;
-    extraConfig = builtins.readFile ./misc/wezterm/wezterm.lua;
+    extraConfig = builtins.readFile ../misc/wezterm/wezterm.lua;
   };
 
   xdg.configFile."wezterm/theme.lua".text = ''

@@ -16,7 +16,6 @@
       "$filebrowser" = "dolphin";
       "$launcher" = "rofi -show drun";
       "$screenshot" = "grim -g \"$(slurp -d)\" - | wl-copy -t image/png";
-      # "screenshotsave" = "grim -g $(\"slurp\")";
       "$browser" = "firefox-developer-edition";
 
       exec-once = [
@@ -26,7 +25,7 @@
         "hypridle"
       ];
       exec = [
-        "matugen image -m ${wal}"
+        "matugen image -m dark ${wal}"
         "swww img ${wal} --transition-type center"
       ];
 
@@ -36,7 +35,7 @@
       ];
       workspace = [
         "eDP-1, 1"
-        "DP-3, 11"
+        "DP-3, 10"
       ];
       
       general = { 

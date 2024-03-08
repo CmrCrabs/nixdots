@@ -30,6 +30,8 @@
       cursor_blink_interval -1
       resize_in_steps no
       shell fish
+
+      include colors.conf
     '';
   };
 

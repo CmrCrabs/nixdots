@@ -1,5 +1,4 @@
 { config, wal, templateDir, ... }:
-
 {
   programs.matugen = {
     enable = true;
@@ -10,9 +9,13 @@
     templates = {
       "kitty" = {
         input_path = "${templateDir}/kitty.conf";
-        output_path = "~/.config/kitty/colors.conf";
+        output_path = "${config.home.homeDirectory}/.config/kitty/colors.conf";
       }; 
     };
   };
-  home.configFile."${templateDir}/kitty.conf".source = "${config.programs.matugen.theme.files}/.config/kitty/colors.conf";
+  home.file."kitty/colors.conf".source = "${config.programs.matugen.theme.files}/.config/kitty/colors.conf";
+
+  xdg.configFile."test.txt".text = ''
+    ${config.programs.matugen.theme.files} 
+  '';
 }
