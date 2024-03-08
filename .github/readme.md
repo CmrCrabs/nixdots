@@ -10,9 +10,11 @@ NixOS Environment - Frosted Neumorphism
 
 - [X] switch to kitty
 - [X] setup ranger image preview on kitty
-- [ ] Setup Matugen
+- [X] Setup Matugen
     - [ ] Lockscreen
-    - [ ] Terminal
+    - [X] Terminal
+    - [ ] Fish
+    - [ ] Prompt
     - [ ] AGS
     - [ ] Browser
     - [ ] GTK/QT
