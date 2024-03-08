@@ -16,10 +16,12 @@ NixOS Environment - Frosted Neumorphism
     - [ ] AGS
     - [ ] Browser
     - [ ] GTK/QT
+    - [ ] Hyprland
 - [ ] Implement Hyprlock / Swaylockfx
 - [ ] Implement HyprIdle to trigger lockscreen (& lockbind)
 - [ ] borrow matugen guys prompt
 - [ ] implement cursor theme
+- [ ] setup brightness on lower screen
 - [ ] AGS Setup
     - [ ] Dock
     - [ ] Vertical Bar
