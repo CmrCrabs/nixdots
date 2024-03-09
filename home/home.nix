@@ -34,6 +34,9 @@ in
      ./config/cli/helix.nix
      ./config/cli/ranger.nix
      ./config/cli/starship.nix
+
+     #./config/misc/gtk3.nix
+     #./config/misc/gtk4.nix
   ];
 
   systemd.user.startServices ="sd-switch";
@@ -45,6 +48,7 @@ in
     EDITOR = "nvim";
     TERMINAL = "kitty";
     BROWSER = "firefox";
+    GTK_THEME = "matugen";
     DOTNET_CLI_TELEMETRY_OPTOUT = "1";
     NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM = 1;
   };

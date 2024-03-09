@@ -2,7 +2,7 @@
   xdg.configFile."gtk-3.0/settings.ini".text = ''
 
     [Settings]
-    gtk-theme-name=adw-gtk3-dark
+    gtk-theme-name=matugen
     gtk-icon-theme-name=Adwaita
     gtk-font-name=Jetbrains Mono Nerd Font,  10
     gtk-cursor-theme-name=Adwaita

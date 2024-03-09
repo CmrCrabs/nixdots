@@ -135,6 +135,8 @@ in {
     feh
     swaylock-effects
     dolphin
+    gnome.nautilus
+
     
     # Term
     vim
@@ -172,6 +174,12 @@ in {
 
     gcc
     zip
+ 
+    gnome-themes-extra
+    libadwaita
+    lxappearance
+    gnome.adwaita-icon-theme
+    gsettings-desktop-schemas
 
   ];
 
