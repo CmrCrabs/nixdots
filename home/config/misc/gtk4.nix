@@ -10,7 +10,7 @@
     gtk-font-name=Jetbrains Mono Nerd Font,  10
     gtk-icon-theme-name=Adwaita
     gtk-primary-button-warps-slider=false
-    gtk-theme-name=adw-gtk3-dark
+    gtk-theme-name=matugen
   '';
 
 }
