@@ -177,9 +177,13 @@ in {
  
     gnome-themes-extra
     libadwaita
-    lxappearance
     gnome.adwaita-icon-theme
     gsettings-desktop-schemas
+
+    nwg-look
+    vimix-cursors
+    bibata-cursors
+    whitesur-icon-theme
 
   ];
 

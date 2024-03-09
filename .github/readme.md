@@ -17,7 +17,8 @@ NixOS Environment - Frosted Neumorphism
     - [X] Prompt
     - [ ] AGS
     - [ ] Browser
-    - [ ] GTK/QT
+    - [X] GTK
+    - [ ] QT
     - [X] Hyprland
 - [X] Implement Hyprlock / Swaylockfx
 - [X] Implement HyprIdle to trigger lockscreen (& lockbind)

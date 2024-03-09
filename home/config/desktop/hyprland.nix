@@ -21,14 +21,15 @@
 
       exec-once = [
         "swww init &"
+        "hyprctl setcursor Vimix-Cursors 24"
         "waybar"
         "sudo tlp start" 
         "hypridle"
       ];
       exec = [
-        "matugen image -m ${style} ${wal}"
         "swww img -o eDP-1 ${wal} --transition-type center"
         "swww img -o DP-3 ${wal-l} --transition-type center"
+        "matugen image -m ${style} ${wal}"
       ];
 
       monitor = [

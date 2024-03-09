@@ -51,5 +51,7 @@ in
     GTK_THEME = "matugen";
     DOTNET_CLI_TELEMETRY_OPTOUT = "1";
     NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM = 1;
+    XCURSOR_THEME = "Vimix-cursors";
+    XCURSOR_SIZE = "24";
   };
 }
