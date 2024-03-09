@@ -170,6 +170,7 @@ in {
     dotnet-runtime_7
 
     gcc
+    zip
 
   ];
 

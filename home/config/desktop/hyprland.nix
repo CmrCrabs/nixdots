@@ -17,6 +17,7 @@
       "$launcher" = "rofi -show drun";
       "$screenshot" = "grim -g \"$(slurp -d)\" - | wl-copy -t image/png";
       "$browser" = "firefox-developer-edition";
+      "$locker" = "hyprlock";
 
       exec-once = [
         "swww init &"
@@ -75,9 +76,10 @@
       decoration = {
         rounding = "10";
         drop_shadow = "yes";
-        shadow_range = "50";
-        shadow_render_power = "9";
-        "col.shadow" = "rgba(${config.colorScheme.palette.base00}cc)";
+        shadow_range = "30";
+        shadow_render_power = "3";
+        shadow_offset = "10, 0";
+       "col.shadow" = "rgba(000000cc)";
         dim_inactive = "yes";
         dim_strength = "0.1";
 
@@ -133,6 +135,7 @@
         "$mainMod, P, pseudo, # dwindle"
         "$mainMod, B, togglesplit, # dwindle"
         "$mainMod, M, fullscreen"
+        "$mainMod SHIFT, P, exec, $locker"
 
         "$mainMod SHIFT, S, exec, $screenshot"
         "$mainMod SHIFT, W, exec, $screenshotsave"

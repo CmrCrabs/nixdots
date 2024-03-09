@@ -12,6 +12,11 @@
     input_path = "${templateDir}/kitty.conf"
     output_path = "${config.home.homeDirectory}/.config/kitty/colors.conf"
 
+
+    [templates.hypr-colors]
+    input_path = "${templateDir}/hypr.conf"
+    output_path = "${config.home.homeDirectory}/.config/hypr/colors.conf"
+
     [config.reload_apps_list]
     kitty = true
     waybar = false
@@ -20,7 +25,7 @@
      
     
   '';
-  home.file."kitty/colors.conf".source = "${config.programs.matugen.theme.files}/.config/kitty/colors.conf";
+  # home.file."kitty/colors.conf".source = "${config.programs.matugen.theme.files}/.config/kitty/colors.conf";
   # xdg.configFile."starship.toml".source = "${config.programs.matugen.theme.files}/.config/starship.toml";
 
   xdg.configFile."test.txt".text = ''
