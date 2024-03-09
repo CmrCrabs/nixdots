@@ -11,6 +11,7 @@
     matugen.url = "github:InioX/matugen";
 
     hyprland.url = "github:hyprwm/hyprland";
+    hyprlock.url = "github:hyprwm/hyprlock";
 
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins";
