@@ -1,7 +1,7 @@
 { config, pkgs, inputs, ... }:
 let
-  wal = "~/.dotfiles/home/images/wallpapers/stardust_snow.jpg";
-  wal-l = "~/.dotfiles/home/images/wallpapers/stardust_snow.jpg";
+  wal = "~/.dotfiles/home/images/wallpapers/aenami_horizon.jpg";
+  wal-l = "~/.dotfiles/home/images/wallpapers/aenami_horizon.jpg";
   style = "dark";
   templateDir = "${config.home.homeDirectory}/.dotfiles/home/templates";
 in
@@ -9,7 +9,7 @@ in
   programs.home-manager.enable = true;
   home.stateVersion = "23.11";
 
-  colorScheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
+  colorScheme = inputs.nix-colors.colorschemes.catppuccin-mocha;
   home.username = "zyn";
   home.homeDirectory = "/home/zyn";
 
