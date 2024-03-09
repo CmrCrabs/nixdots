@@ -120,6 +120,7 @@ in {
     # flake imports
     inputs.matugen.packages.${system}.default
     inputs.hyprlock.packages.${system}.default
+    inputs.hypridle.packages.${system}.default
     
     # Apps
     firefox

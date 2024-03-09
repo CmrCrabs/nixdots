@@ -20,10 +20,13 @@ NixOS Environment - Frosted Neumorphism
     - [ ] GTK/QT
     - [X] Hyprland
 - [X] Implement Hyprlock / Swaylockfx
-- [ ] Implement HyprIdle to trigger lockscreen (& lockbind)
+- [X] Implement HyprIdle to trigger lockscreen (& lockbind)
 - [X] borrow matugen guys prompt
 - [ ] implement cursor theme
 - [ ] setup brightness on lower screen
+- [ ] adjust hypridle & hypr binds for lower brightness
+- [ ] Neovim Configuration
+    - [ ] create subtasks here
 - [ ] AGS Setup
     - [ ] Dock
     - [ ] Vertical Bar
@@ -34,7 +37,6 @@ NixOS Environment - Frosted Neumorphism
     - [ ] Control Center Widgets
     - [ ] Calendar / Date / Music
     - [ ] Drun / Run Menu / Launcher
-- [ ] Neovim Configuration
 - [ ] Setup Nix-Secrets (agenix)
 - [ ] Wine Setup
 - [ ] Dual Jack Microphone / Audio Setup

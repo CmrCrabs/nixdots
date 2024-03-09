@@ -12,6 +12,7 @@
 
     hyprland.url = "github:hyprwm/hyprland";
     hyprlock.url = "github:hyprwm/hyprlock";
+    hypridle.url = "github:hyprwm/hypridle";
 
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins";
