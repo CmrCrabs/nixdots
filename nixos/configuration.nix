@@ -119,6 +119,7 @@ in {
   environment.systemPackages = with pkgs; [
     # flake imports
     inputs.matugen.packages.${system}.default
+    inputs.hyprlock.packages.${system}.default
     
     # Apps
     firefox
