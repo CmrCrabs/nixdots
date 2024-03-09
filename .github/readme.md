@@ -14,7 +14,7 @@ NixOS Environment - Frosted Neumorphism
     - [ ] Lockscreen
     - [X] Terminal
     - [X] Fish
-    - [ ] Prompt
+    - [X] Prompt
     - [ ] AGS
     - [ ] Browser
     - [ ] GTK/QT
