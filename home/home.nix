@@ -1,6 +1,7 @@
-{ config, pkgs, inputs, wal, ... }:
+{ config, pkgs, inputs, ... }:
 let
-  wal = "~/.dotfiles/home/images/wallpapers/aenami_horizon.jpg";
+  wal = "~/.dotfiles/home/images/wallpapers/stardust_snow.jpg";
+  wal-l = "~/.dotfiles/home/images/wallpapers/stardust_snow.jpg";
   style = "dark";
   templateDir = "${config.home.homeDirectory}/.dotfiles/home/templates";
 in
@@ -19,13 +20,13 @@ in
 
     # Files (w/ Inputs)
      (import ./matugen.nix { inherit wal style config templateDir; })
-     (import ./config/desktop/hyprland.nix { inherit wal style config; })
+     (import ./config/desktop/hyprland.nix { inherit wal wal-l style config; })
+     (import ./config/cli/fish.nix { inherit style; })
 
     # Files 
      ./config/apps/kitty.nix
      ./config/apps/wezterm.nix
 
-     ./config/cli/fish.nix
      ./config/cli/git.nix
      ./config/cli/helix.nix
      ./config/cli/ranger.nix

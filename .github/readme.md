@@ -13,7 +13,7 @@ NixOS Environment - Frosted Neumorphism
 - [X] Setup Matugen
     - [ ] Lockscreen
     - [X] Terminal
-    - [ ] Fish
+    - [X] Fish
     - [ ] Prompt
     - [ ] AGS
     - [ ] Browser
