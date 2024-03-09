@@ -1,7 +1,7 @@
 { config, pkgs, inputs, ... }:
 let
-  wal = "~/.dotfiles/home/images/wallpapers/aenami_horizon.jpg";
-  wal-l = "~/.dotfiles/home/images/wallpapers/aenami_horizon.jpg";
+  wal = "~/.dotfiles/home/images/wallpapers/aenami_horizon.png";
+  wal-l = "~/.dotfiles/home/images/wallpapers/aenami_horizon.png";
   style = "dark";
   templateDir = "${config.home.homeDirectory}/.dotfiles/home/templates";
 in
@@ -21,6 +21,7 @@ in
     # Files (w/ Inputs)
      (import ./matugen.nix { inherit wal style config templateDir; })
      (import ./config/desktop/hyprland.nix { inherit wal wal-l style config; })
+     (import ./config/desktop/hyprlock.nix { inherit wal wal-l style; })
      (import ./config/cli/fish.nix { inherit style; })
 
     # Files 
@@ -40,7 +41,7 @@ in
 
   home.sessionVariables = {
     EDITOR = "nvim";
-    TERMINAL = "wezterm";
+    TERMINAL = "kitty";
     BROWSER = "firefox";
     DOTNET_CLI_TELEMETRY_OPTOUT = "1";
     NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM = 1;

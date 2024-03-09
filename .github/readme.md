@@ -11,17 +11,17 @@ NixOS Environment - Frosted Neumorphism
 - [X] switch to kitty
 - [X] setup ranger image preview on kitty
 - [X] Setup Matugen
-    - [ ] Lockscreen
+    - [X] Lockscreen
     - [X] Terminal
     - [X] Fish
     - [X] Prompt
     - [ ] AGS
     - [ ] Browser
     - [ ] GTK/QT
-    - [ ] Hyprland
-- [ ] Implement Hyprlock / Swaylockfx
+    - [X] Hyprland
+- [X] Implement Hyprlock / Swaylockfx
 - [ ] Implement HyprIdle to trigger lockscreen (& lockbind)
-- [ ] borrow matugen guys prompt
+- [X] borrow matugen guys prompt
 - [ ] implement cursor theme
 - [ ] setup brightness on lower screen
 - [ ] AGS Setup
@@ -42,6 +42,7 @@ NixOS Environment - Frosted Neumorphism
 - [ ] Setup Asus Dial Control Panel 
 - [ ] setup gamescope
 - [ ] Setup refind 
+- [ ] potentially hyprbars
 - [ ] Properly Edit & Setup Wallpapers
 - [ ] import / convert refind-minimal to nix
 - [ ] Preview Images
