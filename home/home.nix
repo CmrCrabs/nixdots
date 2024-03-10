@@ -1,7 +1,7 @@
 { config, pkgs, inputs, ... }:
 let
-  wal = "~/.dotfiles/home/images/wallpapers/aenami_river.png";
-  wal-l = "~/.dotfiles/home/images/wallpapers/aenami_river.png";
+  wal = "~/.dotfiles/home/images/wallpapers/aenami_endless.png";
+  wal-l = "~/.dotfiles/home/images/wallpapers/aenami_endless.png";
   style = "dark";
   templateDir = "${config.home.homeDirectory}/.dotfiles/home/templates";
 in
@@ -25,7 +25,6 @@ in
      (import ./config/cli/fish.nix { inherit style; })
 
     # Files 
-     ./config/nvim.nix
      ./config/desktop/hypridle.nix
 
      ./config/apps/kitty.nix
