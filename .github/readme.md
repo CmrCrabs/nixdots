@@ -23,11 +23,17 @@ NixOS Environment - Frosted Neumorphism
 - [X] Implement Hyprlock / Swaylockfx
 - [X] Implement HyprIdle to trigger lockscreen (& lockbind)
 - [X] borrow matugen guys prompt
-- [ ] implement cursor theme
+- [X] implement cursor theme
 - [ ] setup brightness on lower screen
 - [ ] adjust hypridle & hypr binds for lower brightness
 - [ ] Neovim Configuration
     - [ ] create subtasks here
+    - [ ] base setup
+    - [ ] lazy
+    - [ ] plugins
+    - [ ] lsp
+    - [ ] line
+    - [ ] colorscheme (wal.vim)
 - [ ] AGS Setup
     - [ ] Dock
     - [ ] Vertical Bar
@@ -47,6 +53,8 @@ NixOS Environment - Frosted Neumorphism
 - [ ] Setup refind 
 - [ ] potentially hyprbars
 - [ ] Properly Edit & Setup Wallpapers
+- [ ] Cursor firefox work
+- [ ] tmux
 - [ ] import / convert refind-minimal to nix
 - [ ] Preview Images
 - [ ] Write Up README.md (use kaku as ref)
@@ -60,4 +68,5 @@ for their great configs / learning resources / software
 - InioX
 - datsfilipe
 - Aylur
+- HyprNova
 - ChadCat7

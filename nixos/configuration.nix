@@ -1,6 +1,7 @@
 { config, pkgs, inputs, ... }:
 let
   system = "x86_64-linux";
+  asus-wmi-screenpad = config.boot.kernelPackages.callPackage ../derivs/asus-wmi-screenpad.nix {};
 in { 
   imports = [
     ./hardware-configuration.nix 
@@ -115,6 +116,11 @@ in {
   };
   
   # pkgs
+
+  #boot.extraModulePackages = with config.boot.kernelPackages; [
+  #  asus-wmi-screenpad
+  #];
+  
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     # flake imports
@@ -158,12 +164,14 @@ in {
     brightnessctl
     pamixer
     alsa-tools
+    pywal
  
     # Libs / Utils
     grim
     slurp
     wl-clipboard
     libnotify
+    ripgrep
 
     yarn
     nodePackages.npm
@@ -184,6 +192,9 @@ in {
     vimix-cursors
     bibata-cursors
     whitesur-icon-theme
+
+    nix-prefetch-git
+    stdenv
 
   ];
 
