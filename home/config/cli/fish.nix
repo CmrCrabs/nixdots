@@ -6,10 +6,10 @@ let
     "ll" = "eza -l --icons --no-permissions --no-user --no-time --group-directories-first";
     "lt" = "eza -l --icons -T --no-permissions --no-user --no-time --group-directories-first --no-filesize";
     "la" = "eza -la --icons --no-permissions --no-user --no-time --group-directories-first";
-    "sdt" = "$TERMINAL &> dev/null &";
+    "sdt" = "$TERMINAL &> /dev/null &";
     "rgr" = "ranger";
     "cl" = "clear";
-    "cln" = "clear && ls";
+    "cls" = "clear && ls";
     "rbt" = "sudo reboot";
     "nm" = "sudo nmtui";
     "wft" = "ping gnu.org -c 1";

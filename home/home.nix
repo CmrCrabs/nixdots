@@ -25,6 +25,7 @@ in
      (import ./config/cli/fish.nix { inherit style; })
 
     # Files 
+     ./config/nvim.nix
      ./config/desktop/hypridle.nix
 
      ./config/apps/kitty.nix

@@ -21,7 +21,7 @@
 
       exec-once = [
         "swww init &"
-        "hyprctl setcursor Vimix-Cursors 24"
+        "hyprctl setcursor Vimix-cursors 24"
         "waybar"
         "sudo tlp start" 
         "hypridle"
@@ -30,6 +30,7 @@
         "swww img -o eDP-1 ${wal} --transition-type center"
         "swww img -o DP-3 ${wal-l} --transition-type center"
         "matugen image -m ${style} ${wal}"
+        "wal -n -i ${if style == "dark" then "" else if style == "light" then "-l" else ""} ${wal} --backend colorz"
       ];
 
       monitor = [
@@ -82,7 +83,7 @@
         shadow_offset = "10, 0";
        "col.shadow" = "rgba(000000cc)";
         dim_inactive = "yes";
-        dim_strength = "0.1";
+        dim_strength = "0.3";
 
         blur = {
           enabled = "yes";
