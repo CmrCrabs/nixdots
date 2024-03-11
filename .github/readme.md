@@ -27,13 +27,15 @@ NixOS Environment - Frosted Neumorphism
 - [ ] setup brightness on lower screen
 - [ ] adjust hypridle & hypr binds for lower brightness
 - [ ] Neovim Configuration
-    - [ ] create subtasks here
-    - [ ] base setup
-    - [ ] lazy
-    - [ ] plugins
+    - [X] create subtasks here
+    - [X] base setup
+    - [X] lazy
+    - [X] plugins
     - [ ] lsp
     - [ ] line
-    - [ ] colorscheme (wal.vim)
+    - [ ] cmp
+    - [ ] dash
+    - [X] colorscheme (wal.vim)
 - [ ] AGS Setup
     - [ ] Dock
     - [ ] Vertical Bar

@@ -83,7 +83,7 @@
         shadow_offset = "10, 0";
        "col.shadow" = "rgba(000000cc)";
         dim_inactive = "yes";
-        dim_strength = "0.3";
+        dim_strength = "0.15";
 
         blur = {
           enabled = "yes";
