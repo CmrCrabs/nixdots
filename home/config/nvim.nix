@@ -1,11 +1,6 @@
 { config, lib, pkgs, ...}:
 {
     home.packages = with pkgs; [
-        tree-sitter
-        lua-language-server
-        nil
-        nixpkgs-fmt
-        fd
     ];
 
     xdg.configFile = {
