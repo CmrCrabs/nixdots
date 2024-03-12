@@ -79,7 +79,7 @@
         rounding = "10";
         drop_shadow = "yes";
         shadow_range = "30";
-        shadow_render_power = "3";
+        shadow_render_power = "9";
         shadow_offset = "10, 0";
        "col.shadow" = "rgba(000000cc)";
         dim_inactive = "yes";
