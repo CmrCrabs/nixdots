@@ -31,10 +31,10 @@ NixOS Environment - Frosted Neumorphism
     - [X] base setup
     - [X] lazy
     - [X] plugins
-    - [ ] lsp
-    - [ ] line
+    - [X] lsp
+    - [X] line
     - [ ] cmp
-    - [ ] dash
+    - [X] dash
     - [X] colorscheme (wal.vim)
 - [ ] AGS Setup
     - [ ] Dock
