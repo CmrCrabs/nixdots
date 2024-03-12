@@ -1,7 +1,7 @@
 { config, pkgs, inputs, ... }:
 let
-  wal = "~/.dotfiles/home/images/wallpapers/aenami_endless.png";
-  wal-l = "~/.dotfiles/home/images/wallpapers/aenami_endless.png";
+  wal = "~/.dotfiles/home/images/wallpapers/aenami_castle.png";
+  wal-l = "~/.dotfiles/home/images/wallpapers/aenami_castle.png";
   style = "dark";
   templateDir = "${config.home.homeDirectory}/.dotfiles/home/templates";
 in
@@ -22,7 +22,7 @@ in
      (import ./matugen.nix { inherit wal style config templateDir; })
      (import ./config/desktop/hyprland.nix { inherit wal wal-l style config; })
      (import ./config/desktop/hyprlock.nix { inherit wal wal-l style; })
-     (import ./config/cli/fish.nix { inherit style; })
+     (import ./config/cli/fish.nix { inherit style pkgs; })
 
     # Files 
      ./config/nvim.nix

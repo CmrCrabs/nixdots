@@ -81,6 +81,8 @@ in {
 
   security.pam.services.swaylock = {};
 
+  programs.nix-ld.enable = true;
+
 
   # Sound
   sound.enable = true; 
@@ -147,7 +149,6 @@ in {
     # Term
     vim
     neovim
-    helix
     wget
     git
     gh
@@ -179,9 +180,16 @@ in {
     
     dotnet-sdk_7
     dotnet-runtime_7
+    
+    cargo
+    rustup
 
     gcc
     zip
+
+    steam-run
+
+    imagemagick
  
     gnome-themes-extra
     libadwaita
@@ -195,6 +203,8 @@ in {
 
     nix-prefetch-git
     stdenv
+
+    unzip
 
   ];
 
