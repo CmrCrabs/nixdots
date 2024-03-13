@@ -11,9 +11,10 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = {
           -- LSPs
-          -- "lua_ls",
+          "lua_ls",
           "tsserver",
           "rust_analyzer",
+          "omnisharp",
         }
       })
     end

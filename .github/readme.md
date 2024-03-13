@@ -18,7 +18,6 @@ NixOS Environment - Frosted Neumorphism
     - [ ] AGS
     - [ ] Browser
     - [X] GTK
-    - [ ] QT
     - [X] Hyprland
 - [X] Implement Hyprlock / Swaylockfx
 - [X] Implement HyprIdle to trigger lockscreen (& lockbind)
@@ -33,7 +32,7 @@ NixOS Environment - Frosted Neumorphism
     - [X] plugins
     - [X] lsp
     - [X] line
-    - [ ] cmp
+    - [X] cmp
     - [X] dash
     - [X] colorscheme (wal.vim)
 - [ ] AGS Setup
