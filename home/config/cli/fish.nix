@@ -14,13 +14,13 @@ let
     "wft" = "ping gnu.org -c 1";
     "bat" = "cat /sys/class/power_supply/BAT0/capacity";
     "nv" = "steam-run nvim";
+    "nvim" = "steam-run nvim";
     "cpng" = "find . -name \"*.jpg\" -exec mogrify -format png {} \;";
   }; 
   aliases = {
     "ls" = "eza --icons --no-permissions --no-user --no-time --group-directories-first";
   };
-
-in {
+  in {
   programs.fish = {
     enable = true;
     shellAbbrs = abbr;
