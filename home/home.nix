@@ -1,7 +1,7 @@
 { config, pkgs, inputs, ... }:
 let
-  wal = "~/.dotfiles/home/images/wallpapers/aenami_horizon.png";
-  wal-l = "~/.dotfiles/home/images/wallpapers/aenami_horizon.png";
+  wal = "~/.dotfiles/home/images/wallpapers/aenami_endless.png";
+  wal-l = "~/.dotfiles/home/images/wallpapers/aenami_endless.png";
   style = "dark";
   templateDir = "${config.home.homeDirectory}/.dotfiles/home/templates";
 in
