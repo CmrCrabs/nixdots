@@ -30,7 +30,12 @@
     [templates.GTK3]
     input_path = "${templateDir}/gtk.css"
     output_path = "${config.home.homeDirectory}/.config/gtk-3.0/gtk.css"
-     
+
+    [templates.ags]
+    input_path = "${templateDir}/colors.scss"
+    output_path = "${config.home.homeDirectory}/.config/ags/scss/colors.scss"
+
+
     
   '';
   # home.file."kitty/colors.conf".source = "${config.programs.matugen.theme.files}/.config/kitty/colors.conf";
