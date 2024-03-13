@@ -23,9 +23,7 @@ NixOS Environment - Frosted Neumorphism
 - [X] Implement HyprIdle to trigger lockscreen (& lockbind)
 - [X] borrow matugen guys prompt
 - [X] implement cursor theme
-- [ ] setup brightness on lower screen
-- [ ] adjust hypridle & hypr binds for lower brightness
-- [ ] Neovim Configuration
+- [X] Neovim Configuration
     - [X] create subtasks here
     - [X] base setup
     - [X] lazy
@@ -52,10 +50,13 @@ NixOS Environment - Frosted Neumorphism
 - [ ] Setup Asus Dial Control Panel 
 - [ ] setup gamescope
 - [ ] Setup refind 
+- [ ] setup brightness on lower screen
+- [ ] adjust hypridle & hypr binds for lower brightness
 - [ ] potentially hyprbars
 - [ ] Properly Edit & Setup Wallpapers
 - [ ] Cursor firefox work
 - [ ] tmux
+- [ ] move packages into corresponding home files
 - [ ] import / convert refind-minimal to nix
 - [ ] Preview Images
 - [ ] Write Up README.md (use kaku as ref)

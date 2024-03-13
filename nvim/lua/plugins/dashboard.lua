@@ -26,6 +26,7 @@ return {
             }
             dashboard.section.buttons.val = {
               dashboard.button( "f", "Files", ":Telescope find_files<CR>"),
+              dashboard.button( "e", "Tree", ":NvimTreeToggle<CR>"),
               dashboard.button( "/", "Search", ":Telescope live_grep<CR>"),
               dashboard.button( "q", "Exit", ":qa<CR>"),
             }
