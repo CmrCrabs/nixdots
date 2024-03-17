@@ -141,14 +141,16 @@ in {
     dunst
     waybar
     feh
-    swaylock-effects
     dolphin
     gnome.nautilus
+    vscode
+    jetbrains.rider
 
     
     # Term
     vim
     neovim
+    helix
     wget
     git
     gh
@@ -180,6 +182,7 @@ in {
     
     dotnet-sdk_7
     dotnet-runtime_7
+    vimPlugins.omnisharp-extended-lsp-nvim
     
     cargo
     rustup
@@ -199,6 +202,7 @@ in {
     nwg-look
     vimix-cursors
     bibata-cursors
+    apple-cursor
     whitesur-icon-theme
 
     nix-prefetch-git

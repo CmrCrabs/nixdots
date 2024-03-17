@@ -15,7 +15,8 @@ return {
       capabilities = capabilities
     })
     lspconfig.omnisharp.setup({
-      capabilities = capabilities
+      cmd = { "/home/zyn/.local/share/nvim/mason/bin/omnisharp" },
+      capabilities = capabilities,
     })
 
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})

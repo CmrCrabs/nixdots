@@ -3,23 +3,37 @@ NixOS Environment - Frosted Neumorphism
 > [!Caution]
 >
 > Very much under construction; lots of work to do.
-> Old Dotfile: https://github.com/cmrcrabs/dotfiles
+> Old: https://github.com/cmrcrabs/dotfiles
 
 
 # TODO: 
 
 - [ ] AGS Setup
+    - [ ] Design
+        - [X] Colourscheme
+        - [X] Dock
+        - [X] Vertical Bar
+        - [ ] Audio Visualiser
+        - [ ] Notifications
+        - [ ] Notification Log
+        - [ ] Wifi / Volume / Microphone
+        - [ ] Calendar / Date / Music
+        - [ ] Drun / Run Menu / Launcher
     - [ ] Colourscheme
     - [ ] Dock
     - [ ] Vertical Bar
     - [ ] Audio Visialiser
     - [ ] Notifications
     - [ ] Notification Log
-    - [ ] Desktop Widgets
-    - [ ] Control Center Widgets
+    - [ ] Wifi / Volume / Microphone
     - [ ] Calendar / Date / Music
     - [ ] Drun / Run Menu / Launcher
 
+- [ ] Nvim
+    - [ ] C# LSP
+    - [ ] Objects Viewer
+    - [ ] Multiple Tabs
+    - [ ] Unity / Godot Integration
 - [ ] Tmux
     - [ ] Determine if needed
 - [ ] Misc App Setup
