@@ -8,25 +8,25 @@
   }
   
   listener {
-      timeout = 60                                # 2.5min.
+      timeout = 100                                # 2.5min.
       on-timeout = brightnessctl -s set 10         # set monitor backlight to minimum, avoid 0 on OLED monitor.
       on-resume = brightnessctl -r                 # monitor backlight restor.
   }
   
   # turn off keyboard backlight, uncomment this section if have keyboard backlight.
   listener { 
-      timeout = 60                                          # 2.5min.
+      timeout = 100                                          # 2.5min.
       on-timeout = brightnessctl -sd rgb:kbd_backlight set 0 # turn off keyboard backlight.
       on-resume = brightnessctl -rd rgb:kbd_backlight        # turn on keyboard backlight.
   }
   
   listener {
-      timeout = 120                                 # 5min
+      timeout = 180                                 # 5min
       on-timeout = loginctl lock-session            # lock screen when timeout has passed
   }
   
   listener {
-      timeout = 120                                 # 5.5min
+      timeout = 180                                 # 5.5min
       on-timeout = hyprctl dispatch dpms off        # screen off when timeout has passed
       on-resume = hyprctl dispatch dpms on          # screen on when activity is detected after timeout has fired.
   }
