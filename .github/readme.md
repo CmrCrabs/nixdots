@@ -30,9 +30,11 @@ NixOS Environment - Frosted Neumorphism
     - [ ] Drun / Run Menu / Launcher
 
 - [ ] Nvim
-    - [ ] C# LSP
+    - [X] C# LSP
+    - [X] Multiple Tabs
     - [ ] Objects Viewer
-    - [ ] Multiple Tabs
+    - [ ] better bufferline
+    - [ ] better statusline
     - [ ] Unity / Godot Integration
 - [ ] Tmux
     - [ ] Determine if needed
