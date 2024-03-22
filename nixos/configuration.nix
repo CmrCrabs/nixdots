@@ -133,6 +133,7 @@ in {
     # Apps
     firefox
     firefox-devedition-bin
+    chromium
     discord
     # vesktop
     wezterm

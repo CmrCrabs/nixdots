@@ -9,16 +9,7 @@ NixOS Environment - Frosted Neumorphism
 # TODO: 
 
 - [ ] AGS Setup
-    - [ ] Design
-        - [X] Colourscheme
-        - [X] Dock
-        - [X] Vertical Bar
-        - [ ] Audio Visualiser
-        - [ ] Notifications
-        - [ ] Notification Log
-        - [ ] Wifi / Volume / Microphone
-        - [ ] Calendar / Date / Music
-        - [ ] Drun / Run Menu / Launcher
+    - [X] Design
     - [ ] Colourscheme
     - [ ] Dock
     - [ ] Vertical Bar
