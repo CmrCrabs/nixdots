@@ -1,4 +1,4 @@
-{ config, wal, wal-l, style, ...}:
+{ config, wal, wal-l, style, rounding, ...}:
 {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -76,7 +76,7 @@
       };
     
       decoration = {
-        rounding = "10";
+        rounding = "${rounding}";
         drop_shadow = "yes";
         shadow_range = "30";
         shadow_render_power = "9";
@@ -103,12 +103,12 @@
         enabled = "yes";
         bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
         animation = [
-          "windows, 1, 2, myBezier"
+          "windows, 1, 1.5, myBezier"
           "windowsOut, 1, 2, default, popin 80%"
           "border, 1, 2, default"
           "borderangle, 1, 6, default"
           "fade, 1, 2, default"
-          "workspaces, 1, 1, default"
+          "workspaces, 1, 0.5, default"
         ];
       };
       

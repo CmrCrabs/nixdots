@@ -3,6 +3,7 @@ let
   wal = "~/.dotfiles/home/images/wallpapers/aenami_endless.png";
   wal-l = "~/.dotfiles/home/images/wallpapers/aenami_endless.png";
   style = "dark";
+  rounding = "15";
   templateDir = "${config.home.homeDirectory}/.dotfiles/home/templates";
 in
 {
@@ -20,12 +21,14 @@ in
 
     # Files (w/ Inputs)
      (import ./matugen.nix { inherit wal style config templateDir; })
-     (import ./config/desktop/hyprland.nix { inherit wal wal-l style config; })
-     (import ./config/desktop/hyprlock.nix { inherit wal wal-l style; })
+     (import ./config/desktop/hyprland.nix { inherit wal wal-l style rounding config; })
+     (import ./config/desktop/hyprlock.nix { inherit wal wal-l style rounding; })
+     (import ./config/ags.nix { inherit inputs pkgs rounding; })
      (import ./config/cli/fish.nix { inherit style pkgs; })
 
     # Files 
      ./config/nvim.nix
+     # ./config/ags.nix
  
      ./config/desktop/hypridle.nix
 
@@ -36,9 +39,6 @@ in
      ./config/cli/helix.nix
      ./config/cli/ranger.nix
      ./config/cli/starship.nix
-
-     #./config/misc/gtk3.nix
-     #./config/misc/gtk4.nix
   ];
 
   systemd.user.startServices ="sd-switch";
