@@ -129,6 +129,7 @@ in {
     inputs.matugen.packages.${system}.default
     inputs.hyprlock.packages.${system}.default
     inputs.hypridle.packages.${system}.default
+    inputs.ags.packages.${system}.default
     
     # Apps
     firefox
@@ -210,6 +211,7 @@ in {
     stdenv
 
     unzip
+    sassc
 
   ];
 

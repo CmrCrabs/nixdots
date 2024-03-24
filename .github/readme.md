@@ -8,11 +8,12 @@ NixOS Environment - Frosted Neumorphism
 
 # TODO: 
 
+- [X] global rounding
 - [ ] AGS Setup
     - [X] Design
-    - [ ] Colourscheme
-    - [ ] Dock
+    - [X] Colourscheme
     - [ ] Vertical Bar
+    - [ ] Dock
     - [ ] Audio Visialiser
     - [ ] Notifications
     - [ ] Notification Log
@@ -26,7 +27,6 @@ NixOS Environment - Frosted Neumorphism
     - [ ] Objects Viewer
     - [ ] better bufferline
     - [ ] better statusline
-    - [ ] Unity / Godot Integration
 - [ ] Tmux
     - [ ] Determine if needed
 - [ ] Misc App Setup
@@ -34,6 +34,7 @@ NixOS Environment - Frosted Neumorphism
     - [ ] Wine Setup
     - [ ] Setup Stylus Functionality & Pressure / Tilt
     - [ ] Setup Asus Dial Control Panel 
+    - [ ] rewrite hyprlock to accept rounding changes
 
 - [ ] Misc Nix Functionality Setup
     - [ ] Setup Nix-Secrets (agenix)
