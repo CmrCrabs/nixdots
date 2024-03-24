@@ -1,4 +1,4 @@
-{ wal, wal-l, style, ... }:
+{ wal, wal-l, style, rounding, ... }:
 {
   xdg.configFile."hypr/hyprlock.conf".text = ''
 
