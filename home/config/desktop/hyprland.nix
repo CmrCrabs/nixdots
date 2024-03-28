@@ -41,7 +41,11 @@
       ];
       workspace = [
         "eDP-1, 1"
-        "DP-3, 10"
+        "DP-3, 10"        
+        "1, persistent:true"
+        "2, persistent:true"
+        "3, persistent:true"
+        "4, persistent:true"
       ];
       
       general = { 
@@ -123,12 +127,12 @@
         "float, class:(firefoxdeveloperedition), title:(Picture-in-Picture)"
         "pin, class:(firefoxdeveloperedition), title:(Picture-in-Picture)" 
       ];
-      windowrule = "size 720 550,^(kitty)$";
+      windowrule = "size 820 650,^(kitty)$";
       bindm = [
         "$mainMod, mouse:272, movewindow"
         "$mainMod, mouse:273, resizewindow"
       ];
-       
+
       bind = [
         "$mainMod, Q, exec, $terminal"
         "$mainMod, C, killactive,"

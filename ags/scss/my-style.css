@@ -5,12 +5,11 @@ window {
   all: unset; }
 
 .vertical_bar {
-  all: unset;
   border-radius: 15px;
   min-height: 1060px;
   padding-left: 10px;
   padding-right: 10px;
-  margin: 10px;
+  margin-left: 10px;
   background-color: #131413;
   color: #e4e2e0; }
   .vertical_bar * {
@@ -31,7 +30,6 @@ window {
     transition: ease-in 0.3s; }
 
 .clock {
-  all: unset;
   border-radius: 15px;
   padding-left: 10px;
   padding-right: 10px;
@@ -47,27 +45,36 @@ window {
 
 .batbar {
   padding: 1px;
-  background-color: #e4e2e0;
-  color: #e4e2e0; }
+  background-color: #ffb4ab;
+  color: #e4e2e0;
+  margin-top: 10px;
+  min-width: 5px;
+  border-radius: 15px;
+  outline-color: #bbd2c6; }
+
+.battery_icon {
+  margin-top: 10px;
+  background-color: transparent;
+  color: #e4e2e0;
+  font-size: 20px; }
 
 .workspaces {
-  all: unset;
   border-radius: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-radius: 15px;
   background-color: #1f201f;
-  min-height: 200px; }
+  min-height: 150px; }
   .workspaces * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .workspaces_unfocused {
   background-color: #e4e2e0;
   margin-top: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 15px; }
@@ -78,8 +85,8 @@ window {
 .workspaces_focused {
   background-color: #bbd2c6;
   margin-top: 10px;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 15px;

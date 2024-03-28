@@ -3,7 +3,7 @@
     min-height: 1060px;
     padding-left: 10px;
     padding-right: 10px;
-    margin: 10px;
+    margin-left: 10px;
     background-color: $background;
     color: $on_background;
 }
@@ -38,26 +38,36 @@
 
 .batbar {
     padding: 1px;
-    background-color: $on_surface;
+    background-color: $error;
     color: $on_surface;
+    margin-top: 10px;
+    min-width: 5px;
+    border-radius: $rounding;
+    outline-color: $primary;
+}
+.battery_icon {
+    margin-top: 10px;
+    background-color: transparent;
+    color: $on_surface;
+    font-size: 20px;
 }
 
 
 .workspaces {
     @include widget;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: $rounding;
     background-color: $surface_container;
-    min-height: 200px;
+    min-height: 150px;
 }
 .workspaces_unfocused {
     background-color: $on_surface;
     margin-top: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: $rounding;
@@ -69,8 +79,8 @@
 .workspaces_focused {
     background-color: $primary;
     margin-top: 10px;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: $rounding;
