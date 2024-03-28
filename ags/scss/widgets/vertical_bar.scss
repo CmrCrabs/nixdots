@@ -1,10 +1,127 @@
 .vertical_bar {
-    color: $background;
-    padding: 1px;
+    @include widget;
+    min-height: 1060px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
     background-color: $background;
+    color: $on_background;
 }
 
-background {
-    color: $background;
-    background-color: $background;
+.power_icon {
+    background-color: transparent;
+    color: $on_primary;
+    font-size: 35px;
+}
+.power_button {
+    @include button;
+    margin-top: 10px;
+    background-color: $primary;    
+    &:hover {
+        background-color: $primary_fixed;
+        transition: ease-in 0.3s;
+    }
+}
+
+.clock {
+    @include widget;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 50px;
+    margin-top: 10px;
+    background-color: $surface_container;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.batbar {
+    padding: 1px;
+    background-color: $on_surface;
+    color: $on_surface;
+}
+
+
+.workspaces {
+    @include widget;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: $rounding;
+    background-color: $surface_container;
+    min-height: 200px;
+}
+.workspaces_unfocused {
+    background-color: $on_surface;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: $rounding;
+    &:hover {
+        background-color: $primary;
+        transition: ease-in 0.1s;
+    }
+}
+.workspaces_focused {
+    background-color: $primary;
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: $rounding;
+    transition: ease-in 0.1s;
+}
+
+.notification_icon {
+    background-color: transparent;
+    color: $on_tertiary;
+    font-size: 20px;
+}
+.notification_button {
+    @include button;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: $tertiary;    
+    &:hover {
+        background-color: $tertiary_fixed;
+        transition: ease-in 0.3s;
+    }
+}
+
+.misc_icon {
+    background-color: transparent;
+    color: $on_secondary;
+    font-size: 20px;
+}
+.misc_button {
+    @include button;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: $secondary;    
+    &:hover {
+        background-color: $secondary_fixed;
+        transition: ease-in 0.3s;
+    }
+}
+
+.controls_icon {
+    background-color: transparent;
+    color: $on_primary;
+    font-size: 20px;
+}
+.controls_button {
+    @include button;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 12px;
+    background-color: $primary;    
+    &:hover {
+        background-color: $primary_fixed;
+        transition: ease-in 0.3s;
+    }
 }

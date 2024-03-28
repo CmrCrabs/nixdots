@@ -1,0 +1,24 @@
+window {
+    background-color: transparent;
+}
+
+* {
+    all: unset;
+}
+
+@mixin common{
+    all: unset;
+    * {
+        font-family: Jetbrains Mono, sans-serif;
+    }
+}
+
+@mixin widget{
+    @include common;
+    border-radius: $rounding;
+}
+
+@mixin button {
+    border-radius: $rounding;
+    padding: 5px;
+}

@@ -1,99 +1,101 @@
+$rounding: 15px;
 
-    $background: #131318;
 
-    $error: #ffb4ab;
+$background: #131413;
 
-    $error_container: #93000a;
+$error: #ffb4ab;
 
-    $inverse_on_surface: #303036;
+$error_container: #93000a;
 
-    $inverse_primary: #555a92;
+$inverse_on_surface: #303130;
 
-    $inverse_surface: #e4e1e9;
+$inverse_primary: #4e635a;
 
-    $on_background: #e4e1e9;
+$inverse_surface: #e4e2e0;
 
-    $on_error: #690005;
+$on_background: #e4e2e0;
 
-    $on_error_container: #ffdad6;
+$on_error: #690005;
 
-    $on_primary: #272b60;
+$on_error_container: #ffdad6;
 
-    $on_primary_container: #e0e0ff;
+$on_primary: #21342c;
 
-    $on_primary_fixed: #10144b;
+$on_primary_container: #162922;
 
-    $on_primary_fixed_variant: #3d4278;
+$on_primary_fixed: #0c1f18;
 
-    $on_secondary: #2e2f42;
+$on_primary_fixed_variant: #374b42;
 
-    $on_secondary_container: #e1e0f9;
+$on_secondary: #2a322e;
 
-    $on_secondary_fixed: #191a2c;
+$on_secondary_container: #c4cdc7;
 
-    $on_secondary_fixed_variant: #444559;
+$on_secondary_fixed: #161d1a;
 
-    $on_surface: #e4e1e9;
+$on_secondary_fixed_variant: #414944;
 
-    $on_surface_variant: #c7c5d0;
+$on_surface: #e4e2e0;
 
-    $on_tertiary: #46263b;
+$on_surface_variant: #c2c8c3;
 
-    $on_tertiary_container: #ffd8ee;
+$on_tertiary: #29303f;
 
-    $on_tertiary_fixed: #2e1126;
+$on_tertiary_container: #1f2635;
 
-    $on_tertiary_fixed_variant: #5e3c53;
+$on_tertiary_fixed: #141c2a;
 
-    $outline: #91909a;
+$on_tertiary_fixed_variant: #404757;
 
-    $outline_variant: #46464f;
+$outline: #8c928e;
 
-    $primary: #bec2ff;
+$outline_variant: #424845;
 
-    $primary_container: #3d4278;
+$primary: #bbd2c6;
 
-    $primary_fixed: #e0e0ff;
+$primary_container: #a0b6ab;
 
-    $primary_fixed_dim: #bec2ff;
+$primary_fixed: #d1e8dc;
 
-    $scrim: #000000;
+$primary_fixed_dim: #b5ccc0;
 
-    $secondary: #c5c4dd;
+$scrim: #000000;
 
-    $secondary_container: #c5c4dd;
+$secondary: #c0c8c3;
 
-    $secondary_fixed: #e1e0f9;
+$secondary_container: #c6cec9;
 
-    $secondary_fixed_dim: #c5c4dd;
+$secondary_fixed: #dce4df;
 
-    $shadow: #000000;
+$secondary_fixed_dim: #c0c8c3;
 
-    $source_color: #848ada;
+$shadow: #000000;
 
-    $surface: #131318;
+$source_color: #a0b6ab;
 
-    $surface_bright: #39393f;
+$surface: #131413;
 
-    $surface_container: #1f1f25;
+$surface_bright: #393938;
 
-    $surface_container_high: #2a292f;
+$surface_container: #1f201f;
 
-    $surface_container_highest: #34343a;
+$surface_container_high: #292a29;
 
-    $surface_container_low: #1b1b21;
+$surface_container_highest: #343534;
 
-    $surface_container_lowest: #0e0e13;
+$surface_container_low: #1b1c1b;
 
-    $surface_dim: #131318;
+$surface_container_lowest: #0d0e0e;
 
-    $surface_variant: #46464f;
+$surface_dim: #131413;
 
-    $tertiary: #e8b9d5;
+$surface_variant: #424845;
 
-    $tertiary_container: #5e3c53;
+$tertiary: #c6cce0;
 
-    $tertiary_fixed: #ffd8ee;
+$tertiary_container: #aab1c4;
 
-    $tertiary_fixed_dim: #e8b9d5;
+$tertiary_fixed: #dbe2f6;
+
+$tertiary_fixed_dim: #bfc6da;
 

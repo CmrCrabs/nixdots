@@ -1,4 +1,4 @@
-{ inputs, pkgs, rounding, ... }:
+{ config, inputs, pkgs, rounding, ... }:
 {
   imports = [ inputs.ags.homeManagerModules.default ];
 
@@ -13,7 +13,12 @@
     ];
   };
 
-  xdg.configFile."ags/scss/variables.scss".text = ''
-    $rounding: ${rounding}; 
+  home.file.".dotfiles/home/templates/colors.scss".text = ''
+  $rounding: ${rounding}px;
+
+  <* for name, value in colors *>
+  ''${{name}}: {{value.default.hex}};
+  <* endfor *>
   '';
+
 }
