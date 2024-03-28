@@ -1,37 +1,15 @@
-const hyprland = await Service.import("hyprland")
-
-const date = Variable("", {
-    poll: [1000, 'date "+%H %M"'],
-})
-
-function Workspaces() {
-    const activeId = hyprland.active.workspace.bind("id")
-    const workspaces = hyprland.bind("workspaces")
-        .as(ws => ws.map(({ id }) => Widget.Button({
-            on_clicked: () => hyprland.messageAsync(`dispatch workspace ${id}`),
-            child: Widget.Label(`${id}`),
-            class_name: activeId.as(i => `${i === id ? "focused" : ""}`),
-        })))
-
-    return Widget.Box({
-        vertical: true,
-        class_name: "workspaces",
-        children: workspaces,
-    })
-}
-
-function Clock() {
-    return Widget.Label({
-        class_name: "clock",
-        label: date.bind(),
-    })
-}
+import { controls_button, misc_button, notification_button, power_button } from "./buttons.js"
+import { Battery, Clock } from "./misc.js"
+import { Workspaces } from "./workspaces.js"
 
 function Top() {
     return Widget.Box({
         spacing: 2,
+        vertical: true,
         children: [
+            power_button(),
             Clock(),
+            Battery(),
         ],
     })
 }
@@ -39,6 +17,7 @@ function Top() {
 function Center() {
     return Widget.Box({
         spacing: 2,
+        vertical: true,
         children: [
             Workspaces(),
         ],
@@ -48,7 +27,13 @@ function Center() {
 function Bottom() {
     return Widget.Box({
         spacing: 2,
+        vertical: true,
+        hpack: "center",
+        vpack: "end",
         children: [
+            notification_button(),
+            misc_button(),
+            controls_button(),
         ],
     })
 }
