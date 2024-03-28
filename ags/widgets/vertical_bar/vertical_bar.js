@@ -10,6 +10,7 @@ function Top() {
             power_button(),
             Clock(),
             Battery(),
+            //287 pixel from top
         ],
     })
 }

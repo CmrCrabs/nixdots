@@ -5,7 +5,7 @@ let
     "ll" = "eza -l --icons --no-permissions --no-user --no-time --group-directories-first";
     "lt" = "eza -l --icons -T --no-permissions --no-user --no-time --group-directories-first --no-filesize";
     "la" = "eza -la --icons --no-permissions --no-user --no-time --group-directories-first";
-    "sdt" = "$TERMINAL &> /dev/null &";
+    "sdt" = "$TERMINAL &> /dev/null & && disown";
     "rgr" = "ranger";
     "cl" = "clear";
     "cls" = "clear && ls";

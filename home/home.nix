@@ -30,8 +30,7 @@ in
 
     # Files 
      ./config/nvim.nix
-     # ./config/ags.nix
- 
+
      ./config/desktop/hypridle.nix
 
      ./config/apps/kitty.nix
