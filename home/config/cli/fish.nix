@@ -15,7 +15,7 @@ let
     "bat" = "cat /sys/class/power_supply/BAT0/capacity";
     "nv" = "steam-run nvim";
     "nvim" = "steam-run nvim";
-    "cpng" = "find . -name \"*.jpg\" -exec mogrify -format png {} \;";
+    "cpng" = "mogrify -format png *.jpg && rm *.jpg";
   }; 
   aliases = {
     "ls" = "eza --icons --no-permissions --no-user --no-time --group-directories-first";
