@@ -19,7 +19,6 @@
     background-color: $primary;    
     &:hover {
         background-color: $primary_fixed;
-        transition: ease-in 0.3s;
     }
 }
 
@@ -38,8 +37,8 @@
 
 .batbox {
     @include widget;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
     padding-top: 15px;
     padding-bottom: 15px;
     min-height: 60px;
@@ -48,14 +47,39 @@
     font-size: 20px;
     font-weight: bold;
 }
-.batlabel {
-    color: $on_surface;
-}
 
-.batlabel_charging {
-    color: $primary;
+.batbar {
+  trough {
+    margin-top: 10px;
+    min-width: 10px;
+    min-height: 1px;
+    block {
+      border-radius: $rounding;
+      &.empty {
+        background-color: $surface_container;
+      }
+      &.full {
+        background-color: $error;
+      }
+    }
+  }
 }
-
+.batbar.charging {
+  trough {
+    margin-top: 10px;
+    min-width: 10px;
+    min-height: 1px;
+    block {
+      border-radius: $rounding;
+      &.empty {
+        background-color: $surface_container_highest;
+      }
+      &.full {
+        background-color: $primary;
+      }
+    }
+  }
+}
 
 .battery_icon {
     margin-top: 5px;
@@ -63,13 +87,6 @@
     color: $on_surface;
     font-size: 20px;
 }
-.battery_icon_charging {
-    margin-top: 5px;
-    background-color: transparent;
-    color: $on_surface;
-    font-size: 20px;
-}
-
 
 .workspaces {
     @include widget;

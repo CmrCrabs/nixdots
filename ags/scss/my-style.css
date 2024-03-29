@@ -1,7 +1,4 @@
-window {
-  background-color: transparent; }
-
-* {
+*:not(switch) {
   all: unset; }
 
 .vertical_bar {
@@ -28,8 +25,7 @@ window {
   .power_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .power_button:hover {
-    background-color: #d1e8dc;
-    transition: ease-in 0.3s; }
+    background-color: #d1e8dc; }
 
 .clock {
   border-radius: 15px;
@@ -47,8 +43,8 @@ window {
 
 .batbox {
   border-radius: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-top: 15px;
   padding-bottom: 15px;
   min-height: 60px;
@@ -59,19 +55,29 @@ window {
   .batbox * {
     font-family: Jetbrains Mono, sans-serif; }
 
-.batlabel {
-  color: #e4e2e0; }
+.batbar trough {
+  margin-top: 10px;
+  min-width: 10px;
+  min-height: 1px; }
+  .batbar trough block {
+    border-radius: 15px; }
+    .batbar trough block.empty {
+      background-color: #1f201f; }
+    .batbar trough block.full {
+      background-color: #ffb4ab; }
 
-.batlabel_charging {
-  color: #bbd2c6; }
+.batbar.charging trough {
+  margin-top: 10px;
+  min-width: 10px;
+  min-height: 1px; }
+  .batbar.charging trough block {
+    border-radius: 15px; }
+    .batbar.charging trough block.empty {
+      background-color: #343534; }
+    .batbar.charging trough block.full {
+      background-color: #bbd2c6; }
 
 .battery_icon {
-  margin-top: 5px;
-  background-color: transparent;
-  color: #e4e2e0;
-  font-size: 20px; }
-
-.battery_icon_charging {
   margin-top: 5px;
   background-color: transparent;
   color: #e4e2e0;
