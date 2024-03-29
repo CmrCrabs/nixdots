@@ -1,20 +1,18 @@
-NixOS Environment - Frosted Neumorphism
+NixOS Environment - <name pending>
 
 > [!Caution]
 >
-> Very much under construction; lots of work to do.
-> Old: https://github.com/cmrcrabs/dotfiles
+> under construction; work to do.
+> My old dots: https://github.com/cmrcrabs/dotfiles
 
 
 # TODO: 
 
 - [X] global rounding
-- [ ] AGS Setup
+- [X] AGS Setup
     - [X] Design
     - [X] Colourscheme
     - [X] Vertical Bar
-        - [ ] fix workspace reload on name change
-        - [ ] battery no work?
     - [ ] Dock
     - [ ] Audio Visialiser
     - [ ] Notifications
