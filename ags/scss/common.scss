@@ -18,6 +18,7 @@ window {
 }
 
 @mixin button {
+    @include common;
     border-radius: $rounding;
     padding: 5px;
 }

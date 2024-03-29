@@ -1,6 +1,6 @@
 import { vertical_bar } from "./widgets/vertical_bar/vertical_bar.js";
-
 const css = `${App.configDir}/scss/my-style.css`
+
 Utils.monitorFile(
     `${App.configDir}/scss`,
 
