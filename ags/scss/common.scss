@@ -1,8 +1,5 @@
-window {
-    background-color: transparent;
-}
 
-* {
+*:not(switch) {
     all: unset;
 }
 
