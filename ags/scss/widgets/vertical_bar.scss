@@ -36,17 +36,35 @@
     font-weight: bold;
 }
 
-.batbar {
-    padding: 1px;
-    background-color: $error;
-    color: $on_surface;
+.batbox {
+    @include widget;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 60px;
     margin-top: 10px;
-    min-width: 5px;
-    border-radius: $rounding;
-    outline-color: $primary;
+    background-color: $surface_container;
+    font-size: 20px;
+    font-weight: bold;
 }
+.batlabel {
+    color: $on_surface;
+}
+
+.batlabel_charging {
+    color: $primary;
+}
+
+
 .battery_icon {
-    margin-top: 10px;
+    margin-top: 5px;
+    background-color: transparent;
+    color: $on_surface;
+    font-size: 20px;
+}
+.battery_icon_charging {
+    margin-top: 5px;
     background-color: transparent;
     color: $on_surface;
     font-size: 20px;
@@ -64,6 +82,7 @@
     min-height: 150px;
 }
 .workspaces_unfocused {
+    @include common;
     background-color: $on_surface;
     margin-top: 10px;
     padding-top: 10px;

@@ -12,7 +12,9 @@ NixOS Environment - Frosted Neumorphism
 - [ ] AGS Setup
     - [X] Design
     - [X] Colourscheme
-    - [ ] Vertical Bar
+    - [X] Vertical Bar
+        - [ ] fix workspace reload on name change
+        - [ ] battery no work?
     - [ ] Dock
     - [ ] Audio Visialiser
     - [ ] Notifications

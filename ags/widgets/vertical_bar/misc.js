@@ -12,21 +12,28 @@ export function Clock() {
     
 const battery = await Service.import('battery')
 export function Battery() {
-    const value = battery.bind("percent").as((p) => p / 100);
+    const value = battery.bind("percent").as((p) => p.toString());
 
-    let bar = Widget.ProgressBar({
-        //heightRequest: 100,
+    let bar = Widget.LevelBar({
+        heightRequest: 100,
         hpack: "center",
         vpack: "center",
         value: value,
         vertical: true,
-        //class_name: battery.bind('charging').as(ch => ch ? 'batterybar_charging' : 'batterybar'),
-        class_name: "batbar",
+        class_name: battery.bind('charging').as(ch => ch ? 'batbar_charging' : 'batbar'),
+    })
+
+    let label = Widget.Label({
+        hpack: "center",
+        vpack: "center",
+        label: value,
+        justification: "center",
+        class_name: battery.bind('charging').as(ch => ch ? 'batlabel_charging' : 'batlabel'),
     })
 
     let icon = Widget.Icon({
         icon: "battery-symbolic",
-        class_name: "battery_icon"
+        class_name: battery.bind('charging').as(ch => ch ? 'battery_icon_charging' : 'battery_icon'),
     })
 
     return Widget.Box({
@@ -34,9 +41,10 @@ export function Battery() {
         vpack: "center",
         vertical: true,
         spacing: 2,
+        class_name: "batbox",
         children: [
             icon,
-            bar,
+            label,
         ]
     })
 }
