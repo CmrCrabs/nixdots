@@ -136,6 +136,7 @@ in {
     firefox
     firefox-devedition-bin
     chromium
+    blender
     discord
     # vesktop
     wezterm

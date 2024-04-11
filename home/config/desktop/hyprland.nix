@@ -22,7 +22,6 @@
       exec-once = [
         "swww init &"
         "hyprctl setcursor Vimix-cursors 24"
-        "waybar"
         "sudo tlp start" 
         "hypridle"
       ];

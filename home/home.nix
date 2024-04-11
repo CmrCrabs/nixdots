@@ -3,8 +3,8 @@ let
   wal = "~/.dotfiles/home/images/wallpapers/carburetor.png";
   wal-l = "~/.dotfiles/home/images/wallpapers/carburetor.png";
   style = "dark";
-  rounding = "15";
-  scheme = "content";
+  rounding = "5";
+  scheme = "expressive";
 
   templateDir = "${config.home.homeDirectory}/.dotfiles/home/templates";
 in

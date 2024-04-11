@@ -2,7 +2,7 @@ const hyprland = await Service.import("hyprland")
 
 export function Workspaces() {
     const activeId = hyprland.active.workspace.bind("id")
-    const workspaces1 = hyprland.bind("workspaces")
+    const workspaces = hyprland.bind("workspaces")
         .as(ws => ws.map(({ id }) => Widget.Button({
             on_clicked: () => hyprland.messageAsync(`dispatch workspace ${id}`),
             child: Widget.Box({
@@ -20,6 +20,6 @@ export function Workspaces() {
         class_name: "workspaces",
         hpack: "center",
         vpack: "center",
-        children: workspaces1,
+        children: workspaces,
     })
 }
