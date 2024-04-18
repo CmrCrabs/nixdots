@@ -185,6 +185,9 @@ in {
     nodejs_21
     
     dotnet-sdk_7
+    dotnet-sdk
+    mono
+    mono4
     dotnet-runtime_7
     vimPlugins.omnisharp-extended-lsp-nvim
     
