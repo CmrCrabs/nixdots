@@ -13,6 +13,8 @@ export function Clock() {
 const battery = await Service.import('battery')
 export function Battery() {
     const value = battery.bind("percent").as((p) => p / 100);
+    console.log(value)
+    console.log(battery)
 
     let bar = Widget.LevelBar({
         heightRequest: 100,
@@ -21,8 +23,7 @@ export function Battery() {
         value: value,
         vertical: true,
         class_name: 'batbar',
-    }).hook(battery, self => {
-      self.toggleClassName('charging', Battery.charging)
+        class_name: battery.bind('charging').as(ch => ch ? 'batbar-charging' : 'batbar'),
     })
 
     let icon = Widget.Icon({

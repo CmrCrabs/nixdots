@@ -1,10 +1,11 @@
 { config, pkgs, inputs, ... }:
 let
-  wal = "~/.dotfiles/home/images/wallpapers/aenami_horizon.png";
-  wal-l = "~/.dotfiles/home/images/wallpapers/aenami_horizon.png";
+  wal = "~/.dotfiles/home/images/wallpapers/stardust_snow.png";
+  wal-l = "~/.dotfiles/home/images/wallpapers/stardust_snow.png";
   style = "dark";
   rounding = "15";
-  scheme = "fidelity";
+  scheme = "expressive";
+  contrast = "0";
 
   templateDir = "${config.home.homeDirectory}/.dotfiles/home/templates";
 in
@@ -23,7 +24,7 @@ in
 
     # Files (w/ Inputs)
      (import ./matugen.nix { inherit wal style config templateDir; })
-     (import ./config/desktop/hyprland.nix { inherit wal wal-l style rounding scheme config; })
+     (import ./config/desktop/hyprland.nix { inherit wal wal-l style rounding scheme contrast config; })
      (import ./config/desktop/hyprlock.nix { inherit wal wal-l style rounding; })
      (import ./config/ags.nix { inherit config inputs pkgs rounding; })
      (import ./config/cli/fish.nix { inherit style pkgs; })

@@ -56,7 +56,7 @@
     block {
       border-radius: $rounding;
       &.empty {
-        background-color: $surface_container;
+        background-color: $surface_container_highest;
       }
       &.full {
         background-color: $error;
@@ -64,7 +64,7 @@
     }
   }
 }
-.batbar.charging {
+.batbar-charging {
   trough {
     margin-top: 10px;
     min-width: 10px;

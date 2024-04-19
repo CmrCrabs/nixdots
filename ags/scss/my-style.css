@@ -2,54 +2,54 @@
   all: unset; }
 
 .vertical_bar {
-  border-radius: 5px;
+  border-radius: 15px;
   min-height: 1060px;
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 10px;
-  background-color: #0c1514;
-  color: #dae5e2; }
+  background-color: #11131a;
+  color: #e2e1ec; }
   .vertical_bar * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .power_icon {
   background-color: transparent;
-  color: #512300;
+  color: #103803;
   font-size: 35px; }
 
 .power_button {
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 5px;
   margin-top: 10px;
-  background-color: #ffb689; }
+  background-color: #a3d48c; }
   .power_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .power_button:hover {
-    background-color: #ffdbc8; }
+    background-color: #bff0a6; }
 
 .clock {
-  border-radius: 5px;
+  border-radius: 15px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
   min-height: 50px;
   margin-top: 10px;
-  background-color: #182120;
+  background-color: #1e1f27;
   font-size: 20px;
   font-weight: bold; }
   .clock * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .batbox {
-  border-radius: 5px;
+  border-radius: 15px;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 15px;
   padding-bottom: 15px;
   min-height: 60px;
   margin-top: 10px;
-  background-color: #182120;
+  background-color: #1e1f27;
   font-size: 20px;
   font-weight: bold; }
   .batbox * {
@@ -60,113 +60,113 @@
   min-width: 10px;
   min-height: 1px; }
   .batbar trough block {
-    border-radius: 5px; }
+    border-radius: 15px; }
     .batbar trough block.empty {
-      background-color: #182120; }
+      background-color: #33343c; }
     .batbar trough block.full {
       background-color: #ffb4ab; }
 
-.batbar.charging trough {
+.batbar-charging trough {
   margin-top: 10px;
   min-width: 10px;
   min-height: 1px; }
-  .batbar.charging trough block {
-    border-radius: 5px; }
-    .batbar.charging trough block.empty {
-      background-color: #2d3735; }
-    .batbar.charging trough block.full {
-      background-color: #ffb689; }
+  .batbar-charging trough block {
+    border-radius: 15px; }
+    .batbar-charging trough block.empty {
+      background-color: #33343c; }
+    .batbar-charging trough block.full {
+      background-color: #a3d48c; }
 
 .battery_icon {
   margin-top: 5px;
   background-color: transparent;
-  color: #dae5e2;
+  color: #e2e1ec;
   font-size: 20px; }
 
 .workspaces {
-  border-radius: 5px;
+  border-radius: 15px;
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-radius: 5px;
-  background-color: #182120;
+  border-radius: 15px;
+  background-color: #1e1f27;
   min-height: 150px; }
   .workspaces * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .workspaces_unfocused {
-  background-color: #dae5e2;
+  background-color: #e2e1ec;
   margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 5px;
   padding-right: 5px;
-  border-radius: 5px; }
+  border-radius: 15px; }
   .workspaces_unfocused * {
     font-family: Jetbrains Mono, sans-serif; }
   .workspaces_unfocused:hover {
-    background-color: #ffb689;
+    background-color: #a3d48c;
     transition: ease-in 0.1s; }
 
 .workspaces_focused {
-  background-color: #ffb689;
+  background-color: #a3d48c;
   margin-top: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 5px;
   padding-right: 5px;
-  border-radius: 5px;
+  border-radius: 15px;
   transition: ease-in 0.1s; }
 
 .notification_icon {
   background-color: transparent;
-  color: #003734;
+  color: #212e5a;
   font-size: 20px; }
 
 .notification_button {
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 5px;
   margin-top: 10px;
   padding: 12px;
-  background-color: #8cd3cd; }
+  background-color: #b8c4fa; }
   .notification_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .notification_button:hover {
-    background-color: #a8f0e9;
+    background-color: #dce1ff;
     transition: ease-in 0.3s; }
 
 .misc_icon {
   background-color: transparent;
-  color: #02363f;
+  color: #482537;
   font-size: 20px; }
 
 .misc_button {
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 5px;
   margin-top: 10px;
   padding: 12px;
-  background-color: #a2ceda; }
+  background-color: #ebb8cf; }
   .misc_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .misc_button:hover {
-    background-color: #beeaf6;
+    background-color: #ffd8e8;
     transition: ease-in 0.3s; }
 
 .controls_icon {
   background-color: transparent;
-  color: #512300;
+  color: #103803;
   font-size: 20px; }
 
 .controls_button {
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 12px;
-  background-color: #ffb689; }
+  background-color: #a3d48c; }
   .controls_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .controls_button:hover {
-    background-color: #ffdbc8;
+    background-color: #bff0a6;
     transition: ease-in 0.3s; }

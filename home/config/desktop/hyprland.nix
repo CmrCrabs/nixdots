@@ -1,4 +1,4 @@
-{ config, wal, wal-l, style, rounding, scheme, ...}:
+{ config, wal, wal-l, style, rounding, scheme, contrast, ...}:
 {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -28,7 +28,7 @@
       exec = [
         "swww img -o eDP-1 ${wal} --transition-type center"
         "swww img -o DP-3 ${wal-l} --transition-type center"
-        "matugen image -m ${style} ${wal} -t scheme-${scheme}"
+        "matugen image -m ${style} ${wal} -t scheme-${scheme} --contrast ${contrast}"
         "sleep 1 && sassc ~/.config/ags/scss/style.scss ~/.config/ags/scss/my-style.css"
         "sleep 1 && pkill ags"
         "sleep 1.1 && ags"
