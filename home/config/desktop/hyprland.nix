@@ -16,7 +16,7 @@
       "$filebrowser" = "dolphin";
       "$launcher" = "rofi -show drun";
       "$screenshot" = "grim -g \"$(slurp -d)\" - | wl-copy -t image/png";
-      "$browser" = "firefox-developer-edition";
+      "$browser" = "firefox";
       "$locker" = "hyprlock";
 
       exec-once = [
@@ -26,8 +26,8 @@
         "hypridle"
       ];
       exec = [
-        "swww img -o eDP-1 ${wal} --transition-type center"
-        "swww img -o DP-3 ${wal-l} --transition-type center"
+        "swww img -o eDP-1 ${wal} --transition-type center --transition-fps 60"
+        "swww img -o DP-3 ${wal-l} --transition-type center --transition-fps 60"
         "matugen image -m ${style} ${wal} -t scheme-${scheme} --contrast ${contrast}"
         "sleep 1 && sassc ~/.config/ags/scss/style.scss ~/.config/ags/scss/my-style.css"
         "sleep 1 && pkill ags"
@@ -119,14 +119,14 @@
       
       layerrule = "blur,^(rofi)$";
       windowrulev2 = [
-        "noborder, class:^(firefoxdeveloperedition)$,title:^(Firefox Developer Edition)$"
+        "tile, class:^(firefox)$,title:^(Firefox)$"
         "float, class:.*"
         "maxsize 1920 1080, class:.*"
-        "nofullscreenrequest, class:firefoxdeveloperedition), title:(Picture-in-Picture)"
-        "float, class:(firefoxdeveloperedition), title:(Picture-in-Picture)"
-        "pin, class:(firefoxdeveloperedition), title:(Picture-in-Picture)" 
+        "nofullscreenrequest, class:firefox), title:(Picture-in-Picture)"
+        "float, class:(firefox), title:(Picture-in-Picture)"
+        "pin, class:(firefox), title:(Picture-in-Picture)" 
       ];
-      windowrule = "size 820 650,^(kitty)$";
+      windowrule = "size 880 690,^(kitty)$";
       bindm = [
         "$mainMod, mouse:272, movewindow"
         "$mainMod, mouse:273, resizewindow"

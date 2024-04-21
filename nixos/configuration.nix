@@ -85,9 +85,9 @@ in {
 
 
   # Sound
+  hardware.pulseaudio.extraConfig = "load-module module-combine-sink"; 
   sound.enable = true; 
   hardware.pulseaudio.enable = true; 
-  hardware.pulseaudio.extraConfig = "load-module module-combine-sink"; 
   security.rtkit.enable = true; 
 
   # services.pipewire = {
@@ -113,7 +113,7 @@ in {
   fonts.fontconfig = {
     defaultFonts = {
       sansSerif = [ "Jetbrains Mono Nerd Font" ];
-      monospace = [ "Jetbrains Mono Nerd FOnt" ]; 
+      monospace = [ "Jetbrains Mono Nerd Font" ]; 
     };
   };
   
