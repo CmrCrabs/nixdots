@@ -36,6 +36,7 @@
 
       monitor = [
         "eDP-1, 1920x1080@60, 0x0, 1"
+        "eDP-1,addreserved,10, 10, 20, 20"
         "DP-3, 1920x515@60, 0x1080, 1"
       ];
       workspace = [
@@ -148,12 +149,12 @@
         "$mainMod SHIFT, W, exec, $screenshotsave"
         "$mainMod, H, movefocus, l"
         "$mainMod, L, movefocus, r"
-        "$mainMod, K, movefocus, u"
+        "$mainMod, , movefocus, u"
         "$mainMod, J, movefocus, d"
         
         "$mainMod, H, bringactivetotop"
         "$mainMod, L, bringactivetotop"
-        "$mainMod, K, bringactivetotop"
+        "$mainMod, , bringactivetotop"
         "$mainMod, J, bringactivetotop"
         "ALT, Tab, cyclenext"
         "SHIFT ALT, Tab, cyclenext, prev"
