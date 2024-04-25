@@ -1,7 +1,7 @@
 { config, pkgs, inputs, ... }:
 let
-  wal = "~/.dotfiles/home/images/wallpapers/painterly_plane.png";
-  wal-l = "~/.dotfiles/home/images/wallpapers/painterly_plane.png";
+  wal = "~/.dotfiles/home/images/wallpapers/abstract_white_circles.png";
+  wal-l = "~/.dotfiles/home/images/wallpapers/abstract_white_circles.png";
   style = "dark";
   rounding = "15";
   scheme = "expressive";

@@ -171,6 +171,7 @@ in {
     pamixer
     alsa-tools
     pywal
+    cbonsai
  
     # Libs / Utils
     grim
