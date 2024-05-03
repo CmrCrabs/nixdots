@@ -147,7 +147,7 @@ in {
     dolphin
     gnome.nautilus
     vscode
-    jetbrains.rider
+    inkscape
 
     
     # Term
@@ -190,8 +190,7 @@ in {
     mono4
     dotnet-runtime_7
     vimPlugins.omnisharp-extended-lsp-nvim
-    
-    cargo
+
     rustup
 
     gcc
@@ -217,6 +216,9 @@ in {
 
     unzip
     sassc
+
+    alsa-oss
+    alsa-lib
 
   ];
 

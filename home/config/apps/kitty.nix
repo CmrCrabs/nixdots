@@ -30,6 +30,8 @@
       cursor_blink_interval -1
       resize_in_steps no
       shell fish
+      background_opacity         1.0
+      dynamic_background_opacity yes
 
       include colors.conf
     '';

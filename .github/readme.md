@@ -8,6 +8,8 @@ NixOS Environment - <name pending>
 
 # TODO: 
 
+- [ ] switch to pywal
+- [ ] global transparancy
 - [X] global rounding
 - [X] AGS Setup
     - [X] Design
@@ -20,6 +22,10 @@ NixOS Environment - <name pending>
     - [ ] Wifi / Volume / Microphone
     - [ ] Calendar / Date / Music
     - [ ] Drun / Run Menu / Launcher
+
+- [ ] Horizontal Bar Toggle
+    - [ ] Horizontal Bar
+    - [ ] Toggle system
 
 - [ ] Nvim
     - [X] C# LSP
