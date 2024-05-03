@@ -1,11 +1,11 @@
 { config, pkgs, inputs, ... }:
 let
-  wal = "~/.dotfiles/home/images/wallpapers/abstract_white_circles.png";
-  wal-l = "~/.dotfiles/home/images/wallpapers/abstract_white_circles.png";
+  wal = "~/.dotfiles/home/images/wallpapers/mountain_macos.png";
+  wal-l = "~/.dotfiles/home/images/wallpapers/mountain_macos.png";
   style = "dark";
-  rounding = "15";
-  scheme = "expressive";
-  contrast = "0";
+  rounding = "35";
+  scheme = "tonal-spot";
+  contrast = "1.0";
 
   templateDir = "${config.home.homeDirectory}/.dotfiles/home/templates";
 in
