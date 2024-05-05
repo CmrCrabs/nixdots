@@ -8,9 +8,15 @@ NixOS Environment - <name pending>
 
 # TODO: 
 
+
+- [ ] git submodule wallpapers
+- [ ] git submodule nvim
 - [ ] switch to pywal
+- [ ] hybrid matugen pywal setup (?)
+- [ ] matugen for bg and gui, pywal for highlight colors
 - [ ] global transparancy
 - [X] global rounding
+- [ ] shift any 'runtime' configs into AGS gui and keep rest in home-manager
 - [X] AGS Setup
     - [X] Design
     - [X] Colourscheme
@@ -22,6 +28,8 @@ NixOS Environment - <name pending>
     - [ ] Wifi / Volume / Microphone
     - [ ] Calendar / Date / Music
     - [ ] Drun / Run Menu / Launcher
+    - [ ] Wallpaper Selector
+    - [ ] rounded corners(?)
 
 - [ ] Horizontal Bar Toggle
     - [ ] Horizontal Bar
@@ -41,6 +49,8 @@ NixOS Environment - <name pending>
     - [ ] Setup Stylus Functionality & Pressure / Tilt
     - [ ] Setup Asus Dial Control Panel 
     - [ ] rewrite hyprlock to accept rounding changes
+    - [ ] declarative firefox
+    - [ ] firefox sidebery
 
 - [ ] Misc Nix Functionality Setup
     - [ ] Setup Nix-Secrets (agenix)

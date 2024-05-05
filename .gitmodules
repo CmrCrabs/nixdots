@@ -1,0 +1,9 @@
+[submodule "nvimdots"]
+	path = nvimdots
+	url = https://github.com/cmrcrabs/nvimdots
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/cmrcrabs/nvim
+[submodule "wallpapers"]
+	path = wallpapers
+	url = https://github.com/cmrcrabs/wallpapers

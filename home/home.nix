@@ -1,9 +1,9 @@
 { config, pkgs, inputs, ... }:
 let
-  wal = "~/.dotfiles/home/images/wallpapers/mountain_macos.png";
-  wal-l = "~/.dotfiles/home/images/wallpapers/mountain_macos.png";
+  wal = "~/.dotfiles/wallpapers/mountain_poly.png";
+  wal-l = "~/.dotfiles/wallpapers/mountain_poly.png";
   style = "dark";
-  rounding = "35";
+  rounding = "5";
   scheme = "tonal-spot";
   contrast = "1.0";
 
