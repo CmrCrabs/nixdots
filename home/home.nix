@@ -1,14 +1,14 @@
 { config, pkgs, inputs, lib, ... }:
 let
-  wal = "${dotfilesDir}/wallpapers/mountain_poly.png";
-  wal-l = "${dotfilesDir}/wallpapers/mountain_poly.png";
+  wal = "${dotfilesDir}/wallpapers/painterly_tide.png";
+  wal-l = "${dotfilesDir}/wallpapers/painterly_tide.png";
   style = "dark";
   rounding = "5";
-  scheme = "tonal-spot";
+  scheme = "expressive";
   contrast = "1.0";
 
-  dotfilesDir = "~/.dotfiles";
-  templateDir = "${config.home.homeDirectory}/.dotfiles/home/templates";
+  dotfilesDir = "${config.home.homeDirectory}/.dotfiles";
+  templateDir = "${dotfilesDir}/home/templates";
 in
 {
   programs.home-manager.enable = true;
