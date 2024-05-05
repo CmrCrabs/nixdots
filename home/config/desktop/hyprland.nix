@@ -29,9 +29,9 @@
         "swww img -o eDP-1 ${wal} --transition-type center --transition-fps 60"
         "swww img -o DP-3 ${wal-l} --transition-type center --transition-fps 60"
         "matugen image -m ${style} ${wal} -t scheme-${scheme} --contrast ${contrast}"
-        "sleep 1 && sassc ~/.config/ags/scss/style.scss ~/.config/ags/scss/my-style.css"
-        "sleep 1 && pkill ags"
-        "sleep 1.1 && ags"
+        "sleep 2 && sassc ~/.config/ags/scss/style.scss ~/.config/ags/scss/my-style.css"
+        "sleep 2 && pkill ags"
+        "sleep 2.1 && ags"
       ];
 
       monitor = [
@@ -52,7 +52,7 @@
         layout = "dwindle";
         resize_on_border = "yes";
         gaps_in = 5;
-        gaps_out = 12;
+        gaps_out = 3;
         border_size = 0;
         "col.active_border" = "rgba(ffffffcc)";
         "col.inactive_border" = "rgba(ffffffcc)";

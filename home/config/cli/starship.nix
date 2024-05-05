@@ -13,6 +13,7 @@ in
   programs.starship = {
     enable = true;
     settings = {
+      command_timeout = 500;
       add_newline = true;
       format = builtins.concatStringsSep "" [
         "$nix_shell"
