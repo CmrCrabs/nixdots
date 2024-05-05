@@ -1,4 +1,4 @@
-{ config, inputs, pkgs, rounding, ... }:
+{ config, inputs, pkgs, rounding, dotfilesDir, ... }:
 {
   imports = [ inputs.ags.homeManagerModules.default ];
 
@@ -13,7 +13,7 @@
     ];
   };
 
-  home.file.".dotfiles/home/templates/colors.scss".text = ''
+  home.file."${dotfilesDir}/home/templates/colors.scss".text = ''
   $rounding: ${rounding}px;
 
   <* for name, value in colors *>

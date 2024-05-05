@@ -51,7 +51,7 @@
       general = { 
         layout = "dwindle";
         resize_on_border = "yes";
-        gaps_in = 5;
+        gaps_in = 10;
         gaps_out = 3;
         border_size = 0;
         "col.active_border" = "rgba(ffffffcc)";
