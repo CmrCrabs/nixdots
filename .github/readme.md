@@ -11,6 +11,7 @@ NixOS Environment - <name pending>
 
 - [ ] git submodule wallpapers
 - [ ] git submodule nvim
+- [ ] update the code to use nixdots instead of .dotfiles
 - [ ] switch to pywal
 - [ ] hybrid matugen pywal setup (?)
 - [ ] matugen for bg and gui, pywal for highlight colors

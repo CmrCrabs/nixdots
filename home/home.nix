@@ -1,12 +1,13 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, lib, ... }:
 let
-  wal = "~/.dotfiles/wallpapers/mountain_poly.png";
-  wal-l = "~/.dotfiles/wallpapers/mountain_poly.png";
+  wal = "${dotfilesDir}/wallpapers/mountain_poly.png";
+  wal-l = "${dotfilesDir}/wallpapers/mountain_poly.png";
   style = "dark";
   rounding = "5";
   scheme = "tonal-spot";
   contrast = "1.0";
 
+  dotfilesDir = "~/.dotfiles";
   templateDir = "${config.home.homeDirectory}/.dotfiles/home/templates";
 in
 {
@@ -26,12 +27,11 @@ in
      (import ./matugen.nix { inherit wal style config templateDir; })
      (import ./config/desktop/hyprland.nix { inherit wal wal-l style rounding scheme contrast config; })
      (import ./config/desktop/hyprlock.nix { inherit wal wal-l style rounding; })
-     (import ./config/ags.nix { inherit config inputs pkgs rounding; })
+     (import ./config/ags.nix { inherit config inputs pkgs rounding dotfilesDir; })
+     (import ./config/nvim.nix { inherit config lib pkgs dotfilesDir; })
      (import ./config/cli/fish.nix { inherit style pkgs; })
 
     # Files 
-     ./config/nvim.nix
-
      ./config/desktop/hypridle.nix
 
      ./config/apps/kitty.nix

@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ...}:
+{ config, lib, pkgs, dotfilesDir, ...}:
 {
     home.packages = with pkgs; [
     ];
@@ -7,7 +7,7 @@
       nvim = {
         source = 
           config.lib.file.mkOutOfStoreSymlink
-          "${config.home.homeDirectory}/.dotfiles/nvim";
+          "${config.home.homeDirectory}/${dotfilesDir}/nvim";
         recursive = true;
       };
    };
