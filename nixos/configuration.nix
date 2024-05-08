@@ -60,6 +60,8 @@ in {
     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 
+  services.xserver.enable = true;
+
   services.xserver.libinput.enable = true;
   services.upower.enable = true;
   console.keyMap = "uk";
@@ -174,6 +176,14 @@ in {
     cbonsai
  
     # Libs / Utils
+    cmake
+    gnumake
+    ninja
+
+    xorg.libX11
+    xorg.libXrandr
+    xorg.libXinerama
+
     grim
     slurp
     wl-clipboard

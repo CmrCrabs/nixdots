@@ -9,14 +9,20 @@ NixOS Environment - <name pending>
 # TODO: 
 
 
-- [ ] git submodule wallpapers
-- [ ] git submodule nvim
-- [ ] update the code to use nixdots instead of .dotfiles
+- [X] git submodule wallpapers
+- [X] git submodule nvim
+- [X] update the code to use nixdots instead of .dotfiles
+- [ ] xdg-user-dirs
 - [ ] switch to pywal
 - [ ] hybrid matugen pywal setup (?)
 - [ ] matugen for bg and gui, pywal for highlight colors
 - [ ] global transparancy
 - [X] global rounding
+- [ ] remake templates to use pywal
+    - [ ] include transparancy within pywal
+    - [ ] write templates using rounding values
+    - [ ] rewrite hypr config to source file that houses border color
+    - [ ] include border toggle in hypr config
 - [ ] shift any 'runtime' configs into AGS gui and keep rest in home-manager
 - [X] AGS Setup
     - [X] Design
@@ -42,6 +48,7 @@ NixOS Environment - <name pending>
     - [ ] Objects Viewer
     - [ ] better bufferline
     - [ ] better statusline
+    - [ ] neorg(?)
 - [ ] Tmux
     - [ ] Determine if needed
 - [ ] Misc App Setup

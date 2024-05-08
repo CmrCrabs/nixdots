@@ -1,7 +1,7 @@
 { config, pkgs, inputs, lib, ... }:
 let
-  wal = "${dotfilesDir}/wallpapers/painterly_tide.png";
-  wal-l = "${dotfilesDir}/wallpapers/painterly_tide.png";
+  wal = "${dotfilesDir}/wallpapers/painterly_plane.png";
+  wal-l = "${dotfilesDir}/wallpapers/painterly_plane.png";
   style = "dark";
   rounding = "5";
   scheme = "expressive";
@@ -55,7 +55,9 @@ in
     GTK_THEME = "matugen";
     DOTNET_CLI_TELEMETRY_OPTOUT = "1";
     NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM = 1;
-    XCURSOR_THEME = "Vimix-cursors";
+    XCURSOR_THEME = "macOS-BigSur";
     XCURSOR_SIZE = "24";
+    CMAKE_MAKE_PROGRAM = "${pkgs.cmake}";
+    TEST = "real";
   };
 }
