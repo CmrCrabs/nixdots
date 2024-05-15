@@ -1,7 +1,7 @@
 { config, pkgs, inputs, lib, ... }:
 let
-  wal = "${dotfilesDir}/wallpapers/painterly_plane.png";
-  wal-l = "${dotfilesDir}/wallpapers/painterly_plane.png";
+  wal = "${dotfilesDir}/wallpapers/carburetor.png";
+  wal-l = "${dotfilesDir}/wallpapers/carburetor.png";
   style = "dark";
   rounding = "5";
   scheme = "expressive";

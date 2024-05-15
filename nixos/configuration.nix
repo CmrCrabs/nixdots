@@ -60,8 +60,6 @@ in {
     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 
-  services.xserver.enable = true;
-
   services.xserver.libinput.enable = true;
   services.upower.enable = true;
   console.keyMap = "uk";
@@ -180,10 +178,6 @@ in {
     gnumake
     ninja
 
-    xorg.libX11
-    xorg.libXrandr
-    xorg.libXinerama
-
     grim
     slurp
     wl-clipboard
@@ -210,14 +204,7 @@ in {
 
     imagemagick
  
-    gnome-themes-extra
-    libadwaita
-    gnome.adwaita-icon-theme
-    gsettings-desktop-schemas
 
-    nwg-look
-    vimix-cursors
-    bibata-cursors
     apple-cursor
     whitesur-icon-theme
 
@@ -229,7 +216,6 @@ in {
 
     alsa-oss
     alsa-lib
-
   ];
 
   # dont touch

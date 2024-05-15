@@ -13,7 +13,17 @@ NixOS Environment - <name pending>
 - [X] git submodule nvim
 - [X] update the code to use nixdots instead of .dotfiles
 - [ ] xdg-user-dirs
+- [ ] ranger command for pywal
 - [ ] switch to pywal
+    - [ ] kitty
+    - [ ] ags
+    - [ ] nvim (lushwal)
+    - [ ] firefox   
+        - [ ] declarative firefox
+        - [ ] firefox sidebery
+        - [ ] sidebery pywal
+    - [ ] gtk
+    - [ ] qt
 - [ ] hybrid matugen pywal setup (?)
 - [ ] matugen for bg and gui, pywal for highlight colors
 - [ ] global transparancy
@@ -57,8 +67,6 @@ NixOS Environment - <name pending>
     - [ ] Setup Stylus Functionality & Pressure / Tilt
     - [ ] Setup Asus Dial Control Panel 
     - [ ] rewrite hyprlock to accept rounding changes
-    - [ ] declarative firefox
-    - [ ] firefox sidebery
 
 - [ ] Misc Nix Functionality Setup
     - [ ] Setup Nix-Secrets (agenix)
