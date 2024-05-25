@@ -2,21 +2,14 @@ NixOS Environment - <name pending>
 
 > [!Caution]
 >
-> under construction; work to do.
+> under construction
 > My old dots: https://github.com/cmrcrabs/dotfiles
 
-
 # TODO: 
-
-
-- [X] git submodule wallpapers
-- [X] git submodule nvim
-- [X] update the code to use nixdots instead of .dotfiles
-- [ ] xdg-user-dirs
-- [ ] ranger command for pywal
 - [ ] switch to pywal
     - [ ] kitty
     - [ ] ags
+        - [ ] autoreload pywal css
     - [ ] nvim (lushwal)
     - [ ] firefox   
         - [ ] declarative firefox
@@ -24,28 +17,36 @@ NixOS Environment - <name pending>
         - [ ] sidebery pywal
     - [ ] gtk
     - [ ] qt
-- [ ] hybrid matugen pywal setup (?)
-- [ ] matugen for bg and gui, pywal for highlight colors
-- [ ] global transparancy
-- [X] global rounding
+
 - [ ] remake templates to use pywal
     - [ ] include transparancy within pywal
     - [ ] write templates using rounding values
     - [ ] rewrite hypr config to source file that houses border color
     - [ ] include border toggle in hypr config
-- [ ] shift any 'runtime' configs into AGS gui and keep rest in home-manager
+
+- [ ] Switch to Yazi
+- [ ] yazi command for pywal
+- [ ] toggle hypr border
+- [ ] Switch to Unstable
+- [ ] hyprland hdrop plugin
+- [ ] global transparancy
+    - [ ] seaglass global transparency
+
+- [ ] Redesign AGS Design with pywal colours and new scheme
+    - [ ] use dharmx & gh0stzk
 - [X] AGS Setup
     - [X] Design
     - [X] Colourscheme
     - [X] Vertical Bar
-    - [ ] Dock
+    - [ ] Dock ( steal from hypr? )
     - [ ] Audio Visialiser
     - [ ] Notifications
     - [ ] Notification Log
     - [ ] Wifi / Volume / Microphone
     - [ ] Calendar / Date / Music
     - [ ] Drun / Run Menu / Launcher
-    - [ ] Wallpaper Selector
+    - [ ] Wallpaper Selector (rofi?)
+        - [ ] include any further runtime changeable configs
     - [ ] rounded corners(?)
 
 - [ ] Horizontal Bar Toggle
@@ -59,8 +60,7 @@ NixOS Environment - <name pending>
     - [ ] better bufferline
     - [ ] better statusline
     - [ ] neorg(?)
-- [ ] Tmux
-    - [ ] Determine if needed
+
 - [ ] Misc App Setup
     - [ ] setup gamescope
     - [ ] Wine Setup
@@ -75,12 +75,14 @@ NixOS Environment - <name pending>
     - [ ] setup brightness on lower screen
     - [ ] adjust hypridle & hypr binds for lower brightness
     - [ ] import / convert refind-minimal to nix
+    - [ ] xdg-user-dirs
 
 - [ ] Final package setup
     - [ ] move packages into corresponding home files
     - [ ] Properly Edit & Setup Wallpapers
     - [ ] Preview Images
     - [ ] Write Up README.md (use kaku as ref)
+        - [ ] limitless gojo domain sign
     - [ ] Package whole rice as a derivation
 
 # Credits:
@@ -94,3 +96,4 @@ for their great configs / learning resources / software
 - HyprNova
 - ChadCat7
 - linuxmobile
+- kotontrion (ags help)
