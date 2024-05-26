@@ -1,10 +1,10 @@
 { config, pkgs, inputs, lib, ... }:
 let
-  wal = "${dotfilesDir}/wallpapers/street_samurai.png";
-  wal-l = "${dotfilesDir}/wallpapers/street_samurai.png";
+  wal = "${dotfilesDir}/wallpapers/mountain_red.png";
+  wal-l = "${dotfilesDir}/wallpapers/mountain_red.png";
   style = "dark";
   rounding = "5";
-  scheme = "expressive";
+  scheme = "tonal-spot";
   contrast = "0.5";
 
   dotfilesDir = "${config.home.homeDirectory}/.dotfiles";
@@ -28,6 +28,7 @@ in
      (import ./config/desktop/hyprlock.nix { inherit wal wal-l style rounding; })
      (import ./config/ags.nix { inherit config inputs pkgs rounding dotfilesDir; })
      (import ./config/nvim.nix { inherit config lib pkgs dotfilesDir; })
+     (import ./config/flavours.nix { inherit config lib pkgs dotfilesDir; })
      (import ./config/cli/fish.nix { inherit style pkgs; })
 
     # Files 
