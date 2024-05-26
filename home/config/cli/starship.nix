@@ -64,7 +64,7 @@ in
         format = "[$symbol ](yellow dimmed)";
       };
       directory = {
-        format = " [${pad.left}](fg:bright-black)[$path](bg:bright-black fg:white)[${pad.right}](fg:bright-black)";
+        format = " [${pad.left}](fg:bright-black)[$path](bg:bright-black fg:black)[${pad.right}](fg:bright-black)";
         truncation_length = 6;
         truncation_symbol = ".../";
       };

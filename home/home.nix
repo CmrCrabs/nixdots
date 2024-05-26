@@ -1,11 +1,11 @@
 { config, pkgs, inputs, lib, ... }:
 let
-  wal = "${dotfilesDir}/wallpapers/carburetor.png";
-  wal-l = "${dotfilesDir}/wallpapers/carburetor.png";
+  wal = "${dotfilesDir}/wallpapers/street_samurai.png";
+  wal-l = "${dotfilesDir}/wallpapers/street_samurai.png";
   style = "dark";
   rounding = "5";
   scheme = "expressive";
-  contrast = "1.0";
+  contrast = "0.5";
 
   dotfilesDir = "${config.home.homeDirectory}/.dotfiles";
   templateDir = "${dotfilesDir}/home/templates";
@@ -14,7 +14,6 @@ in
   programs.home-manager.enable = true;
   home.stateVersion = "23.11";
 
-  colorScheme = inputs.nix-colors.colorschemes.catppuccin-mocha;
   home.username = "zyn";
   home.homeDirectory = "/home/zyn";
 
@@ -25,7 +24,7 @@ in
 
     # Files (w/ Inputs)
      (import ./matugen.nix { inherit wal style config templateDir; })
-     (import ./config/desktop/hyprland.nix { inherit wal wal-l style rounding scheme contrast config; })
+     (import ./config/desktop/hyprland.nix { inherit wal wal-l style rounding scheme contrast config inputs pkgs; })
      (import ./config/desktop/hyprlock.nix { inherit wal wal-l style rounding; })
      (import ./config/ags.nix { inherit config inputs pkgs rounding dotfilesDir; })
      (import ./config/nvim.nix { inherit config lib pkgs dotfilesDir; })
@@ -35,7 +34,6 @@ in
      ./config/desktop/hypridle.nix
 
      ./config/apps/kitty.nix
-     ./config/apps/wezterm.nix
 
      ./config/cli/git.nix
      ./config/cli/helix.nix

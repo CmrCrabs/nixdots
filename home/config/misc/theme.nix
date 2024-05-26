@@ -14,4 +14,11 @@
       package = pkgs.whitesur-icon-theme;
     };
   };
+
+  xdg.configFile."wal/templates" = {
+        source = 
+          "${dotfilesDir}/home/templates";
+        recursive = true;
+      };
+   };
 }
