@@ -7,7 +7,7 @@
     
     plugins = [
       # inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
-      inputs.hyprspace.packages.${pkgs.system}.Hyprspace
+      # inputs.hyprspace.packages.${pkgs.system}.Hyprspace
     ];
     
         
@@ -27,6 +27,7 @@
         "hypridle"
       ];
       exec = [
+        "matugen image -m ${style} ${wal} -t scheme-${scheme} --contrast ${contrast}"
         "swww img -o eDP-1 ${wal} --transition-type center --transition-fps 60"
         "swww img -o DP-3 ${wal-l} --transition-type center --transition-fps 60"
         "wal -i ${wal} -n --saturate ${contrast} ${if style == "dark" then "" else if style == "light" then "-l" else ""}"
@@ -135,7 +136,7 @@
       ];
 
       bind = [
-        "SUPER, overview:toggle"
+        # "SUPER, overview:toggle"
         "$mainMod, Q, exec, $terminal"
         "$mainMod, C, killactive,"
         "$mainMod SHIFT, E, exit,"

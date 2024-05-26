@@ -35,7 +35,7 @@
 
       # include colors.conf
       
-      include ~/.cache/wal/colors-kitty.conf
+      include ~/.config/kitty/colors.conf
 
     '';
   };

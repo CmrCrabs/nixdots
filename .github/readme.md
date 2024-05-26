@@ -30,6 +30,7 @@ NixOS Environment - <name pending>
 - [ ] Switch to Unstable
 - [ ] hyprland hdrop plugin
 - [ ] hyprbars setup (windowrules & hyprbars)
+- [ ] hyprspace
 - [ ] global transparancy
     - [ ] seaglass global transparency
 
