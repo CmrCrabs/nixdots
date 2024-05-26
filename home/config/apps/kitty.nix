@@ -33,7 +33,10 @@
       background_opacity         1.0
       dynamic_background_opacity yes
 
-      include colors.conf
+      # include colors.conf
+      
+      include ~/.cache/wal/colors-kitty.conf
+
     '';
   };
 

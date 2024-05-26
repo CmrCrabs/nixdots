@@ -6,20 +6,20 @@ NixOS Environment - <name pending>
 > My old dots: https://github.com/cmrcrabs/dotfiles
 
 # TODO: 
-- [ ] switch to pywal
+- [ ] switch to flavours
     - [ ] kitty
     - [ ] ags
         - [ ] autoreload pywal css
-    - [ ] nvim (lushwal)
+    - [ ] nvim (mini.base16)
+    - [ ] gtk
+    - [ ] qt
     - [ ] firefox   
         - [ ] declarative firefox
         - [ ] firefox sidebery
         - [ ] sidebery pywal
-    - [ ] gtk
-    - [ ] qt
 
-- [ ] remake templates to use pywal
-    - [ ] include transparancy within pywal
+- [ ] remake templates to use 
+    - [ ] include transparancy within flavours
     - [ ] write templates using rounding values
     - [ ] rewrite hypr config to source file that houses border color
     - [ ] include border toggle in hypr config
@@ -29,10 +29,11 @@ NixOS Environment - <name pending>
 - [ ] toggle hypr border
 - [ ] Switch to Unstable
 - [ ] hyprland hdrop plugin
+- [ ] hyprbars setup (windowrules & hyprbars)
 - [ ] global transparancy
     - [ ] seaglass global transparency
 
-- [ ] Redesign AGS Design with pywal colours and new scheme
+- [ ] Redesign AGS Design with base16 colours and new scheme
     - [ ] use dharmx & gh0stzk
 - [X] AGS Setup
     - [X] Design

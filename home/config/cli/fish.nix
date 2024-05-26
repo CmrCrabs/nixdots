@@ -29,9 +29,13 @@ let
       starship init fish | source 
     '';
     shellInit = ''
-      set -g fish_greeting
-      set -g fish_color_search_match --background='${if style == "dark" then "999" else if style == "light" then "111" else "red"}'
-      set -g fish_color_autosuggestion --background='${if style == "dark" then "999" else if style == "light" then "111" else "red"}'
+    set -g fish_greeting
+
+    if test -e ~/.cache/wal/colors.fish
+      source ~/.cache/wal/colors.fish
+    end
+
+
     '';
   };
 }

@@ -133,7 +133,6 @@ in {
     
     # Apps
     firefox
-    firefox-devedition-bin
     chromium
     blender
     discord
@@ -203,7 +202,6 @@ in {
     steam-run
 
     imagemagick
- 
 
     apple-cursor
     whitesur-icon-theme
@@ -213,6 +211,10 @@ in {
 
     unzip
     sassc
+
+    wallust
+    python311Packages.pip
+
 
     alsa-oss
     alsa-lib
