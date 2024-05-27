@@ -1,22 +1,19 @@
-# Theming Targets:
-- Neovim
-- Kitty
-- Firefox
-- AGS
-- GTK
+Background Colors:
+- matugen
 
+Highlight Colors:
+- pywal
 
-# Flavours -> Matugen
+Misc Variables: 
+- matugen
 
-- Neovim
-- Kitty
-
-- better highlight colours
-- better background colors
-- harmonize existing theme
-
-# Flavours
-
-- mini.base16
-- https://github.com/wincent/base16-nvim/blob/main/colors/base16-ashes.lua
-- https://github.com/tinted-theming/base16-gtk-flatcolor
+- able to be applied without home manager rebuild
+- get colorscheme
+    - generated
+    - base16 
+- apply colorscheme to:
+    - terminal
+    - web browser
+    - text editor
+    - GUI Widgets
+    - GTK

@@ -7,6 +7,7 @@
   file = "~/.config/kitty/colors.conf"
   template = "kitty"
   rewrite = true
+  hook = "kill -SIGUSR1 $KITTY_PID"
 
   '';
 }

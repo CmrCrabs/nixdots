@@ -6,62 +6,55 @@ NixOS Environment - <name pending>
 > My old dots: https://github.com/cmrcrabs/dotfiles
 
 # TODO: 
-- [ ] switch to flavours
+- [ ] Matugen Config Rewrite
     - [ ] kitty
-    - [ ] ags
-        - [ ] autoreload pywal css
     - [ ] nvim (mini.base16)
-    - [ ] gtk
-    - [ ] qt
+    - [ ] rounding
     - [ ] firefox   
         - [ ] declarative firefox
         - [ ] firefox sidebery
         - [ ] sidebery pywal
-
-- [ ] remake templates to use 
-    - [ ] include transparancy within flavours
-    - [ ] write templates using rounding values
-    - [ ] rewrite hypr config to source file that houses border color
-    - [ ] include border toggle in hypr config
+    - [ ] ags
+        - [ ] autoreload nix-colors css
+    - [ ] transparency
+    - [ ] font
+    - [ ] gtk
+    - [ ] borders bool?
 
 - [ ] Switch to Yazi
-- [ ] yazi command for pywal
+- [ ] yazi command for matugen 
 - [ ] toggle hypr border
 - [ ] Switch to Unstable
 - [ ] hyprland hdrop plugin
 - [ ] hyprbars setup (windowrules & hyprbars)
 - [ ] hyprspace
-- [ ] global transparancy
-    - [ ] seaglass global transparency
+- [ ] seaglass global transparency
 
 - [ ] Redesign AGS Design with base16 colours and new scheme
     - [ ] use dharmx & gh0stzk
-- [X] AGS Setup
-    - [X] Design
-    - [X] Colourscheme
-    - [X] Vertical Bar
+
+- [ ] AGS Setup
+    - [ ] Design
+    - [ ] Colourscheme
+    - [ ] Vertical Bar
+    - [ ] Horizontal Bar
     - [ ] Dock ( steal from hypr? )
     - [ ] Audio Visialiser
     - [ ] Notifications
     - [ ] Notification Log
     - [ ] Wifi / Volume / Microphone
-    - [ ] Calendar / Date / Music
+    - [ ] Date / Music
     - [ ] Drun / Run Menu / Launcher
-    - [ ] Wallpaper Selector (rofi?)
-        - [ ] include any further runtime changeable configs
     - [ ] rounded corners(?)
-
-- [ ] Horizontal Bar Toggle
-    - [ ] Horizontal Bar
-    - [ ] Toggle system
+    - [ ] Live Environment Editor
 
 - [ ] Nvim
-    - [X] C# LSP
-    - [X] Multiple Tabs
     - [ ] Objects Viewer
     - [ ] better bufferline
     - [ ] better statusline
     - [ ] neorg(?)
+    - [ ] include startup time on dash
+    - [ ] matugen harmonise nvim
 
 - [ ] Misc App Setup
     - [ ] setup gamescope
@@ -85,7 +78,9 @@ NixOS Environment - <name pending>
     - [ ] Preview Images
     - [ ] Write Up README.md (use kaku as ref)
         - [ ] limitless gojo domain sign
+        - [ ] steal catppuccin cat footer
     - [ ] Package whole rice as a derivation
+
 
 # Credits:
 for their great configs / learning resources / software
