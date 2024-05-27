@@ -8,9 +8,9 @@
     type = 'scheme-tonal-spot'
     reload_apps = true
    
-    # [templates.kitty]
-    # input_path = "${templateDir}/kitty.conf"
-    # output_path = "${config.home.homeDirectory}/.config/kitty/colors.conf"
+    [templates.kitty]
+    input_path = "${templateDir}/kitty.conf"
+    output_path = "${config.home.homeDirectory}/.config/kitty/colors.conf"
 
 
     [templates.hypr-colors]
@@ -18,7 +18,7 @@
     output_path = "${config.home.homeDirectory}/.config/hypr/colors.conf"
 
     [config.reload_apps_list]
-    kitty = false
+    kitty = true
     waybar = false
     gtk_theme = false
     dunst = false
