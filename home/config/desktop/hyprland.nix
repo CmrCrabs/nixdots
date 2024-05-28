@@ -1,4 +1,4 @@
-{ config, inputs, pkgs, wal, wal-l, style, rounding, scheme, contrast, ...}:
+{ config, inputs, pkgs, ...}:
 {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -9,6 +9,7 @@
       # inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
       # inputs.hyprspace.packages.${pkgs.system}.Hyprspace
     ];
+
     
         
     settings = {
@@ -19,6 +20,7 @@
       "$screenshot" = "grim -g \"$(slurp -d)\" - | wl-copy -t image/png";
       "$browser" = "firefox";
       "$locker" = "hyprlock";
+      source = "~/.config/hypr/colors.conf";
 
       exec-once = [
         "swww init &"
@@ -27,16 +29,8 @@
         "hypridle"
       ];
       exec = [
-        "matugen image -m ${style} ${wal} -t scheme-${scheme} --contrast ${contrast}"
-        "swww img -o eDP-1 ${wal} --transition-type center --transition-fps 60"
-        "swww img -o DP-3 ${wal-l} --transition-type center --transition-fps 60"
-        # "wal -i ${wal} -n --saturate ${contrast} ${if style == "dark" then "" else if style == "light" then "-l" else ""}"
-        "sleep 2 && sassc ~/.config/ags/scss/style.scss ~/.config/ags/scss/my-style.css"
-        "sleep 2 && pkill ags"
-        "sleep 2.1 && ags"
-        "sleep 10 && kill -SIGUSR1 $(pgrep kitty)"
-        "cp ~/.config/nvim/lua/colorscheme.lua ~/.config/nvim/lua/colorscheme_actual.lua"
       ];
+
 
       monitor = [
         "eDP-1, 1920x1080@60, 0x0, 1"
@@ -86,7 +80,7 @@
       };
     
       decoration = {
-        rounding = "${rounding}";
+        rounding = "5";
         drop_shadow = "yes";
         shadow_range = "30";
         shadow_render_power = "9";

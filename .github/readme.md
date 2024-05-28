@@ -6,20 +6,20 @@ NixOS Environment - <name pending>
 > My old dots: https://github.com/cmrcrabs/dotfiles
 
 # TODO: 
-- [ ] Matugen Config Rewrite
-    - [ ] kitty
-    - [ ] nvim (mini.base16)
+- [ ] Matugen / Wal Config Rewrite
+    - [X] kitty
     - [ ] rounding
-    - [ ] firefox   
-        - [ ] declarative firefox
-        - [ ] firefox sidebery
-        - [ ] sidebery pywal
     - [ ] ags
         - [ ] autoreload nix-colors css
     - [ ] transparency
     - [ ] font
+    - [ ] firefox   
+        - [ ] declarative firefox
+        - [ ] pywalfox
+        - [ ] firefox sidebery
+        - [ ] sidebery pywal
     - [ ] gtk
-    - [ ] borders bool?
+    - [ ] nvim (prism)
 
 - [ ] Switch to Yazi
 - [ ] yazi command for matugen 
@@ -28,13 +28,12 @@ NixOS Environment - <name pending>
 - [ ] hyprland hdrop plugin
 - [ ] hyprbars setup (windowrules & hyprbars)
 - [ ] hyprspace
+- [ ] redesign hyprlock to follow options
 - [ ] seaglass global transparency
 
-- [ ] Redesign AGS Design with base16 colours and new scheme
-    - [ ] use dharmx & gh0stzk
-
 - [ ] AGS Setup
-    - [ ] Design
+    - [ ] Redesign AGS Design with base16 colours and new scheme
+        - [ ] use dharmx & gh0stzk
     - [ ] Colourscheme
     - [ ] Vertical Bar
     - [ ] Horizontal Bar

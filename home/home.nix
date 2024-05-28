@@ -1,13 +1,13 @@
 { config, pkgs, inputs, lib, ... }:
 let
-  wal = "${dotfilesDir}/wallpapers/aenami_ring.png";
-  wal-l = "${dotfilesDir}/wallpapers/aenami_ring.png";
-  colors = "catppuccin-mocha";
-  # https://github.com/tinted-theming/base16-schemes/tree/main
+  wal = "${dotfilesDir}/wallpapers/jellyfish_redblue.png";
+  wal-l = "${dotfilesDir}/wallpapers/jellyfish_redblue.png";
   style = "dark";
-  rounding = "1";
+  rounding = "10";
   scheme = "tonal-spot";
-  contrast = "0.0";
+  bg-contrast = "0.0";
+  fg-contrast = "0.3";
+  transparency = "1.0";
 
   dotfilesDir = "${config.home.homeDirectory}/.dotfiles";
   templateDir = "${dotfilesDir}/home/templates";
@@ -19,34 +19,36 @@ in
   home.username = "zyn";
   home.homeDirectory = "/home/zyn";
 
-  colorScheme = inputs.nix-colors.colorSchemes.${colors};
-
   imports = [
     # flake inputs
     inputs.matugen.nixosModules.default
     inputs.nix-colors.homeManagerModules.default
 
     # Files (w/ Inputs)
-     (import ./matugen.nix { inherit wal style config templateDir; })
-     (import ./flavours.nix { inherit config lib pkgs dotfilesDir; })
-     (import ./config/desktop/hyprland.nix { inherit wal wal-l style rounding scheme contrast config inputs pkgs; })
-     (import ./config/desktop/hyprlock.nix { inherit wal wal-l style rounding; })
-     (import ./config/ags.nix { inherit config inputs pkgs rounding dotfilesDir; })
-     (import ./config/nvim.nix { inherit config lib pkgs dotfilesDir; })
-     (import ./config/cli/fish.nix { inherit style pkgs; })
-     (import ./config/apps/kitty.nix { inherit config; })
+    (import ./matugen.nix { inherit wal style rounding transparency config templateDir; })
+    (import ./config/desktop/hyprland.nix { inherit config inputs pkgs; })
+    (import ./config/desktop/hyprlock.nix { inherit wal wal-l style rounding; })
+    (import ./config/ags.nix { inherit config inputs pkgs rounding dotfilesDir; })
+    (import ./config/nvim.nix { inherit config lib pkgs dotfilesDir; })
+    (import ./config/cli/fish.nix { inherit style pkgs; })
+    (import ./config/apps/kitty.nix { inherit config; })
 
     # Files 
-     ./config/desktop/hypridle.nix
-     ./config/cli/git.nix
-     ./config/cli/helix.nix
-     ./config/cli/ranger.nix
-     ./config/cli/starship.nix
+    ./config/desktop/hypridle.nix
+    ./config/cli/git.nix
+    ./config/cli/helix.nix
+    ./config/cli/ranger.nix
+    ./config/cli/starship.nix
+
+    # Wal Templates
+    ./templates/kitty_waltemp.nix
+
   ];
 
   systemd.user.startServices ="sd-switch";
 
   home.packages = [
+    (import ./theme.nix { inherit config inputs pkgs wal wal-l style rounding scheme bg-contrast fg-contrast dotfilesDir; })
   ];
 
   home.sessionVariables = {
