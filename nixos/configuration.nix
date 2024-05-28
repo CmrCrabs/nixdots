@@ -156,7 +156,7 @@ in {
     wget
     git
     gh
-    neofetch
+    fastfetch
     starship
     btop
     ranger
