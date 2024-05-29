@@ -26,6 +26,7 @@ NixOS Environment - <name pending>
 - [ ] AGS Setup
     - [X] Redesign AGS Design with base16 colours and new scheme
     - [X] Vertical Bar update
+    - [ ] hyprland layerrules shadow + blur
     - [ ] Dock ( steal from hypr? )
     - [ ] Notifications
     - [ ] Notification Log

@@ -38,7 +38,7 @@
 
       monitor = [
         "eDP-1, 1920x1080@60, 0x0, 1"
-        "eDP-1,addreserved,10, 10, 20, 20"
+        "eDP-1,addreserved,10, 10, 15, 15"
         "DP-3, 1920x515@60, 0x1080, 1"
       ];
       workspace = [
