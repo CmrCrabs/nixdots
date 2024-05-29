@@ -12,13 +12,4 @@
       accountsservice
     ];
   };
-
-  home.file."${dotfilesDir}/home/templates/colors.scss".text = ''
-  $rounding: ${rounding}px;
-
-  <* for name, value in colors *>
-  ''${{name}}: {{value.default.hex}};
-  <* endfor *>
-  '';
-
 }

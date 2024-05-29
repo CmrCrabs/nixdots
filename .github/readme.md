@@ -8,10 +8,9 @@ NixOS Environment - <name pending>
 # TODO: 
 - [ ] Matugen / Wal Config Rewrite
     - [X] kitty
-    - [ ] rounding
-    - [ ] ags
-        - [ ] autoreload nix-colors css
-    - [ ] transparency
+    - [X] rounding
+    - [X] ags
+    - [X] transparency
     - [ ] font
     - [ ] firefox   
         - [ ] declarative firefox
@@ -32,20 +31,18 @@ NixOS Environment - <name pending>
 - [ ] seaglass global transparency
 
 - [ ] AGS Setup
-    - [ ] Redesign AGS Design with base16 colours and new scheme
-        - [ ] use dharmx & gh0stzk
-    - [ ] Colourscheme
-    - [ ] Vertical Bar
-    - [ ] Horizontal Bar
+    - [X] Redesign AGS Design with base16 colours and new scheme
+    - [ ] Vertical Bar update
     - [ ] Dock ( steal from hypr? )
-    - [ ] Audio Visialiser
     - [ ] Notifications
     - [ ] Notification Log
     - [ ] Wifi / Volume / Microphone
     - [ ] Date / Music
     - [ ] Drun / Run Menu / Launcher
-    - [ ] rounded corners(?)
     - [ ] Live Environment Editor
+    - [ ] Horizontal Bar
+    - [ ] rounded corners(?)
+- [ ] Rofi Wallpaper Selector
 
 - [ ] Nvim
     - [ ] Objects Viewer
@@ -54,6 +51,7 @@ NixOS Environment - <name pending>
     - [ ] neorg(?)
     - [ ] include startup time on dash
     - [ ] matugen harmonise nvim
+    - [ ] have rounding / flat respect matugen
 
 - [ ] Misc App Setup
     - [ ] setup gamescope
@@ -73,6 +71,7 @@ NixOS Environment - <name pending>
 
 - [ ] Final package setup
     - [ ] move packages into corresponding home files
+    - [ ] make hostname a variable
     - [ ] Properly Edit & Setup Wallpapers
     - [ ] Preview Images
     - [ ] Write Up README.md (use kaku as ref)

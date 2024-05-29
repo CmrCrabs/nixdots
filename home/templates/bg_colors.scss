@@ -1,0 +1,6 @@
+  $rounding: {{custom.rounding}}px;
+  $transparency: {{custom.transparency}};
+
+  <* for name, value in colors *>
+  ${{name}}: {{value.default.hex}};
+  <* endfor *>
