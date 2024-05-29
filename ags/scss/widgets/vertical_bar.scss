@@ -1,24 +1,25 @@
 .vertical_bar {
     @include widget;
     min-height: 1060px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 9px;
+    padding-right: 9px;
     margin-left: 10px;
-    background-color: $background;
+    background-color: $background-t;
     color: $on_background;
 }
 
 .power_icon {
     background-color: transparent;
-    color: $on_primary;
+    color: $surface_container;
     font-size: 35px;
 }
 .power_button {
     @include button;
     margin-top: 10px;
-    background-color: $primary;    
+    background-color: $color3;    
     &:hover {
-        background-color: $primary_fixed;
+        background-color: saturate($color3, 20);
+        transition: ease-in 0.3s;
     }
 }
 
@@ -30,7 +31,7 @@
     padding-bottom: 15px;
     min-height: 50px;
     margin-top: 10px;
-    background-color: $surface_container;
+    background-color: $surface_container-t;
     font-size: 20px;
     font-weight: bold;
 }
@@ -43,7 +44,7 @@
     padding-bottom: 15px;
     min-height: 60px;
     margin-top: 10px;
-    background-color: $surface_container;
+    background-color: $surface_container-t;
     font-size: 20px;
     font-weight: bold;
 }
@@ -56,10 +57,10 @@
     block {
       border-radius: $rounding;
       &.empty {
-        background-color: $surface_container_highest;
+        background-color: $surface_container_highest-t;
       }
       &.full {
-        background-color: $error;
+        background-color: $color2;
       }
     }
   }
@@ -72,10 +73,10 @@
     block {
       border-radius: $rounding;
       &.empty {
-        background-color: $surface_container_highest;
+        background-color: $surface_container_highest-t;
       }
       &.full {
-        background-color: $primary;
+        background-color: $color1;
       }
     }
   }
@@ -95,7 +96,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: $rounding;
-    background-color: $surface_container;
+    background-color: $surface_container-t;
     min-height: 150px;
 }
 .workspaces_unfocused {
@@ -108,12 +109,12 @@
     padding-right: 5px;
     border-radius: $rounding;
     &:hover {
-        background-color: $primary;
+        background-color: $color6;
         transition: ease-in 0.1s;
     }
 }
 .workspaces_focused {
-    background-color: $primary;
+    background-color: $color6;
     margin-top: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -121,43 +122,62 @@
     padding-right: 5px;
     border-radius: $rounding;
     transition: ease-in 0.1s;
+    &:hover {
+        background-color: saturate($color6, 20);
+        transition: ease-in 0.1s;
+    }
 }
 
+.wallpaper_icon {
+    background-color: transparent;
+    color: $surface_container;
+    font-size: 20px;
+}
+.wallpaper_button {
+    @include button;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: $color4;    
+    &:hover {
+        background-color: saturate($color4, 20);
+        transition: ease-in 0.3s;
+    }
+}
 .notification_icon {
     background-color: transparent;
-    color: $on_tertiary;
+    color: $surface_container;
     font-size: 20px;
 }
 .notification_button {
     @include button;
     margin-top: 10px;
     padding: 12px;
-    background-color: $tertiary;    
+    background-color: $color3;    
     &:hover {
-        background-color: $tertiary_fixed;
+        background-color: saturate($color3, 20);
         transition: ease-in 0.3s;
     }
 }
 
 .misc_icon {
     background-color: transparent;
-    color: $on_secondary;
+    color: $surface_container;
     font-size: 20px;
 }
 .misc_button {
     @include button;
     margin-top: 10px;
     padding: 12px;
-    background-color: $secondary;    
+    background-color: $color7;    
     &:hover {
-        background-color: $secondary_fixed;
+        background-color: saturate($color7, 20);
         transition: ease-in 0.3s;
     }
 }
 
 .controls_icon {
     background-color: transparent;
-    color: $on_primary;
+    color: $surface_container;
     font-size: 20px;
 }
 .controls_button {
@@ -165,9 +185,9 @@
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 12px;
-    background-color: $primary;    
+    background-color: $color1;    
     &:hover {
-        background-color: $primary_fixed;
+        background-color: saturate($color1, 20);
         transition: ease-in 0.3s;
     }
 }

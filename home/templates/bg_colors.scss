@@ -2,5 +2,12 @@
   $transparency: {{custom.transparency}};
 
   <* for name, value in colors *>
+  ${{name}}-t: fade-out(
+    $color: {{value.default.hex}},
+    $amount: 1.0 - {{custom.transparency}},
+  );
+  <* endfor *>
+
+  <* for name, value in colors *>
   ${{name}}: {{value.default.hex}};
   <* endfor *>
