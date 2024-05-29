@@ -1,7 +1,7 @@
 { config, pkgs, inputs, lib, ... }:
 let
-  wal = "${dotfilesDir}/wallpapers/jellyfish_redblue.png";
-  wal-l = "${dotfilesDir}/wallpapers/jellyfish_redblue.png";
+  wal = "${dotfilesDir}/wallpapers/leaves.png";
+  wal-l = "${dotfilesDir}/wallpapers/leaves.png";
   style = "dark";
   rounding = "10";
   scheme = "tonal-spot";
@@ -41,7 +41,8 @@ in
     ./config/cli/starship.nix
 
     # Wal Templates
-    ./templates/kitty_waltemp.nix
+    ./templates/kitty_wal_template.nix
+    ./templates/ags_wal_template.nix
 
   ];
 

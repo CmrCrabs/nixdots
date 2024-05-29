@@ -13,20 +13,24 @@
     
         
     settings = {
+      source = [
+        "~/.config/hypr/colors.conf"
+      ];
       "$mainMod" = "ALT";
       "$terminal" = "kitty";
-      "$filebrowser" = "dolphin";
+      "$filebrowser" = "ranger";
       "$launcher" = "rofi -show drun";
       "$screenshot" = "grim -g \"$(slurp -d)\" - | wl-copy -t image/png";
       "$browser" = "firefox";
       "$locker" = "hyprlock";
-      source = "~/.config/hypr/colors.conf";
+
 
       exec-once = [
         "swww init &"
         "hyprctl setcursor Vimix-cursors 24"
         "sudo tlp start" 
         "hypridle"
+        "ags"
       ];
       exec = [
       ];
@@ -80,7 +84,6 @@
       };
     
       decoration = {
-        rounding = "5";
         drop_shadow = "yes";
         shadow_range = "30";
         shadow_render_power = "9";
@@ -199,5 +202,10 @@
 
       ];
     };
+    extraConfig = ''
+    decoration {
+      rounding = $rounding
+    }
+    '';
   };
 }

@@ -5,6 +5,7 @@ pkgs.writeShellScriptBin "theme" ''
     wal -i ${wal} -n -s -t --saturate ${fg-contrast} ${if style == "dark" then "" else if style == "light" then "-l" else ""}
     matugen image -m ${style} ${wal} -t scheme-${scheme} -v --contrast ${bg-contrast} --show-colors
     sassc ~/.config/ags/scss/style.scss ~/.config/ags/scss/my-style.css
+    cp ~/.cache/wal/fg_colors.scss ~/.config/ags/scss/fg_colors.scss
     pkill ags
     ags &
 ''

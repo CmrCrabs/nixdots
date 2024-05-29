@@ -6,11 +6,13 @@
     jsonFormat = 'hex'
     reload_apps = true
 
+    [config.custom_keywords]
+    rounding = "${rounding}"
+    transparency = "${transparency}"
 
     [templates.kitty]
     input_path = "${templateDir}/kitty.conf"
     output_path = "${config.home.homeDirectory}/.config/kitty/bg_colors.conf"
-
 
     [templates.hypr-colors]
     input_path = "${templateDir}/hypr.conf"
@@ -31,8 +33,8 @@
     output_path = "${config.home.homeDirectory}/.config/gtk-3.0/gtk.css"
 
     [templates.ags]
-    input_path = "${templateDir}/colors.scss"
-    output_path = "${config.home.homeDirectory}/.config/ags/scss/colors.scss"
+    input_path = "${templateDir}/bg_colors.scss"
+    output_path = "${config.home.homeDirectory}/.config/ags/scss/bg_colors.scss"
 
 
     
