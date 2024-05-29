@@ -1,7 +1,27 @@
 @import 'bg_colors.scss';
 @import 'fg_colors.scss';
-@import 'common.scss';
-
-@import 'widgets/vertical_bar.scss';
 
 
+*:not(switch) {
+    all: unset;
+}
+
+@mixin common{
+    * {
+        font-family: Jetbrains Mono, sans-serif;
+    }
+}
+
+@mixin widget{
+    @include common;
+    border-radius: $rounding * 0.6;
+}
+
+@mixin button {
+    @include common;
+    border-radius: $rounding * 0.6;
+    padding: 5px;
+}
+
+
+@import '../widgets/vertical_bar/vertical_bar.scss';
