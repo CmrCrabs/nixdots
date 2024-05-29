@@ -1,0 +1,193 @@
+*:not(switch) {
+  all: unset; }
+
+.vertical_bar {
+  border-radius: 12px;
+  min-height: 1060px;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-left: 10px;
+  background-color: rgba(16, 20, 24, 0.9);
+  color: #e0e2e8; }
+  .vertical_bar * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.power_icon {
+  background-color: transparent;
+  color: #1c2024;
+  font-size: 35px; }
+
+.power_button {
+  border-radius: 12px;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #3b5a6d; }
+  .power_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .power_button:hover {
+    background-color: #2a5e7e;
+    transition: ease-in 0.3s; }
+
+.clock {
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-height: 50px;
+  margin-top: 10px;
+  background-color: rgba(28, 32, 36, 0.9);
+  font-size: 20px;
+  font-weight: bold; }
+  .clock * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.batbox {
+  border-radius: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-height: 60px;
+  margin-top: 10px;
+  background-color: rgba(28, 32, 36, 0.9);
+  font-size: 20px;
+  font-weight: bold; }
+  .batbox * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.batbar trough {
+  margin-top: 10px;
+  min-width: 10px;
+  min-height: 1px; }
+  .batbar trough block {
+    border-radius: 20px; }
+    .batbar trough block.empty {
+      background-color: rgba(49, 53, 57, 0.9); }
+    .batbar trough block.full {
+      background-color: #c28e8e; }
+
+.batbar-charging trough {
+  margin-top: 10px;
+  min-width: 10px;
+  min-height: 1px; }
+  .batbar-charging trough block {
+    border-radius: 20px; }
+    .batbar-charging trough block.empty {
+      background-color: rgba(49, 53, 57, 0.9); }
+    .batbar-charging trough block.full {
+      background-color: #aa6562; }
+
+.battery_icon {
+  margin-top: 5px;
+  background-color: transparent;
+  color: #e0e2e8;
+  font-size: 20px; }
+
+.workspaces {
+  border-radius: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  background-color: rgba(28, 32, 36, 0.9);
+  min-height: 150px; }
+  .workspaces * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.workspaces_unfocused {
+  background-color: #e0e2e8;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 20px; }
+  .workspaces_unfocused * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .workspaces_unfocused:hover {
+    background-color: #5c97a7;
+    transition: ease-in 0.1s; }
+
+.workspaces_focused {
+  background-color: #5c97a7;
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 20px;
+  transition: ease-in 0.1s; }
+  .workspaces_focused:hover {
+    background-color: #43a5c0;
+    transition: ease-in 0.1s; }
+
+.wallpaper_icon {
+  background-color: transparent;
+  color: #1c2024;
+  font-size: 20px; }
+
+.wallpaper_button {
+  border-radius: 12px;
+  padding: 5px;
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #c18c95; }
+  .wallpaper_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .wallpaper_button:hover {
+    background-color: #d37a89;
+    transition: ease-in 0.3s; }
+
+.notification_icon {
+  background-color: transparent;
+  color: #1c2024;
+  font-size: 20px; }
+
+.notification_button {
+  border-radius: 12px;
+  padding: 5px;
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #3b5a6d; }
+  .notification_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .notification_button:hover {
+    background-color: #2a5e7e;
+    transition: ease-in 0.3s; }
+
+.misc_icon {
+  background-color: transparent;
+  color: #1c2024;
+  font-size: 20px; }
+
+.misc_button {
+  border-radius: 12px;
+  padding: 5px;
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #7adde8; }
+  .misc_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .misc_button:hover {
+    background-color: #6ae9f8;
+    transition: ease-in 0.3s; }
+
+.controls_icon {
+  background-color: transparent;
+  color: #1c2024;
+  font-size: 20px; }
+
+.controls_button {
+  border-radius: 12px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 12px;
+  background-color: #aa6562; }
+  .controls_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .controls_button:hover {
+    background-color: #c24f4a;
+    transition: ease-in 0.3s; }

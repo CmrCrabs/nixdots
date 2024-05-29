@@ -15,6 +15,25 @@ export function power_button() {
     })
 }
 
+export function wallpaper_button() {
+    const icon = Widget.Icon({
+        icon: "wallpaper-symbolic",
+        hpack: "center",
+        vpack: "center",
+        cursor: "pointer",
+        class_name: "wallpaper_icon"
+    })
+
+    return Widget.Button({
+        onClicked: () => print("test"),
+        hpack: "center",
+        vpack: "center",
+        cursor: "pointer",
+        child: icon,
+        class_name: "wallpaper_button",
+    })
+}
+
 export function notification_button() {
     const icon = Widget.Icon({
         icon: "notification-symbolic",

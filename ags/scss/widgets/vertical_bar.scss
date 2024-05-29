@@ -1,0 +1,193 @@
+.vertical_bar {
+    @include widget;
+    min-height: 1060px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin-left: 10px;
+    background-color: $background-t;
+    color: $on_background;
+}
+
+.power_icon {
+    background-color: transparent;
+    color: $surface_container;
+    font-size: 35px;
+}
+.power_button {
+    @include button;
+    margin-top: 10px;
+    background-color: $color3;    
+    &:hover {
+        background-color: saturate($color3, 20);
+        transition: ease-in 0.3s;
+    }
+}
+
+.clock {
+    @include widget;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 50px;
+    margin-top: 10px;
+    background-color: $surface_container-t;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.batbox {
+    @include widget;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 60px;
+    margin-top: 10px;
+    background-color: $surface_container-t;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.batbar {
+  trough {
+    margin-top: 10px;
+    min-width: 10px;
+    min-height: 1px;
+    block {
+      border-radius: $rounding;
+      &.empty {
+        background-color: $surface_container_highest-t;
+      }
+      &.full {
+        background-color: $color2;
+      }
+    }
+  }
+}
+.batbar-charging {
+  trough {
+    margin-top: 10px;
+    min-width: 10px;
+    min-height: 1px;
+    block {
+      border-radius: $rounding;
+      &.empty {
+        background-color: $surface_container_highest-t;
+      }
+      &.full {
+        background-color: $color1;
+      }
+    }
+  }
+}
+
+.battery_icon {
+    margin-top: 5px;
+    background-color: transparent;
+    color: $on_surface;
+    font-size: 20px;
+}
+
+.workspaces {
+    @include widget;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: $rounding;
+    background-color: $surface_container-t;
+    min-height: 150px;
+}
+.workspaces_unfocused {
+    @include common;
+    background-color: $on_surface;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: $rounding;
+    &:hover {
+        background-color: $color6;
+        transition: ease-in 0.1s;
+    }
+}
+.workspaces_focused {
+    background-color: $color6;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: $rounding;
+    transition: ease-in 0.1s;
+    &:hover {
+        background-color: saturate($color6, 20);
+        transition: ease-in 0.1s;
+    }
+}
+
+.wallpaper_icon {
+    background-color: transparent;
+    color: $surface_container;
+    font-size: 20px;
+}
+.wallpaper_button {
+    @include button;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: $color4;    
+    &:hover {
+        background-color: saturate($color4, 20);
+        transition: ease-in 0.3s;
+    }
+}
+.notification_icon {
+    background-color: transparent;
+    color: $surface_container;
+    font-size: 20px;
+}
+.notification_button {
+    @include button;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: $color3;    
+    &:hover {
+        background-color: saturate($color3, 20);
+        transition: ease-in 0.3s;
+    }
+}
+
+.misc_icon {
+    background-color: transparent;
+    color: $surface_container;
+    font-size: 20px;
+}
+.misc_button {
+    @include button;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: $color7;    
+    &:hover {
+        background-color: saturate($color7, 20);
+        transition: ease-in 0.3s;
+    }
+}
+
+.controls_icon {
+    background-color: transparent;
+    color: $surface_container;
+    font-size: 20px;
+}
+.controls_button {
+    @include button;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 12px;
+    background-color: $color1;    
+    &:hover {
+        background-color: saturate($color1, 20);
+        transition: ease-in 0.3s;
+    }
+}

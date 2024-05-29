@@ -119,7 +119,10 @@
         ];
       };
       
-      layerrule = "blur,^(rofi)$";
+      layerrule = [
+        "blur,^(rofi)$"
+        "blur,^(vertical_bar)$"
+      ];
       windowrulev2 = [
         "tile, class:^(firefox)$,title:^(Firefox)$"
         "float, class:.*"

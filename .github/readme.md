@@ -11,12 +11,6 @@ NixOS Environment - <name pending>
     - [X] rounding
     - [X] ags
     - [X] transparency
-    - [ ] font
-    - [ ] firefox   
-        - [ ] declarative firefox
-        - [ ] pywalfox
-        - [ ] firefox sidebery
-        - [ ] sidebery pywal
     - [ ] gtk
     - [ ] nvim (prism)
 
@@ -28,11 +22,10 @@ NixOS Environment - <name pending>
 - [ ] hyprbars setup (windowrules & hyprbars)
 - [ ] hyprspace
 - [ ] redesign hyprlock to follow options
-- [ ] seaglass global transparency
 
 - [ ] AGS Setup
     - [X] Redesign AGS Design with base16 colours and new scheme
-    - [ ] Vertical Bar update
+    - [X] Vertical Bar update
     - [ ] Dock ( steal from hypr? )
     - [ ] Notifications
     - [ ] Notification Log
@@ -52,6 +45,12 @@ NixOS Environment - <name pending>
     - [ ] include startup time on dash
     - [ ] matugen harmonise nvim
     - [ ] have rounding / flat respect matugen
+    
+- [ ] firefox   
+    - [ ] declarative firefox
+    - [ ] pywalfox
+    - [ ] firefox sidebery
+    - [ ] sidebery pywal
 
 - [ ] Misc App Setup
     - [ ] setup gamescope

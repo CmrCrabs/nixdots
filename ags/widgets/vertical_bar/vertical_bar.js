@@ -1,4 +1,4 @@
-import { controls_button, misc_button, notification_button, power_button } from "./buttons.js"
+import { controls_button, misc_button, notification_button, power_button, wallpaper_button } from "./buttons.js"
 import { Battery, Clock } from "./misc.js"
 import { Workspaces } from "./workspaces.js"
 
@@ -32,6 +32,7 @@ function Bottom() {
         hpack: "center",
         vpack: "end",
         children: [
+            wallpaper_button(),
             notification_button(),
             misc_button(),
             controls_button(),
@@ -41,7 +42,7 @@ function Bottom() {
 
 export function vertical_bar(monitor = 0) {
     return Widget.Window({
-        name: `bar-${monitor}`,
+        name: `vertical_bar`,
         monitor,
         exclusivity: "exclusive",
         anchor: ["left"],
