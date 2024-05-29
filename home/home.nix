@@ -1,7 +1,7 @@
 { config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/upper/paradise.png";
-  wal-l = "${dotfilesDir}/wallpapers/lower/paradise.png";
+  wal =   "${dotfilesDir}/wallpapers/mountain_blue.png";
+  wal-l = "${dotfilesDir}/wallpapers/mountain_blue.png";
   style = "dark";
   rounding = "20";
   scheme = "tonal-spot";
