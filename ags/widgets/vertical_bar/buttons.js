@@ -8,6 +8,7 @@ export function power_button() {
     return Widget.Button({
         onClicked: () => print("test"),
         hpack: "center",
+        tooltip_text: "Power Menu",
         vpack: "center",
         cursor: "pointer",
         child: icon,
@@ -26,6 +27,7 @@ export function wallpaper_button() {
 
     return Widget.Button({
         onClicked: () => print("test"),
+        tooltip_text: "Limitless Theming Menu",
         hpack: "center",
         vpack: "center",
         cursor: "pointer",
@@ -45,6 +47,7 @@ export function notification_button() {
 
     return Widget.Button({
         onClicked: () => print("test"),
+        tooltip_text: "Notification Menu",
         hpack: "center",
         vpack: "center",
         cursor: "pointer",
@@ -65,6 +68,7 @@ export function misc_button() {
 
     return Widget.Button({
         onClicked: () => print("test"),
+        tooltip_text: "Miscellaneous Controls",
         hpack: "center",
         vpack: "center",
         cursor: "pointer",
@@ -85,6 +89,7 @@ export function controls_button() {
 
     return Widget.Button({
         onClicked: () => print("test"),
+        tooltip_text: "Controls",
         hpack: "center",
         vpack: "center",
         cursor: "pointer",

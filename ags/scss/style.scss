@@ -1,10 +1,13 @@
 @import 'bg_colors.scss';
 @import 'fg_colors.scss';
 
+$gap: 10px;
+$outer_gap: 10px;
 
 *:not(switch) {
     all: unset;
 }
+
 
 @mixin common{
     * {
@@ -12,16 +15,26 @@
     }
 }
 
+tooltip {
+    @include common;
+    background-color: $surface-container-highest-t;
+    padding: 3px;
+    color: $on_surface; 
+    border-radius: $rounding
+}
+
+
 @mixin widget{
     @include common;
-    border-radius: $rounding * 0.6;
+    border-radius: if($rounding == 0, 0, $rounding + $gap/2);
 }
 
 @mixin button {
     @include common;
-    border-radius: $rounding * 0.6;
+    border-radius: if($rounding == 0, 0, $rounding + $gap/2);
     padding: 5px;
 }
 
 
 @import '../widgets/vertical_bar/vertical_bar.scss';
+@import '../widgets/dock/dock.scss';

@@ -1,56 +1,63 @@
 *:not(switch) {
   all: unset; }
 
+tooltip {
+  background-color: rgba(68, 59, 64, 0.8);
+  padding: 3px;
+  color: #ffffff;
+  border-radius: 0px; }
+  tooltip * {
+    font-family: Jetbrains Mono, sans-serif; }
+
 .vertical_bar {
-  border-radius: 12px;
+  border-radius: 0px;
+  font-family: Jetbrains Mono, sans-serif;
   min-height: 1060px;
   padding-left: 9px;
   padding-right: 9px;
   margin-left: 10px;
-  background-color: rgba(16, 20, 24, 0.6);
-  color: #e0e2e8; }
-  .vertical_bar * {
-    font-family: Jetbrains Mono, sans-serif; }
+  background-color: rgba(24, 18, 21, 0.8);
+  color: #ecdfe5; }
 
 .power_icon {
   background-color: transparent;
-  color: #1c2024;
+  color: #2d262a;
   font-size: 35px; }
 
 .power_button {
-  border-radius: 12px;
+  border-radius: 0;
   padding: 5px;
   margin-top: 10px;
-  background-color: #aad1ce; }
+  background-color: #cca1bf; }
   .power_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .power_button:hover {
-    background-color: #9dded9;
+    background-color: #db93c5;
     transition: ease-in 0.3s; }
 
 .clock {
-  border-radius: 12px;
+  border-radius: 0;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
   min-height: 50px;
   margin-top: 10px;
-  background-color: rgba(28, 32, 36, 0.6);
+  background-color: rgba(45, 38, 42, 0.8);
   font-size: 20px;
   font-weight: bold; }
   .clock * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .batbox {
-  border-radius: 12px;
+  border-radius: 0;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 15px;
   padding-bottom: 15px;
   min-height: 60px;
   margin-top: 10px;
-  background-color: rgba(28, 32, 36, 0.6);
+  background-color: rgba(45, 38, 42, 0.8);
   font-size: 20px;
   font-weight: bold; }
   .batbox * {
@@ -61,133 +68,192 @@
   min-width: 10px;
   min-height: 1px; }
   .batbar trough block {
-    border-radius: 20px; }
+    border-radius: 0; }
     .batbar trough block.empty {
-      background-color: rgba(50, 53, 57, 0.6); }
+      background-color: rgba(68, 59, 64, 0.8); }
     .batbar trough block.full {
-      background-color: #9ac4c9; }
+      background-color: #a09ac8; }
 
 .batbar-charging trough {
   margin-top: 10px;
   min-width: 10px;
   min-height: 1px; }
   .batbar-charging trough block {
-    border-radius: 20px; }
+    border-radius: 0; }
     .batbar-charging trough block.empty {
-      background-color: rgba(50, 53, 57, 0.6); }
+      background-color: rgba(68, 59, 64, 0.8); }
     .batbar-charging trough block.full {
-      background-color: #a3cdc4; }
+      background-color: #bc83b5; }
 
 .battery_icon {
   margin-top: 5px;
   background-color: transparent;
-  color: #e0e2e8;
+  color: #ffffff;
   font-size: 20px; }
 
 .workspaces {
-  border-radius: 12px;
+  border-radius: 0;
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-radius: 20px;
-  background-color: rgba(28, 32, 36, 0.6);
+  border-radius: 0;
+  background-color: rgba(45, 38, 42, 0.8);
   min-height: 150px; }
   .workspaces * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .workspaces_unfocused {
-  background-color: #e0e2e8;
+  background-color: #ffffff;
   margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 5px;
   padding-right: 5px;
-  border-radius: 20px; }
+  border-radius: 0; }
   .workspaces_unfocused * {
     font-family: Jetbrains Mono, sans-serif; }
   .workspaces_unfocused:hover {
-    background-color: #dbe6d2;
+    background-color: #d3adc6;
     transition: ease-in 0.1s; }
 
 .workspaces_focused {
-  background-color: #dbe6d2;
+  background-color: #d3adc6;
   margin-top: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 5px;
   padding-right: 5px;
-  border-radius: 20px;
+  border-radius: 0;
   transition: ease-in 0.1s; }
   .workspaces_focused:hover {
-    background-color: #daedcb;
+    background-color: #e0a0ca;
     transition: ease-in 0.1s; }
 
 .wallpaper_icon {
   background-color: transparent;
-  color: #1c2024;
+  color: #2d262a;
   font-size: 20px; }
 
 .wallpaper_button {
-  border-radius: 12px;
+  border-radius: 0;
   padding: 5px;
   margin-top: 10px;
   padding: 12px;
-  background-color: #c5e0c5; }
+  background-color: #cfa5bb; }
   .wallpaper_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .wallpaper_button:hover {
-    background-color: #bce9bc;
+    background-color: #dd97bc;
     transition: ease-in 0.3s; }
 
 .notification_icon {
   background-color: transparent;
-  color: #1c2024;
+  color: #2d262a;
   font-size: 20px; }
 
 .notification_button {
-  border-radius: 12px;
+  border-radius: 0;
   padding: 5px;
   margin-top: 10px;
-  padding: 12px;
-  background-color: #aad1ce; }
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 13px;
+  padding-right: 11px;
+  background-color: #c898b7; }
   .notification_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .notification_button:hover {
-    background-color: #9dded9;
+    background-color: #d888bc;
     transition: ease-in 0.3s; }
 
 .misc_icon {
   background-color: transparent;
-  color: #1c2024;
+  color: #2d262a;
   font-size: 20px; }
 
 .misc_button {
-  border-radius: 12px;
+  border-radius: 0;
   padding: 5px;
   margin-top: 10px;
-  padding: 12px;
-  background-color: #eaeae4; }
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 13px;
+  padding-right: 11px;
+  background-color: #dad0d9; }
   .misc_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .misc_button:hover {
-    background-color: #efefdf;
+    background-color: #e2c8e0;
     transition: ease-in 0.3s; }
 
 .controls_icon {
   background-color: transparent;
-  color: #1c2024;
+  color: #2d262a;
   font-size: 20px; }
 
 .controls_button {
-  border-radius: 12px;
+  border-radius: 0;
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 12px;
-  background-color: #a3cdc4; }
+  background-color: #bc83b5; }
   .controls_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .controls_button:hover {
-    background-color: #95dbcc;
+    background-color: #cf70c3;
+    transition: ease-in 0.3s; }
+
+.dock {
+  border-radius: 0;
+  min-height: 50px;
+  min-width: 500px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(24, 18, 21, 0.8);
+  color: #ecdfe5; }
+  .dock * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.icons image {
+  -gtk-icon-theme: "WhiteSur"; }
+
+.separator {
+  background-color: rgba(68, 59, 64, 0.8);
+  color: #ffffff;
+  padding: 1px; }
+
+.taskbar_icon_box {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.indicator {
+  padding: 3px;
+  margin-top: 30px;
+  margin-right: 2px;
+  margin-left: 2px;
+  border-radius: 0px;
+  background-color: #ffffff; }
+
+.start_menu_icon {
+  background-color: transparent;
+  color: #2d262a;
+  font-size: 35px; }
+
+.start_menu_button {
+  border-radius: 0;
+  padding: 5px;
+  background-color: #d3adc6;
+  margin-left: 20px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 7px; }
+  .start_menu_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .start_menu_button:hover {
+    background-color: #e0a0ca;
     transition: ease-in 0.3s; }

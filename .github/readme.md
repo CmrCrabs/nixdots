@@ -13,6 +13,9 @@ NixOS Environment - <name pending>
     - [X] transparency
     - [ ] gtk
     - [ ] nvim (prism)
+    - [ ] gaps toggle
+    - [ ] border toggle
+    - [ ] dimming toggle
 
 - [ ] Switch to Yazi
 - [ ] yazi command for matugen 
@@ -26,13 +29,13 @@ NixOS Environment - <name pending>
 - [ ] AGS Setup
     - [X] Redesign AGS Design with base16 colours and new scheme
     - [X] Vertical Bar update
-    - [ ] hyprland layerrules shadow + blur
-    - [ ] Dock ( steal from hypr? )
+    - [X] hyprland layerrules shadow + blur
+    - [X] Dock ( steal from hypr? )
+    - [ ] Drun / Run Menu / Launcher
     - [ ] Notifications
     - [ ] Notification Log
     - [ ] Wifi / Volume / Microphone
     - [ ] Date / Music
-    - [ ] Drun / Run Menu / Launcher
     - [ ] Live Environment Editor
     - [ ] Horizontal Bar
     - [ ] rounded corners(?)
@@ -46,7 +49,9 @@ NixOS Environment - <name pending>
     - [ ] include startup time on dash
     - [ ] matugen harmonise nvim
     - [ ] have rounding / flat respect matugen
-    
+
+- [ ] tmux
+
 - [ ] firefox   
     - [ ] declarative firefox
     - [ ] pywalfox

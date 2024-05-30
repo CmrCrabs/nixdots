@@ -1,0 +1,55 @@
+.dock {
+    @include widget;
+    min-height: 50px;
+    min-width: 500px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: $outer_gap;
+    background-color: $background-t;
+    color: $on_background;
+}
+.icons {
+    image {
+        -gtk-icon-theme: "WhiteSur";
+    }
+}
+
+.separator {
+    background-color: $surface_container_highest-t;
+    color: $on_surface;
+    padding: 1px;
+}
+
+.taskbar_icon_box {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.indicator {
+    padding: 3px;
+    margin-top: 30px;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-radius: $rounding;
+    background-color: $on_surface;
+}
+
+.start_menu_icon {
+    background-color: transparent;
+    color: $surface_container;
+    font-size: 35px;
+}
+.start_menu_button {
+    @include button;
+    background-color: $color6;    
+    margin-left: 20px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 7px;
+    &:hover {
+        background-color: saturate($color6, 20);
+        transition: ease-in 0.3s;
+    }
+}

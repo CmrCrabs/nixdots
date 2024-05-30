@@ -40,6 +40,7 @@
         "eDP-1, 1920x1080@60, 0x0, 1"
         "eDP-1,addreserved,10, 10, 15, 15"
         "DP-3, 1920x515@60, 0x1080, 1"
+        "DP-3,addreserved,5, 5, 5, 5"
       ];
       workspace = [
         "eDP-1, 1"
@@ -122,6 +123,7 @@
       layerrule = [
         "blur,^(rofi)$"
         "blur,^(vertical_bar)$"
+        "blur,^(dock)$"
       ];
       windowrulev2 = [
         "tile, class:^(firefox)$,title:^(Firefox)$"

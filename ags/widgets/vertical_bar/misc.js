@@ -13,8 +13,6 @@ export function Clock() {
 const battery = await Service.import('battery')
 export function Battery() {
     const value = battery.bind("percent").as((p) => p / 100);
-    console.log(value)
-    console.log(battery)
 
     let bar = Widget.LevelBar({
         heightRequest: 100,
