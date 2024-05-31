@@ -109,7 +109,11 @@
       
       animations = {
         enabled = "yes";
-        bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
+        bezier = [
+          "myBezier, 0.05, 0.9, 0.1, 1.05"
+          "menu_decel, 0.1, 1, 0, 1"
+          "menu_accel, 0.38, 0.04, 1, 0.07"
+        ];
         animation = [
           "windows, 1, 1.5, myBezier"
           "windowsOut, 1, 2, default, popin 80%"
