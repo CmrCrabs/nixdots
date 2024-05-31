@@ -146,8 +146,8 @@
       ];
       bind = [
         # "SUPER, overview:toggle"
-        "$mainMod, Q, exec, $terminal"
-        "$mainMod SHIFT, Q, exec, [float] $terminal"
+        "$mainMod SHIFT, Q, exec, $terminal"
+        "$mainMod, Q, exec, [float] $terminal"
         "$mainMod, C, killactive,"
         "$mainMod SHIFT, E, exit,"
         "$mainMod, E, exec, $browser"

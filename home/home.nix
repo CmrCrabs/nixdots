@@ -1,13 +1,13 @@
 { config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/tropical_leaves.png";
-  wal-l = "${dotfilesDir}/wallpapers/tropical_leaves.png";
+  wal =   "${dotfilesDir}/wallpapers/rocky_beach.png";
+  wal-l = "${dotfilesDir}/wallpapers/rocky_beach.png";
   style = "dark";
   rounding = "10";
   scheme = "tonal-spot";
-  bg-contrast = "0.5";
+  bg-contrast = "0.8";
   fg-contrast = "0.3";
-  transparency = "0.6";
+  transparency = "0.8";
 
   dotfilesDir = "${config.home.homeDirectory}/.dotfiles";
   templateDir = "${dotfilesDir}/home/templates";
