@@ -18,7 +18,6 @@ NixOS Environment - <name pending>
     - [ ] dimming toggle
 
 - [ ] Switch to Yazi
-- [ ] yazi command for matugen 
 - [ ] toggle hypr border
 - [ ] Switch to Unstable
 - [ ] hyprland hdrop plugin
@@ -31,7 +30,7 @@ NixOS Environment - <name pending>
     - [X] Vertical Bar update
     - [X] hyprland layerrules shadow + blur
     - [X] Dock ( steal from hypr? )
-    - [ ] Drun / Run Menu / Launcher
+    - [X] Drun / Run Menu / Launcher
     - [ ] Notifications
     - [ ] Notification Log
     - [ ] Wifi / Volume / Microphone

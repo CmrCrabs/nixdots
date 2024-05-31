@@ -1,12 +1,14 @@
 import Hyprland from 'resource:///com/github/Aylur/ags/service/hyprland.js';
 import Applications from 'resource:///com/github/Aylur/ags/service/applications.js';
 import Widget from 'resource:///com/github/Aylur/ags/widget.js';
+import App from 'resource:///com/github/Aylur/ags/app.js';
 
 const pinned_apps_list = [
         'firefox',
         'kitty',
         'discord',
-        //'chromium',
+        'blender',
+        'Neovim wrapper'
 ];
 
 function start_menu_button() {
@@ -17,7 +19,7 @@ function start_menu_button() {
     })
 
     return Widget.Button({
-        onClicked: () => print("test"),
+        onClicked: () => App.toggleWindow("start_menu"),
         tooltip_text: "Start Menu",
         hpack: "center",
         vpack: "center",
@@ -130,7 +132,11 @@ const seperator = () => Widget.Separator({
     class_name: "separator",
 })
 
-export function dock(monitor = 0) {
+export function Dock(monitor = 0) {
+
+    for (const app in Applications.List) {
+        console.log(app);
+    }
 
     return Widget.Window({
         name: 'dock',
@@ -157,6 +163,6 @@ export function dock(monitor = 0) {
                     start_menu_button(),
                 ],
             }),
-        })
+        }),
     })
 }

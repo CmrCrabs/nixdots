@@ -1,4 +1,4 @@
-export function power_button() {
+export function PowerButton() {
     const icon = Widget.Icon({
         icon: "power-symbolic",
         cursor: "pointer",
@@ -16,7 +16,7 @@ export function power_button() {
     })
 }
 
-export function wallpaper_button() {
+export function WallpaperButton() {
     const icon = Widget.Icon({
         icon: "wallpaper-symbolic",
         hpack: "center",
@@ -36,7 +36,7 @@ export function wallpaper_button() {
     })
 }
 
-export function notification_button() {
+export function NotificationButton() {
     const icon = Widget.Icon({
         icon: "notification-symbolic",
         hpack: "center",
@@ -57,7 +57,7 @@ export function notification_button() {
 }
 
 
-export function misc_button() {
+export function MiscButton() {
     const icon = Widget.Icon({
         icon: "calendar-symbolic",
         hpack: "center",
@@ -78,7 +78,7 @@ export function misc_button() {
 }
 
 
-export function controls_button() {
+export function ControlsButton() {
     const icon = Widget.Icon({
         icon: "slider-symbolic",
         hpack: "center",
