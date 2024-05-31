@@ -29,7 +29,18 @@
     min-height: 465px;
 }
 
-.app_item_box {
+.app_item_button {
+    @include widget;
+    padding: 3px;
+    &:hover {
+        background-color: $surface-container-highest-t;
+        transition: ease-in 0.3s;
+    }
+    &:focus {
+        background-color: $surface-container-highest-t;
+        transition: ease-in 0.3s;
+    }
+
 }
 
 .list_icon {

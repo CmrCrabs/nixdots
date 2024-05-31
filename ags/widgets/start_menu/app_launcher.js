@@ -10,6 +10,7 @@ const AppItem = app => Widget.Button({
         App.closeWindow(WINDOW_NAME)
         app.launch()
     },
+    class_name: "app_item_button",
     attribute: { app },
     child: Widget.Box({
         class_name: "app_item_box",
@@ -31,39 +32,37 @@ const AppItem = app => Widget.Button({
 })
 
 const Applauncher = () => {
-    // list of application buttons
     let applications = query("").map(AppItem)
 
-    // container holding the buttons
     const list = Widget.Box({
         vertical: true,
         children: applications,
         spacing: 30,
     })
 
-    // repopulate the box, so the most frequent apps are on top of the list
     function repopulate() {
         applications = query("").map(AppItem)
         list.children = applications
     }
 
-    // search entry
     const entry = Widget.Entry({
         hexpand: true,
         class_name: "search_bar",
         placeholder_text: "Search...",
 
-        // to launch the first item on Enter
-        on_accept: () => {
-            // make sure we only consider visible (searched for) applications
-	    const results = applications.filter((item) => item.visible);
+        on_accept: ({ text }) => {
+            const results = applications.filter((item) => item.visible);
             if (results[0]) {
                 App.toggleWindow(WINDOW_NAME)
                 results[0].attribute.app.launch()
+            } else {
+                App.toggleWindow(WINDOW_NAME)
+                Utils.execAsync(['bash', '-c', text])
+                    .then(out => print(out))
+                    .catch(err => print(err));
             }
         },
 
-        // filter out the list
         on_change: ({ text }) => applications.forEach(item => {
             item.visible = item.attribute.app.match(text ?? "")
         }),
@@ -84,7 +83,6 @@ const Applauncher = () => {
             if (windowName !== WINDOW_NAME)
                 return
 
-            // when the applauncher shows up
             if (visible) {
                 repopulate()
                 entry.text = ""
@@ -94,7 +92,6 @@ const Applauncher = () => {
     })
 }
 
-// there needs to be only one instance
 export function AppLauncher() {
     return Widget.Box({
         setup: self => self.keybind("Escape", () => {

@@ -5,12 +5,13 @@ NixOS Environment - <name pending>
 > under construction
 > My old dots: https://github.com/cmrcrabs/dotfiles
 
+# Temporary Preview:
+
+![Preview](./temporary_preview.png)
+
 # TODO: 
 - [ ] Matugen / Wal Config Rewrite
-    - [X] kitty
-    - [X] rounding
-    - [X] ags
-    - [X] transparency
+
     - [ ] gtk
     - [ ] nvim (prism)
     - [ ] gaps toggle
@@ -26,11 +27,6 @@ NixOS Environment - <name pending>
 - [ ] redesign hyprlock to follow options
 
 - [ ] AGS Setup
-    - [X] Redesign AGS Design with base16 colours and new scheme
-    - [X] Vertical Bar update
-    - [X] hyprland layerrules shadow + blur
-    - [X] Dock ( steal from hypr? )
-    - [X] Drun / Run Menu / Launcher
     - [ ] Notifications
     - [ ] Notification Log
     - [ ] Wifi / Volume / Microphone
