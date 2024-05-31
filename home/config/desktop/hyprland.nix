@@ -19,7 +19,7 @@
       "$mainMod" = "ALT";
       "$terminal" = "kitty";
       "$filebrowser" = "ranger";
-      "$launcher" = "rofi -show drun";
+      "$launcher" = "ags --toggle-window start_menu";
       "$screenshot" = "grim -g \"$(slurp -d)\" - | wl-copy -t image/png";
       "$browser" = "firefox";
       "$locker" = "hyprlock";
@@ -121,13 +121,15 @@
       };
       
       layerrule = [
-        "blur,^(rofi)$"
         "blur,^(vertical_bar)$"
+        "ignorezero,^(vertical_bar)$"
         "blur,^(dock)$"
+        "ignorezero,^(dock)$"
+        "blur,^(start_menu)$"
+        "ignorezero,^(start_menu)$"
       ];
       windowrulev2 = [
         "tile, class:^(firefox)$,title:^(Firefox)$"
-        "float, class:.*"
         "maxsize 1920 1080, class:.*"
         "nofullscreenrequest, class:firefox), title:(Picture-in-Picture)"
         "float, class:(firefox), title:(Picture-in-Picture)"
@@ -139,9 +141,13 @@
         "$mainMod, mouse:273, resizewindow"
       ];
 
+      bindr = [
+        "SUPER,SUPER_L,exec,ags --toggle-window start_menu"
+      ];
       bind = [
         # "SUPER, overview:toggle"
         "$mainMod, Q, exec, $terminal"
+        "$mainMod SHIFT, Q, exec, [float] $terminal"
         "$mainMod, C, killactive,"
         "$mainMod SHIFT, E, exit,"
         "$mainMod, E, exec, $browser"

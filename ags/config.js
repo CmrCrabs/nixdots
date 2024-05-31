@@ -1,5 +1,6 @@
-import { vertical_bar } from "./widgets/vertical_bar/vertical_bar.js";
-import { dock } from "./widgets/dock/dock.js";
+import { VerticalBar } from "./widgets/vertical_bar/vertical_bar.js"; 
+import { Dock } from "./widgets/dock/dock.js";
+import { StartMenu } from "./widgets/start_menu/start_menu.js";
 const css = `${App.configDir}/scss/my-style.css`
 const scss = `${App.configDir}/scss/style.scss`
 
@@ -17,8 +18,8 @@ App.addIcons(`${App.configDir}/assets`)
 App.config({
     style: css,
     windows: [
-        vertical_bar(0),
-        dock(0),
+        VerticalBar(0),
+        Dock(0),
+        StartMenu(0),
     ],
 })
-

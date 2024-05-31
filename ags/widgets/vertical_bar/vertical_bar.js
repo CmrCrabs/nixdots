@@ -1,4 +1,4 @@
-import { controls_button, misc_button, notification_button, power_button, wallpaper_button } from "./buttons.js"
+import { ControlsButton, MiscButton, NotificationButton, PowerButton, WallpaperButton } from "./buttons.js"
 import { Battery, Clock } from "./misc.js"
 import { Workspaces } from "./workspaces.js"
 
@@ -7,7 +7,7 @@ function Top() {
         spacing: 2,
         vertical: true,
         children: [
-            power_button(),
+            PowerButton(),
             Clock(),
             Battery(),
             //287 pixel from top
@@ -32,15 +32,15 @@ function Bottom() {
         hpack: "center",
         vpack: "end",
         children: [
-            wallpaper_button(),
-            notification_button(),
-            misc_button(),
-            controls_button(),
+            WallpaperButton(),
+            NotificationButton(),
+            MiscButton(),
+            ControlsButton(),
         ],
     })
 }
 
-export function vertical_bar(monitor = 0) {
+export function VerticalBar(monitor = 0) {
     return Widget.Window({
         name: `vertical_bar`,
         monitor,
