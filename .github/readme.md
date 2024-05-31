@@ -25,6 +25,7 @@ NixOS Environment - <name pending>
 - [ ] hyprbars setup (windowrules & hyprbars)
 - [ ] hyprspace
 - [ ] redesign hyprlock to follow options
+- [ ] import / convert refind-minimal to nix
 
 - [ ] AGS Setup
     - [ ] Notifications
@@ -63,10 +64,8 @@ NixOS Environment - <name pending>
 - [ ] Misc Nix Functionality Setup
     - [ ] Setup Nix-Secrets (agenix)
     - [ ] Dual Jack Microphone / Audio Setup
-    - [ ] Setup refind 
     - [ ] setup brightness on lower screen
     - [ ] adjust hypridle & hypr binds for lower brightness
-    - [ ] import / convert refind-minimal to nix
     - [ ] xdg-user-dirs
 
 - [ ] Final package setup
