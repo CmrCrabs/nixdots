@@ -40,7 +40,6 @@
         background-color: $surface-container-highest-t;
         transition: ease-in 0.3s;
     }
-
 }
 
 .list_icon {
@@ -63,13 +62,11 @@
 .title {
     @include common;
     font-weight: 500;
+    margin-bottom: 10px;
 }
-
 .start_widgets {
     @include widget;
     min-width: 200px;
-    min-height: 470px;
+    min-height: 600px;
     margin-left: $outer_gap;
-    padding: 1px;
-    background-color: $background-t;
 }

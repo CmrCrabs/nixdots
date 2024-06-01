@@ -62,6 +62,7 @@ in {
 
   services.xserver.libinput.enable = true;
   services.upower.enable = true;
+  services.gvfs.enable = true;
   console.keyMap = "uk";
 
   # Services

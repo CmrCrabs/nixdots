@@ -2,7 +2,7 @@
   all: unset; }
 
 tooltip {
-  background-color: rgba(62, 68, 68, 0.8);
+  background-color: rgba(60, 61, 67, 0.6);
   padding: 3px;
   color: #ffffff;
   border-radius: 10px; }
@@ -16,23 +16,23 @@ tooltip {
   padding-left: 9px;
   padding-right: 9px;
   margin-left: 10px;
-  background-color: rgba(14, 21, 20, 0.8);
-  color: #dde4e2; }
+  background-color: rgba(18, 19, 24, 0.6);
+  color: #e2e2e9; }
 
 .power_icon {
   background-color: transparent;
-  color: #282e2e;
+  color: #26282d;
   font-size: 35px; }
 
 .power_button {
   border-radius: 15px;
   padding: 5px;
   margin-top: 10px;
-  background-color: #79b1b7; }
+  background-color: #8f4c7f; }
   .power_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .power_button:hover {
-    background-color: #64c2cc;
+    background-color: #a5368a;
     transition: ease-in 0.3s; }
 
 .clock {
@@ -43,7 +43,7 @@ tooltip {
   padding-bottom: 15px;
   min-height: 50px;
   margin-top: 10px;
-  background-color: rgba(40, 46, 46, 0.8);
+  background-color: rgba(38, 40, 45, 0.6);
   font-size: 20px;
   font-weight: bold; }
   .clock * {
@@ -57,7 +57,7 @@ tooltip {
   padding-bottom: 15px;
   min-height: 60px;
   margin-top: 10px;
-  background-color: rgba(40, 46, 46, 0.8);
+  background-color: rgba(38, 40, 45, 0.6);
   font-size: 20px;
   font-weight: bold; }
   .batbox * {
@@ -70,9 +70,9 @@ tooltip {
   .batbar trough block {
     border-radius: 15px; }
     .batbar trough block.empty {
-      background-color: rgba(62, 68, 68, 0.8); }
+      background-color: rgba(60, 61, 67, 0.6); }
     .batbar trough block.full {
-      background-color: #3e6b73; }
+      background-color: #8f4d74; }
 
 .batbar-charging trough {
   margin-top: 10px;
@@ -81,9 +81,9 @@ tooltip {
   .batbar-charging trough block {
     border-radius: 15px; }
     .batbar-charging trough block.empty {
-      background-color: rgba(62, 68, 68, 0.8); }
+      background-color: rgba(60, 61, 67, 0.6); }
     .batbar-charging trough block.full {
-      background-color: #b69579; }
+      background-color: #50417a; }
 
 .battery_icon {
   margin-top: 5px;
@@ -98,7 +98,7 @@ tooltip {
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 15px;
-  background-color: rgba(40, 46, 46, 0.8);
+  background-color: rgba(38, 40, 45, 0.6);
   min-height: 150px; }
   .workspaces * {
     font-family: Jetbrains Mono, sans-serif; }
@@ -114,11 +114,11 @@ tooltip {
   .workspaces_unfocused * {
     font-family: Jetbrains Mono, sans-serif; }
   .workspaces_unfocused:hover {
-    background-color: #82bbbb;
+    background-color: #9f559a;
     transition: ease-in 0.1s; }
 
 .workspaces_focused {
-  background-color: #82bbbb;
+  background-color: #9f559a;
   margin-top: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -127,12 +127,12 @@ tooltip {
   border-radius: 15px;
   transition: ease-in 0.1s; }
   .workspaces_focused:hover {
-    background-color: #6fcece;
+    background-color: #b73daf;
     transition: ease-in 0.1s; }
 
 .wallpaper_icon {
   background-color: transparent;
-  color: #282e2e;
+  color: #26282d;
   font-size: 20px; }
 
 .wallpaper_button {
@@ -140,16 +140,16 @@ tooltip {
   padding: 5px;
   margin-top: 10px;
   padding: 12px;
-  background-color: #5a9ea6; }
+  background-color: #604b8c; }
   .wallpaper_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .wallpaper_button:hover {
-    background-color: #41b2bf;
+    background-color: #5836a2;
     transition: ease-in 0.3s; }
 
 .notification_icon {
   background-color: transparent;
-  color: #282e2e;
+  color: #26282d;
   font-size: 20px; }
 
 .notification_button {
@@ -160,16 +160,16 @@ tooltip {
   padding-bottom: 12px;
   padding-left: 13px;
   padding-right: 11px;
-  background-color: #41757a; }
+  background-color: #484885; }
   .notification_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .notification_button:hover {
-    background-color: #2e848d;
+    background-color: #34349a;
     transition: ease-in 0.3s; }
 
 .misc_icon {
   background-color: transparent;
-  color: #282e2e;
+  color: #26282d;
   font-size: 20px; }
 
 .misc_button {
@@ -180,16 +180,16 @@ tooltip {
   padding-bottom: 12px;
   padding-left: 13px;
   padding-right: 11px;
-  background-color: #dad5d0; }
+  background-color: #e4acca; }
   .misc_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .misc_button:hover {
-    background-color: #e2d5c8;
+    background-color: #efa1cb;
     transition: ease-in 0.3s; }
 
 .controls_icon {
   background-color: transparent;
-  color: #282e2e;
+  color: #26282d;
   font-size: 20px; }
 
 .controls_button {
@@ -198,11 +198,11 @@ tooltip {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 12px;
-  background-color: #b69579; }
+  background-color: #50417a; }
   .controls_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .controls_button:hover {
-    background-color: #cb9364;
+    background-color: #472e8d;
     transition: ease-in 0.3s; }
 
 .dock {
@@ -213,8 +213,8 @@ tooltip {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px;
-  background-color: rgba(14, 21, 20, 0.8);
-  color: #dde4e2; }
+  background-color: rgba(18, 19, 24, 0.6);
+  color: #e2e2e9; }
   .dock * {
     font-family: Jetbrains Mono, sans-serif; }
 
@@ -222,7 +222,7 @@ tooltip {
   -gtk-icon-theme: "WhiteSur"; }
 
 .separator {
-  background-color: rgba(62, 68, 68, 0.8);
+  background-color: rgba(60, 61, 67, 0.6);
   color: #ffffff;
   padding: 1px; }
 
@@ -240,13 +240,13 @@ tooltip {
 
 .start_menu_icon {
   background-color: transparent;
-  color: #282e2e;
+  color: #26282d;
   font-size: 35px; }
 
 .start_menu_button {
   border-radius: 15px;
   padding: 5px;
-  background-color: #82bbbb;
+  background-color: #9f559a;
   margin-left: 20px;
   padding-bottom: 3px;
   padding-left: 6px;
@@ -255,7 +255,7 @@ tooltip {
   .start_menu_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .start_menu_button:hover {
-    background-color: #6fcece;
+    background-color: #b73daf;
     transition: ease-in 0.3s; }
 
 .start_menu {
@@ -265,8 +265,8 @@ tooltip {
 
 .app_launcher {
   border-radius: 15px;
-  background-color: rgba(14, 21, 20, 0.8);
-  color: #dde4e2;
+  background-color: rgba(18, 19, 24, 0.6);
+  color: #e2e2e9;
   min-width: 315px;
   min-height: 600px; }
   .app_launcher * {
@@ -276,7 +276,7 @@ tooltip {
 
 .scrollable {
   border-radius: 15px;
-  background-color: rgba(40, 46, 46, 0.8);
+  background-color: rgba(38, 40, 45, 0.6);
   font-size: 16px;
   margin-left: 10px;
   margin-right: 10px;
@@ -295,10 +295,10 @@ tooltip {
   .app_item_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .app_item_button:hover {
-    background-color: rgba(62, 68, 68, 0.8);
+    background-color: rgba(60, 61, 67, 0.6);
     transition: ease-in 0.3s; }
   .app_item_button:focus {
-    background-color: rgba(62, 68, 68, 0.8);
+    background-color: rgba(60, 61, 67, 0.6);
     transition: ease-in 0.3s; }
 
 .list_icon {
@@ -309,7 +309,7 @@ tooltip {
   border-radius: 15px;
   font-size: 20px;
   margin: 10px;
-  background-color: rgba(40, 46, 46, 0.8);
+  background-color: rgba(38, 40, 45, 0.6);
   color: #ffffff;
   padding-left: 15px;
   padding-right: 15px;
@@ -319,16 +319,82 @@ tooltip {
     font-family: Jetbrains Mono, sans-serif; }
 
 .title {
-  font-weight: 500; }
+  font-weight: 500;
+  margin-bottom: 10px; }
   .title * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .start_widgets {
   border-radius: 15px;
   min-width: 200px;
-  min-height: 470px;
-  margin-left: 10px;
-  padding: 1px;
-  background-color: rgba(14, 21, 20, 0.8); }
+  min-height: 600px;
+  margin-left: 10px; }
   .start_widgets * {
     font-family: Jetbrains Mono, sans-serif; }
+
+.player {
+  border-radius: 15px; }
+  .player * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.real {
+  border-radius: 15px;
+  min-height: 390px;
+  background-color: rgba(18, 19, 24, 0.6);
+  margin-bottom: 10px; }
+  .real * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.media {
+  border-radius: 15px;
+  min-height: 200px;
+  background-color: rgba(18, 19, 24, 0.6); }
+  .media * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.title {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 1.0; }
+  .title * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.artist {
+  font-size: 10px;
+  color: #ffffff;
+  opacity: 1.0; }
+  .artist * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.play-pause {
+  background-color: transparent; }
+  .play-pause:hover {
+    color: #50417a;
+    transition: ease-in 0.3s; }
+
+.play-pause-icon {
+  background-color: transparent;
+  font-size: 30px; }
+
+.prev {
+  background-color: transparent;
+  margin-top: 6px; }
+  .prev:hover {
+    color: #50417a;
+    transition: ease-in 0.3s; }
+
+.prev-icon {
+  background-color: transparent;
+  font-size: 20px; }
+
+.next {
+  background-color: transparent;
+  margin-top: 6px; }
+  .next:hover {
+    color: #50417a;
+    transition: ease-in 0.3s; }
+
+.next-icon {
+  background-color: transparent;
+  font-size: 20px; }

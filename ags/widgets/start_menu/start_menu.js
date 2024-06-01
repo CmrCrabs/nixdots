@@ -27,3 +27,9 @@ export function StartMenu(monitor = 0) {
         },
     })
 }
+
+export function ControlSliders() {
+
+}
+
+

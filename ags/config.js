@@ -13,7 +13,6 @@ Utils.monitorFile(
         App.applyCss(css)
     },
 )
-
 App.addIcons(`${App.configDir}/assets`)
 App.config({
     style: css,
