@@ -11,7 +11,6 @@ NixOS Environment - <name pending>
 
 # TODO: 
 - [ ] Matugen / Wal Config Rewrite
-
     - [ ] gtk
     - [ ] nvim (prism)
     - [ ] gaps toggle
@@ -36,6 +35,9 @@ NixOS Environment - <name pending>
     - [ ] Horizontal Bar
     - [ ] rounded corners(?)
 - [ ] Rofi Wallpaper Selector
+- [ ] add overview button to dock for hyprspace
+- [ ] fix outer gap, make it a slider aswell
+- [ ] fix slider and labels
 
 - [ ] Nvim
     - [ ] Objects Viewer

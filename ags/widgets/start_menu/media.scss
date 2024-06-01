@@ -1,0 +1,68 @@
+.player {
+    @include widget;
+}
+
+.real {
+    @include widget;
+    min-height: 400px - $outer_gap;
+    background-color: $background-t;
+    margin-bottom: $outer_gap;
+}
+
+.media {
+    @include widget;
+    min-height: 200px;
+    background-color: $background-t;
+}
+
+.title {
+    @include common;
+    margin-top: 10px;
+    font-size: 14px;
+    color: $on_surface;
+    opacity: 1.0;
+}
+.artist {
+    @include common;
+    font-size: 10px;
+    color: $on_surface;
+    opacity: 1.0;
+}
+
+.play-pause {
+    background-color: transparent;
+    &:hover {
+        color: $color1;
+        transition: ease-in 0.3s;
+    }
+}
+.play-pause-icon {
+    background-color: transparent;
+    font-size: 30px;
+}
+
+.prev {
+    background-color: transparent;
+    margin-top: 6px;
+    &:hover {
+        color: $color1;
+        transition: ease-in 0.3s;
+    }
+}
+.prev-icon {
+    background-color: transparent;
+    font-size: 20px;
+}
+.next {
+    background-color: transparent;
+    margin-top: 6px;
+    &:hover {
+        color: $color1;
+        transition: ease-in 0.3s;
+    }
+}
+.next-icon {
+    background-color: transparent;
+    font-size: 20px;
+}
+
