@@ -21,10 +21,13 @@ NixOS Environment - <name pending>
 - [ ] toggle hypr border
 - [ ] Switch to Unstable
 - [ ] hyprland hdrop plugin
-- [ ] hyprbars setup (windowrules & hyprbars)
+- [ ] hyprbars setup (windowrules & hyprbars) + use ags to change buttons to round / square
 - [ ] hyprspace
 - [ ] redesign hyprlock to follow options
 - [ ] import / convert refind-minimal to nix
+
+- [ ] setup NUR
+- [ ] install spotify-adblock
 
 - [ ] AGS Setup
     - [ ] Notifications
@@ -79,6 +82,7 @@ NixOS Environment - <name pending>
         - [ ] limitless gojo domain sign
         - [ ] steal catppuccin cat footer
     - [ ] Package whole rice as a derivation
+
 
 
 # Credits:

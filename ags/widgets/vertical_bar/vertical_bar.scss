@@ -1,7 +1,7 @@
 .vertical_bar {
     border-radius: $rounding;
     font-family: Jetbrains Mono, sans-serif;
-    min-height: 1060px;
+    min-height: 1080px - 2 * $outer_gap + 6px;
     padding-left: 9px;
     padding-right: 9px;
     margin-left: $outer_gap;

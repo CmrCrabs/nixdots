@@ -6,6 +6,7 @@ import App from 'resource:///com/github/Aylur/ags/app.js';
 const pinned_apps_list = [
         'firefox',
         'kitty',
+        'spotify',
         'discord',
         'blender',
         'Neovim wrapper'
@@ -166,3 +167,4 @@ export function Dock(monitor = 0) {
         }),
     })
 }
+
