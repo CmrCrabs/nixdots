@@ -1,5 +1,6 @@
   $rounding: {{custom.rounding}}px;
   $transparency: {{custom.transparency}};
+  $gap_var: {{custom.outer_gap}}px;
 
   <* for name, value in colors *>
   ${{name}}-t: fade-out(

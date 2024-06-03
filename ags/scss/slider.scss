@@ -1,0 +1,49 @@
+@mixin slider {
+    all: unset;
+
+    trough{
+        border-radius: $rounding;
+        background-color: #00ff00;
+        min-height: 10px;
+        min-width:  100px;
+
+        highlight, progress{
+            border-radius: $rounding;
+            min-height: 10px;
+            min-width:  10px;
+        }
+    }
+
+    slider {
+        background-color: #ff0000;
+        border-radius: $rounding;
+        min-height: 10px;
+        min-width:  10px;
+        margin: -10px;
+    }
+
+    &:hover {
+        trough {
+            background-color: #ff0000;
+        }
+
+        slider {
+            background-color: #f0f000;
+        }
+    }
+
+    &:disabled {
+        highlight, progress{
+            background-color: #f000f0;
+        }
+    }
+
+    trough:focus{
+        background-color: #00f0f0;
+
+        slider {
+            background-color: #ff00ff;
+        }
+    }
+
+}

@@ -7,6 +7,16 @@ in {
     ./hardware-configuration.nix 
   ];
 
+  # NUR
+  #nixpkgs.config.packageOverrides = pkgs: {
+  #  nur = import (builtins.fetchTarball {
+  #    url = "https://github.com/nix-community/NUR/archive/master.tar.gz";
+  #    sha256 = "0a17b4m9kvcx2dhi7xb9a8m5ldbw7xcq3s2wxh18jajxz3yg3ipj";
+  #  }) {
+  #    inherit pkgs;
+  #  };
+  #};
+
   # Bootloader.
   boot.loader = {
     systemd-boot.enable = false;
@@ -131,13 +141,15 @@ in {
     inputs.hyprlock.packages.${system}.default
     inputs.hypridle.packages.${system}.default
     inputs.ags.packages.${system}.default
+
+    # NUR
+    #nur.repos.nltch.spotify-adblock
     
     # Apps
     firefox
     chromium
     blender
     discord
-    # vesktop
     wezterm
     kitty
     rofi-wayland
@@ -148,6 +160,7 @@ in {
     gnome.nautilus
     vscode
     inkscape
+    spotify
 
     
     # Term
@@ -177,6 +190,8 @@ in {
     cmake
     gnumake
     ninja
+
+    playerctl
 
     grim
     slurp

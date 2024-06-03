@@ -1,8 +1,9 @@
 @import 'bg_colors.scss';
 @import 'fg_colors.scss';
+@import './slider.scss';
 
 $gap: 10px;
-$outer_gap: 10px;
+$outer_gap: 2 * $gap_var;
 
 *:not(switch) {
     all: unset;
@@ -23,8 +24,7 @@ tooltip {
     border-radius: $rounding
 }
 
-
-@mixin widget{
+@mixin widget {
     @include common;
     border-radius: if($rounding == 0, 0, $rounding + $gap/2);
 }

@@ -70,3 +70,7 @@
     min-height: 600px;
     margin-left: $outer_gap;
 }
+
+.position-slider {
+    @include slider;
+}

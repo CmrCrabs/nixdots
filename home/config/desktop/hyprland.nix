@@ -54,8 +54,6 @@
       general = { 
         layout = "dwindle";
         resize_on_border = "yes";
-        gaps_in = 10;
-        gaps_out = 3;
         border_size = 0;
         "col.active_border" = "rgba(ffffffcc)";
         "col.inactive_border" = "rgba(ffffffcc)";
@@ -220,6 +218,10 @@
     extraConfig = ''
     decoration {
       rounding = $rounding
+    }
+    general {
+      gaps_in = $outer_gap
+      gaps_out = $outer_gap;
     }
     '';
   };

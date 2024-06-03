@@ -1,13 +1,14 @@
 { config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/aenami_citymoon.png";
-  wal-l = "${dotfilesDir}/wallpapers/aenami_citymoon.png";
+  wal =   "${dotfilesDir}/wallpapers/rocky_beach.png";
+  wal-l = "${dotfilesDir}/wallpapers/rocky_beach.png";
   style = "dark";
-  rounding = "10";
+  rounding = "5";
   scheme = "tonal-spot";
   bg-contrast = "0.5";
   fg-contrast = "0.3";
-  transparency = "0.6";
+  transparency = "0.8";
+  outer_gap = "10";
 
   dotfilesDir = "${config.home.homeDirectory}/.dotfiles";
   templateDir = "${dotfilesDir}/home/templates";
@@ -25,7 +26,7 @@ in
     inputs.nix-colors.homeManagerModules.default
 
     # Files (w/ Inputs)
-    (import ./matugen.nix { inherit wal style rounding transparency config templateDir; })
+    (import ./matugen.nix { inherit wal style rounding transparency outer_gap config templateDir; })
     (import ./config/desktop/hyprland.nix { inherit config inputs pkgs; })
     (import ./config/desktop/hyprlock.nix { inherit wal wal-l style rounding; })
     (import ./config/ags.nix { inherit config inputs pkgs rounding dotfilesDir; })
@@ -51,6 +52,19 @@ in
   home.packages = [
     (import ./theme.nix { inherit config inputs pkgs wal wal-l style rounding scheme bg-contrast fg-contrast dotfilesDir; })
   ];
+
+  # NUR
+
+  home.file."nix/config.nix".text = ''
+  {
+    nixpkgs.config.packageOverrides = pkgs: {
+      nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
+        inherit pkgs;
+      };
+    };
+  }
+
+  '';
 
   home.sessionVariables = {
     EDITOR = "nvim";

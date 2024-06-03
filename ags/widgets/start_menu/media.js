@@ -69,16 +69,16 @@ function Player(player) {
         visible: player.bind("can_go_next"),
         child: Widget.Icon({
             class_name: "next-icon",
-
             cursor: "pointer",
             icon: NEXT_ICON,
         }),
     })
 
     const positionSlider = Widget.Slider({
-        class_name: "position_slider",
+        class_name: "position-slider",
         draw_value: false,
         on_change: ({ value }) => player.position = value * player.length,
+        hexpand: true,
         visible: player.bind("length").as(l => l > 0),
         setup: self => {
             function update() {
@@ -92,7 +92,7 @@ function Player(player) {
     })
 
     const positionLabel = Widget.Label({
-        class_name: "position",
+            class_name: "position",
         hpack: "start",
         setup: self => {
             const update = (_, time) => {
@@ -131,10 +131,6 @@ function Player(player) {
         vexpand: true,
         css: player.bind("cover_path").transform(p => `
             background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${p}');
-            background-size: cover;
-            background-position: center;
-            min-height: 180px;
-            min-width: 180px;
         `),
         vertical: true,
         start_widget: Widget.CenterBox({

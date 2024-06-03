@@ -1,4 +1,4 @@
-{ config, wal, style, rounding, transparency, templateDir, ... }:
+{ config, wal, style, rounding, transparency, outer_gap, templateDir, ... }:
 {
 
   xdg.configFile."matugen/config.toml".text = ''
@@ -9,6 +9,7 @@
     [config.custom_keywords]
     rounding = "${rounding}"
     transparency = "${transparency}"
+    outer_gap = "${outer_gap}"
 
     [templates.kitty]
     input_path = "${templateDir}/kitty.conf"
