@@ -9,7 +9,6 @@ $outer_gap: 2 * $gap_var;
     all: unset;
 }
 
-
 @mixin common{
     * {
         font-family: Jetbrains Mono, sans-serif;
@@ -28,7 +27,10 @@ tooltip {
     @include common;
     border-radius: if($rounding == 0, 0, $rounding + $gap/2);
 }
-
+@mixin outer_widget {
+    @include common;
+    border-radius: if($outer_gap == 0, 0, $rounding);
+}
 @mixin button {
     @include common;
     border-radius: if($rounding == 0, 0, $rounding + $gap/2);
@@ -40,3 +42,4 @@ tooltip {
 @import '../widgets/dock/dock.scss';
 @import '../widgets/start_menu/start_menu.scss';
 @import '../widgets/start_menu/media.scss';
+@import '../widgets/start_menu/control_sliders.scss';

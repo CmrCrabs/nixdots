@@ -40,7 +40,12 @@ NixOS Environment - <name pending>
 - [ ] Rofi Wallpaper Selector
 - [ ] add overview button to dock for hyprspace
 - [ ] fix outer gap, make it a slider aswell
-- [ ] fix slider and labels
+- add hyprpspace button
+- add systray
+- add systray button
+- fix search bar broken
+- when doing theme menu, ensure to add offsets to gap value passed to hyprland to account for a minimum
+
 
 - [ ] Nvim
     - [ ] Objects Viewer

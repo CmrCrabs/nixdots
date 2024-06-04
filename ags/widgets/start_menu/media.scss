@@ -1,19 +1,10 @@
 .player {
-    @include common;
-    border-radius: if($rounding == 0, 0, $rounding + $gap/5);
+    @include outer_widget;
+    border: $gap solid $background-t;
     background-size: cover;
     background-position: center;
     min-height: 200px - $gap - $gap;
     min-width: 200px - $gap - $gap;
-    margin-top: $gap;
-    margin-bottom: $gap;
-}
-
-.real {
-    @include widget;
-    min-height: 400px - $outer_gap;
-    background-color: $background-t;
-    margin-bottom: $outer_gap;
 }
 
 .media {

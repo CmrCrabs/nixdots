@@ -1,9 +1,11 @@
 .vertical_bar {
-    border-radius: $rounding;
+    @include outer_widget;
     font-family: Jetbrains Mono, sans-serif;
-    min-height: 1080px - 2 * $outer_gap + 6px;
-    padding-left: 9px;
-    padding-right: 9px;
+    min-height: 1080px - $outer_gap - $outer_gap + 10px;
+    margin-top: $outer_gap + 6px;
+    margin-bottom: $outer_gap;
+    padding-left: $gap;
+    padding-right: $gap;
     margin-left: $outer_gap;
     background-color: $background-t;
     color: $on_background;
@@ -188,6 +190,7 @@
     font-size: 20px;
 }
 .controls_button {
+    margin-bottom: $gap;
     @include button;
     margin-top: 10px;
     margin-bottom: 10px;

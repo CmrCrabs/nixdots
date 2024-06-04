@@ -5,29 +5,29 @@
 }
 
 .app_launcher {
-    @include widget;
+    @include outer_widget;
     image {
         -gtk-icon-theme: "WhiteSur";
     }
-    background-color: $background-t;
+    background-color: transparent;
     color: $on_background;
     min-width: 315px;
     min-height: 600px;
 }
 
 .scrollable {
-    @include widget;
+    @include outer_widget;
     background-color: $surface-container-t;
+    border: $gap solid $background-t;
     font-size: 16px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: $outer_gap;
+    margin-right: $outer_gap;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
     min-width: 310px;
     min-height: 465px;
-    margin-bottom: 10px;
 }
 
 .app_item_button {
@@ -49,20 +49,21 @@
 }
 
 .search_bar {
-    @include widget;
+    @include outer_widget;
     font-size: 20px;
-    margin: 10px;
+    margin-left: $outer_gap;
+    margin-bottom: $outer_gap;
     background-color: $surface-container-t;
+    border: $gap solid $background-t;
     color: $on_surface;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: $gap;
+    padding-bottom: $gap;
 }
 
 .title {
     @include common;
     font-weight: 500;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 .start_widgets {
@@ -71,5 +72,3 @@
     min-height: 600px;
     margin-left: $outer_gap;
 }
-
-

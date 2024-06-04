@@ -6,6 +6,7 @@ function Top() {
     return Widget.Box({
         spacing: 2,
         vertical: true,
+        vexpand: true,
         children: [
             PowerButton(),
             Clock(),
@@ -19,6 +20,7 @@ function Center() {
     return Widget.Box({
         spacing: 2,
         vertical: true,
+            vexpand: true,
         children: [
             Workspaces(),
         ],
@@ -31,6 +33,7 @@ function Bottom() {
         vertical: true,
         hpack: "center",
         vpack: "end",
+            vexpand: true,
         children: [
             WallpaperButton(),
             NotificationButton(),
@@ -47,6 +50,7 @@ export function VerticalBar(monitor = 0) {
         exclusivity: "exclusive",
         anchor: ["left"],
         child: Widget.CenterBox({
+            vexpand: true,
             class_name: "vertical_bar",
             vertical: true,
             start_widget: Top(),

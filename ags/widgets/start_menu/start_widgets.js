@@ -1,4 +1,5 @@
 import { Media } from "./media.js"
+import { ControlSliders } from "./control_sliders.js"
 
 export function StartWidgets() {
     return Widget.Box({
@@ -7,16 +8,7 @@ export function StartWidgets() {
         hpack: "center",
         vpack: "center",
         children: [
-            Widget.Box({
-            class_name: "real",
-            child: Widget.Label({
-                    class_name: "title",
-                    label: "REAL",
-                    xalign: 0,
-                    vpack: "center",
-                    truncate: "end",
-                }),
-            }),
+            ControlSliders(),
             Media(),
         ],
     })
