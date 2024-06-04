@@ -27,6 +27,7 @@
     padding-bottom: 20px;
     min-width: 310px;
     min-height: 465px;
+    margin-bottom: 10px;
 }
 
 .app_item_button {
@@ -71,6 +72,4 @@
     margin-left: $outer_gap;
 }
 
-.position-slider {
-    @include slider;
-}
+

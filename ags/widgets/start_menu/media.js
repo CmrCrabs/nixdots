@@ -30,6 +30,7 @@ function Player(player) {
         hpack: "center",
         label: player.bind("track_artists").transform(a => a.join(", ").length > 20 ? a.join(", ").substring(0,20).concat("...") : a.join(", ")),
     })
+
     const playPause = Widget.Button({
         class_name: "play-pause",
         on_clicked: () => player.playPause(),
@@ -78,7 +79,6 @@ function Player(player) {
         class_name: "position-slider",
         draw_value: false,
         on_change: ({ value }) => player.position = value * player.length,
-        hexpand: true,
         visible: player.bind("length").as(l => l > 0),
         setup: self => {
             function update() {
@@ -92,7 +92,7 @@ function Player(player) {
     })
 
     const positionLabel = Widget.Label({
-            class_name: "position",
+        class_name: "position",
         hpack: "start",
         setup: self => {
             const update = (_, time) => {
@@ -147,13 +147,11 @@ function Player(player) {
             vertical: true,
             hexpand: true,
             vexpand: true,
-            start_widget: positionSlider,
-            center_widget: Widget.Box({
+            center_widget: positionSlider,
+            end_widget: Widget.CenterBox({
                 class_name: "time_box",
-                children: [
-                    positionLabel,
-                    lengthLabel,
-                ]
+                start_widget: positionLabel,
+                end_widget: lengthLabel,
             })
         }),
     })
@@ -164,6 +162,6 @@ export function Media() {
         vertical: true,
         class_name: "media",
         visible: players.as(p => p.length > 0),
-        children: players.as(p => p.map(Player)),
+        children: players.as(p => p.map(Player).slice(0,2)),
     })
 }

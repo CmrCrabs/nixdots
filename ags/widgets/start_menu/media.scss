@@ -5,6 +5,8 @@
     background-position: center;
     min-height: 200px - $gap - $gap;
     min-width: 200px - $gap - $gap;
+    margin-top: $gap;
+    margin-bottom: $gap;
 }
 
 .real {
@@ -71,8 +73,72 @@
     font-size: 20px;
 }
 
-.pos_slider {
-    padding: 3px;
-    background-color: #ff0000;
-    color: #0000ff;
+.position {
+    @include common;
+    font-size: 10px;
+    color: $on_surface;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.length {
+    @include common;
+    font-size: 10px;
+    color: $on_surface;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.position-slider {
+    all: unset;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    trough{
+        border-radius: $rounding;
+        background-color: $surface-container-t;
+        min-height: 8px;
+        min-width:  50px;
+
+        highlight, progress{
+            background-color: $color1;
+            border-radius: $rounding;
+        }
+    }
+
+    slider {
+        background-color: $color1;
+        border-radius: $rounding;
+    }
+
+    &:hover {
+        trough {
+            transition: ease-in 0.3s;
+            background-color: saturate($surface-container-t, 20);
+        }
+
+        slider {
+            transition: ease-in 0.3s;
+            background-color: saturate($color1, 35);
+        }
+
+        highlight, progress {
+            transition: ease-in 0.3s;
+            background-color: saturate($color1, 20);
+        }
+    }
+
+    &:disabled {
+        highlight, progress{
+            background-color: $error;
+        }
+    }
+
+    trough:focus{
+        background-color: $color2;
+
+        slider {
+            background-color: $color2;
+        }
+    }
 }
