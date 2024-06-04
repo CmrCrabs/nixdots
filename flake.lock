@@ -438,6 +438,21 @@
         "type": "github"
       }
     },
+    "nur": {
+      "locked": {
+        "lastModified": 1717488989,
+        "narHash": "sha256-BRbBBMEdsAQSjFTvC8bal0WloVK1iv9ndQPBV4PRiMk=",
+        "owner": "nix-community",
+        "repo": "NUR",
+        "rev": "ab534f14c307f729de6954e36837e9febdbda97e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "NUR",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "ags": "ags",
@@ -449,7 +464,8 @@
         "hyprspace": "hyprspace",
         "matugen": "matugen",
         "nix-colors": "nix-colors",
-        "nixpkgs": "nixpkgs_6"
+        "nixpkgs": "nixpkgs_6",
+        "nur": "nur"
       }
     },
     "systems": {

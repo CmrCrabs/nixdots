@@ -3,6 +3,7 @@
   
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
+    nur.url = "github:nix-community/NUR";
 
     home-manager.url = "github:nix-community/home-manager/release-23.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -29,7 +30,7 @@
     ags.url = "github:Aylur/ags";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager,nur, ... }@inputs:
   let 
     lib = nixpkgs.lib;
     system = "x86_64-linux";
@@ -39,6 +40,7 @@
       zyn-nixos = lib.nixosSystem {
         inherit system;
         modules = [ 
+          nur.nixosModules.nur
           ./nixos/configuration.nix
         ];
         specialArgs = { inherit inputs; };

@@ -143,7 +143,7 @@ in {
     inputs.ags.packages.${system}.default
 
     # NUR
-    #nur.repos.nltch.spotify-adblock
+    config.nur.repos.nltch.spotify-adblock
     
     # Apps
     firefox
