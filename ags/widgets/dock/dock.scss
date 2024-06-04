@@ -1,10 +1,10 @@
 .dock {
-    @include widget;
+    @include outer_widget;
     min-height: 50px;
     min-width: 540px + $outer_gap;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-right: $gap;
+    padding-top: $gap;
+    padding-bottom: if($outer_gap ==0, 2 * $gap, $gap);
     margin-bottom: $outer_gap - 6px;
     background-color: $background-t;
     color: $on_background;

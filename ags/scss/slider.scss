@@ -1,49 +1,44 @@
-@mixin slider {
-    all: unset;
+@mixin control_slider($primary_col: $color1, $bg_col: $surface_container-highest-t) {
+    //all: unset;
+    margin-left: 10px;
+    margin-right: 10px;
 
     trough{
         border-radius: $rounding;
-        background-color: #00ff00;
-        min-height: 10px;
-        min-width:  100px;
+        background-color: $bg_col;
+        min-width:  20px;
 
         highlight, progress{
+            background-color: $primary_col;
             border-radius: $rounding;
-            min-height: 10px;
-            min-width:  10px;
         }
     }
 
     slider {
-        background-color: #ff0000;
+        background-color: $primary_col;
         border-radius: $rounding;
-        min-height: 10px;
-        min-width:  10px;
-        margin: -10px;
     }
 
     &:hover {
         trough {
-            background-color: #ff0000;
+            transition: ease-in 0.3s;
+            background-color: saturate($bg_col, 20);
         }
 
         slider {
-            background-color: #f0f000;
+            transition: ease-in 0.3s;
+            background-color: saturate($bg_col, 35);
+        }
+
+        highlight, progress {
+            transition: ease-in 0.3s;
+            background-color: saturate($primary_col, 20);
         }
     }
 
     &:disabled {
         highlight, progress{
-            background-color: #f000f0;
+            background-color: $error;
         }
     }
-
-    trough:focus{
-        background-color: #00f0f0;
-
-        slider {
-            background-color: #ff00ff;
-        }
-    }
-
 }

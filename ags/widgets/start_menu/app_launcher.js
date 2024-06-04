@@ -46,7 +46,7 @@ const Applauncher = () => {
     }
 
     const entry = Widget.Entry({
-        hexpand: true,
+        hexpand: false,
         class_name: "search_bar",
         placeholder_text: "Search...",
 
