@@ -77,6 +77,7 @@ const Applauncher = () => {
                 hscroll: "never",
                 class_name: "scrollable",
                 child: list,
+                vexpand: true,
             }),
         ],
         setup: self => self.hook(App, (_, windowName, visible) => {

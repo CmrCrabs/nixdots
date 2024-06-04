@@ -285,7 +285,8 @@ tooltip {
   padding-top: 20px;
   padding-bottom: 20px;
   min-width: 310px;
-  min-height: 465px; }
+  min-height: 465px;
+  margin-bottom: 10px; }
   .scrollable * {
     font-family: Jetbrains Mono, sans-serif; }
 
@@ -332,40 +333,14 @@ tooltip {
   .start_widgets * {
     font-family: Jetbrains Mono, sans-serif; }
 
-.position-slider {
-  all: unset; }
-  .position-slider trough {
-    border-radius: 5px;
-    background-color: #00ff00;
-    min-height: 10px;
-    min-width: 100px; }
-    .position-slider trough highlight, .position-slider trough progress {
-      border-radius: 5px;
-      min-height: 10px;
-      min-width: 10px; }
-  .position-slider slider {
-    background-color: #ff0000;
-    border-radius: 5px;
-    min-height: 10px;
-    min-width: 10px;
-    margin: -10px; }
-  .position-slider:hover trough {
-    background-color: #ff0000; }
-  .position-slider:hover slider {
-    background-color: #f0f000; }
-  .position-slider:disabled highlight, .position-slider:disabled progress {
-    background-color: #f000f0; }
-  .position-slider trough:focus {
-    background-color: #00f0f0; }
-    .position-slider trough:focus slider {
-      background-color: #ff00ff; }
-
 .player {
   border-radius: 7px;
   background-size: cover;
   background-position: center;
   min-height: 180px;
-  min-width: 180px; }
+  min-width: 180px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
   .player * {
     font-family: Jetbrains Mono, sans-serif; }
 
@@ -431,7 +406,49 @@ tooltip {
   background-color: transparent;
   font-size: 20px; }
 
-.pos_slider {
-  padding: 3px;
-  background-color: #ff0000;
-  color: #0000ff; }
+.position {
+  font-size: 10px;
+  color: #ffffff;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+  .position * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.length {
+  font-size: 10px;
+  color: #ffffff;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+  .length * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.position-slider {
+  all: unset;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .position-slider trough {
+    border-radius: 5px;
+    background-color: rgba(35, 41, 41, 0.8);
+    min-height: 8px;
+    min-width: 50px; }
+    .position-slider trough highlight, .position-slider trough progress {
+      background-color: #b69579;
+      border-radius: 5px; }
+  .position-slider slider {
+    background-color: #b69579;
+    border-radius: 5px; }
+  .position-slider:hover trough {
+    transition: ease-in 0.3s;
+    background-color: rgba(27, 49, 49, 0.8); }
+  .position-slider:hover slider {
+    transition: ease-in 0.3s;
+    background-color: #da9255; }
+  .position-slider:hover highlight, .position-slider:hover progress {
+    transition: ease-in 0.3s;
+    background-color: #cb9364; }
+  .position-slider:disabled highlight, .position-slider:disabled progress {
+    background-color: #ffd2cc; }
+  .position-slider trough:focus {
+    background-color: #3e6b73; }
+    .position-slider trough:focus slider {
+      background-color: #3e6b73; }
