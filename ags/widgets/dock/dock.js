@@ -10,7 +10,6 @@ const pinned_apps_list = [
         'spotify',
         'discord',
         'blender',
-        'Neovim wrapper'
 ];
 
 function start_menu_button() {

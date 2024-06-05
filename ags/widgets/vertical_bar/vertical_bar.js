@@ -33,7 +33,7 @@ function Bottom() {
         vertical: true,
         hpack: "center",
         vpack: "end",
-            vexpand: true,
+        vexpand: true,
         children: [
             WallpaperButton(),
             NotificationButton(),
@@ -52,7 +52,8 @@ export function VerticalBar(monitor = 0) {
         anchor: ["left"],
         child: Widget.CenterBox({
             cursor: "default",
-            vexpand: true,
+            vpack: "center",
+            hpack: "center",
             class_name: "vertical_bar",
             vertical: true,
             start_widget: Top(),

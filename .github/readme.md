@@ -13,9 +13,7 @@ NixOS Environment - <name pending>
 - [ ] Matugen / Wal Config Rewrite
     - [ ] gtk
     - [ ] nvim (prism)
-    - [ ] gaps toggle
-    - [ ] border toggle
-    - [ ] dimming toggle
+    - [ ] hypr colors for lockscreen & hyprbars
 
 - [ ] Switch to Yazi
 - [ ] toggle hypr border
@@ -27,8 +25,6 @@ NixOS Environment - <name pending>
 - [ ] import / convert refind-minimal to nix
 
 - [ ] AGS Setup
-    - [ ] Notifications
-    - [ ] Notification Log
     - [ ] Wifi / Volume / Microphone
     - [ ] Live Environment Editor
     - [ ] Horizontal Bar
@@ -38,6 +34,7 @@ NixOS Environment - <name pending>
 - add hyprpspace button
 - when doing theme menu, ensure to add offsets to gap value passed to hyprland to account for a minimum
 - add can click off to close window
+- fix notification-log being offset upwards
 
 
 - [ ] Nvim
