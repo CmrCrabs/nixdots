@@ -153,7 +153,6 @@ in {
     wezterm
     kitty
     rofi-wayland
-    dunst
     waybar
     feh
     dolphin
