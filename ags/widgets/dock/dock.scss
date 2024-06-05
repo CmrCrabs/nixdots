@@ -38,18 +38,75 @@
 .start_menu_icon {
     background-color: transparent;
     color: $surface_container;
-    font-size: 35px;
+    font-size: 25px;
 }
 .start_menu_button {
     @include button;
     background-color: $color6;    
     margin-left: 20px;
-    padding-bottom: 3px;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-top: 7px;
+    padding: 10px;
     &:hover {
         background-color: saturate($color6, 20);
         transition: ease-in 0.3s;
+    }
+}
+
+.systray_icon {
+    background-color: transparent;
+    color: $surface_container;
+    font-size: 25px;
+}
+.systray_button {
+    @include button;
+    background-color: $color4;    
+    padding-left: 15px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    &:hover {
+        background-color: saturate($color4, 20);
+        transition: ease-in 0.3s;
+    }
+}
+
+.systray_box {
+    image {
+        -gtk-icon-theme: "WhiteSur";
+    }
+    @include outer_widget;
+    min-height: 50px;
+    background-color: $background-t;
+    padding-top: $gap;
+    padding-left: 2 * $gap;
+    padding-right: 2 * $gap + 30px;
+    margin-top: 1080px;
+    margin-right: $outer_gap;
+    padding-bottom: if($outer_gap ==0, 2 * $gap, $gap);
+    margin-bottom: $outer_gap - 6px;
+}
+.sys_app_icon {
+    margin-left: 30px;
+}
+.sys_app_button {
+    margin-left: 30px;
+}
+
+menu {
+    @include outer_widget;
+    background-color: $background-t;
+    padding: 10px;
+    margin-bottom: 5px;
+    menuitem {
+        @include widget;
+        margin-top: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        &:hover {
+            background-color: $surface-container-high-t;
+            transition: ease-in 0.3s;
+        }
     }
 }

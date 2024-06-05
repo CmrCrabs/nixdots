@@ -2,6 +2,7 @@ import Hyprland from 'resource:///com/github/Aylur/ags/service/hyprland.js';
 import Applications from 'resource:///com/github/Aylur/ags/service/applications.js';
 import Widget from 'resource:///com/github/Aylur/ags/widget.js';
 import App from 'resource:///com/github/Aylur/ags/app.js';
+const systemtray = await Service.import("systemtray")
 
 const pinned_apps_list = [
         'firefox',
@@ -14,7 +15,7 @@ const pinned_apps_list = [
 
 function start_menu_button() {
    const icon = Widget.Icon({
-        icon: "nixos-symbolic",
+        icon: "launcher-symbolic",
         cursor: "pointer",
         class_name: "start_menu_icon"
     })
@@ -27,6 +28,51 @@ function start_menu_button() {
         cursor: "pointer",
         child: icon,
         class_name: "start_menu_button",
+    })
+}
+
+function systray_button() {
+   const icon = Widget.Icon({
+        icon: "chevron-right-symbolic",
+        cursor: "pointer",
+        class_name: "systray_icon"
+    })
+
+    return Widget.Button({
+        onClicked: () => App.toggleWindow("systray"),
+        tooltip_text: "System Tray",
+        hpack: "center",
+        vpack: "center",
+        cursor: "pointer",
+        child: icon,
+        class_name: "systray_button",
+    })
+}
+
+export function SysTray(monitor = 0) {
+    const items = systemtray.bind("items")
+        .as(items => items.map(item => Widget.Button({
+        class_name: "sys_app_btn",
+        child: Widget.Icon({ icon: item.bind("icon"), class_name: "sys_app_icon", size: 30, }),
+            on_primary_click: (_, event) => {
+                App.closeWindow("systray")
+                item.activate(event).catch()
+            },
+            on_secondary_click: (_, event) => item.openMenu(event).catch(),
+            tooltip_markup: item.bind("tooltip_markup"),
+        })))
+    const itembox = Widget.Box({
+        class_name: "systray_box",
+        children: items,
+    })
+
+    return Widget.Window({
+        name: `systray`,
+        monitor,
+        anchor: ["right"],
+        exclusivity: "normal",
+        visible: false,
+        child: itembox,
     })
 }
 
@@ -141,6 +187,7 @@ export function Dock(monitor = 0) {
 
     return Widget.Window({
         name: 'dock',
+        cursor: "default",
         monitor,
         exclusivity: "exclusive",
         anchor: ["bottom"],
@@ -162,6 +209,7 @@ export function Dock(monitor = 0) {
                 children: [
                     seperator(),
                     start_menu_button(),
+                    systray_button(),
                 ],
             }),
         }),

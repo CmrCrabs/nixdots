@@ -2,9 +2,9 @@
   all: unset; }
 
 tooltip {
-  background-color: #35363c;
+  background-color: rgba(70, 59, 58, 0.8);
   padding: 3px;
-  color: #e2e2e9;
+  color: #ffffff;
   border-radius: 5px; }
   tooltip * {
     font-family: Jetbrains Mono, sans-serif; }
@@ -18,25 +18,25 @@ tooltip {
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 20px;
-  background-color: #111318;
-  color: #e2e2e9; }
+  background-color: rgba(26, 17, 17, 0.8);
+  color: #f1dedd; }
   .vertical_bar * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .power_icon {
   background-color: transparent;
-  color: #1f2126;
+  color: #302525;
   font-size: 35px; }
 
 .power_button {
   border-radius: 10px;
   padding: 5px;
   margin-top: 10px;
-  background-color: #17d78f; }
+  background-color: #db389f; }
   .power_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .power_button:hover {
-    background-color: #00ee95;
+    background-color: #f321a5;
     transition: ease-in 0.3s; }
 
 .clock {
@@ -47,7 +47,7 @@ tooltip {
   padding-bottom: 15px;
   min-height: 50px;
   margin-top: 10px;
-  background-color: #1f2126;
+  background-color: rgba(48, 37, 37, 0.8);
   font-size: 20px;
   font-weight: bold; }
   .clock * {
@@ -61,7 +61,7 @@ tooltip {
   padding-bottom: 15px;
   min-height: 60px;
   margin-top: 10px;
-  background-color: #1f2126;
+  background-color: rgba(48, 37, 37, 0.8);
   font-size: 20px;
   font-weight: bold; }
   .batbox * {
@@ -74,9 +74,9 @@ tooltip {
   .batbar trough block {
     border-radius: 10px; }
     .batbar trough block.empty {
-      background-color: #35363c; }
+      background-color: rgba(70, 59, 58, 0.8); }
     .batbar trough block.full {
-      background-color: #b461ed; }
+      background-color: #e36061; }
 
 .batbar-charging trough {
   margin-top: 10px;
@@ -85,14 +85,14 @@ tooltip {
   .batbar-charging trough block {
     border-radius: 10px; }
     .batbar-charging trough block.empty {
-      background-color: #35363c; }
+      background-color: rgba(70, 59, 58, 0.8); }
     .batbar-charging trough block.full {
-      background-color: #eb4da3; }
+      background-color: #e27960; }
 
 .battery_icon {
   margin-top: 5px;
   background-color: transparent;
-  color: #e2e2e9;
+  color: #ffffff;
   font-size: 20px; }
 
 .workspaces {
@@ -102,13 +102,13 @@ tooltip {
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 10px;
-  background-color: #1f2126;
+  background-color: rgba(48, 37, 37, 0.8);
   min-height: 150px; }
   .workspaces * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .workspaces_unfocused {
-  background-color: #e2e2e9;
+  background-color: #ffffff;
   margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -118,11 +118,11 @@ tooltip {
   .workspaces_unfocused * {
     font-family: Jetbrains Mono, sans-serif; }
   .workspaces_unfocused:hover {
-    background-color: #48c4ea;
+    background-color: #e26093;
     transition: ease-in 0.1s; }
 
 .workspaces_focused {
-  background-color: #48c4ea;
+  background-color: #e26093;
   margin-top: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -131,12 +131,12 @@ tooltip {
   border-radius: 10px;
   transition: ease-in 0.1s; }
   .workspaces_focused:hover {
-    background-color: #34cffe;
+    background-color: #f54d8f;
     transition: ease-in 0.1s; }
 
 .wallpaper_icon {
   background-color: transparent;
-  color: #1f2126;
+  color: #302525;
   font-size: 20px; }
 
 .wallpaper_button {
@@ -144,16 +144,16 @@ tooltip {
   padding: 5px;
   margin-top: 10px;
   padding: 12px;
-  background-color: #31e8da; }
+  background-color: #e79977; }
   .wallpaper_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .wallpaper_button:hover {
-    background-color: #1affed;
+    background-color: #f79367;
     transition: ease-in 0.3s; }
 
 .notification_icon {
   background-color: transparent;
-  color: #1f2126;
+  color: #302525;
   font-size: 20px; }
 
 .notification_button {
@@ -164,16 +164,16 @@ tooltip {
   padding-bottom: 12px;
   padding-left: 13px;
   padding-right: 11px;
-  background-color: #17d18b; }
+  background-color: #e1915a; }
   .notification_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .notification_button:hover {
-    background-color: #00e891;
+    background-color: #f58d47;
     transition: ease-in 0.3s; }
 
 .misc_icon {
   background-color: transparent;
-  color: #1f2126;
+  color: #302525;
   font-size: 20px; }
 
 .misc_button {
@@ -184,16 +184,16 @@ tooltip {
   padding-bottom: 12px;
   padding-left: 13px;
   padding-right: 11px;
-  background-color: #c7c4e1; }
+  background-color: #f2bbbe; }
   .misc_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .misc_button:hover {
-    background-color: #c0bbea;
+    background-color: #fab3b7;
     transition: ease-in 0.3s; }
 
 .controls_icon {
   background-color: transparent;
-  color: #1f2126;
+  color: #302525;
   font-size: 20px; }
 
 .controls_button {
@@ -203,11 +203,11 @@ tooltip {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 12px;
-  background-color: #eb4da3; }
+  background-color: #e27960; }
   .controls_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .controls_button:hover {
-    background-color: #ff39a5;
+    background-color: #f56d4d;
     transition: ease-in 0.3s; }
 
 .dock {
@@ -218,8 +218,8 @@ tooltip {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 14px;
-  background-color: #111318;
-  color: #e2e2e9; }
+  background-color: rgba(26, 17, 17, 0.8);
+  color: #f1dedd; }
   .dock * {
     font-family: Jetbrains Mono, sans-serif; }
 
@@ -227,8 +227,8 @@ tooltip {
   -gtk-icon-theme: "WhiteSur"; }
 
 .separator {
-  background-color: #35363c;
-  color: #e2e2e9;
+  background-color: rgba(70, 59, 58, 0.8);
+  color: #ffffff;
   padding: 1px; }
 
 .taskbar_icon_box {
@@ -241,38 +241,97 @@ tooltip {
   margin-right: 2px;
   margin-left: 2px;
   border-radius: 5px;
-  background-color: #e2e2e9; }
+  background-color: #ffffff; }
 
 .start_menu_icon {
   background-color: transparent;
-  color: #1f2126;
-  font-size: 35px; }
+  color: #302525;
+  font-size: 25px; }
 
 .start_menu_button {
   border-radius: 10px;
   padding: 5px;
-  background-color: #48c4ea;
+  background-color: #e26093;
   margin-left: 20px;
-  padding-bottom: 3px;
-  padding-left: 6px;
-  padding-right: 6px;
-  padding-top: 7px; }
+  padding: 10px; }
   .start_menu_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .start_menu_button:hover {
-    background-color: #34cffe;
+    background-color: #f54d8f;
     transition: ease-in 0.3s; }
 
+.systray_icon {
+  background-color: transparent;
+  color: #302525;
+  font-size: 25px; }
+
+.systray_button {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #e79977;
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 20px; }
+  .systray_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .systray_button:hover {
+    background-color: #f79367;
+    transition: ease-in 0.3s; }
+
+.systray_box {
+  border-radius: 5px;
+  min-height: 50px;
+  background-color: rgba(26, 17, 17, 0.8);
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 50px;
+  margin-top: 1080px;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 14px; }
+  .systray_box image {
+    -gtk-icon-theme: "WhiteSur"; }
+  .systray_box * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.sys_app_icon {
+  margin-left: 30px; }
+
+.sys_app_button {
+  margin-left: 30px; }
+
+menu {
+  border-radius: 5px;
+  background-color: rgba(26, 17, 17, 0.8);
+  padding: 10px;
+  margin-bottom: 5px; }
+  menu * {
+    font-family: Jetbrains Mono, sans-serif; }
+  menu menuitem {
+    border-radius: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    menu menuitem * {
+      font-family: Jetbrains Mono, sans-serif; }
+    menu menuitem:hover {
+      background-color: rgba(59, 48, 47, 0.8);
+      transition: ease-in 0.3s; }
+
 .start_menu {
-  min-width: 550px;
+  min-width: 570px;
   min-height: 600px;
   margin-bottom: 20px; }
 
 .app_launcher {
   border-radius: 5px;
   background-color: transparent;
-  color: #e2e2e9;
-  min-width: 315px;
+  color: #f1dedd;
+  min-width: 320px;
   min-height: 600px; }
   .app_launcher * {
     font-family: Jetbrains Mono, sans-serif; }
@@ -281,16 +340,14 @@ tooltip {
 
 .scrollable {
   border-radius: 5px;
-  background-color: #1f2126;
-  border: 10px solid #111318;
+  background-color: rgba(48, 37, 37, 0.8);
+  border: 10px solid rgba(26, 17, 17, 0.8);
   font-size: 16px;
-  margin-left: 20px;
-  margin-right: 20px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
-  min-width: 310px;
+  min-width: 320px;
   min-height: 465px; }
   .scrollable * {
     font-family: Jetbrains Mono, sans-serif; }
@@ -301,10 +358,10 @@ tooltip {
   .app_item_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .app_item_button:hover {
-    background-color: #35363c;
+    background-color: rgba(70, 59, 58, 0.8);
     transition: ease-in 0.3s; }
   .app_item_button:focus {
-    background-color: #35363c;
+    background-color: rgba(70, 59, 58, 0.8);
     transition: ease-in 0.3s; }
 
 .list_icon {
@@ -314,11 +371,10 @@ tooltip {
 .search_bar {
   border-radius: 5px;
   font-size: 20px;
-  margin-left: 20px;
   margin-bottom: 20px;
-  background-color: #1f2126;
-  border: 10px solid #111318;
-  color: #e2e2e9;
+  background-color: rgba(48, 37, 37, 0.8);
+  border: 10px solid rgba(26, 17, 17, 0.8);
+  color: #ffffff;
   padding-top: 10px;
   padding-bottom: 10px; }
   .search_bar * {
@@ -341,7 +397,7 @@ tooltip {
 
 .player {
   border-radius: 5px;
-  border: 10px solid #111318;
+  border: 10px solid rgba(26, 17, 17, 0.8);
   background-size: cover;
   background-position: center;
   min-height: 180px;
@@ -352,21 +408,21 @@ tooltip {
 .media {
   border-radius: 10px;
   min-height: 200px;
-  background-color: #111318; }
+  background-color: rgba(26, 17, 17, 0.8); }
   .media * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .title {
   margin-top: 10px;
   font-size: 14px;
-  color: #e2e2e9;
+  color: #ffffff;
   opacity: 1.0; }
   .title * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .artist {
   font-size: 10px;
-  color: #e2e2e9;
+  color: #ffffff;
   opacity: 1.0; }
   .artist * {
     font-family: Jetbrains Mono, sans-serif; }
@@ -374,7 +430,7 @@ tooltip {
 .play-pause {
   background-color: transparent; }
   .play-pause:hover {
-    color: #eb4da3;
+    color: #e27960;
     transition: ease-in 0.3s; }
 
 .play-pause-icon {
@@ -385,7 +441,7 @@ tooltip {
   background-color: transparent;
   margin-top: 6px; }
   .prev:hover {
-    color: #eb4da3;
+    color: #e27960;
     transition: ease-in 0.3s; }
 
 .prev-icon {
@@ -396,7 +452,7 @@ tooltip {
   background-color: transparent;
   margin-top: 6px; }
   .next:hover {
-    color: #eb4da3;
+    color: #e27960;
     transition: ease-in 0.3s; }
 
 .next-icon {
@@ -405,7 +461,7 @@ tooltip {
 
 .position {
   font-size: 10px;
-  color: #e2e2e9;
+  color: #ffffff;
   margin-left: 10px;
   margin-bottom: 10px; }
   .position * {
@@ -413,7 +469,7 @@ tooltip {
 
 .length {
   font-size: 10px;
-  color: #e2e2e9;
+  color: #ffffff;
   margin-right: 10px;
   margin-bottom: 10px; }
   .length * {
@@ -425,38 +481,38 @@ tooltip {
   margin-right: 10px; }
   .position-slider trough {
     border-radius: 5px;
-    background-color: #1f2126;
+    background-color: rgba(48, 37, 37, 0.8);
     min-height: 8px;
     min-width: 50px; }
     .position-slider trough highlight, .position-slider trough progress {
-      background-color: #eb4da3;
+      background-color: #e27960;
       border-radius: 5px; }
   .position-slider slider {
-    background-color: #eb4da3;
+    background-color: #e27960;
     border-radius: 5px; }
   .position-slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: #181e2d; }
+    background-color: rgba(57, 29, 29, 0.8); }
   .position-slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: #ff39a5; }
+    background-color: #ff6743; }
   .position-slider:hover highlight, .position-slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #ff39a5; }
+    background-color: #f56d4d; }
   .position-slider:disabled highlight, .position-slider:disabled progress {
-    background-color: #ffb4ab; }
+    background-color: #ffd2cc; }
   .position-slider trough:focus {
-    background-color: #b461ed; }
+    background-color: #e36061; }
     .position-slider trough:focus slider {
-      background-color: #b461ed; }
+      background-color: #e36061; }
 
 .control_sliders {
   border-radius: 5px;
   min-height: 380px;
   min-width: 180px;
-  background-color: #1f2126;
+  background-color: rgba(48, 37, 37, 0.8);
   margin-bottom: 20px;
-  border: 10px solid #111318; }
+  border: 10px solid rgba(26, 17, 17, 0.8); }
   .control_sliders * {
     font-family: Jetbrains Mono, sans-serif; }
 
@@ -470,29 +526,29 @@ tooltip {
   min-height: 355px; }
   .volume_slider trough {
     border-radius: 5px;
-    background-color: #35363c;
+    background-color: rgba(70, 59, 58, 0.8);
     min-width: 20px; }
     .volume_slider trough highlight, .volume_slider trough progress {
-      background-color: #eb4da3;
+      background-color: #e27960;
       border-radius: 5px; }
   .volume_slider slider {
-    background-color: #eb4da3;
+    background-color: #e27960;
     border-radius: 5px; }
   .volume_slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: #2a2e47; }
+    background-color: rgba(83, 48, 45, 0.8); }
   .volume_slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: #212850; }
+    background-color: rgba(92, 40, 36, 0.8); }
   .volume_slider:hover highlight, .volume_slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #ff39a5; }
+    background-color: #f56d4d; }
   .volume_slider:disabled highlight, .volume_slider:disabled progress {
-    background-color: #ffb4ab; }
+    background-color: #ffd2cc; }
 
 .speaker_icon {
   background-color: transparent;
-  color: #eb4da3;
+  color: #e27960;
   font-size: 25px;
   margin-top: 10px;
   margin-left: 8px; }
@@ -507,29 +563,29 @@ tooltip {
   min-height: 355px; }
   .brightness_slider trough {
     border-radius: 5px;
-    background-color: #35363c;
+    background-color: rgba(70, 59, 58, 0.8);
     min-width: 20px; }
     .brightness_slider trough highlight, .brightness_slider trough progress {
-      background-color: #c7c4e1;
+      background-color: #f2bbbe;
       border-radius: 5px; }
   .brightness_slider slider {
-    background-color: #c7c4e1;
+    background-color: #f2bbbe;
     border-radius: 5px; }
   .brightness_slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: #2a2e47; }
+    background-color: rgba(83, 48, 45, 0.8); }
   .brightness_slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: #212850; }
+    background-color: rgba(92, 40, 36, 0.8); }
   .brightness_slider:hover highlight, .brightness_slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #c0bbea; }
+    background-color: #fab3b7; }
   .brightness_slider:disabled highlight, .brightness_slider:disabled progress {
-    background-color: #ffb4ab; }
+    background-color: #ffd2cc; }
 
 .brightness_icon {
   background-color: transparent;
-  color: #c7c4e1;
+  color: #f2bbbe;
   font-size: 25px;
   margin-top: 10px;
   margin-left: 2px; }
@@ -544,29 +600,29 @@ tooltip {
   min-height: 355px; }
   .microphone_slider trough {
     border-radius: 5px;
-    background-color: #35363c;
+    background-color: rgba(70, 59, 58, 0.8);
     min-width: 20px; }
     .microphone_slider trough highlight, .microphone_slider trough progress {
-      background-color: #17d18b;
+      background-color: #e1915a;
       border-radius: 5px; }
   .microphone_slider slider {
-    background-color: #17d18b;
+    background-color: #e1915a;
     border-radius: 5px; }
   .microphone_slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: #2a2e47; }
+    background-color: rgba(83, 48, 45, 0.8); }
   .microphone_slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: #212850; }
+    background-color: rgba(92, 40, 36, 0.8); }
   .microphone_slider:hover highlight, .microphone_slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #00e891; }
+    background-color: #f58d47; }
   .microphone_slider:disabled highlight, .microphone_slider:disabled progress {
-    background-color: #ffb4ab; }
+    background-color: #ffd2cc; }
 
 .microphone_icon {
   background-color: transparent;
-  color: #17d18b;
+  color: #e1915a;
   font-size: 25px;
   margin-top: 10px;
   margin-left: 8px; }
