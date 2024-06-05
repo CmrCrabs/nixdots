@@ -1,5 +1,5 @@
 .start_menu {
-    min-width: 550px;
+    min-width: 570px;
     min-height: 600px;
     margin-bottom: $outer_gap;
 }
@@ -11,7 +11,7 @@
     }
     background-color: transparent;
     color: $on_background;
-    min-width: 315px;
+    min-width: 320px;
     min-height: 600px;
 }
 
@@ -20,13 +20,11 @@
     background-color: $surface-container-t;
     border: $gap solid $background-t;
     font-size: 16px;
-    margin-left: $outer_gap;
-    margin-right: $outer_gap;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-    min-width: 310px;
+    min-width: 320px;
     min-height: 465px;
 }
 
@@ -51,7 +49,6 @@
 .search_bar {
     @include outer_widget;
     font-size: 20px;
-    margin-left: $outer_gap;
     margin-bottom: $outer_gap;
     background-color: $surface-container-t;
     border: $gap solid $background-t;

@@ -190,6 +190,8 @@ in {
     cmake
     gnumake
     ninja
+    
+    libdbusmenu-gtk3
 
     playerctl
 

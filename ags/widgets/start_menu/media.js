@@ -10,8 +10,12 @@ const NEXT_ICON = "fast-forward-symbolic"
 /** @param {number} length */
 function lengthStr(length) {
     const min = Math.floor(length / 60)
+    const hours = Math.floor(min / 60)
     const sec = Math.floor(length % 60)
     const sec0 = sec < 10 ? "0" : ""
+    if (min > 60) {
+        return`${hours}:${min % 60}:${sec0}${sec}`
+    }
     return `${min}:${sec0}${sec}`
 }
 

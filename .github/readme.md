@@ -26,25 +26,18 @@ NixOS Environment - <name pending>
 - [ ] redesign hyprlock to follow options
 - [ ] import / convert refind-minimal to nix
 
-- [ ] setup NUR
-- [ ] install spotify-adblock
-
 - [ ] AGS Setup
     - [ ] Notifications
     - [ ] Notification Log
     - [ ] Wifi / Volume / Microphone
-    - [ ] Date / Music
     - [ ] Live Environment Editor
     - [ ] Horizontal Bar
     - [ ] rounded corners(?)
 - [ ] Rofi Wallpaper Selector
 - [ ] add overview button to dock for hyprspace
-- [ ] fix outer gap, make it a slider aswell
 - add hyprpspace button
-- add systray
-- add systray button
-- fix search bar broken
 - when doing theme menu, ensure to add offsets to gap value passed to hyprland to account for a minimum
+- add can click off to close window
 
 
 - [ ] Nvim

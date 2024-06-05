@@ -45,11 +45,13 @@ function Bottom() {
 
 export function VerticalBar(monitor = 0) {
     return Widget.Window({
+        cursor: "default",
         name: `vertical_bar`,
         monitor,
         exclusivity: "exclusive",
         anchor: ["left"],
         child: Widget.CenterBox({
+            cursor: "default",
             vexpand: true,
             class_name: "vertical_bar",
             vertical: true,
