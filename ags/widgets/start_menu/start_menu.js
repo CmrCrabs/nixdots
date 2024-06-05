@@ -5,6 +5,7 @@ const WINDOW_NAME = "start_menu"
 export function StartMenu(monitor = 0) {
     return Widget.Window({
         name: `start_menu`,
+        cursor: "default",
         monitor,
         keymode: "exclusive",
         anchor: ["bottom"],

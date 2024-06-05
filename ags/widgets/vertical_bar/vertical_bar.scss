@@ -1,8 +1,7 @@
 .vertical_bar {
     @include outer_widget;
-    font-family: Jetbrains Mono, sans-serif;
-    min-height: 1080px - $outer_gap - $outer_gap + 10px;
-    margin-top: $outer_gap + 6px;
+    min-height: 1080px - 2 * $outer_gap;
+    margin-top: $outer_gap;
     margin-bottom: $outer_gap;
     padding-left: $gap;
     padding-right: $gap;
@@ -18,7 +17,7 @@
 }
 .power_button {
     @include button;
-    margin-top: $gap;
+    margin-top: if($gap_var == 0, 2 * $gap, $gap);
     background-color: $color5;    
     &:hover {
         background-color: saturate($color5, 20);
@@ -193,7 +192,7 @@
     margin-bottom: $gap;
     @include button;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: if($gap_var == 0, 2 * $gap, $gap);
     padding: 12px;
     background-color: $color1;    
     &:hover {

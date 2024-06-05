@@ -1,0 +1,43 @@
+.notifications_tray {
+    @include outer_widget;
+    min-height: 1080px - (2 * $outer_gap);
+    min-width: 400px;
+    margin-top: $outer_gap + 93px;
+    margin-bottom: $outer_gap;
+    margin-right: $outer_gap;
+    background-color: $background-t;
+}
+
+.notifications_header {
+    @include widget;
+    padding-top: $gap;
+    padding-bottom: $gap;
+    padding-left: 2 * $gap;
+    padding-right: 2 * $gap;
+    font-size: 2em;
+}
+
+.clear_icon {
+    background-color: transparent;
+    color: $surface_container;
+    font-size: 35px;
+}
+.clear_button {
+    @include button;
+    background-color: $color3;    
+    &:hover {
+        background-color: saturate($color3, 20);
+        transition: ease-in 0.3s;
+    }
+}
+
+.placeholder {
+    font-size: 1.5em;
+    margin-bottom: 100px;
+}
+
+.notifications_list {
+}
+
+.notification_scrollable {
+}

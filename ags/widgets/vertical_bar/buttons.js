@@ -11,8 +11,8 @@ export function PowerButton() {
         tooltip_text: "Power Menu",
         vpack: "center",
         cursor: "pointer",
-        child: icon,
         class_name: "power_button",
+        child: icon,
     })
 }
 
@@ -46,7 +46,7 @@ export function NotificationButton() {
     })
 
     return Widget.Button({
-        onClicked: () => print("test"),
+        onClicked: () => App.toggleWindow("notification_tray"),
         tooltip_text: "Notification Menu",
         hpack: "center",
         vpack: "center",
