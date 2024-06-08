@@ -7,6 +7,12 @@ window.notification-popups box.notifications {
     min-height: 100px;
     margin-right: 10px;
 }
+.placeholder_icon {
+    @include widget;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: $color7;
+}
 
 .noti_icon image {
     font-size: 100px;
@@ -21,9 +27,12 @@ window.notification-popups box.notifications {
 
 .notification {
     @include outer_widget;
-    min-width: 350px;
+    min-width: 450px;
     min-height: 100px;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin: 10px;
     background-color: $surface-container-t;
 }
@@ -36,6 +45,24 @@ window.notification-popups box.notifications {
     color: $color1;
     font-size: 1.2em;
     font-weight: 500;
+}
+
+.noti_time {
+    @include common;
+    color: $color3;
+    font-size: 1.0em;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.close_icon {
+    background-color: transparent;
+    color: $color5;
+    font-size: 10px;
+    &:hover {
+        color: saturate($color5, 20);
+        transition: ease-in 0.3s;
+    }
 }
 
 .body {

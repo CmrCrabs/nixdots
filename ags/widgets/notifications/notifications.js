@@ -1,4 +1,5 @@
 const notifications = await Service.import("notifications")
+import GLib from 'gi://GLib';
 
 /** @param {import('resource:///com/github/Aylur/ags/service/notifications.js').Notification} n */
 function NotificationIcon({ app_entry, app_icon, image }) {
@@ -11,15 +12,22 @@ function NotificationIcon({ app_entry, app_icon, image }) {
         })
     }
 
-    let icon = "notification-symbolic"
-    if (Utils.lookUpIcon(app_icon))
-        icon = app_icon
-
-    if (app_entry && Utils.lookUpIcon(app_entry))
-        icon = app_entry
+    let icon = "notification-symbolic";
+    if (Utils.lookUpIcon(app_icon)) {
+        icon = app_icon;
+        return Widget.Box({
+            child: Widget.Icon(icon),
+        })
+    }
+    if (app_entry && Utils.lookUpIcon(app_entry)) {
+        icon = app_entry;
+        return Widget.Box({
+            child: Widget.Icon(icon),
+        })
+    }
 
     return Widget.Box({
-        child: Widget.Icon(icon),
+        class_name: "placeholder_icon"
     })
 }
 
@@ -45,6 +53,27 @@ export function Notification(n) {
         use_markup: true,
     })
 
+    const time = Widget.Label({
+        class_name: "noti_time",
+        justification: "right",
+        hexpand: true,
+        hpack: "end",
+        max_width_chars: 24,
+        truncate: "end",
+        wrap: true,
+        label: GLib.DateTime.new_from_unix_local(n.time).format('%H:%M'),
+        use_markup: true,
+    })
+
+    const close = Widget.Button({
+        cursor: "pointer",
+        on_clicked: () => n.close(),
+        child: Widget.Icon({
+            class_name: "close_icon",
+            icon: "close-symbolic",
+        })
+    })
+
     const body = Widget.Label({
         class_name: "body",
         hpack: "start",
@@ -52,7 +81,7 @@ export function Notification(n) {
         use_markup: true,
         xalign: 0,
         justification: "left",
-        label: n.body.length > 35 ? n.body.substring(0,32).concat("...") : n.body,
+        label: n.body.split("\n",3).map(a => a.length > 35 ? a.substring(0,33).concat("..") : a).join("\n"),
         wrap: true,
     })
 
@@ -70,30 +99,40 @@ export function Notification(n) {
         })),
     })
 
-    return Widget.EventBox(
-        {
-            attribute: { id: n.id },
-            on_primary_click: n.dismiss,
-        },
-        Widget.Box(
-            {
-                class_name: `notification ${n.urgency}`,
-                vertical: true,
-            },
-            Widget.Box([
-                icon,
-                Widget.Box(
-                    { vertical: true },
-                    title,
-                    body,
-                    actions,
-                ),
-            ]),
-        ),
-    )
+    const header = Widget.Box({
+        class_name: "noti_header",
+        children: [
+            title,
+            time,
+            close,
+        ]
+    })
+
+    return Widget.EventBox({
+        attribute: { id: n.id },
+        on_primary_click: n.dismiss,
+        child: Widget.Box({
+            class_name: `notification ${n.urgency}`,
+            vertical: true,
+            child: Widget.Box({
+                children: [
+                    icon,
+                    Widget.Box({ 
+                        vertical: true,
+                        children: [
+                            header,
+                            body,
+                            actions,
+                        ]
+                    }),
+                ]
+            }),
+        }),
+    })
 }
 
 export function NotificationPopups(monitor = 0) {
+    //notifications.dnd = true;
     const list = Widget.Box({
         vertical: true,
         children: notifications.popups.map(Notification),

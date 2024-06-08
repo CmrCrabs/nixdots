@@ -5,12 +5,12 @@
     background-position: center;
     min-height: 200px - $gap - $gap;
     min-width: 200px - $gap - $gap;
+    margin-top: $outer_gap;
 }
 
 .media {
     @include widget;
     min-height: 200px;
-    background-color: $background-t;
 }
 
 .title {

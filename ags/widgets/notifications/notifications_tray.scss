@@ -1,7 +1,7 @@
 .notifications_tray {
     @include outer_widget;
     min-height: 1080px - (2 * $outer_gap);
-    min-width: 400px;
+    min-width: 500px;
     margin-top: $outer_gap + 93px;
     margin-bottom: $outer_gap;
     margin-right: $outer_gap;
