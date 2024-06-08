@@ -35,6 +35,9 @@ NixOS Environment - <name pending>
 - when doing theme menu, ensure to add offsets to gap value passed to hyprland to account for a minimum
 - add can click off to close window
 - fix notification-log being offset upwards
+- add time to notifications
+- add close button to notifications
+- fix header
 
 
 - [ ] Nvim

@@ -657,8 +657,6 @@ window.notification-popups box.notifications {
   min-height: 100px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   margin: 10px;
   background-color: rgba(41, 40, 40, 0.7); }
   .notification * {

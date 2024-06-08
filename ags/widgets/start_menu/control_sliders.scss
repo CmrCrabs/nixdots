@@ -3,13 +3,11 @@
     min-height: 400px - $outer_gap;
     min-width: 200px - $gap - $gap;
     background-color: $surface-container-t;
-    margin-bottom: $outer_gap;
     border: $gap solid $background-t;
 }
 
 .volume {
     margin-top: $gap;
-    margin-bottom: $gap;
 }
 .volume_slider {
     @include control_slider($color1);
