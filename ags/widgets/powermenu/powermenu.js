@@ -1,6 +1,6 @@
 export function PowerMenu(monitor = 0) {
     const sleep = Widget.Button({
-        onClicked: () => App.exec("systemctl suspend"),
+        onClicked: () => Utils.exec("systemctl suspend"),
         hpack: "center",
         tooltip_text: "Sleep",
         vpack: "center",
@@ -14,7 +14,7 @@ export function PowerMenu(monitor = 0) {
     })
 
     const reboot = Widget.Button({
-        onClicked: () => App.exec("systemctl reboot"),
+        onClicked: () => Utils.exec("systemctl reboot"),
         hpack: "center",
         tooltip_text: "Reboot",
         vpack: "center",
@@ -28,7 +28,7 @@ export function PowerMenu(monitor = 0) {
     })
 
     const logout = Widget.Button({
-        onClicked: () => App.exec("pkill Hyprland"),
+        onClicked: () => Utils.exec("pkill Hyprland"),
         hpack: "center",
         tooltip_text: "Log Out",
         vpack: "center",
@@ -42,7 +42,7 @@ export function PowerMenu(monitor = 0) {
     })
 
     const shutdown = Widget.Button({
-        onClicked: () => App.exec("shutdown now"),
+        onClicked: () => Utils.exec("shutdown now"),
         hpack: "center",
         tooltip_text: "Shutdown",
         vpack: "center",
