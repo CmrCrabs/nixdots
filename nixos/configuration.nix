@@ -7,16 +7,6 @@ in {
     ./hardware-configuration.nix 
   ];
 
-  # NUR
-  #nixpkgs.config.packageOverrides = pkgs: {
-  #  nur = import (builtins.fetchTarball {
-  #    url = "https://github.com/nix-community/NUR/archive/master.tar.gz";
-  #    sha256 = "0a17b4m9kvcx2dhi7xb9a8m5ldbw7xcq3s2wxh18jajxz3yg3ipj";
-  #  }) {
-  #    inherit pkgs;
-  #  };
-  #};
-
   # Bootloader.
   boot.loader = {
     systemd-boot.enable = false;
@@ -127,6 +117,10 @@ in {
       monospace = [ "Jetbrains Mono Nerd Font" ]; 
     };
   };
+
+  programs.bash.shellAliases = {
+    h = "Hyprland";
+  };
   
   # pkgs
 
@@ -141,6 +135,7 @@ in {
     inputs.hyprlock.packages.${system}.default
     inputs.hypridle.packages.${system}.default
     inputs.ags.packages.${system}.default
+    # inputs.hyprspace.packages.${system}.default
 
     # NUR
     config.nur.repos.nltch.spotify-adblock
@@ -150,16 +145,13 @@ in {
     chromium
     blender
     discord
-    wezterm
     kitty
     rofi-wayland
     waybar
     feh
-    dolphin
-    gnome.nautilus
-    vscode
     inkscape
     spotify
+    krita
 
     
     # Term
@@ -175,6 +167,7 @@ in {
     ranger
 
     eza
+    yazi
 
     hyprpaper
     swww

@@ -22,8 +22,8 @@
 }
 
 .taskbar_icon_box {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: $gap;
+    padding-right: $gap;
 }
 
 .indicator {
@@ -38,15 +38,15 @@
 .start_menu_icon {
     background-color: transparent;
     color: $surface_container;
-    font-size: 25px;
+    font-size: 20px;
 }
 .start_menu_button {
     @include button;
-    background-color: $color6;    
-    margin-left: 20px;
-    padding: 10px;
+    background-color: $color5;    
+    margin-left: $gap;
+    padding: 13px;
     &:hover {
-        background-color: saturate($color6, 20);
+        background-color: saturate($color5, 20);
         transition: ease-in 0.3s;
     }
 }
@@ -54,16 +54,16 @@
 .systray_icon {
     background-color: transparent;
     color: $surface_container;
-    font-size: 25px;
+    font-size: 20px;
 }
 .systray_button {
     @include button;
     background-color: $color4;    
-    padding-left: 15px;
-    padding-right: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 20px;
+    padding-left: 18px;
+    padding-right: 8px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-left: $gap;
     &:hover {
         background-color: saturate($color4, 20);
         transition: ease-in 0.3s;

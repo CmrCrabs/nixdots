@@ -9,6 +9,7 @@
 
   gtk = {
     enable = true;
+    theme.name = "matugen";
     iconTheme = {
       name = "WhiteSur";
       package = pkgs.whitesur-icon-theme;
@@ -20,5 +21,5 @@
           "${dotfilesDir}/home/templates";
         recursive = true;
       };
-   };
+  };
 }

@@ -23,12 +23,3 @@
 @define-color card_bg_color {{colors.surface.default.hex}};
 
 @define-color card_fg_color {{colors.on_surface.default.hex}};
-
-@define-color sidebar_bg_color {{colors.surface_container.default.hex}};
-
-@define-color sidebar_fg_color {{colors.on_surface.default.hex}};
-
-@define-color sidebar_border_color {{colors.inverse_on_surface.default.hex}};
-
-@define-color navigation_sidebar_color {{colors.inverse_on_surface.default.hex}};
-

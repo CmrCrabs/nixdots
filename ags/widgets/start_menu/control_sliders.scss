@@ -2,12 +2,13 @@
     @include outer_widget;
     min-height: 400px - $outer_gap;
     min-width: 200px - $gap - $gap;
-    background-color: $surface-container-t;
+    background-color: $surface_container_low-t;
     border: $gap solid $background-t;
 }
 
 .volume {
     margin-top: $gap;
+    margin-bottom: $gap;
 }
 .volume_slider {
     @include control_slider($color1);

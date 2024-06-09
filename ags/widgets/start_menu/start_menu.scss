@@ -17,7 +17,7 @@
 
 .scrollable {
     @include outer_widget;
-    background-color: $surface-container-t;
+    background-color: $surface_container_low-t;
     border: $gap solid $background-t;
     font-size: 16px;
     padding-left: 10px;
@@ -50,7 +50,7 @@
     @include outer_widget;
     font-size: 20px;
     margin-bottom: $outer_gap;
-    background-color: $surface-container-t;
+    background-color: $surface_container_low-t;
     border: $gap solid $background-t;
     color: $on_surface;
     padding-top: $gap;

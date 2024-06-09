@@ -2,7 +2,20 @@ const { query } = await Service.import("applications")
 const WINDOW_NAME = "start_menu"
 
 const hidden_apps = [
-    "",
+    "neovim wrapper",
+    "hdajackretask",
+    "echomixer",
+    "ranger",
+    "hdspconf",
+    "rofi theme selector",
+    "nixos manual",
+    "envy24 control",
+    "helix",
+    "fish",
+    "hdspmixer",
+    "btop++",
+    "rofi",
+    "gparted",
 ]
 
 const AppItem = app => Widget.Button({
@@ -32,7 +45,13 @@ const AppItem = app => Widget.Button({
 })
 
 const Applauncher = () => {
-    let applications = query("").map(AppItem)
+    let applications = query("").filter(a => {
+        let hidden = false;
+        for (const app of hidden_apps) { 
+            if (app == a.name.toLowerCase()) { hidden = true; }
+        }
+        return !hidden;
+    }).map(AppItem);
 
     const list = Widget.Box({
         vertical: true,
@@ -41,7 +60,13 @@ const Applauncher = () => {
     })
 
     function repopulate() {
-        applications = query("").map(AppItem)
+        applications = query("") .filter(a => {
+            let hidden = false;
+            for (const app of hidden_apps) { 
+                if (app == a.name.toLowerCase()) { hidden = true; }
+            }
+            return !hidden;
+        }).map(AppItem)
         list.children = applications
     }
 

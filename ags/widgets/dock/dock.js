@@ -9,6 +9,7 @@ const pinned_apps_list = [
         'kitty',
         'spotify',
         'discord',
+        'krita',
         'blender',
 ];
 

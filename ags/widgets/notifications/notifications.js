@@ -64,16 +64,7 @@ export function Notification(n) {
         label: GLib.DateTime.new_from_unix_local(n.time).format('%H:%M'),
         use_markup: true,
     })
-
-    const close = Widget.Button({
-        cursor: "pointer",
-        on_clicked: () => n.close(),
-        child: Widget.Icon({
-            class_name: "close_icon",
-            icon: "close-symbolic",
-        })
-    })
-
+    
     const body = Widget.Label({
         class_name: "body",
         hpack: "start",
@@ -81,12 +72,13 @@ export function Notification(n) {
         use_markup: true,
         xalign: 0,
         justification: "left",
-        label: n.body.split("\n",3).map(a => a.length > 35 ? a.substring(0,33).concat("..") : a).join("\n"),
+        label: n.body.includes("\n") ? n.body.split("\n",2).map(a => a.length > 35 ? a.substring(0,33).concat("..") : a).join("\n") : n.body.length > 33 ? n.body.substring(0,33).concat("..\n") : n.body.concat("\n"),
         wrap: true,
     })
 
     const actions = Widget.Box({
         class_name: "actions",
+        vpack: "end",
         children: n.actions.map(({ id, label }) => Widget.Button({
             cursor: "pointer",
             class_name: "action-button",
@@ -95,7 +87,7 @@ export function Notification(n) {
                 n.dismiss()
             },
             hexpand: true,
-            child: Widget.Label(label),
+            child: Widget.Label({label: label, class_name: "action_button_text"}),
         })),
     })
 
@@ -104,13 +96,13 @@ export function Notification(n) {
         children: [
             title,
             time,
-            close,
         ]
     })
 
     return Widget.EventBox({
         attribute: { id: n.id },
         on_primary_click: n.dismiss,
+        on_secondary_click: n.close,
         child: Widget.Box({
             class_name: `notification ${n.urgency}`,
             vertical: true,
