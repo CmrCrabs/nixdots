@@ -1,9 +1,9 @@
 { config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/mountain_macos.png";
-  wal-l = "${dotfilesDir}/wallpapers/mountain_macos.png";
+  wal =   "${dotfilesDir}/wallpapers/aerial_waves.png";
+  wal-l = "${dotfilesDir}/wallpapers/aerial_waves.png";
   style = "dark";
-  rounding = "10";
+  rounding = "5";
   scheme = "fidelity";
   bg-contrast = "0.4";
   fg-contrast = "0.4";
