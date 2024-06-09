@@ -1,16 +1,16 @@
 { config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/fern_close.png";
-  wal-l = "${dotfilesDir}/wallpapers/fern_close.png";
+  wal =   "${dotfilesDir}/wallpapers/mountain_macos.png";
+  wal-l = "${dotfilesDir}/wallpapers/mountain_macos.png";
   style = "dark";
   rounding = "10";
   scheme = "fidelity";
-  bg-contrast = "0.5";
-  fg-contrast = "0.3";
-  transparency = "0.7";
-  outer_gap = "10";
+  bg-contrast = "0.4";
+  fg-contrast = "0.4";
+  transparency = "1.0";
+  outer_gap = "5";
 
-  dotfilesDir = "${config.home.homeDirectory}/.dotfiles";
+  dotfilesDir = "${config.home.homeDirectory}/limitless";
   templateDir = "${dotfilesDir}/home/templates";
 in
 {
@@ -77,5 +77,7 @@ in
     XCURSOR_SIZE = "24";
     CMAKE_MAKE_PROGRAM = "${pkgs.cmake}";
     TEST = "real";
+    ADW_DISABLE_PORTAL=1;
+    # KRITA_NO_STYLE_OVERRIDE=1;
   };
 }

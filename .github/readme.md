@@ -1,17 +1,17 @@
-NixOS Environment - <name pending>
-
+# NixOS Flake
 > [!Caution]
 >
 > under construction
 > My old dots: https://github.com/cmrcrabs/dotfiles
 
-# Temporary Preview:
+## Temporary Preview:
 
-![Preview](./temporary_preview.png)
+![Preview](./temp_prev1.png)
+![Preview](./temp_prev2.png)
+![Preview](./temp_prev3.png)
 
-# TODO: 
+## TODO: 
 - [ ] Matugen / Wal Config Rewrite
-    - [ ] gtk
     - [ ] nvim (prism)
     - [ ] hypr colors for lockscreen & hyprbars
 
@@ -35,10 +35,10 @@ NixOS Environment - <name pending>
 - when doing theme menu, ensure to add offsets to gap value passed to hyprland to account for a minimum
 - add can click off to close window
 - fix notification-log being offset upwards
-- add time to notifications
-- add close button to notifications
 - fix header
-
+- add dock toggle
+- fix notification button height 
+- write script to auto go between macos walls https://www.idownloadblog.com/2020/06/22/macos-big-sur-wallpapers/
 
 - [ ] Nvim
     - [ ] Objects Viewer
@@ -83,7 +83,7 @@ NixOS Environment - <name pending>
 
 
 
-# Credits:
+## Credits:
 for their great configs / learning resources / software
 
 - LibrePhoenix

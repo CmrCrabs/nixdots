@@ -6,7 +6,7 @@ export function PowerButton() {
     })
 
     return Widget.Button({
-        onClicked: () => print("test"),
+        onClicked: () => App.toggleWindow("powermenu"),
         hpack: "center",
         tooltip_text: "Power Menu",
         vpack: "center",

@@ -13,14 +13,15 @@
 .power_icon {
     background-color: transparent;
     color: $surface_container;
-    font-size: 35px;
+    font-size: 30px;
 }
 .power_button {
     @include button;
     margin-top: if($gap_var == 0, 2 * $gap, $gap);
-    background-color: $color5;    
+    padding: 7px;
+    background-color: $color2;    
     &:hover {
-        background-color: saturate($color5, 20);
+        background-color: saturate($color2, 20);
         transition: ease-in 0.3s;
     }
 }
@@ -62,7 +63,7 @@
         background-color: $surface_container_highest-t;
       }
       &.full {
-        background-color: $color2;
+        background-color: $color6;
       }
     }
   }
@@ -78,7 +79,7 @@
         background-color: $surface_container_highest-t;
       }
       &.full {
-        background-color: $color1;
+        background-color: saturate($color6, 50);
       }
     }
   }
@@ -176,9 +177,9 @@
     padding-bottom: 12px;
     padding-left: 13px;
     padding-right: 11px;
-    background-color: $color7;    
+    background-color: $color2;    
     &:hover {
-        background-color: saturate($color7, 20);
+        background-color: saturate($color2, 20);
         transition: ease-in 0.3s;
     }
 }

@@ -130,6 +130,8 @@
         "ignorezero,^(start_menu)$"
         "blur,^(notification_tray)$"
         "ignorezero,^(notification_tray)$"
+        "blur,^(powermenu)$"
+        "ignorezero,^(powermenu)$"
       ];
       windowrulev2 = [
         "tile, class:^(firefox)$,title:^(Firefox)$"

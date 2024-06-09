@@ -1,11 +1,11 @@
 window.notification-popups box.notifications {
-    padding: 10px;
+    padding: $gap;
 }
 
 .noti_icon {
     min-width: 100px;
     min-height: 100px;
-    margin-right: 10px;
+    margin-right: $gap;
 }
 .placeholder_icon {
     @include widget;
@@ -27,13 +27,11 @@ window.notification-popups box.notifications {
 
 .notification {
     @include outer_widget;
-    min-width: 450px;
+    min-width: 400px;
     min-height: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 10px;
+    padding: $gap;
+    margin: $gap;
+    margin-bottom: 0;
     background-color: $surface-container-t;
 }
 .notification.critical {
@@ -49,32 +47,20 @@ window.notification-popups box.notifications {
 
 .noti_time {
     @include common;
-    color: $color3;
+    color: $color8;
     font-size: 1.0em;
     font-weight: 300;
-    margin-right: 10px;
-}
-
-.close_icon {
-    background-color: transparent;
-    color: $color5;
-    font-size: 10px;
-    &:hover {
-        color: saturate($color5, 20);
-        transition: ease-in 0.3s;
-    }
+    margin-bottom: 1px;
 }
 
 .body {
     @include common;
-    margin-top: 5px;
     margin-bottom: 10px;
     color: $on_surface;
     font-size: 0.8em;
 }
 
 .actions {
-    margin-top: 10px;
 }
 
 .action-button {
@@ -82,9 +68,12 @@ window.notification-popups box.notifications {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: $gap;
     background-color: $color5;
-    margin-left: 20px;
+    margin-left: $gap;
+}
+.action_button_text {
+    font-weight: 500;
 }
 
 .action-button:first-child {
