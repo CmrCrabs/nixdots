@@ -15,7 +15,7 @@ let
 in
 {
   programs.home-manager.enable = true;
-  home.stateVersion = "23.11";
+  home.stateVersion = "24.05";
 
   home.username = "zyn";
   home.homeDirectory = "/home/zyn";

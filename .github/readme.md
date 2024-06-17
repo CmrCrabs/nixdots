@@ -44,6 +44,7 @@
 - include color preview gradient in ags somewhere
 - fix mesa version mismatch
 - gradience setup cli to do gtk theme
+- make surface_container_lowest the shadow color
 
 - [ ] Nvim
     - [ ] Objects Viewer

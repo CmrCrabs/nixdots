@@ -60,7 +60,7 @@ in {
     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 
-  services.xserver.libinput.enable = true;
+  services.libinput.enable = true;
   services.upower.enable = true;
   services.gvfs.enable = true;
   console.keyMap = "uk";
@@ -135,7 +135,6 @@ in {
     inputs.hyprlock.packages.${system}.default
     inputs.hypridle.packages.${system}.default
     inputs.ags.packages.${system}.default
-    # inputs.hyprspace.packages.${system}.default
 
     # NUR
     config.nur.repos.nltch.spotify-adblock
@@ -196,7 +195,6 @@ in {
 
     yarn
     nodePackages.npm
-    nodejs_21
     
     dotnet-sdk_7
     dotnet-sdk
@@ -229,6 +227,7 @@ in {
     alsa-oss
     alsa-lib
 
+    hyprcursor
 
     # WGPU
     vulkan-loader
@@ -242,5 +241,5 @@ in {
   ];
 
   # dont touch
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.05";
 }

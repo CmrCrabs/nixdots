@@ -6,7 +6,7 @@
     xwayland.enable = true;
     
     plugins = [
-      # inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
+      # inputs.hyprland-plugins.packages."${pkgs.system}".hyprbars
       # inputs.hyprspace.packages.${pkgs.system}.Hyprspace
     ];
 
@@ -83,9 +83,9 @@
     
       decoration = {
         drop_shadow = "yes";
-        shadow_range = "30";
-        shadow_render_power = "9";
-        shadow_offset = "10, 0";
+        shadow_range = "10";
+        shadow_render_power = "3";
+        shadow_offset = "0, 3";
        "col.shadow" = "rgba(000000cc)";
         dim_inactive = "yes";
         dim_strength = "0.15";
@@ -110,14 +110,27 @@
           "myBezier, 0.05, 0.9, 0.1, 1.05"
           "menu_decel, 0.1, 1, 0, 1"
           "menu_accel, 0.38, 0.04, 1, 0.07"
+          "md3_decel, 0.05, 0.7, 0.1, 1"
+          "md3_accel, 0.3, 0, 0.8, 0.15"
         ];
         animation = [
-          "windows, 1, 1.5, myBezier"
-          "windowsOut, 1, 2, default, popin 80%"
-          "border, 1, 2, default"
-          "borderangle, 1, 6, default"
-          "fade, 1, 2, default"
-          "workspaces, 1, 0.5, default"
+          # "windows, 1, 1.5, myBezier"
+          # "windowsOut, 1, 2, default, popin 80%"
+          # "border, 1, 2, default"
+          # "borderangle, 1, 6, default"
+          # "fade, 1, 2, default"
+
+          "windows, 1, 3, md3_decel, popin 60%"
+          "windowsIn, 1, 3, md3_decel, popin 60%"
+          "windowsOut, 1, 3, md3_accel, popin 60%"
+          "border, 1, 10, default"
+          "fade, 1, 3, md3_decel"
+          "layersIn, 1, 3, default, popin 80%"
+          "layersIn, 1, 3, menu_decel, slide"
+          "layersOut, 1, 1.6, menu_accel"
+          "fadeLayersIn, 1, 2, menu_decel"
+          "fadeLayersOut, 1, 4.5, menu_accel"
+          "workspaces, 1, 3, menu_decel, slide"
         ];
       };
       
@@ -130,13 +143,15 @@
         "ignorezero,^(start_menu)$"
         "blur,^(notification_tray)$"
         "ignorezero,^(notification_tray)$"
+        "animation slide left,^(notification_tray)$"
+        "animation slide right,^(systray)$"
         "blur,^(powermenu)$"
         "ignorezero,^(powermenu)$"
       ];
       windowrulev2 = [
         "tile, class:^(firefox)$,title:^(Firefox)$"
         "maxsize 1920 1080, class:.*"
-        "nofullscreenrequest, class:firefox), title:(Picture-in-Picture)"
+        # "nofullscreenrequest, class:firefox), title:(Picture-in-Picture)"
         "float, class:(firefox), title:(Picture-in-Picture)"
         "pin, class:(firefox), title:(Picture-in-Picture)" 
       ];
@@ -150,7 +165,7 @@
         "SUPER,SUPER_L,exec,ags --toggle-window start_menu"
       ];
       bind = [
-        # "SUPER, overview:toggle"
+        # "$mainMod SHIFT, Q, overview, toggle"
         "$mainMod, Q, exec, $terminal"
         "$mainMod, E, exec, [float] $terminal"
         "$mainMod, C, killactive,"
