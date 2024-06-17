@@ -39,6 +39,11 @@
 - add dock toggle
 - fix notification button height 
 - write script to auto go between macos walls https://www.idownloadblog.com/2020/06/22/macos-big-sur-wallpapers/
+- fix noti button no working
+- fix alt k
+- include color preview gradient in ags somewhere
+- fix mesa version mismatch
+- gradience setup cli to do gtk theme
 
 - [ ] Nvim
     - [ ] Objects Viewer

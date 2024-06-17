@@ -130,7 +130,7 @@ in {
   
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
-    # flake imports
+    # Flake imports
     inputs.matugen.packages.${system}.default
     inputs.hyprlock.packages.${system}.default
     inputs.hypridle.packages.${system}.default
@@ -152,6 +152,7 @@ in {
     inkscape
     spotify
     krita
+    remnote
 
     
     # Term
@@ -225,9 +226,19 @@ in {
     wallust
     python311Packages.pip
 
-
     alsa-oss
     alsa-lib
+
+
+    # WGPU
+    vulkan-loader
+    wayland
+    libxkbcommon
+    xorg.libX11
+    xorg.libXcursor
+    xorg.libXi
+    xorg.libXrandr
+    spirv-tools
   ];
 
   # dont touch

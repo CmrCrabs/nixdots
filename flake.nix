@@ -11,14 +11,20 @@
     nix-colors.url = "github:misterio77/nix-colors";
     matugen.url = "github:InioX/matugen";
 
-    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1&rev=e93fbd7c4f991cb8ef03e433ccc4d43587923e15";
+
+    hyprcursor = {
+      url = "github:hyprwm/hyprcursor";
+    };
+    hyprland = {
+      type = "git";
+      url = "https://github.com/hyprwm/Hyprland";
+      submodules = true;
+    };
     hyprlock = {
       url = "github:hyprwm/hyprlock";
-      inputs.hyprland.follows = "hyprland";
     };
     hypridle = {
       url = "github:hyprwm/hypridle";
-      inputs.hyprland.follows = "hyprland";
     };
     hyprspace = {
       url = "github:KZDKM/Hyprspace";

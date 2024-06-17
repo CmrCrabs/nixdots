@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, outer_gap, ... }:
 {
   programs.kitty = {
     enable = true;
@@ -10,7 +10,7 @@
       font_size = 12;
       disable_ligatures = "cursor";
       confirm_os_window_close = 0;
-      window_padding_width = 18;
+      window_padding_width = ${outer_gap} + 10;
       adjust_line_height = 0;
       adjust_column_width = 0;
       box_drawing_scale = "0.01, 0.8, 1.5, 2";
