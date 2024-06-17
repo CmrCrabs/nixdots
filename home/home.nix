@@ -1,14 +1,14 @@
 { config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/aerial_waves.png";
-  wal-l = "${dotfilesDir}/wallpapers/aerial_waves.png";
+  wal =   "${dotfilesDir}/wallpapers/yosemite.png";
+  wal-l = "${dotfilesDir}/wallpapers/yosemite.png";
   style = "dark";
   rounding = "5";
   scheme = "fidelity";
   bg-contrast = "0.4";
-  fg-contrast = "0.4";
-  transparency = "1.0";
-  outer_gap = "5";
+  fg-contrast = "0.7";
+  transparency = "0.8";
+  outer_gap = "10";
 
   dotfilesDir = "${config.home.homeDirectory}/limitless";
   templateDir = "${dotfilesDir}/home/templates";
@@ -32,7 +32,7 @@ in
     (import ./config/ags.nix { inherit config inputs pkgs rounding dotfilesDir; })
     (import ./config/nvim.nix { inherit config lib pkgs dotfilesDir; })
     (import ./config/cli/fish.nix { inherit style pkgs; })
-    (import ./config/apps/kitty.nix { inherit config; })
+    (import ./config/apps/kitty.nix { inherit config outer_gap; })
 
     # Files 
     ./config/desktop/hypridle.nix
@@ -40,6 +40,7 @@ in
     ./config/cli/helix.nix
     ./config/cli/ranger.nix
     ./config/cli/starship.nix
+    ./config/cli/fastfetch.nix
 
     # Wal Templates
     ./templates/kitty_wal_template.nix
@@ -50,7 +51,8 @@ in
   systemd.user.startServices ="sd-switch";
 
   home.packages = [
-    (import ./theme.nix { inherit config inputs pkgs wal wal-l style rounding scheme bg-contrast fg-contrast dotfilesDir; })
+    (import ../scripts/theme.nix { inherit config inputs pkgs wal wal-l style rounding scheme bg-contrast fg-contrast dotfilesDir; })
+    (import ../scripts/color_script.nix { inherit pkgs; })
   ];
 
   # NUR
