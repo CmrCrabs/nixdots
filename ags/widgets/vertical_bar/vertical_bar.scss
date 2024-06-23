@@ -79,7 +79,7 @@
         background-color: $surface_container_highest-t;
       }
       &.full {
-        background-color: saturate($color6, 50);
+        background-color: saturate($color6, 20);
       }
     }
   }

@@ -31,20 +31,27 @@
     - [ ] rounded corners(?)
 - [ ] Rofi Wallpaper Selector
 - [ ] add overview button to dock for hyprspace
-- add hyprpspace button
-- when doing theme menu, ensure to add offsets to gap value passed to hyprland to account for a minimum
-- add can click off to close window
-- fix notification-log being offset upwards
-- fix header
-- add dock toggle
-- fix notification button height 
-- write script to auto go between macos walls https://www.idownloadblog.com/2020/06/22/macos-big-sur-wallpapers/
-- fix noti button no working
-- fix alt k
-- include color preview gradient in ags somewhere
-- fix mesa version mismatch
-- gradience setup cli to do gtk theme
-- make surface_container_lowest the shadow color
+
+- [ ] add hyprpspace button
+- [ ] when doing theme menu, ensure to add offsets to gap value passed to hyprland to account for a minimum
+- [ ] add can click off to close window
+- [ ] fix notification-log being offset upwards
+- [ ] fix header
+- [ ] add dock toggle
+- [ ] fix notification button height 
+- [ ] write script to auto go between macos walls https://www.idownloadblog.com/2020/06/22/macos-big-sur-wallpapers/
+- [ ] fix noti button no working
+- [ ] fix alt k
+- [ ] include color preview gradient in ags somewhere
+- [ ] fix mesa version mismatch
+- [ ] gradience setup cli to do gtk theme
+- [ ] make surface_container_lowest the shadow color
+- [ ] switch to hyprcursor
+- [ ] ags outer gaps, inner gaps, widget gaps etc
+- [ ] make hyprland gaps seperate option to outer gap
+- [ ] remove extra padding when 0 outer gap
+- [ ] pywalfox thunderbird / find email client
+- [ ] thunderbird lightning for google calendar integration
 
 - [ ] Nvim
     - [ ] Objects Viewer
@@ -52,10 +59,8 @@
     - [ ] better statusline
     - [ ] neorg(?)
     - [ ] include startup time on dash
-    - [ ] matugen harmonise nvim
+    - [ ] prism
     - [ ] have rounding / flat respect matugen
-
-- [ ] tmux
 
 - [ ] firefox   
     - [ ] declarative firefox

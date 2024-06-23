@@ -1,6 +1,7 @@
 .player {
     @include outer_widget;
     border: $gap solid $background-t;
+    background-color: $surface_container-t;
     background-size: cover;
     background-position: center;
     min-height: 200px - $gap - $gap;

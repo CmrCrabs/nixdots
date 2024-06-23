@@ -145,7 +145,7 @@ export function NotificationPopups(monitor = 0) {
 
     return Widget.Window({
         monitor,
-        name: `notifications${monitor}`,
+        name: `notifications`,
         class_name: "notification-popups",
         anchor: ["top"],
         child: Widget.Box({
