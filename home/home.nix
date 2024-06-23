@@ -1,13 +1,13 @@
 { config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/yosemite.png";
-  wal-l = "${dotfilesDir}/wallpapers/yosemite.png";
+  wal =   "${dotfilesDir}/wallpapers/rocky_beach.png";
+  wal-l = "${dotfilesDir}/wallpapers/rocky_beach.png";
   style = "dark";
   rounding = "5";
   scheme = "fidelity";
   bg-contrast = "0.4";
-  fg-contrast = "0.7";
-  transparency = "0.8";
+  fg-contrast = "0.4";
+  transparency = "0.7";
   outer_gap = "10";
 
   dotfilesDir = "${config.home.homeDirectory}/limitless";
@@ -40,7 +40,7 @@ in
     ./config/cli/helix.nix
     ./config/cli/ranger.nix
     ./config/cli/starship.nix
-    ./config/cli/fastfetch.nix
+    # ./config/cli/fastfetch.nix
 
     # Wal Templates
     ./templates/kitty_wal_template.nix

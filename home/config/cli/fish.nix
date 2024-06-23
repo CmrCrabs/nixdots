@@ -17,6 +17,7 @@ let
     # "nvim" = "steam-run nvim";
     "cpng" = "mogrify -format png *.jpg && rm *.jpg";
     "shell" = "nix-shell . --command \"fish\"";
+    "rst" = "exit && cd && clear && colors";
   }; 
   aliases = {
     "ls" = "eza --icons --no-permissions --no-user --no-time --group-directories-first";

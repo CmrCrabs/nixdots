@@ -38,12 +38,12 @@
 
       monitor = [
         "eDP-1, 1920x1080@60, 0x0, 1"
-        "DP-3, 1920x515@60, 0x1080, 1"
-        "DP-3,addreserved,5, 5, 5, 5"
+        "DP-1, 1920x515@60, 0x1080, 1"
+        "DP-1,addreserved,5, 5, 5, 5"
       ];
       workspace = [
         "eDP-1, 1"
-        "DP-3, 10"        
+        "DP-1, 10"        
         # "1, persistent:true"
         # "2, persistent:true"
         # "3, persistent:true"
@@ -143,7 +143,10 @@
         "ignorezero,^(start_menu)$"
         "blur,^(notification_tray)$"
         "ignorezero,^(notification_tray)$"
-        "animation slide left,^(notification_tray)$"
+        "animation slide right,^(notification_tray)$"
+        "blur,^(notifications)$"
+        "ignorezero,^(notifications)$"
+        "animation slide top,^(notifications)$"
         "animation slide right,^(systray)$"
         "blur,^(powermenu)$"
         "ignorezero,^(powermenu)$"
