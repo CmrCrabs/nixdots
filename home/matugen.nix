@@ -26,12 +26,12 @@
     dunst = false
 
     [templates.GTK4]
-    input_path = "${templateDir}/gtk.css"
-    output_path = "${config.home.homeDirectory}/.config/gtk-4.0/gtk.css"
+    input_path = "${templateDir}/gtk-colors.css"
+    output_path = "${config.home.homeDirectory}/.config/gtk-4.0/colors.css"
 
     [templates.GTK3]
-    input_path = "${templateDir}/gtk.css"
-    output_path = "${config.home.homeDirectory}/.config/gtk-3.0/gtk.css"
+    input_path = "${templateDir}/gtk-colors.css"
+    output_path = "${config.home.homeDirectory}/.config/gtk-3.0/colors.css"
 
     [templates.ags]
     input_path = "${templateDir}/bg_colors.scss"

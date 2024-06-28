@@ -2,7 +2,7 @@
   all: unset; }
 
 tooltip {
-  background-color: rgba(59, 60, 60, 0.7);
+  background-color: #3e4041;
   padding: 3px;
   color: #ffffff;
   border-radius: 5px; }
@@ -17,14 +17,14 @@ tooltip {
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 17px;
-  background-color: rgba(18, 20, 19, 0.7);
-  color: #e3e2e1; }
+  background-color: #111415;
+  color: #e2e2e4; }
   .vertical_bar * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .power_icon {
   background-color: transparent;
-  color: #252626;
+  color: #282a2b;
   font-size: 30px; }
 
 .power_button {
@@ -32,11 +32,11 @@ tooltip {
   padding: 5px;
   margin-top: 10px;
   padding: 7px;
-  background-color: #35717c; }
+  background-color: #986fdb; }
   .power_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .power_button:hover {
-    background-color: #237d8e;
+    background-color: #945ded;
     transition: ease-in 0.3s; }
 
 .clock {
@@ -47,7 +47,7 @@ tooltip {
   padding-bottom: 15px;
   min-height: 50px;
   margin-top: 10px;
-  background-color: rgba(37, 38, 38, 0.7);
+  background-color: #282a2b;
   font-size: 20px;
   font-weight: bold; }
   .clock * {
@@ -61,7 +61,7 @@ tooltip {
   padding-bottom: 15px;
   min-height: 60px;
   margin-top: 10px;
-  background-color: rgba(37, 38, 38, 0.7);
+  background-color: #282a2b;
   font-size: 20px;
   font-weight: bold; }
   .batbox * {
@@ -74,9 +74,9 @@ tooltip {
   .batbar trough block {
     border-radius: 10px; }
     .batbar trough block.empty {
-      background-color: rgba(59, 60, 60, 0.7); }
+      background-color: #3e4041; }
     .batbar trough block.full {
-      background-color: #78c5c5; }
+      background-color: #a9d7e9; }
 
 .batbar-charging trough {
   margin-top: 10px;
@@ -85,9 +85,9 @@ tooltip {
   .batbar-charging trough block {
     border-radius: 10px; }
     .batbar-charging trough block.empty {
-      background-color: rgba(59, 60, 60, 0.7); }
+      background-color: #3e4041; }
     .batbar-charging trough block.full {
-      background-color: #65d8d8; }
+      background-color: #9edcf4; }
 
 .battery_icon {
   margin-top: 5px;
@@ -102,7 +102,7 @@ tooltip {
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 10px;
-  background-color: rgba(37, 38, 38, 0.7);
+  background-color: #282a2b;
   min-height: 150px; }
   .workspaces * {
     font-family: Jetbrains Mono, sans-serif; }
@@ -118,11 +118,11 @@ tooltip {
   .workspaces_unfocused * {
     font-family: Jetbrains Mono, sans-serif; }
   .workspaces_unfocused:hover {
-    background-color: #78c5c5;
+    background-color: #a9d7e9;
     transition: ease-in 0.1s; }
 
 .workspaces_focused {
-  background-color: #78c5c5;
+  background-color: #a9d7e9;
   margin-top: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -131,12 +131,12 @@ tooltip {
   border-radius: 10px;
   transition: ease-in 0.1s; }
   .workspaces_focused:hover {
-    background-color: #65d8d8;
+    background-color: #9edcf4;
     transition: ease-in 0.1s; }
 
 .wallpaper_icon {
   background-color: transparent;
-  color: #252626;
+  color: #282a2b;
   font-size: 20px; }
 
 .wallpaper_button {
@@ -144,16 +144,16 @@ tooltip {
   padding: 5px;
   margin-top: 10px;
   padding: 12px;
-  background-color: #4da8b3; }
+  background-color: #96cde5; }
   .wallpaper_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .wallpaper_button:hover {
-    background-color: #34bccc;
+    background-color: #89d2f2;
     transition: ease-in 0.3s; }
 
 .notification_icon {
   background-color: transparent;
-  color: #252626;
+  color: #282a2b;
   font-size: 20px; }
 
 .notification_button {
@@ -164,16 +164,16 @@ tooltip {
   padding-bottom: 12px;
   padding-left: 13px;
   padding-right: 11px;
-  background-color: #387d83; }
+  background-color: #b38be2; }
   .notification_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .notification_button:hover {
-    background-color: #258d96;
+    background-color: #b27df1;
     transition: ease-in 0.3s; }
 
 .misc_icon {
   background-color: transparent;
-  color: #252626;
+  color: #282a2b;
   font-size: 20px; }
 
 .misc_button {
@@ -184,16 +184,16 @@ tooltip {
   padding-bottom: 12px;
   padding-left: 13px;
   padding-right: 11px;
-  background-color: #35717c; }
+  background-color: #986fdb; }
   .misc_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .misc_button:hover {
-    background-color: #237d8e;
+    background-color: #945ded;
     transition: ease-in 0.3s; }
 
 .controls_icon {
   background-color: transparent;
-  color: #252626;
+  color: #282a2b;
   font-size: 20px; }
 
 .controls_button {
@@ -203,11 +203,11 @@ tooltip {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 12px;
-  background-color: #c1946e; }
+  background-color: #6583d8; }
   .controls_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .controls_button:hover {
-    background-color: #d69259;
+    background-color: #527aeb;
     transition: ease-in 0.3s; }
 
 .dock {
@@ -218,8 +218,8 @@ tooltip {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 17px;
-  background-color: rgba(18, 20, 19, 0.7);
-  color: #e3e2e1; }
+  background-color: #111415;
+  color: #e2e2e4; }
   .dock * {
     font-family: Jetbrains Mono, sans-serif; }
 
@@ -227,7 +227,7 @@ tooltip {
   -gtk-icon-theme: "WhiteSur"; }
 
 .separator {
-  background-color: rgba(59, 60, 60, 0.7);
+  background-color: #3e4041;
   color: #ffffff;
   padding: 1px; }
 
@@ -245,30 +245,30 @@ tooltip {
 
 .start_menu_icon {
   background-color: transparent;
-  color: #252626;
+  color: #282a2b;
   font-size: 20px; }
 
 .start_menu_button {
   border-radius: 10px;
   padding: 5px;
-  background-color: #6fb9c1;
+  background-color: #9bcfe6;
   margin-left: 10px;
   padding: 13px; }
   .start_menu_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .start_menu_button:hover {
-    background-color: #5acad6;
+    background-color: #8fd4f3;
     transition: ease-in 0.3s; }
 
 .systray_icon {
   background-color: transparent;
-  color: #252626;
+  color: #282a2b;
   font-size: 20px; }
 
 .systray_button {
   border-radius: 10px;
   padding: 5px;
-  background-color: #4da8b3;
+  background-color: #96cde5;
   padding-left: 18px;
   padding-right: 8px;
   padding-top: 13px;
@@ -277,13 +277,13 @@ tooltip {
   .systray_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .systray_button:hover {
-    background-color: #34bccc;
+    background-color: #89d2f2;
     transition: ease-in 0.3s; }
 
 .systray_box {
   border-radius: 10px;
   min-height: 50px;
-  background-color: rgba(18, 20, 19, 0.7);
+  background-color: #111415;
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 50px;
@@ -304,7 +304,7 @@ tooltip {
 
 menu {
   border-radius: 10px;
-  background-color: rgba(18, 20, 19, 0.7);
+  background-color: #111415;
   padding: 10px;
   margin-bottom: 5px; }
   menu * {
@@ -319,7 +319,7 @@ menu {
     menu menuitem * {
       font-family: Jetbrains Mono, sans-serif; }
     menu menuitem:hover {
-      background-color: rgba(48, 49, 49, 0.7);
+      background-color: #333536;
       transition: ease-in 0.3s; }
 
 .start_menu {
@@ -330,7 +330,7 @@ menu {
 .app_launcher {
   border-radius: 10px;
   background-color: transparent;
-  color: #e3e2e1;
+  color: #e2e2e4;
   min-width: 320px;
   min-height: 600px; }
   .app_launcher * {
@@ -340,8 +340,8 @@ menu {
 
 .scrollable {
   border-radius: 10px;
-  background-color: rgba(28, 29, 29, 0.7);
-  border: 10px solid rgba(18, 20, 19, 0.7);
+  background-color: #1c1e1f;
+  border: 10px solid #111415;
   font-size: 16px;
   padding-left: 10px;
   padding-right: 10px;
@@ -358,10 +358,10 @@ menu {
   .app_item_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .app_item_button:hover {
-    background-color: rgba(59, 60, 60, 0.7);
+    background-color: #3e4041;
     transition: ease-in 0.3s; }
   .app_item_button:focus {
-    background-color: rgba(59, 60, 60, 0.7);
+    background-color: #3e4041;
     transition: ease-in 0.3s; }
 
 .list_icon {
@@ -372,8 +372,8 @@ menu {
   border-radius: 10px;
   font-size: 20px;
   margin-bottom: 17px;
-  background-color: rgba(28, 29, 29, 0.7);
-  border: 10px solid rgba(18, 20, 19, 0.7);
+  background-color: #1c1e1f;
+  border: 10px solid #111415;
   color: #ffffff;
   padding-top: 10px;
   padding-bottom: 10px; }
@@ -397,8 +397,8 @@ menu {
 
 .player {
   border-radius: 10px;
-  border: 10px solid rgba(18, 20, 19, 0.7);
-  background-color: rgba(37, 38, 38, 0.7);
+  border: 10px solid #111415;
+  background-color: #282a2b;
   background-size: cover;
   background-position: center;
   min-height: 180px;
@@ -431,7 +431,7 @@ menu {
 .play-pause {
   background-color: transparent; }
   .play-pause:hover {
-    color: #c1946e;
+    color: #6583d8;
     transition: ease-in 0.3s; }
 
 .play-pause-icon {
@@ -442,7 +442,7 @@ menu {
   background-color: transparent;
   margin-top: 6px; }
   .prev:hover {
-    color: #c1946e;
+    color: #6583d8;
     transition: ease-in 0.3s; }
 
 .prev-icon {
@@ -453,7 +453,7 @@ menu {
   background-color: transparent;
   margin-top: 6px; }
   .next:hover {
-    color: #c1946e;
+    color: #6583d8;
     transition: ease-in 0.3s; }
 
 .next-icon {
@@ -482,37 +482,37 @@ menu {
   margin-right: 10px; }
   .position-slider trough {
     border-radius: 5px;
-    background-color: rgba(37, 38, 38, 0.7);
+    background-color: #282a2b;
     min-height: 8px;
     min-width: 50px; }
     .position-slider trough highlight, .position-slider trough progress {
-      background-color: #c1946e;
+      background-color: #6583d8;
       border-radius: 5px; }
   .position-slider slider {
-    background-color: #c1946e;
+    background-color: #6583d8;
     border-radius: 5px; }
   .position-slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: rgba(30, 46, 46, 0.7); }
+    background-color: #202d33; }
   .position-slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: #e5914a; }
+    background-color: #4373fa; }
   .position-slider:hover highlight, .position-slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #d69259; }
+    background-color: #527aeb; }
   .position-slider:disabled highlight, .position-slider:disabled progress {
-    background-color: #ffc3bb; }
+    background-color: #ffd7d2; }
   .position-slider trough:focus {
-    background-color: #35717c; }
+    background-color: #986fdb; }
     .position-slider trough:focus slider {
-      background-color: #35717c; }
+      background-color: #986fdb; }
 
 .control_sliders {
   border-radius: 10px;
   min-height: 383px;
   min-width: 180px;
-  background-color: rgba(28, 29, 29, 0.7);
-  border: 10px solid rgba(18, 20, 19, 0.7); }
+  background-color: #1c1e1f;
+  border: 10px solid #111415; }
   .control_sliders * {
     font-family: Jetbrains Mono, sans-serif; }
 
@@ -526,29 +526,29 @@ menu {
   min-height: 355px; }
   .volume_slider trough {
     border-radius: 5px;
-    background-color: rgba(59, 60, 60, 0.7);
+    background-color: #3e4041;
     min-width: 20px; }
     .volume_slider trough highlight, .volume_slider trough progress {
-      background-color: #c1946e;
+      background-color: #6583d8;
       border-radius: 5px; }
   .volume_slider slider {
-    background-color: #c1946e;
+    background-color: #6583d8;
     border-radius: 5px; }
   .volume_slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: rgba(47, 72, 72, 0.7); }
+    background-color: #31444e; }
   .volume_slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: rgba(38, 81, 81, 0.7); }
+    background-color: #284757; }
   .volume_slider:hover highlight, .volume_slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #d69259; }
+    background-color: #527aeb; }
   .volume_slider:disabled highlight, .volume_slider:disabled progress {
-    background-color: #ffc3bb; }
+    background-color: #ffd7d2; }
 
 .speaker_icon {
   background-color: transparent;
-  color: #c1946e;
+  color: #6583d8;
   font-size: 25px;
   margin-top: 10px;
   margin-left: 8px; }
@@ -563,29 +563,29 @@ menu {
   min-height: 355px; }
   .brightness_slider trough {
     border-radius: 5px;
-    background-color: rgba(59, 60, 60, 0.7);
+    background-color: #3e4041;
     min-width: 20px; }
     .brightness_slider trough highlight, .brightness_slider trough progress {
-      background-color: #dad5d0;
+      background-color: #d3e8ea;
       border-radius: 5px; }
   .brightness_slider slider {
-    background-color: #dad5d0;
+    background-color: #d3e8ea;
     border-radius: 5px; }
   .brightness_slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: rgba(47, 72, 72, 0.7); }
+    background-color: #31444e; }
   .brightness_slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: rgba(38, 81, 81, 0.7); }
+    background-color: #284757; }
   .brightness_slider:hover highlight, .brightness_slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #e2d5c8; }
+    background-color: #cdedf1; }
   .brightness_slider:disabled highlight, .brightness_slider:disabled progress {
-    background-color: #ffc3bb; }
+    background-color: #ffd7d2; }
 
 .brightness_icon {
   background-color: transparent;
-  color: #dad5d0;
+  color: #d3e8ea;
   font-size: 25px;
   margin-top: 10px;
   margin-left: 2px; }
@@ -600,29 +600,29 @@ menu {
   min-height: 355px; }
   .microphone_slider trough {
     border-radius: 5px;
-    background-color: rgba(59, 60, 60, 0.7);
+    background-color: #3e4041;
     min-width: 20px; }
     .microphone_slider trough highlight, .microphone_slider trough progress {
-      background-color: #387d83;
+      background-color: #b38be2;
       border-radius: 5px; }
   .microphone_slider slider {
-    background-color: #387d83;
+    background-color: #b38be2;
     border-radius: 5px; }
   .microphone_slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: rgba(47, 72, 72, 0.7); }
+    background-color: #31444e; }
   .microphone_slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: rgba(38, 81, 81, 0.7); }
+    background-color: #284757; }
   .microphone_slider:hover highlight, .microphone_slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #258d96; }
+    background-color: #b27df1; }
   .microphone_slider:disabled highlight, .microphone_slider:disabled progress {
-    background-color: #ffc3bb; }
+    background-color: #ffd7d2; }
 
 .microphone_icon {
   background-color: transparent;
-  color: #387d83;
+  color: #b38be2;
   font-size: 25px;
   margin-top: 10px;
   margin-left: 8px; }
@@ -639,13 +639,13 @@ window.notification-popups box.notifications {
   border-radius: 10px;
   min-width: 100px;
   min-height: 100px;
-  background-color: #dad5d0; }
+  background-color: #d3e8ea; }
   .placeholder_icon * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .noti_icon image {
   font-size: 100px;
-  color: #dad5d0; }
+  color: #d3e8ea; }
 
 .noti_icon box {
   border-radius: 10px;
@@ -661,22 +661,22 @@ window.notification-popups box.notifications {
   padding: 10px;
   margin: 10px;
   margin-bottom: 0;
-  background-color: rgba(37, 38, 38, 0.7); }
+  background-color: #282a2b; }
   .notification * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .notification.critical {
-  border: 5px solid #ffc3bb; }
+  border: 5px solid #ffd7d2; }
 
 .noti_title {
-  color: #c1946e;
+  color: #6583d8;
   font-size: 1.2em;
   font-weight: 500; }
   .noti_title * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .noti_time {
-  color: #989591;
+  color: #93a2a3;
   font-size: 1.0em;
   font-weight: 300;
   margin-bottom: 1px; }
@@ -696,7 +696,7 @@ window.notification-popups box.notifications {
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 10px;
-  background-color: #6fb9c1;
+  background-color: #9bcfe6;
   margin-left: 10px; }
   .action-button * {
     font-family: Jetbrains Mono, sans-serif; }
@@ -717,7 +717,7 @@ window.notification-popups box.notifications {
   margin-top: 110px;
   margin-bottom: 17px;
   margin-right: 17px;
-  background-color: rgba(18, 20, 19, 0.7); }
+  background-color: #111415; }
   .notifications_tray * {
     font-family: Jetbrains Mono, sans-serif; }
 
@@ -733,17 +733,17 @@ window.notification-popups box.notifications {
 
 .clear_icon {
   background-color: transparent;
-  color: #252626;
+  color: #282a2b;
   font-size: 35px; }
 
 .clear_button {
   border-radius: 10px;
   padding: 5px;
-  background-color: #387d83; }
+  background-color: #b38be2; }
   .clear_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .clear_button:hover {
-    background-color: #258d96;
+    background-color: #b27df1;
     transition: ease-in 0.3s; }
 
 .placeholder {
@@ -754,13 +754,13 @@ window.notification-popups box.notifications {
   border-radius: 10px;
   padding: 10px;
   margin-top: 17px;
-  background-color: rgba(18, 20, 19, 0.7); }
+  background-color: #111415; }
   .powermenu * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .sleep_icon {
   background-color: transparent;
-  color: #252626;
+  color: #282a2b;
   font-size: 30px; }
 
 .sleep_button {
@@ -768,23 +768,23 @@ window.notification-popups box.notifications {
   padding: 5px;
   margin-right: 20px;
   padding: 8px;
-  background-color: #35717c; }
+  background-color: #986fdb; }
   .sleep_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .sleep_button:hover {
-    background-color: #237d8e;
+    background-color: #945ded;
     transition: ease-in 0.3s; }
 
 .lock_icon {
   background-color: transparent;
-  color: #252626;
+  color: #282a2b;
   font-size: 30px; }
 
 .lock_button {
   border-radius: 10px;
   padding: 5px;
   margin-right: 20px;
-  background-color: #c1946e;
+  background-color: #6583d8;
   padding-left: 11px;
   padding-right: 5px;
   padding-top: 7px;
@@ -792,19 +792,19 @@ window.notification-popups box.notifications {
   .lock_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .lock_button:hover {
-    background-color: #d69259;
+    background-color: #527aeb;
     transition: ease-in 0.3s; }
 
 .logout_icon {
   background-color: transparent;
-  color: #252626;
+  color: #282a2b;
   font-size: 30px; }
 
 .logout_button {
   border-radius: 10px;
   padding: 5px;
   margin-right: 20px;
-  background-color: #387d83;
+  background-color: #b38be2;
   padding-top: 10px;
   padding-bottom: 6px;
   padding-left: 8px;
@@ -812,19 +812,19 @@ window.notification-popups box.notifications {
   .logout_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .logout_button:hover {
-    background-color: #258d96;
+    background-color: #b27df1;
     transition: ease-in 0.3s; }
 
 .reboot_icon {
   background-color: transparent;
-  color: #252626;
+  color: #282a2b;
   font-size: 35px; }
 
 .reboot_button {
   border-radius: 10px;
   padding: 5px;
   margin-right: 20px;
-  background-color: #6fb9c1;
+  background-color: #9bcfe6;
   padding-top: 6px;
   padding-bottom: 10px;
   padding-left: 11px;
@@ -832,20 +832,20 @@ window.notification-popups box.notifications {
   .reboot_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .reboot_button:hover {
-    background-color: #5acad6;
+    background-color: #8fd4f3;
     transition: ease-in 0.3s; }
 
 .shutdown_icon {
   background-color: transparent;
-  color: #252626;
+  color: #282a2b;
   font-size: 35px; }
 
 .shutdown_button {
   border-radius: 10px;
   padding: 5px;
-  background-color: #78c5c5; }
+  background-color: #a9d7e9; }
   .shutdown_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .shutdown_button:hover {
-    background-color: #65d8d8;
+    background-color: #9edcf4;
     transition: ease-in 0.3s; }

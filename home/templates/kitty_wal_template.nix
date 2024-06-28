@@ -1,6 +1,5 @@
 {
   xdg.configFile."wal/templates/fg_colors.conf".text = ''
-
   color0  {color0} 
   color8  {color8}     
   color1  {color1}    
@@ -17,6 +16,5 @@
   color14 {color14}     
   color7  {color7}     
   color15 {color15}     
-
   '';
 }

@@ -31,3 +31,10 @@ App.config({
         PowerMenu(0),
     ],
 })
+
+while (true) {
+    setTimeout(1000);
+    Utils.exec(`sassc ${scss} ${css}`)
+    App.resetCss()
+    App.applyCss(css)
+}
