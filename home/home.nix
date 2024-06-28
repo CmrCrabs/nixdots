@@ -1,13 +1,13 @@
-{ config, pkgs, inputs, lib, ... }:
+{config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/rocky_beach.png";
-  wal-l = "${dotfilesDir}/wallpapers/rocky_beach.png";
+  wal =   "${dotfilesDir}/wallpapers/anime_train_snow.png";
+  wal-l = "${dotfilesDir}/wallpapers/anime_train_snow.png";
   style = "dark";
   rounding = "5";
   scheme = "fidelity";
-  bg-contrast = "0.4";
-  fg-contrast = "0.4";
-  transparency = "0.7";
+  bg-contrast = "0.6";
+  fg-contrast = "0.6";
+  transparency = "1.0";
   outer_gap = "10";
 
   dotfilesDir = "${config.home.homeDirectory}/limitless";
@@ -45,6 +45,7 @@ in
     # Wal Templates
     ./templates/kitty_wal_template.nix
     ./templates/ags_wal_template.nix
+    ./templates/gtk_wal_template.nix
 
   ];
 

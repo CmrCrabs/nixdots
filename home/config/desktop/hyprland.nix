@@ -27,7 +27,6 @@
 
       exec-once = [
         "swww init &"
-        "hyprctl setcursor Vimix-cursors 24"
         "sudo tlp start" 
         "hypridle"
         "ags"
@@ -43,7 +42,7 @@
       ];
       workspace = [
         "eDP-1, 1"
-        "DP-1, 10"        
+        "DP-1, 9"        
         # "1, persistent:true"
         # "2, persistent:true"
         # "3, persistent:true"
@@ -246,6 +245,20 @@
 
     monitor = eDP-1, addreserved,$outer_gap,0,0,0
     monitor = eDP-1,addreserved,$outer_gap, $outer_gap, $outer_gap, $outer_gap
+
+plugin {
+    hyprbars {
+        # example config
+        bar_height = 20
+
+        # example buttons (R -> L)
+        # hyprbars-button = color, size, on-click
+        bar_color = rgb(ff0000)
+        hyprbars-button = rgb(ff4040), 10, 󰖭, hyprctl dispatch killactive
+        hyprbars-button = rgb(eeee11), 10, , hyprctl dispatch fullscreen 1
+    }
+}
+
     '';
   };
 }

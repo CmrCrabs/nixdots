@@ -16,6 +16,7 @@ const hidden_apps = [
     "btop++",
     "rofi",
     "gparted",
+    "yazi",
 ]
 
 const AppItem = app => Widget.Button({

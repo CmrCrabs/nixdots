@@ -152,6 +152,7 @@ in {
     spotify
     krita
     remnote
+    gnome.nautilus
 
     
     # Term
@@ -214,6 +215,7 @@ in {
 
     apple-cursor
     whitesur-icon-theme
+    whitesur-gtk-theme
 
     nix-prefetch-git
     stdenv

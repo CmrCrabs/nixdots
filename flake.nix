@@ -15,6 +15,7 @@
       type = "git";
       url = "https://github.com/hyprwm/Hyprland";
       submodules = true;
+      # rev = "cba1ade848feac44b2eda677503900639581c3f4";
     };
     hyprlock = {
       url = "github:hyprwm/hyprlock";
