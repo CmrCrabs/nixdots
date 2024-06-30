@@ -2,7 +2,7 @@ import Hyprland from 'resource:///com/github/Aylur/ags/service/hyprland.js';
 import Applications from 'resource:///com/github/Aylur/ags/service/applications.js';
 import Widget from 'resource:///com/github/Aylur/ags/widget.js';
 import App from 'resource:///com/github/Aylur/ags/app.js';
-const systemtray = await Service.import("systemtray")
+import { Button } from '../shared/button.js';
 
 const pinned_apps_list = [
         'firefox',
@@ -12,70 +12,6 @@ const pinned_apps_list = [
         'krita',
         'blender',
 ];
-
-function start_menu_button() {
-   const icon = Widget.Icon({
-        icon: "launcher-symbolic",
-        cursor: "pointer",
-        class_name: "start_menu_icon"
-    })
-
-    return Widget.Button({
-        onClicked: () => App.toggleWindow("start_menu"),
-        tooltip_text: "Start Menu",
-        hpack: "center",
-        vpack: "center",
-        cursor: "pointer",
-        child: icon,
-        class_name: "start_menu_button",
-    })
-}
-
-function systray_button() {
-   const icon = Widget.Icon({
-        icon: "chevron-right-symbolic",
-        cursor: "pointer",
-        class_name: "systray_icon"
-    })
-
-    return Widget.Button({
-        onClicked: () => App.toggleWindow("systray"),
-        tooltip_text: "System Tray",
-        hpack: "center",
-        vpack: "center",
-        cursor: "pointer",
-        child: icon,
-        class_name: "systray_button",
-    })
-}
-
-export function SysTray(monitor = 0) {
-    const items = systemtray.bind("items")
-        .as(items => items.map(item => Widget.Button({
-        class_name: "sys_app_btn",
-        child: Widget.Icon({ icon: item.bind("icon"), class_name: "sys_app_icon", size: 30, }),
-            on_primary_click: (_, event) => {
-                App.closeWindow("systray")
-                item.activate(event).catch()
-            },
-            on_secondary_click: (_, event) => item.openMenu(event).catch(),
-            tooltip_markup: item.bind("tooltip_markup"),
-        })))
-    const itembox = Widget.Box({
-        class_name: "systray_box",
-        children: items,
-    })
-
-    return Widget.Window({
-        name: `systray`,
-        monitor,
-        anchor: ["right"],
-        exclusivity: "normal",
-        visible: false,
-        child: itembox,
-    })
-}
-
 
 function range(length, start = 1) {
     return Array.from({ length }, (_, i) => i + start);
@@ -179,11 +115,14 @@ const seperator = () => Widget.Separator({
     class_name: "separator",
 })
 
-export function Dock(monitor = 0) {
+function start_menu_button() {
+    return Button("launcher", "start_menu", "Start Menu", () => { App.toggleWindow("start_menu"); });
+}
 
-    for (const app in Applications.List) {
-        console.log(app);
-    }
+function systray_button() {
+    return Button("chevron-right", "systray", "System tray", () => App.toggleWindow("systray"));
+}
+export function Dock(monitor = 0) {
 
     return Widget.Window({
         name: 'dock',

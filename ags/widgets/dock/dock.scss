@@ -1,13 +1,10 @@
 .dock {
-    @include outer_widget;
-    min-height: 50px;
-    min-width: 540px + $outer_gap;
-    padding-right: $gap;
-    padding-top: $gap;
-    padding-bottom: if($outer_gap ==0, 2 * $gap, $gap);
+    @include widget;
+    padding-top: $padding / 2;
+    padding-bottom: $padding / 2;
+    min-width: $screen_width / 4;
     margin-bottom: $outer_gap;
     background-color: $background-t;
-    color: $on_background;
 }
 .icons {
     image {
@@ -16,97 +13,38 @@
 }
 
 .separator {
-    background-color: $surface_container_highest-t;
-    color: $on_surface;
-    padding: 1px;
+    background-color: $surface_container_high-t;
+    padding-left: $padding * 0.05;
+    padding-right: $padding * 0.05;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
 }
 
 .taskbar_icon_box {
-    padding-left: $gap;
-    padding-right: $gap;
+    padding-left: $padding;
+    padding-right: $padding;
 }
 
 .indicator {
-    padding: 3px;
-    margin-top: 30px;
-    margin-right: 2px;
-    margin-left: 2px;
+    padding: 0.25rem;
+    margin-right: 0.125rem;
+    margin-left: 0.125rem;
     border-radius: $rounding;
     background-color: $on_surface;
 }
 
 .start_menu_icon {
-    background-color: transparent;
-    color: $surface_container;
-    font-size: 20px;
+    @include button_icon($color5);
 }
 .start_menu_button {
-    @include button;
-    background-color: $color5;    
+    @include button($color5);
     margin-left: $gap;
-    padding: 13px;
-    &:hover {
-        background-color: saturate($color5, 20);
-        transition: ease-in 0.3s;
-    }
 }
 
 .systray_icon {
-    background-color: transparent;
-    color: $surface_container;
-    font-size: 20px;
+    @include button_icon($color4);
 }
 .systray_button {
-    @include button;
-    background-color: $color4;    
-    padding-left: 18px;
-    padding-right: 8px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    @include button($color4);
     margin-left: $gap;
-    &:hover {
-        background-color: saturate($color4, 20);
-        transition: ease-in 0.3s;
-    }
-}
-
-.systray_box {
-    image {
-        -gtk-icon-theme: "WhiteSur";
-    }
-    @include outer_widget;
-    min-height: 50px;
-    background-color: $background-t;
-    padding-top: $gap;
-    padding-left: 2 * $gap;
-    padding-right: 2 * $gap + 30px;
-    margin-top: 1080px;
-    margin-right: $outer_gap;
-    padding-bottom: if($outer_gap ==0, 2 * $gap, $gap);
-    margin-bottom: $outer_gap - 6px;
-}
-.sys_app_icon {
-    margin-left: 30px;
-}
-.sys_app_button {
-    margin-left: 30px;
-}
-
-menu {
-    @include outer_widget;
-    background-color: $background-t;
-    padding: 10px;
-    margin-bottom: 5px;
-    menuitem {
-        @include widget;
-        margin-top: 5px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        &:hover {
-            background-color: $surface-container-high-t;
-            transition: ease-in 0.3s;
-        }
-    }
 }

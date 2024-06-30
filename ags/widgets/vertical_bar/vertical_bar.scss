@@ -1,129 +1,70 @@
 .vertical_bar {
-    @include outer_widget;
-    min-height: 1080px - 2 * $outer_gap;
+    @include widget;
+    min-height: $screen_height - 2 * $outer_gap;
     margin-top: $outer_gap;
     margin-bottom: $outer_gap;
-    padding-left: $gap;
-    padding-right: $gap;
     margin-left: $outer_gap;
     background-color: $background-t;
     color: $on_background;
 }
 
-.power_icon {
-    background-color: transparent;
-    color: $surface_container;
-    font-size: 30px;
-}
-.power_button {
-    @include button;
-    margin-top: if($gap_var == 0, 2 * $gap, $gap);
-    padding: 7px;
-    background-color: $color2;    
-    &:hover {
-        background-color: saturate($color2, 20);
-        transition: ease-in 0.3s;
-    }
-}
-
 .clock {
-    @include widget;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    min-height: 50px;
-    margin-top: $gap;
-    background-color: $surface_container-t;
-    font-size: 20px;
+    @include element;
+    padding-top: $padding * 1.5;
+    padding-bottom: $padding  * 1.5;
+    padding-left: $padding * 1.1;
+    padding-right: $padding * 1.1;
+    min-height: 3rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .batbox {
-    @include widget;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    min-height: 60px;
-    margin-top: $gap;
-    background-color: $surface_container-t;
-    font-size: 20px;
-    font-weight: bold;
+    @include element;
+    padding: $gap / 2.1;
+}
+.bat_icon {
+    @include button_icon($on_surface);
+    font-size: 1.5em;
+}
+circular-progress {
+    font-size: 0.25em;
+    margin: 0.2rem;
+}
+.bat_progress {
+    color: $color4;
+}
+.bat_progress_charging {
+    color: saturate($color4, 50);
+    transition: ease-in 0.5s;
 }
 
-.batbar {
-  trough {
-    margin-top: $gap;
-    min-width: 10px;
-    min-height: 1px;
-    block {
-      border-radius: if($rounding == 0, 0, $rounding + $gap/2);
-      &.empty {
-        background-color: $surface_container_highest-t;
-      }
-      &.full {
-        background-color: $color6;
-      }
-    }
-  }
-}
-.batbar-charging {
-  trough {
-    margin-top: $gap;
-    min-width: 10px;
-    min-height: 1px;
-    block {
-      border-radius: if($rounding == 0, 0, $rounding + $gap/2);
-      &.empty {
-        background-color: $surface_container_highest-t;
-      }
-      &.full {
-        background-color: saturate($color6, 20);
-      }
-    }
-  }
-}
-
-.battery_icon {
-    margin-top: 5px;
-    background-color: transparent;
-    color: $on_surface;
-    font-size: 20px;
-}
 
 .workspaces {
-    @include widget;
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: if($rounding == 0, 0, $rounding + $gap/2);
-    background-color: $surface_container-t;
-    min-height: 150px;
+    @include element;
+    padding: $padding * 2;
 }
-.workspaces_unfocused {
-    @include common;
+.workspace_unfocused {
+    @include element;
     background-color: $on_surface;
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: if($rounding == 0, 0, $rounding + $gap/2);
+    margin-top: $gap;
+    padding-top: $padding * 1.25;
+    padding-bottom: $padding * 1.25;
+    padding-left: $padding / 2;
+    padding-right: $padding / 2;
     &:hover {
         background-color: $color6;
         transition: ease-in 0.1s;
     }
 }
-.workspaces_focused {
+.workspace_focused {
+    @include element;
     background-color: $color6;
-    margin-top: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: if($rounding == 0, 0, $rounding + $gap/2);
+    margin-top: $gap;
+    padding-top: $padding * 1.5;
+    padding-bottom: $padding * 1.5;
+    padding-left: $padding / 2;
+    padding-right: $padding / 2;
     transition: ease-in 0.1s;
     &:hover {
         background-color: saturate($color6, 20);
@@ -131,73 +72,36 @@
     }
 }
 
-.wallpaper_icon {
-    background-color: transparent;
-    color: $surface_container;
-    font-size: 20px;
+.theme_icon {
+    @include button_icon($color4);
 }
-.wallpaper_button {
-    @include button;
-    margin-top: 10px;
-    padding: 12px;
-    background-color: $color4;    
-    &:hover {
-        background-color: saturate($color4, 20);
-        transition: ease-in 0.3s;
-    }
-}
-.notification_icon {
-    background-color: transparent;
-    color: $surface_container;
-    font-size: 20px;
-}
-.notification_button {
-    @include button;
-    margin-top: 10px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 13px;
-    padding-right: 11px;
-    background-color: $color3;    
-    &:hover {
-        background-color: saturate($color3, 20);
-        transition: ease-in 0.3s;
-    }
+.theme_button {
+    @include button($color4);
 }
 
-.misc_icon {
-    background-color: transparent;
-    color: $surface_container;
-    font-size: 20px;
+.notification_icon {
+    @include button_icon($color3);
+    margin-bottom: $gap;
+}
+.music_icon {
+    @include button_icon($color1);
+}
+.notification_music_button {
+    @include button($color1);
+    margin: 0;
+}
+
+.slider_icon {
+    @include button_icon($color4);
+    margin-bottom: $gap;
+}
+.wifi_icon {
+    @include button_icon($color2);
+    margin-bottom: $gap;
+}
+.bluetooth_icon {
+    @include button_icon($color1);
 }
 .misc_button {
-    @include button;
-    margin-top: 10px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 13px;
-    padding-right: 11px;
-    background-color: $color2;    
-    &:hover {
-        background-color: saturate($color2, 20);
-        transition: ease-in 0.3s;
-    }
-}
-
-.controls_icon {
-    background-color: transparent;
-    color: $surface_container;
-    font-size: 20px;
-}
-.controls_button {
-    margin-bottom: $gap;
-    @include button;
-    margin-top: 10px;
-    margin-bottom: if($gap_var == 0, 2 * $gap, $gap);
-    padding: 12px;
-    background-color: $color1;    
-    &:hover {
-        background-color: saturate($color1, 20);
-        transition: ease-in 0.3s;
-    }
+    @include button($color1);
 }

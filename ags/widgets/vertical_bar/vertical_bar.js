@@ -1,24 +1,25 @@
-import { ControlsButton, MiscButton, NotificationButton, PowerButton, WallpaperButton } from "./buttons.js"
+import { NotificationMusicButton, MiscButton } from "./buttons.js"
 import { Battery, Clock } from "./misc.js"
 import { Workspaces } from "./workspaces.js"
+import { Button } from '../shared/button.js';
+
+function ThemeButton() {
+    return Button("wallpaper", "theme", "Limitless' Theming Menu", () => print("test"));
+}
 
 function Top() {
     return Widget.Box({
-        spacing: 2,
         vertical: true,
         vexpand: true,
         children: [
-            PowerButton(),
-            Clock(),
-            Battery(),
-            //287 pixel from top
+            NotificationMusicButton(),
+            ThemeButton(),
         ],
     })
 }
 
 function Center() {
     return Widget.Box({
-        spacing: 2,
         vertical: true,
             vexpand: true,
         children: [
@@ -29,16 +30,14 @@ function Center() {
 
 function Bottom() {
     return Widget.Box({
-        spacing: 2,
         vertical: true,
         hpack: "center",
         vpack: "end",
         vexpand: true,
         children: [
-            WallpaperButton(),
-            NotificationButton(),
+            Battery(),
             MiscButton(),
-            ControlsButton(),
+            Clock(),
         ],
     })
 }

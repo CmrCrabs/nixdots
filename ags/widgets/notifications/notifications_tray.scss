@@ -1,5 +1,5 @@
 .notifications_tray {
-    @include outer_widget;
+    @include widget;
     min-height: 1080px - (2 * $outer_gap);
     min-width: 450px;
     margin-top: $outer_gap + 93px;
@@ -23,7 +23,7 @@
     font-size: 35px;
 }
 .clear_button {
-    @include button;
+    @include button($color1);
     background-color: $color3;    
     &:hover {
         background-color: saturate($color3, 20);

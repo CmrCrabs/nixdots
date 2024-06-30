@@ -1,0 +1,13 @@
+@mixin common{
+    * {
+        font-family: Jetbrains Mono, sans-serif;
+    }
+}
+
+tooltip {
+    @include common;
+    background-color: $surface-container-high-t;
+    padding: 3px;
+    color: $on_surface; 
+    border-radius: $rounding
+}

@@ -1,5 +1,6 @@
 import { VerticalBar } from "./widgets/vertical_bar/vertical_bar.js"; 
-import { Dock, SysTray } from "./widgets/dock/dock.js";
+import { Dock } from "./widgets/dock/dock.js";
+import { SysTray } from "./widgets/dock/systray.js";
 import { StartMenu } from "./widgets/start_menu/start_menu.js";
 import { NotificationPopups } from "./widgets/notifications/notifications.js";
 import { NotificationCenter } from "./widgets/notifications/notifications_tray.js";

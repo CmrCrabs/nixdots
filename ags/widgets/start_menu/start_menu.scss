@@ -5,7 +5,7 @@
 }
 
 .app_launcher {
-    @include outer_widget;
+    @include widget;
     image {
         -gtk-icon-theme: "WhiteSur";
     }
@@ -16,7 +16,7 @@
 }
 
 .scrollable {
-    @include outer_widget;
+    @include widget;
     background-color: $surface_container_low-t;
     border: $gap solid $background-t;
     font-size: 16px;
@@ -47,7 +47,7 @@
 }
 
 .search_bar {
-    @include outer_widget;
+    @include widget;
     font-size: 20px;
     margin-bottom: $outer_gap;
     background-color: $surface_container_low-t;

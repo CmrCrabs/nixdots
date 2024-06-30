@@ -1,401 +1,198 @@
-* {
-  all: unset; }
-
 tooltip {
-  background-color: #3e4041;
+  background-color: #333536;
   padding: 3px;
   color: #ffffff;
-  border-radius: 5px; }
+  border-radius: 10px; }
   tooltip * {
     font-family: Jetbrains Mono, sans-serif; }
 
+* {
+  all: unset; }
+
 .vertical_bar {
+  padding: 10px;
   border-radius: 10px;
-  min-height: 1046px;
-  margin-top: 17px;
-  margin-bottom: 17px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: 17px;
+  min-height: 1040px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
   background-color: #111415;
   color: #e2e2e4; }
   .vertical_bar * {
     font-family: Jetbrains Mono, sans-serif; }
 
-.power_icon {
-  background-color: transparent;
-  color: #282a2b;
-  font-size: 30px; }
-
-.power_button {
-  border-radius: 10px;
-  padding: 5px;
-  margin-top: 10px;
-  padding: 7px;
-  background-color: #986fdb; }
-  .power_button * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .power_button:hover {
-    background-color: #945ded;
-    transition: ease-in 0.3s; }
-
 .clock {
+  padding: 10px;
   border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  background-color: #282a2b;
+  border: 0px solid #3e4041;
   padding-top: 15px;
   padding-bottom: 15px;
-  min-height: 50px;
-  margin-top: 10px;
-  background-color: #282a2b;
-  font-size: 20px;
+  padding-left: 11px;
+  padding-right: 11px;
+  min-height: 3rem;
+  font-size: 1.5rem;
   font-weight: bold; }
   .clock * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .batbox {
+  padding: 10px;
   border-radius: 10px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  min-height: 60px;
-  margin-top: 10px;
   background-color: #282a2b;
-  font-size: 20px;
-  font-weight: bold; }
+  border: 0px solid #3e4041;
+  padding: 4.7619047619px; }
   .batbox * {
     font-family: Jetbrains Mono, sans-serif; }
 
-.batbar trough {
-  margin-top: 10px;
-  min-width: 10px;
-  min-height: 1px; }
-  .batbar trough block {
-    border-radius: 10px; }
-    .batbar trough block.empty {
-      background-color: #3e4041; }
-    .batbar trough block.full {
-      background-color: #a9d7e9; }
-
-.batbar-charging trough {
-  margin-top: 10px;
-  min-width: 10px;
-  min-height: 1px; }
-  .batbar-charging trough block {
-    border-radius: 10px; }
-    .batbar-charging trough block.empty {
-      background-color: #3e4041; }
-    .batbar-charging trough block.full {
-      background-color: #9edcf4; }
-
-.battery_icon {
-  margin-top: 5px;
-  background-color: transparent;
+.bat_icon {
   color: #ffffff;
-  font-size: 20px; }
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-size: 1.5em; }
+
+circular-progress {
+  font-size: 0.25em;
+  margin: 0.2rem; }
+
+.bat_progress {
+  color: #96cde5; }
+
+.bat_progress_charging {
+  color: #7cd7ff;
+  transition: ease-in 0.5s; }
 
 .workspaces {
-  border-radius: 10px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  min-height: 150px; }
+  border: 0px solid #3e4041;
+  padding: 20px; }
   .workspaces * {
     font-family: Jetbrains Mono, sans-serif; }
 
-.workspaces_unfocused {
+.workspace_unfocused {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #282a2b;
+  border: 0px solid #3e4041;
   background-color: #ffffff;
   margin-top: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
   padding-left: 5px;
-  padding-right: 5px;
-  border-radius: 10px; }
-  .workspaces_unfocused * {
+  padding-right: 5px; }
+  .workspace_unfocused * {
     font-family: Jetbrains Mono, sans-serif; }
-  .workspaces_unfocused:hover {
+  .workspace_unfocused:hover {
     background-color: #a9d7e9;
     transition: ease-in 0.1s; }
 
-.workspaces_focused {
+.workspace_focused {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #282a2b;
+  border: 0px solid #3e4041;
   background-color: #a9d7e9;
   margin-top: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 5px;
   padding-right: 5px;
-  border-radius: 10px;
   transition: ease-in 0.1s; }
-  .workspaces_focused:hover {
+  .workspace_focused * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .workspace_focused:hover {
     background-color: #9edcf4;
     transition: ease-in 0.1s; }
 
-.wallpaper_icon {
+.theme_icon {
+  color: #96cde5;
   background-color: transparent;
-  color: #282a2b;
-  font-size: 20px; }
+  font-size: 1.5rem; }
 
-.wallpaper_button {
+.theme_button {
+  padding: 10px;
   border-radius: 10px;
-  padding: 5px;
+  background-color: #282a2b;
+  border: 0px solid #3e4041;
+  border-radius: 10px;
   margin-top: 10px;
-  padding: 12px;
-  background-color: #96cde5; }
-  .wallpaper_button * {
+  margin-bottom: 10px;
+  padding: 13px;
+  background-color: #282a2b;
+  border: 0px solid #96cde5; }
+  .theme_button * {
     font-family: Jetbrains Mono, sans-serif; }
-  .wallpaper_button:hover {
-    background-color: #89d2f2;
+  .theme_button:hover {
+    background-color: #41484b;
     transition: ease-in 0.3s; }
 
 .notification_icon {
+  color: #b38be2;
   background-color: transparent;
-  color: #282a2b;
-  font-size: 20px; }
+  font-size: 1.5rem;
+  margin-bottom: 10px; }
 
-.notification_button {
+.music_icon {
+  color: #6583d8;
+  background-color: transparent;
+  font-size: 1.5rem; }
+
+.notification_music_button {
+  padding: 10px;
   border-radius: 10px;
-  padding: 5px;
+  background-color: #282a2b;
+  border: 0px solid #3e4041;
+  border-radius: 10px;
   margin-top: 10px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 13px;
-  padding-right: 11px;
-  background-color: #b38be2; }
-  .notification_button * {
+  margin-bottom: 10px;
+  padding: 13px;
+  background-color: #282a2b;
+  border: 0px solid #6583d8;
+  margin: 0; }
+  .notification_music_button * {
     font-family: Jetbrains Mono, sans-serif; }
-  .notification_button:hover {
-    background-color: #b27df1;
+  .notification_music_button:hover {
+    background-color: #41484b;
     transition: ease-in 0.3s; }
 
-.misc_icon {
+.slider_icon {
+  color: #96cde5;
   background-color: transparent;
-  color: #282a2b;
-  font-size: 20px; }
+  font-size: 1.5rem;
+  margin-bottom: 10px; }
+
+.wifi_icon {
+  color: #986fdb;
+  background-color: transparent;
+  font-size: 1.5rem;
+  margin-bottom: 10px; }
+
+.bluetooth_icon {
+  color: #6583d8;
+  background-color: transparent;
+  font-size: 1.5rem; }
 
 .misc_button {
+  padding: 10px;
   border-radius: 10px;
-  padding: 5px;
+  background-color: #282a2b;
+  border: 0px solid #3e4041;
+  border-radius: 10px;
   margin-top: 10px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 13px;
-  padding-right: 11px;
-  background-color: #986fdb; }
+  margin-bottom: 10px;
+  padding: 13px;
+  background-color: #282a2b;
+  border: 0px solid #6583d8; }
   .misc_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .misc_button:hover {
-    background-color: #945ded;
+    background-color: #41484b;
     transition: ease-in 0.3s; }
-
-.controls_icon {
-  background-color: transparent;
-  color: #282a2b;
-  font-size: 20px; }
-
-.controls_button {
-  margin-bottom: 10px;
-  border-radius: 10px;
-  padding: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 12px;
-  background-color: #6583d8; }
-  .controls_button * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .controls_button:hover {
-    background-color: #527aeb;
-    transition: ease-in 0.3s; }
-
-.dock {
-  border-radius: 10px;
-  min-height: 50px;
-  min-width: 557px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 17px;
-  background-color: #111415;
-  color: #e2e2e4; }
-  .dock * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.icons image {
-  -gtk-icon-theme: "WhiteSur"; }
-
-.separator {
-  background-color: #3e4041;
-  color: #ffffff;
-  padding: 1px; }
-
-.taskbar_icon_box {
-  padding-left: 10px;
-  padding-right: 10px; }
-
-.indicator {
-  padding: 3px;
-  margin-top: 30px;
-  margin-right: 2px;
-  margin-left: 2px;
-  border-radius: 5px;
-  background-color: #ffffff; }
-
-.start_menu_icon {
-  background-color: transparent;
-  color: #282a2b;
-  font-size: 20px; }
-
-.start_menu_button {
-  border-radius: 10px;
-  padding: 5px;
-  background-color: #9bcfe6;
-  margin-left: 10px;
-  padding: 13px; }
-  .start_menu_button * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .start_menu_button:hover {
-    background-color: #8fd4f3;
-    transition: ease-in 0.3s; }
-
-.systray_icon {
-  background-color: transparent;
-  color: #282a2b;
-  font-size: 20px; }
-
-.systray_button {
-  border-radius: 10px;
-  padding: 5px;
-  background-color: #96cde5;
-  padding-left: 18px;
-  padding-right: 8px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  margin-left: 10px; }
-  .systray_button * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .systray_button:hover {
-    background-color: #89d2f2;
-    transition: ease-in 0.3s; }
-
-.systray_box {
-  border-radius: 10px;
-  min-height: 50px;
-  background-color: #111415;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 50px;
-  margin-top: 1080px;
-  margin-right: 17px;
-  padding-bottom: 10px;
-  margin-bottom: 11px; }
-  .systray_box image {
-    -gtk-icon-theme: "WhiteSur"; }
-  .systray_box * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.sys_app_icon {
-  margin-left: 30px; }
-
-.sys_app_button {
-  margin-left: 30px; }
-
-menu {
-  border-radius: 10px;
-  background-color: #111415;
-  padding: 10px;
-  margin-bottom: 5px; }
-  menu * {
-    font-family: Jetbrains Mono, sans-serif; }
-  menu menuitem {
-    border-radius: 10px;
-    margin-top: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px; }
-    menu menuitem * {
-      font-family: Jetbrains Mono, sans-serif; }
-    menu menuitem:hover {
-      background-color: #333536;
-      transition: ease-in 0.3s; }
-
-.start_menu {
-  min-width: 570px;
-  min-height: 600px;
-  margin-bottom: 17px; }
-
-.app_launcher {
-  border-radius: 10px;
-  background-color: transparent;
-  color: #e2e2e4;
-  min-width: 320px;
-  min-height: 600px; }
-  .app_launcher * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .app_launcher image {
-    -gtk-icon-theme: "WhiteSur"; }
-
-.scrollable {
-  border-radius: 10px;
-  background-color: #1c1e1f;
-  border: 10px solid #111415;
-  font-size: 16px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  min-width: 320px;
-  min-height: 465px; }
-  .scrollable * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.app_item_button {
-  border-radius: 10px;
-  padding: 3px; }
-  .app_item_button * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .app_item_button:hover {
-    background-color: #3e4041;
-    transition: ease-in 0.3s; }
-  .app_item_button:focus {
-    background-color: #3e4041;
-    transition: ease-in 0.3s; }
-
-.list_icon {
-  margin-left: 5px;
-  margin-right: 10px; }
-
-.search_bar {
-  border-radius: 10px;
-  font-size: 20px;
-  margin-bottom: 17px;
-  background-color: #1c1e1f;
-  border: 10px solid #111415;
-  color: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-  .search_bar * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.title {
-  font-weight: 500;
-  font-size: 40px;
-  margin-bottom: 10px; }
-  .title * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.start_widgets {
-  border-radius: 10px;
-  min-width: 200px;
-  min-height: 600px;
-  margin-left: 17px; }
-  .start_widgets * {
-    font-family: Jetbrains Mono, sans-serif; }
 
 .player {
+  padding: 10px;
   border-radius: 10px;
   border: 10px solid #111415;
   background-color: #282a2b;
@@ -403,11 +200,12 @@ menu {
   background-position: center;
   min-height: 180px;
   min-width: 180px;
-  margin-top: 17px; }
+  margin-top: 20px; }
   .player * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .media {
+  padding: 10px;
   border-radius: 10px;
   min-height: 200px; }
   .media * {
@@ -481,16 +279,16 @@ menu {
   margin-left: 10px;
   margin-right: 10px; }
   .position-slider trough {
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #282a2b;
     min-height: 8px;
     min-width: 50px; }
     .position-slider trough highlight, .position-slider trough progress {
       background-color: #6583d8;
-      border-radius: 5px; }
+      border-radius: 10px; }
   .position-slider slider {
     background-color: #6583d8;
-    border-radius: 5px; }
+    border-radius: 10px; }
   .position-slider:hover trough {
     transition: ease-in 0.3s;
     background-color: #202d33; }
@@ -507,9 +305,88 @@ menu {
     .position-slider trough:focus slider {
       background-color: #986fdb; }
 
-.control_sliders {
+.start_menu {
+  min-width: 570px;
+  min-height: 600px;
+  margin-bottom: 20px; }
+
+.app_launcher {
+  padding: 10px;
   border-radius: 10px;
-  min-height: 383px;
+  background-color: transparent;
+  color: #e2e2e4;
+  min-width: 320px;
+  min-height: 600px; }
+  .app_launcher * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .app_launcher image {
+    -gtk-icon-theme: "WhiteSur"; }
+
+.scrollable {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #1c1e1f;
+  border: 10px solid #111415;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-width: 320px;
+  min-height: 465px; }
+  .scrollable * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.app_item_button {
+  padding: 10px;
+  border-radius: 10px;
+  padding: 3px; }
+  .app_item_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .app_item_button:hover {
+    background-color: #3e4041;
+    transition: ease-in 0.3s; }
+  .app_item_button:focus {
+    background-color: #3e4041;
+    transition: ease-in 0.3s; }
+
+.list_icon {
+  margin-left: 5px;
+  margin-right: 10px; }
+
+.search_bar {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  background-color: #1c1e1f;
+  border: 10px solid #111415;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .search_bar * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.title {
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 10px; }
+  .title * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.start_widgets {
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 200px;
+  min-height: 600px;
+  margin-left: 20px; }
+  .start_widgets * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.control_sliders {
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 380px;
   min-width: 180px;
   background-color: #1c1e1f;
   border: 10px solid #111415; }
@@ -525,15 +402,15 @@ menu {
   margin-right: 10px;
   min-height: 355px; }
   .volume_slider trough {
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #3e4041;
     min-width: 20px; }
     .volume_slider trough highlight, .volume_slider trough progress {
       background-color: #6583d8;
-      border-radius: 5px; }
+      border-radius: 10px; }
   .volume_slider slider {
     background-color: #6583d8;
-    border-radius: 5px; }
+    border-radius: 10px; }
   .volume_slider:hover trough {
     transition: ease-in 0.3s;
     background-color: #31444e; }
@@ -562,15 +439,15 @@ menu {
   margin-right: 10px;
   min-height: 355px; }
   .brightness_slider trough {
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #3e4041;
     min-width: 20px; }
     .brightness_slider trough highlight, .brightness_slider trough progress {
       background-color: #d3e8ea;
-      border-radius: 5px; }
+      border-radius: 10px; }
   .brightness_slider slider {
     background-color: #d3e8ea;
-    border-radius: 5px; }
+    border-radius: 10px; }
   .brightness_slider:hover trough {
     transition: ease-in 0.3s;
     background-color: #31444e; }
@@ -599,15 +476,15 @@ menu {
   margin-right: 10px;
   min-height: 355px; }
   .microphone_slider trough {
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #3e4041;
     min-width: 20px; }
     .microphone_slider trough highlight, .microphone_slider trough progress {
       background-color: #b38be2;
-      border-radius: 5px; }
+      border-radius: 10px; }
   .microphone_slider slider {
     background-color: #b38be2;
-    border-radius: 5px; }
+    border-radius: 10px; }
   .microphone_slider:hover trough {
     transition: ease-in 0.3s;
     background-color: #31444e; }
@@ -627,6 +504,162 @@ menu {
   margin-top: 10px;
   margin-left: 8px; }
 
+.powermenu {
+  padding: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #111415; }
+  .powermenu * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.sleep_icon {
+  background-color: transparent;
+  color: #282a2b;
+  font-size: 30px; }
+
+.sleep_button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #282a2b;
+  border: 0px solid #3e4041;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 13px;
+  background-color: #282a2b;
+  border: 0px solid #6583d8;
+  margin-right: 20px;
+  padding: 8px;
+  background-color: #986fdb; }
+  .sleep_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .sleep_button:hover {
+    background-color: #41484b;
+    transition: ease-in 0.3s; }
+  .sleep_button:hover {
+    background-color: #945ded;
+    transition: ease-in 0.3s; }
+
+.lock_icon {
+  background-color: transparent;
+  color: #282a2b;
+  font-size: 30px; }
+
+.lock_button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #282a2b;
+  border: 0px solid #3e4041;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 13px;
+  background-color: #282a2b;
+  border: 0px solid #6583d8;
+  margin-right: 20px;
+  background-color: #6583d8;
+  padding-left: 11px;
+  padding-right: 5px;
+  padding-top: 7px;
+  padding-bottom: 9px; }
+  .lock_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .lock_button:hover {
+    background-color: #41484b;
+    transition: ease-in 0.3s; }
+  .lock_button:hover {
+    background-color: #527aeb;
+    transition: ease-in 0.3s; }
+
+.logout_icon {
+  background-color: transparent;
+  color: #282a2b;
+  font-size: 30px; }
+
+.logout_button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #282a2b;
+  border: 0px solid #3e4041;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 13px;
+  background-color: #282a2b;
+  border: 0px solid #6583d8;
+  margin-right: 20px;
+  background-color: #b38be2;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+  padding-right: 8px; }
+  .logout_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .logout_button:hover {
+    background-color: #41484b;
+    transition: ease-in 0.3s; }
+  .logout_button:hover {
+    background-color: #b27df1;
+    transition: ease-in 0.3s; }
+
+.reboot_icon {
+  background-color: transparent;
+  color: #282a2b;
+  font-size: 35px; }
+
+.reboot_button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #282a2b;
+  border: 0px solid #3e4041;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 13px;
+  background-color: #282a2b;
+  border: 0px solid #6583d8;
+  margin-right: 20px;
+  background-color: #9bcfe6;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  padding-left: 11px;
+  padding-right: 5px; }
+  .reboot_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .reboot_button:hover {
+    background-color: #41484b;
+    transition: ease-in 0.3s; }
+  .reboot_button:hover {
+    background-color: #8fd4f3;
+    transition: ease-in 0.3s; }
+
+.shutdown_icon {
+  background-color: transparent;
+  color: #282a2b;
+  font-size: 35px; }
+
+.shutdown_button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #282a2b;
+  border: 0px solid #3e4041;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 13px;
+  background-color: #282a2b;
+  border: 0px solid #6583d8;
+  background-color: #a9d7e9; }
+  .shutdown_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .shutdown_button:hover {
+    background-color: #41484b;
+    transition: ease-in 0.3s; }
+  .shutdown_button:hover {
+    background-color: #9edcf4;
+    transition: ease-in 0.3s; }
+
 window.notification-popups box.notifications {
   padding: 10px; }
 
@@ -636,6 +669,7 @@ window.notification-popups box.notifications {
   margin-right: 10px; }
 
 .placeholder_icon {
+  padding: 10px;
   border-radius: 10px;
   min-width: 100px;
   min-height: 100px;
@@ -648,6 +682,7 @@ window.notification-popups box.notifications {
   color: #d3e8ea; }
 
 .noti_icon box {
+  padding: 10px;
   border-radius: 10px;
   min-width: 100px;
   min-height: 100px; }
@@ -655,6 +690,7 @@ window.notification-popups box.notifications {
     font-family: Jetbrains Mono, sans-serif; }
 
 .notification {
+  padding: 10px;
   border-radius: 10px;
   min-width: 400px;
   min-height: 100px;
@@ -691,6 +727,7 @@ window.notification-popups box.notifications {
     font-family: Jetbrains Mono, sans-serif; }
 
 .action-button {
+  padding: 10px;
   border-radius: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -711,17 +748,19 @@ window.notification-popups box.notifications {
   margin-right: 0; }
 
 .notifications_tray {
+  padding: 10px;
   border-radius: 10px;
-  min-height: 1046px;
+  min-height: 1040px;
   min-width: 450px;
-  margin-top: 110px;
-  margin-bottom: 17px;
-  margin-right: 17px;
+  margin-top: 113px;
+  margin-bottom: 20px;
+  margin-right: 20px;
   background-color: #111415; }
   .notifications_tray * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .notifications_header {
+  padding: 10px;
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -737,11 +776,22 @@ window.notification-popups box.notifications {
   font-size: 35px; }
 
 .clear_button {
+  padding: 10px;
   border-radius: 10px;
-  padding: 5px;
+  background-color: #282a2b;
+  border: 0px solid #3e4041;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 13px;
+  background-color: #282a2b;
+  border: 0px solid #6583d8;
   background-color: #b38be2; }
   .clear_button * {
     font-family: Jetbrains Mono, sans-serif; }
+  .clear_button:hover {
+    background-color: #41484b;
+    transition: ease-in 0.3s; }
   .clear_button:hover {
     background-color: #b27df1;
     transition: ease-in 0.3s; }
@@ -750,102 +800,122 @@ window.notification-popups box.notifications {
   font-size: 1.5em;
   margin-bottom: 100px; }
 
-.powermenu {
-  border-radius: 10px;
+.dock {
   padding: 10px;
-  margin-top: 17px;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-width: 480px;
+  margin-bottom: 20px;
   background-color: #111415; }
-  .powermenu * {
+  .dock * {
     font-family: Jetbrains Mono, sans-serif; }
 
-.sleep_icon {
-  background-color: transparent;
-  color: #282a2b;
-  font-size: 30px; }
+.icons image {
+  -gtk-icon-theme: "WhiteSur"; }
 
-.sleep_button {
+.separator {
+  background-color: #333536;
+  padding-left: 0.5px;
+  padding-right: 0.5px;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem; }
+
+.taskbar_icon_box {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.indicator {
+  padding: 0.25rem;
+  margin-right: 0.125rem;
+  margin-left: 0.125rem;
   border-radius: 10px;
-  padding: 5px;
+  background-color: #ffffff; }
+
+.start_menu_icon {
+  color: #9bcfe6;
+  background-color: transparent;
+  font-size: 1.5rem; }
+
+.start_menu_button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #282a2b;
+  border: 0px solid #3e4041;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 13px;
+  background-color: #282a2b;
+  border: 0px solid #9bcfe6;
+  margin-left: 10px; }
+  .start_menu_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .start_menu_button:hover {
+    background-color: #41484b;
+    transition: ease-in 0.3s; }
+
+.systray_icon {
+  color: #96cde5;
+  background-color: transparent;
+  font-size: 1.5rem; }
+
+.systray_button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #282a2b;
+  border: 0px solid #3e4041;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 13px;
+  background-color: #282a2b;
+  border: 0px solid #96cde5;
+  margin-left: 10px; }
+  .systray_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .systray_button:hover {
+    background-color: #41484b;
+    transition: ease-in 0.3s; }
+
+.systray_box {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #111415;
+  padding: 20px;
   margin-right: 20px;
-  padding: 8px;
-  background-color: #986fdb; }
-  .sleep_button * {
+  margin-bottom: 20px; }
+  .systray_box * {
     font-family: Jetbrains Mono, sans-serif; }
-  .sleep_button:hover {
-    background-color: #945ded;
-    transition: ease-in 0.3s; }
+  .systray_box image {
+    -gtk-icon-theme: "WhiteSur"; }
 
-.lock_icon {
-  background-color: transparent;
-  color: #282a2b;
-  font-size: 30px; }
+.sys_app_icon {
+  margin-left: 1rem;
+  margin-right: 1rem; }
 
-.lock_button {
+.sys_app_button {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+menu {
+  padding: 10px;
   border-radius: 10px;
-  padding: 5px;
-  margin-right: 20px;
-  background-color: #6583d8;
-  padding-left: 11px;
-  padding-right: 5px;
-  padding-top: 7px;
-  padding-bottom: 9px; }
-  .lock_button * {
+  background-color: #282a2b;
+  padding: 10px;
+  margin-bottom: 20px; }
+  menu * {
     font-family: Jetbrains Mono, sans-serif; }
-  .lock_button:hover {
-    background-color: #527aeb;
-    transition: ease-in 0.3s; }
-
-.logout_icon {
-  background-color: transparent;
-  color: #282a2b;
-  font-size: 30px; }
-
-.logout_button {
-  border-radius: 10px;
-  padding: 5px;
-  margin-right: 20px;
-  background-color: #b38be2;
-  padding-top: 10px;
-  padding-bottom: 6px;
-  padding-left: 8px;
-  padding-right: 8px; }
-  .logout_button * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .logout_button:hover {
-    background-color: #b27df1;
-    transition: ease-in 0.3s; }
-
-.reboot_icon {
-  background-color: transparent;
-  color: #282a2b;
-  font-size: 35px; }
-
-.reboot_button {
-  border-radius: 10px;
-  padding: 5px;
-  margin-right: 20px;
-  background-color: #9bcfe6;
-  padding-top: 6px;
-  padding-bottom: 10px;
-  padding-left: 11px;
-  padding-right: 5px; }
-  .reboot_button * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .reboot_button:hover {
-    background-color: #8fd4f3;
-    transition: ease-in 0.3s; }
-
-.shutdown_icon {
-  background-color: transparent;
-  color: #282a2b;
-  font-size: 35px; }
-
-.shutdown_button {
-  border-radius: 10px;
-  padding: 5px;
-  background-color: #a9d7e9; }
-  .shutdown_button * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .shutdown_button:hover {
-    background-color: #9edcf4;
-    transition: ease-in 0.3s; }
+  menu menuitem {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    menu menuitem * {
+      font-family: Jetbrains Mono, sans-serif; }
+    menu menuitem:hover {
+      background-color: #3e4041;
+      transition: ease-in 0.3s; }

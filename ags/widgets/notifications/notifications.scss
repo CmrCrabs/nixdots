@@ -26,7 +26,7 @@ window.notification-popups box.notifications {
 }
 
 .notification {
-    @include outer_widget;
+    @include widget;
     min-width: 400px;
     min-height: 100px;
     padding: $gap;

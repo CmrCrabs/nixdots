@@ -1,0 +1,13 @@
+@mixin widget {
+    @include common;
+    padding: $padding;
+    border-radius: if($rounding == 0, 0, $rounding);
+}
+
+@mixin element {
+    @include common;
+    padding: $padding;
+    border-radius: if($rounding == 0, 0, if($rounding > $gap, $rounding - $gap, $rounding));
+    background-color: $surface_container-t;
+    border: $border solid $surface_container_highest-t;
+}

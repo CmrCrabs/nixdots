@@ -1,5 +1,5 @@
 .powermenu {
-    @include outer_widget;
+    @include widget;
     padding: $gap;
     margin-top: $outer_gap;
     background-color: $background-t;
@@ -11,7 +11,7 @@
     font-size: 30px;
 }
 .sleep_button {
-    @include button;
+    @include button($color1);
     margin-right: 2 * $gap;
     padding: 8px;
     background-color: $color2;    
@@ -27,7 +27,7 @@
     font-size: 30px;
 }
 .lock_button {
-    @include button;
+    @include button($color1);
     margin-right: 2 * $gap;
     background-color: $color1;    
     padding-left: 11px;
@@ -47,7 +47,7 @@
     font-size: 30px;
 }
 .logout_button {
-    @include button;
+    @include button($color1);
     margin-right: 2 * $gap;
     background-color: $color3;    
     padding-top: 10px;
@@ -67,7 +67,7 @@
     font-size: 35px;
 }
 .reboot_button {
-    @include button;
+    @include button($color1);
     margin-right: 2 * $gap;
     background-color: $color5;    
     padding-top: 6px;
@@ -87,7 +87,7 @@
     font-size: 35px;
 }
 .shutdown_button {
-    @include button;
+    @include button($color1);
     background-color: $color6;    
     &:hover {
         background-color: saturate($color6, 20);

@@ -14,31 +14,31 @@ const battery = await Service.import('battery')
 export function Battery() {
     const value = battery.bind("percent").as((p) => p / 100);
 
-    let bar = Widget.LevelBar({
-        heightRequest: 100,
+    let bar = Widget.CircularProgress({
         hpack: "center",
         vpack: "center",
         value: value,
-        vertical: true,
-        class_name: 'batbar',
-        class_name: battery.bind('charging').as(ch => ch ? 'batbar-charging' : 'batbar'),
+        rounded: true,
+        startAt: 0.0,
+        class_name: 'bat_progress',
+        class_name: battery.bind('charging').as(ch => ch ? 'bat_progress_charging' : 'bat_progress'),
     })
 
     let icon = Widget.Icon({
-        class_name: "battery_icon",
+        class_name: "bat_icon",
         icon: battery.bind('charging').as(ch => ch ? 'battery-charging-symbolic' : 'battery1-symbolic'),
     })
 
     return Widget.Box({
-        hpack: "center",
-        vpack: "center",
-        vertical: true,
-        spacing: 2,
         class_name: "batbox",
-        children: [
-            icon,
-            bar,
-        ]
+        child: Widget.Overlay({
+            hpack: "center",
+            vpack: "center",
+            child: bar,
+            overlays: [ 
+                icon,
+            ],
+        }),
     })
 }
 
