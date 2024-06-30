@@ -1,51 +1,28 @@
 @import 'bg_colors.scss';
 @import 'fg_colors.scss';
-@import './slider.scss';
+@import 'mixins/button';
+@import 'mixins/misc';
+@import 'mixins/slider';
+@import 'mixins/widget';
+
 
 $gap: 10px;
-$outer_gap: $gap_var + if($gap_var ==0, 0px, 7px);
+$outer_gap: $gap_var + if($gap_var == 0, 0px, $gap_var);
+$padding: 10px;
+$border: 0px;
+$screen_height: 1080px;
+$screen_width: 1920px;
 
-//*:not(switch) {
-//    all: unset;
-//}
 * {
     all: unset;
 }
 
-@mixin common{
-    * {
-        font-family: Jetbrains Mono, sans-serif;
-    }
-}
-
-tooltip {
-    @include common;
-    background-color: $surface-container-highest-t;
-    padding: 3px;
-    color: $on_surface; 
-    border-radius: $rounding
-}
-
-@mixin widget {
-    @include common;
-    border-radius: if($rounding == 0, 0, $rounding + $gap/2);
-}
-@mixin outer_widget {
-    @include common;
-    border-radius: if($outer_gap == 0, 0, $rounding + $gap/2);
-}
-@mixin button {
-    @include common;
-    border-radius: if($rounding == 0, 0, $rounding + $gap/2);
-    padding: 5px;
-}
-
-
-@import '../widgets/vertical_bar/vertical_bar.scss';
-@import '../widgets/dock/dock.scss';
-@import '../widgets/start_menu/start_menu.scss';
-@import '../widgets/start_menu/media.scss';
-@import '../widgets/start_menu/control_sliders.scss';
-@import '../widgets/notifications/notifications.scss';
-@import '../widgets/notifications/notifications_tray.scss';
-@import '../widgets/powermenu/powermenu.scss';
+@import '../widgets/vertical_bar/vertical_bar';
+@import '../widgets/start_menu/media';
+@import '../widgets/start_menu/start_menu';
+@import '../widgets/start_menu/control_sliders';
+@import '../widgets/powermenu/powermenu';
+@import '../widgets/notifications/notifications';
+@import '../widgets/notifications/notifications_tray';
+@import '../widgets/dock/dock';
+@import '../widgets/dock/systray';

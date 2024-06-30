@@ -1,0 +1,19 @@
+@mixin button($colorchosen) {
+    @include element;
+    border-radius: if($rounding == 0, 0, if($rounding > $gap, $rounding - $gap, $rounding));
+    margin-top: $gap;
+    margin-bottom: $gap;
+    padding: $padding * 1.3;
+    background-color: $surface_container;    
+    border: $border solid $colorchosen;
+    &:hover {
+        background-color: $surface_variant;    
+        transition: ease-in 0.3s;
+    }
+}
+
+@mixin button_icon($colorchosen) {
+    color: $colorchosen;
+    background-color: transparent;
+    font-size: 1.5rem;
+}

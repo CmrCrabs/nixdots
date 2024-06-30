@@ -7,6 +7,7 @@
     
     plugins = [
       # inputs.hyprland-plugins.packages."${pkgs.system}".hyprbars
+      # inputs.hyprland-plugins.packages."${pkgs.system}".borders-plus-plus
       # inputs.hyprspace.packages.${pkgs.system}.Hyprspace
     ];
 
@@ -42,7 +43,7 @@
       ];
       workspace = [
         "eDP-1, 1"
-        "DP-1, 9"        
+        "DP-1, 10"        
         # "1, persistent:true"
         # "2, persistent:true"
         # "3, persistent:true"
@@ -85,7 +86,7 @@
         shadow_range = "10";
         shadow_render_power = "3";
         shadow_offset = "0, 3";
-       "col.shadow" = "rgba(000000cc)";
+        "col.shadow" = "rgba(000000cc)";
         dim_inactive = "yes";
         dim_strength = "0.15";
 
@@ -113,12 +114,6 @@
           "md3_accel, 0.3, 0, 0.8, 0.15"
         ];
         animation = [
-          # "windows, 1, 1.5, myBezier"
-          # "windowsOut, 1, 2, default, popin 80%"
-          # "border, 1, 2, default"
-          # "borderangle, 1, 6, default"
-          # "fade, 1, 2, default"
-
           "windows, 1, 3, md3_decel, popin 60%"
           "windowsIn, 1, 3, md3_decel, popin 60%"
           "windowsOut, 1, 3, md3_accel, popin 60%"
@@ -243,21 +238,8 @@
       gaps_out = 10
     }
 
-    monitor = eDP-1, addreserved,$outer_gap,0,0,0
-    monitor = eDP-1,addreserved,$outer_gap, $outer_gap, $outer_gap, $outer_gap
-
-plugin {
-    hyprbars {
-        # example config
-        bar_height = 20
-
-        # example buttons (R -> L)
-        # hyprbars-button = color, size, on-click
-        bar_color = rgb(ff0000)
-        hyprbars-button = rgb(ff4040), 10, 󰖭, hyprctl dispatch killactive
-        hyprbars-button = rgb(eeee11), 10, , hyprctl dispatch fullscreen 1
-    }
-}
+    # monitor = eDP-1, addreserved,$outer_gap,0,0,0
+    # monitor = eDP-1,addreserved,$outer_gap, $outer_gap, $outer_gap, $outer_gap
 
     '';
   };

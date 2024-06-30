@@ -1,5 +1,5 @@
 .control_sliders {
-    @include outer_widget;
+    @include widget;
     min-height: 400px - $outer_gap;
     min-width: 200px - $gap - $gap;
     background-color: $surface_container_low-t;

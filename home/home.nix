@@ -3,7 +3,7 @@ let
   wal =   "${dotfilesDir}/wallpapers/anime_train_snow.png";
   wal-l = "${dotfilesDir}/wallpapers/anime_train_snow.png";
   style = "dark";
-  rounding = "5";
+  rounding = "10";
   scheme = "fidelity";
   bg-contrast = "0.6";
   fg-contrast = "0.6";

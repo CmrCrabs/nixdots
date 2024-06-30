@@ -15,14 +15,13 @@
     - [ ] nvim (prism)
     - [ ] hypr colors for lockscreen & hyprbars
 
-- [ ] Switch to Yazi
 - [ ] toggle hypr border
 - [ ] Switch to Unstable
-- [ ] hyprland hdrop plugin
 - [ ] hyprbars setup (windowrules & hyprbars) + use ags to change buttons to round / square
 - [ ] hyprspace
 - [ ] redesign hyprlock to follow options
 - [ ] import / convert refind-minimal to nix
+- [ ] make so if toggle floating on kitty window it sets size to the floating size
 
 - [ ] AGS Setup
     - [ ] Wifi / Volume / Microphone
@@ -31,6 +30,18 @@
     - [ ] rounded corners(?)
 - [ ] Rofi Wallpaper Selector
 - [ ] add overview button to dock for hyprspace
+- [ ] ags config file
+- [ ] rewrite ags to support config file
+- [ ] rewrite ags to support consistent cs vars IE:
+    - [ ] $gap
+    - [ ] $padding
+    - [ ] $widget gap
+    - [ ] $outer gap
+    - [ ] fix rounding
+    - [ ] write a button mixin
+    - [ ] write a slider mixin
+    - [ ] fix icon theme
+    - [ ] fix seperator height
 
 - [ ] add hyprpspace button
 - [ ] when doing theme menu, ensure to add offsets to gap value passed to hyprland to account for a minimum
@@ -106,3 +117,4 @@ for their great configs / learning resources / software
 - ChadCat7
 - linuxmobile
 - kotontrion (ags help)
+- end4 
