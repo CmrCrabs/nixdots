@@ -5,6 +5,8 @@ import { StartMenu } from "./widgets/start_menu/start_menu.js";
 import { NotificationPopups } from "./widgets/notifications/notifications.js";
 import { NotificationCenter } from "./widgets/notifications/notifications_tray.js";
 import { PowerMenu } from "./widgets/powermenu/powermenu.js";
+import { ControlCenter } from "./widgets/control_center/control_center.js";
+
 const css = `${App.configDir}/scss/my-style.css`
 const scss = `${App.configDir}/scss/style.scss`
 
@@ -30,6 +32,7 @@ App.config({
         NotificationPopups(0),
         NotificationCenter(0),
         PowerMenu(0),
+        ControlCenter(0),
     ],
 })
 

@@ -1,8 +1,6 @@
 .vertical_bar {
     @include widget;
-    min-height: $screen_height - 2 * $outer_gap;
-    margin-top: $outer_gap;
-    margin-bottom: $outer_gap;
+    min-height: $screen_height - (4 * $outer_gap);
     margin-left: $outer_gap;
     background-color: $background-t;
     color: $on_background;
@@ -21,7 +19,7 @@
 
 .batbox {
     @include element;
-    padding: $gap / 2.1;
+    padding: $gap / 2.1
 }
 .bat_icon {
     @include button_icon($on_surface);

@@ -57,7 +57,7 @@ export function MiscButton() {
     })
 
     return Widget.Button({
-        onClicked: () => print("test"),
+        onClicked: () => App.toggleWindow("control_center"),
         tooltip_text: "Miscellaneous Controls",
         hpack: "center",
         vpack: "center",

@@ -23,7 +23,7 @@ tooltip {
   padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  border: 0rem solid #3e4041;
+  border: 0px solid #3e4041;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 11px;
@@ -38,7 +38,7 @@ tooltip {
   padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  border: 0rem solid #3e4041;
+  border: 0px solid #3e4041;
   padding: 4.7619047619px; }
   .batbox * {
     font-family: Jetbrains Mono, sans-serif; }
@@ -64,7 +64,7 @@ circular-progress {
   padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  border: 0rem solid #3e4041;
+  border: 0px solid #3e4041;
   padding: 20px; }
   .workspaces * {
     font-family: Jetbrains Mono, sans-serif; }
@@ -73,7 +73,7 @@ circular-progress {
   padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  border: 0rem solid #3e4041;
+  border: 0px solid #3e4041;
   background-color: #ffffff;
   margin-top: 10px;
   padding-top: 12.5px;
@@ -90,7 +90,7 @@ circular-progress {
   padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  border: 0rem solid #3e4041;
+  border: 0px solid #3e4041;
   background-color: #a9d7e9;
   margin-top: 10px;
   padding-top: 15px;
@@ -113,13 +113,13 @@ circular-progress {
   padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  border: 0rem solid #3e4041;
+  border: 0px solid #3e4041;
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
   background-color: #282a2b;
-  border: 0rem solid #7cd7ff; }
+  border: 0px solid #96cde5; }
   .theme_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .theme_button:hover {
@@ -141,13 +141,13 @@ circular-progress {
   padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  border: 0rem solid #3e4041;
+  border: 0px solid #3e4041;
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
   background-color: #282a2b;
-  border: 0rem solid #3e70ff;
+  border: 0px solid #6583d8;
   margin: 0; }
   .notification_music_button * {
     font-family: Jetbrains Mono, sans-serif; }
@@ -176,18 +176,132 @@ circular-progress {
   padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  border: 0rem solid #3e4041;
+  border: 0px solid #3e4041;
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
   background-color: #282a2b;
-  border: 0rem solid #3e70ff; }
+  border: 0px solid #6583d8; }
   .misc_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .misc_button:hover {
     background-color: #41484b;
     transition: ease-in 0.3s; }
+
+.player {
+  padding: 10px;
+  border-radius: 10px;
+  border: 10px solid #111415;
+  background-color: #282a2b;
+  background-size: cover;
+  background-position: center;
+  min-height: 180px;
+  min-width: 180px;
+  margin-top: 10px; }
+  .player * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.media {
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 200px; }
+  .media * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.title {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 1.0; }
+  .title * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.artist {
+  font-size: 10px;
+  color: #ffffff;
+  opacity: 1.0; }
+  .artist * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.play-pause {
+  background-color: transparent; }
+  .play-pause:hover {
+    color: #6583d8;
+    transition: ease-in 0.3s; }
+
+.play-pause-icon {
+  background-color: transparent;
+  font-size: 30px; }
+
+.prev {
+  background-color: transparent;
+  margin-top: 6px; }
+  .prev:hover {
+    color: #6583d8;
+    transition: ease-in 0.3s; }
+
+.prev-icon {
+  background-color: transparent;
+  font-size: 20px; }
+
+.next {
+  background-color: transparent;
+  margin-top: 6px; }
+  .next:hover {
+    color: #6583d8;
+    transition: ease-in 0.3s; }
+
+.next-icon {
+  background-color: transparent;
+  font-size: 20px; }
+
+.position {
+  font-size: 10px;
+  color: #ffffff;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+  .position * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.length {
+  font-size: 10px;
+  color: #ffffff;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+  .length * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.position-slider {
+  all: unset;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .position-slider trough {
+    border-radius: 10px;
+    background-color: #282a2b;
+    min-height: 8px;
+    min-width: 50px; }
+    .position-slider trough highlight, .position-slider trough progress {
+      background-color: #6583d8;
+      border-radius: 10px; }
+  .position-slider slider {
+    background-color: #6583d8;
+    border-radius: 10px; }
+  .position-slider:hover trough {
+    transition: ease-in 0.3s;
+    background-color: #202d33; }
+  .position-slider:hover slider {
+    transition: ease-in 0.3s;
+    background-color: #4373fa; }
+  .position-slider:hover highlight, .position-slider:hover progress {
+    transition: ease-in 0.3s;
+    background-color: #527aeb; }
+  .position-slider:disabled highlight, .position-slider:disabled progress {
+    background-color: #ffd7d2; }
+  .position-slider trough:focus {
+    background-color: #986fdb; }
+    .position-slider trough:focus slider {
+      background-color: #986fdb; }
 
 .start_menu {
   min-width: 570px;
@@ -285,13 +399,13 @@ circular-progress {
   padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  border: 0rem solid #3e4041;
+  border: 0px solid #3e4041;
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
   background-color: #282a2b;
-  border: 0rem solid #3e70ff;
+  border: 0px solid #6583d8;
   margin-right: 20px;
   padding: 8px;
   background-color: #986fdb; }
@@ -313,13 +427,13 @@ circular-progress {
   padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  border: 0rem solid #3e4041;
+  border: 0px solid #3e4041;
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
   background-color: #282a2b;
-  border: 0rem solid #3e70ff;
+  border: 0px solid #6583d8;
   margin-right: 20px;
   background-color: #6583d8;
   padding-left: 11px;
@@ -344,13 +458,13 @@ circular-progress {
   padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  border: 0rem solid #3e4041;
+  border: 0px solid #3e4041;
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
   background-color: #282a2b;
-  border: 0rem solid #3e70ff;
+  border: 0px solid #6583d8;
   margin-right: 20px;
   background-color: #b38be2;
   padding-top: 10px;
@@ -375,13 +489,13 @@ circular-progress {
   padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  border: 0rem solid #3e4041;
+  border: 0px solid #3e4041;
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
   background-color: #282a2b;
-  border: 0rem solid #3e70ff;
+  border: 0px solid #6583d8;
   margin-right: 20px;
   background-color: #9bcfe6;
   padding-top: 6px;
@@ -406,13 +520,13 @@ circular-progress {
   padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  border: 0rem solid #3e4041;
+  border: 0px solid #3e4041;
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
   background-color: #282a2b;
-  border: 0rem solid #3e70ff;
+  border: 0px solid #6583d8;
   background-color: #a9d7e9; }
   .shutdown_button * {
     font-family: Jetbrains Mono, sans-serif; }
@@ -510,6 +624,59 @@ window.notification-popups box.notifications {
 .action-button:last-child {
   margin-right: 0; }
 
+.notifications_tray {
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 1060px;
+  min-width: 450px;
+  margin-top: 103px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  background-color: #111415; }
+  .notifications_tray * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.notifications_header {
+  padding: 10px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 2em; }
+  .notifications_header * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.clear_icon {
+  background-color: transparent;
+  color: #282a2b;
+  font-size: 35px; }
+
+.clear_button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #282a2b;
+  border: 0px solid #3e4041;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 13px;
+  background-color: #282a2b;
+  border: 0px solid #6583d8;
+  background-color: #b38be2; }
+  .clear_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .clear_button:hover {
+    background-color: #41484b;
+    transition: ease-in 0.3s; }
+  .clear_button:hover {
+    background-color: #b27df1;
+    transition: ease-in 0.3s; }
+
+.placeholder {
+  font-size: 1.5em;
+  margin-bottom: 100px; }
+
 .dock {
   padding: 10px;
   border-radius: 10px;
@@ -551,13 +718,13 @@ window.notification-popups box.notifications {
   padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  border: 0rem solid #3e4041;
+  border: 0px solid #3e4041;
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
   background-color: #282a2b;
-  border: 0rem solid #82d9ff;
+  border: 0px solid #9bcfe6;
   margin-left: 10px; }
   .start_menu_button * {
     font-family: Jetbrains Mono, sans-serif; }
@@ -574,13 +741,13 @@ window.notification-popups box.notifications {
   padding: 10px;
   border-radius: 10px;
   background-color: #282a2b;
-  border: 0rem solid #3e4041;
+  border: 0px solid #3e4041;
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
   background-color: #282a2b;
-  border: 0rem solid #7cd7ff;
+  border: 0px solid #96cde5;
   margin-left: 10px; }
   .systray_button * {
     font-family: Jetbrains Mono, sans-serif; }
@@ -634,42 +801,43 @@ menu {
   padding: 10px;
   border-radius: 10px;
   margin-left: 10px;
-  min-width: 350px;
-  background-color: #111415;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  min-width: 25em;
+  background-color: #111415; }
   .control_sliders * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .volume {
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
 
-.volume_slider {
-  min-width: 306px; }
-  .volume_slider trough {
-    border-radius: 10px;
-    background-color: #3e4041;
-    min-height: 15px;
-    min-width: 20px;
-    margin-left: 10px;
-    margin-right: 10px; }
-    .volume_slider trough highlight, .volume_slider trough progress {
-      background-color: #6583d8;
-      border-radius: 10px; }
-  .volume_slider slider {
+.volume_slider trough {
+  border-radius: 10px;
+  background-color: #3e4041;
+  min-height: 20px;
+  min-width: 80px;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .volume_slider trough highlight, .volume_slider trough progress {
     background-color: #6583d8;
     border-radius: 10px; }
-  .volume_slider:hover trough {
-    transition: ease-in 0.3s;
-    background-color: #31444e; }
-  .volume_slider:hover slider {
-    transition: ease-in 0.3s;
-    background-color: #284757; }
-  .volume_slider:hover highlight, .volume_slider:hover progress {
-    transition: ease-in 0.3s;
-    background-color: #527aeb; }
-  .volume_slider:disabled highlight, .volume_slider:disabled progress {
-    background-color: #ffd7d2; }
+
+.volume_slider slider {
+  background-color: #6583d8;
+  border-radius: 10px; }
+
+.volume_slider:hover trough {
+  transition: ease-in 0.3s;
+  background-color: #31444e; }
+
+.volume_slider:hover slider {
+  transition: ease-in 0.3s;
+  background-color: #284757; }
+
+.volume_slider:hover highlight, .volume_slider:hover progress {
+  transition: ease-in 0.3s;
+  background-color: #527aeb; }
+
+.volume_slider:disabled highlight, .volume_slider:disabled progress {
+  background-color: #ffd7d2; }
 
 .volume_icon {
   background-color: transparent;
@@ -677,66 +845,72 @@ menu {
   font-size: 1.5rem; }
 
 .brightness {
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
 
-.brightness_slider {
-  min-width: 306px; }
-  .brightness_slider trough {
-    border-radius: 10px;
-    background-color: #3e4041;
-    min-height: 15px;
-    min-width: 20px;
-    margin-left: 10px;
-    margin-right: 10px; }
-    .brightness_slider trough highlight, .brightness_slider trough progress {
-      background-color: #d3e8ea;
-      border-radius: 10px; }
-  .brightness_slider slider {
+.brightness_slider trough {
+  border-radius: 10px;
+  background-color: #3e4041;
+  min-height: 20px;
+  min-width: 80px;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .brightness_slider trough highlight, .brightness_slider trough progress {
     background-color: #d3e8ea;
     border-radius: 10px; }
-  .brightness_slider:hover trough {
-    transition: ease-in 0.3s;
-    background-color: #31444e; }
-  .brightness_slider:hover slider {
-    transition: ease-in 0.3s;
-    background-color: #284757; }
-  .brightness_slider:hover highlight, .brightness_slider:hover progress {
-    transition: ease-in 0.3s;
-    background-color: #cdedf1; }
-  .brightness_slider:disabled highlight, .brightness_slider:disabled progress {
-    background-color: #ffd7d2; }
+
+.brightness_slider slider {
+  background-color: #d3e8ea;
+  border-radius: 10px; }
+
+.brightness_slider:hover trough {
+  transition: ease-in 0.3s;
+  background-color: #31444e; }
+
+.brightness_slider:hover slider {
+  transition: ease-in 0.3s;
+  background-color: #284757; }
+
+.brightness_slider:hover highlight, .brightness_slider:hover progress {
+  transition: ease-in 0.3s;
+  background-color: #cdedf1; }
+
+.brightness_slider:disabled highlight, .brightness_slider:disabled progress {
+  background-color: #ffd7d2; }
 
 .brightness_icon {
   background-color: transparent;
   color: #d3e8ea;
   font-size: 1.5rem; }
 
-.microphone_slider {
-  min-width: 306px; }
-  .microphone_slider trough {
-    border-radius: 10px;
-    background-color: #3e4041;
-    min-height: 15px;
-    min-width: 20px;
-    margin-left: 10px;
-    margin-right: 10px; }
-    .microphone_slider trough highlight, .microphone_slider trough progress {
-      background-color: #b38be2;
-      border-radius: 10px; }
-  .microphone_slider slider {
+.microphone_slider trough {
+  border-radius: 10px;
+  background-color: #3e4041;
+  min-height: 20px;
+  min-width: 80px;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .microphone_slider trough highlight, .microphone_slider trough progress {
     background-color: #b38be2;
     border-radius: 10px; }
-  .microphone_slider:hover trough {
-    transition: ease-in 0.3s;
-    background-color: #31444e; }
-  .microphone_slider:hover slider {
-    transition: ease-in 0.3s;
-    background-color: #284757; }
-  .microphone_slider:hover highlight, .microphone_slider:hover progress {
-    transition: ease-in 0.3s;
-    background-color: #b27df1; }
-  .microphone_slider:disabled highlight, .microphone_slider:disabled progress {
-    background-color: #ffd7d2; }
+
+.microphone_slider slider {
+  background-color: #b38be2;
+  border-radius: 10px; }
+
+.microphone_slider:hover trough {
+  transition: ease-in 0.3s;
+  background-color: #31444e; }
+
+.microphone_slider:hover slider {
+  transition: ease-in 0.3s;
+  background-color: #284757; }
+
+.microphone_slider:hover highlight, .microphone_slider:hover progress {
+  transition: ease-in 0.3s;
+  background-color: #b27df1; }
+
+.microphone_slider:disabled highlight, .microphone_slider:disabled progress {
+  background-color: #ffd7d2; }
 
 .microphone_icon {
   background-color: transparent;
@@ -750,132 +924,7 @@ menu {
   margin-bottom: 10px;
   margin-left: 10px;
   background-color: #111415;
-  min-width: 350px; }
+  min-width: 25em;
+  min-height: 20em; }
   .control_menu * {
     font-family: Jetbrains Mono, sans-serif; }
-
-.wifi_button {
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #282a2b;
-  border: 0rem solid #3e4041;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #6583d8;
-  border: 0rem solid #3e70ff;
-  min-width: 330px;
-  margin-bottom: 10px; }
-  .wifi_button * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .wifi_button:hover {
-    background-color: #4875f5;
-    transition: ease-in 0.3s; }
-
-.dnd_button {
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #282a2b;
-  border: 0rem solid #3e4041;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #a9d7e9;
-  border: 0rem solid #93e1ff;
-  min-width: 150px;
-  margin-right: 10px;
-  margin-bottom: 10px; }
-  .dnd_button * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .dnd_button:hover {
-    background-color: #99def9;
-    transition: ease-in 0.3s; }
-
-.bluetooth_button {
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #282a2b;
-  border: 0rem solid #3e4041;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #d3e8ea;
-  border: 0rem solid #c3f5fa;
-  min-width: 150px;
-  margin-bottom: 10px; }
-  .bluetooth_button * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .bluetooth_button:hover {
-    background-color: #c9f0f4;
-    transition: ease-in 0.3s; }
-
-.power_profiles_button {
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #282a2b;
-  border: 0rem solid #3e4041;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #b38be2;
-  border: 0rem solid #b16eff;
-  min-width: 150px;
-  margin-right: 10px; }
-  .power_profiles_button * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .power_profiles_button:hover {
-    background-color: #b175f8;
-    transition: ease-in 0.3s; }
-
-.control_button_icon {
-  color: #111415;
-  background-color: transparent;
-  font-size: 1.5rem;
-  margin-right: 10px; }
-
-.control_button_header {
-  color: #111415;
-  font-size: 0.8rem; }
-
-.control_button_label {
-  color: #111415;
-  font-size: 0.6rem; }
-
-.redshift_button {
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #282a2b;
-  border: 0rem solid #3e4041;
-  margin-right: 10px;
-  min-width: 52.5px;
-  border-radius: 10px;
-  padding: 13px;
-  background-color: #282a2b;
-  border: 0rem solid #133140; }
-  .redshift_button * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .redshift_button:hover {
-    background-color: #41484b;
-    transition: ease-in 0.3s; }
-
-.redshift_icon {
-  color: #ffffff;
-  background-color: transparent;
-  font-size: 1.5rem; }
-
-.mute_button {
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #282a2b;
-  border: 0rem solid #3e4041;
-  min-width: 52.5px;
-  border-radius: 10px;
-  padding: 13px;
-  background-color: #b38be2;
-  border: 0rem solid #93e1ff; }
-  .mute_button * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .mute_button:hover {
-    background-color: #41484b;
-    transition: ease-in 0.3s; }
-
-.mute_icon {
-  color: #111415;
-  background-color: transparent;
-  font-size: 1.5rem; }

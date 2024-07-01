@@ -15,7 +15,7 @@
         
     settings = {
       source = [
-        "~/.config/hypr/colors.conf"
+        "~/.config/hypr/vars.conf"
       ];
       "$mainMod" = "ALT";
       "$terminal" = "kitty";
@@ -39,7 +39,6 @@
       monitor = [
         "eDP-1, 1920x1080@60, 0x0, 1"
         "DP-1, 1920x515@60, 0x1080, 1"
-        "DP-1,addreserved,5, 5, 5, 5"
       ];
       workspace = [
         "eDP-1, 1"
@@ -82,10 +81,10 @@
       };
     
       decoration = {
-        drop_shadow = "yes";
+        drop_shadow = "no";
         shadow_range = "10";
         shadow_render_power = "3";
-        shadow_offset = "0, 3";
+        shadow_offset = "0, 0";
         "col.shadow" = "rgba(000000cc)";
         dim_inactive = "yes";
         dim_strength = "0.15";
@@ -144,6 +143,8 @@
         "animation slide right,^(systray)$"
         "blur,^(powermenu)$"
         "ignorezero,^(powermenu)$"
+        "blur,^(control_center)$"
+        "ignorezero,^(control_center)$"
       ];
       windowrulev2 = [
         "tile, class:^(firefox)$,title:^(Firefox)$"
@@ -234,13 +235,11 @@
       rounding = $rounding
     }
     general {
-      gaps_in = 10
-      gaps_out = 10
+      gaps_in = $outer_gap
+      gaps_out = $outer_gap
     }
 
-    # monitor = eDP-1, addreserved,$outer_gap,0,0,0
-    # monitor = eDP-1,addreserved,$outer_gap, $outer_gap, $outer_gap, $outer_gap
-
+    monitor = eDP-1,addreserved,0, 90 + $outer_gap, 0, 0
     '';
   };
 }

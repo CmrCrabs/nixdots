@@ -1,5 +1,4 @@
 import { AppLauncher } from "./app_launcher.js"
-import { StartWidgets } from "./start_widgets.js";
 const WINDOW_NAME = "start_menu"
 
 export function StartMenu(monitor = 0) {
@@ -18,7 +17,6 @@ export function StartMenu(monitor = 0) {
             vpack: "center",
             children: [
                 AppLauncher(),
-                StartWidgets(),
             ],
         }),
         setup: self => {

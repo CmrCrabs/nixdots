@@ -8,6 +8,7 @@ export function Workspaces() {
         .map(({ id }) => Widget.Button({
                 on_clicked: () => hyprland.messageAsync(`dispatch workspace ${id}`),
                 class_name: activeId.as(i => `${i === id ? "workspace_focused" : "workspace_unfocused"}`),
+                cursor: "pointer",
                 hpack: "center",
                 vpack: "center",
         }))

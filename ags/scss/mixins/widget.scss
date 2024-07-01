@@ -1,5 +1,6 @@
 @mixin widget {
     @include common;
+    //border: 1px solid red
     padding: $padding;
     border-radius: if($rounding == 0, 0, $rounding);
 }

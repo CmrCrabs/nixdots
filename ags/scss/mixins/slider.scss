@@ -1,12 +1,12 @@
-@mixin control_slider($primary_col: $color1, $bg_col: $surface_container-highest-t) {
+@mixin slider($primary_col: $color1, $bg_col: $surface_container-highest-t) {
     //all: unset;
-    margin-left: 10px;
-    margin-right: 10px;
-
     trough{
         border-radius: $rounding;
         background-color: $bg_col;
-        min-width:  20px;
+        min-height:  1.5 * $padding;
+        min-width: 2 * $padding;
+        margin-left: 10px;
+        margin-right: 10px;
 
         highlight, progress{
             background-color: $primary_col;
@@ -41,4 +41,11 @@
             background-color: $error;
         }
     }
+}
+
+@mixin slider_icon($col: #ff0000) {
+    background-color: transparent;
+    color: $col;
+    font-size: 1.5rem;
+    //border: 1px solid red;
 }

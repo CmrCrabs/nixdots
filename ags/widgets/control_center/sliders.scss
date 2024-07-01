@@ -1,0 +1,40 @@
+.control_sliders {
+    @include widget;
+    margin-left: $outer_gap;
+    min-width: $left_menu_width;
+    background-color: $background-t;
+    padding-top: 2 * $padding;
+    padding-bottom: 2 * $padding;
+}
+
+.volume {
+    margin-bottom: 2 * $gap;
+}
+.volume_slider {
+    @include slider($color1);
+    min-width:  $left_menu_width - 2 * $gap - 24px;
+}
+.volume_icon {
+    @include slider_icon($color1);
+}
+
+.brightness {
+    margin-bottom: 2 * $gap;
+}
+.brightness_slider {
+    @include slider($color7);
+    min-width:  $left_menu_width - 2 * $gap - 24px;
+}
+.brightness_icon {
+    @include slider_icon($color7);
+}
+
+.microphone {
+}
+.microphone_slider {
+    @include slider($color3);
+    min-width:  $left_menu_width - 2 * $gap - 24px;
+}
+.microphone_icon {
+    @include slider_icon($color3);
+}
