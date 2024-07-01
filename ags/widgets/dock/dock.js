@@ -128,7 +128,7 @@ export function Dock(monitor = 0) {
         name: 'dock',
         cursor: "default",
         monitor,
-        exclusivity: "exclusive",
+        exclusivity: "normal",
         anchor: ["bottom"],
         child: Widget.CenterBox({
             class_name: 'dock',

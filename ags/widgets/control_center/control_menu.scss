@@ -1,0 +1,85 @@
+.control_menu {
+    @include widget;
+    margin-top: $outer_gap;
+    margin-bottom: $outer_gap;
+    margin-left: $outer_gap;
+    background-color: $background-t;
+    min-width: $left_menu_width;
+}
+
+.wifi_button {
+    @include control_button($color1);
+    min-width: $left_menu_width - 2 * $gap;
+    margin-bottom: $gap;
+}
+
+.dnd_button {
+    @include control_button($color6);
+    min-width: ($left_menu_width / 2) - 2.5 * $gap;
+    margin-right: $gap;
+    margin-bottom: $gap;
+}
+
+.bluetooth_button {
+    @include control_button($color7);
+    min-width: ($left_menu_width / 2) - 2.5 * $gap;
+    margin-bottom: $gap;
+}
+
+.power_profiles_button {
+    @include control_button($color3);
+    min-width: ($left_menu_width / 2) - 2.5 * $gap;
+    margin-right: $gap;
+}
+
+.control_button_icon {
+    @include button_icon($background);
+    margin-right: $gap;
+}
+.control_button_header {
+    color: $background;
+    font-size: 0.8rem;
+}
+.control_button_label {
+    color: $background;
+    font-size: 0.6rem;
+}
+
+.redshift_button {
+    @include element;
+    margin-right: $gap;
+    min-width: ($left_menu_width / 4) - 3.5 * $gap;
+    border-radius: if($rounding == 0, 0, if($rounding > $gap, $rounding - $gap, $rounding));
+    padding: $padding * 1.3;
+    background-color: $surface_container;    
+    border: $border solid saturate($surface_container, 50);
+    &:hover {
+        background-color: $surface_variant;    
+        transition: ease-in 0.3s;
+    }
+}
+
+.redshift_icon {
+    color: $on_surface;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.mute_button {
+    @include element;
+    min-width: ($left_menu_width / 4) - 3.5 * $gap;
+    border-radius: if($rounding == 0, 0, if($rounding > $gap, $rounding - $gap, $rounding));
+    padding: $padding * 1.3;
+    background-color: $color3;    
+    border: $border solid saturate($color6, 50);
+    &:hover {
+        background-color: $surface_variant;    
+        transition: ease-in 0.3s;
+    }
+}
+
+.mute_icon {
+    color: $background;
+    background-color: transparent;
+    font-size: 1.5rem;
+}

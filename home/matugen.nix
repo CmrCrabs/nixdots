@@ -15,9 +15,9 @@
     input_path = "${templateDir}/kitty.conf"
     output_path = "${config.home.homeDirectory}/.config/kitty/bg_colors.conf"
 
-    [templates.hypr-colors]
+    [templates.hypr-vars]
     input_path = "${templateDir}/hypr.conf"
-    output_path = "${config.home.homeDirectory}/.config/hypr/colors.conf"
+    output_path = "${config.home.homeDirectory}/.config/hypr/vars.conf"
 
     [config.reload_apps_list]
     kitty = true
@@ -36,9 +36,6 @@
     [templates.ags]
     input_path = "${templateDir}/bg_colors.scss"
     output_path = "${config.home.homeDirectory}/.config/ags/scss/bg_colors.scss"
-
-
-    
   '';
 
 }

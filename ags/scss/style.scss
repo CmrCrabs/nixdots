@@ -1,5 +1,6 @@
-@import 'bg_colors.scss';
-@import 'fg_colors.scss';
+@import 'bg_colors';
+@import 'fg_colors';
+
 @import 'mixins/button';
 @import 'mixins/misc';
 @import 'mixins/slider';
@@ -7,22 +8,25 @@
 
 
 $gap: 10px;
-$outer_gap: $gap_var + if($gap_var == 0, 0px, $gap_var);
+$outer_gap: $gap_var;
 $padding: 10px;
-$border: 0px;
+$border: 0rem;
 $screen_height: 1080px;
 $screen_width: 1920px;
+$left_menu_width: 350px;
 
 * {
     all: unset;
 }
 
 @import '../widgets/vertical_bar/vertical_bar';
-@import '../widgets/start_menu/media';
+//@import '../widgets/start_menu/media';
 @import '../widgets/start_menu/start_menu';
-@import '../widgets/start_menu/control_sliders';
 @import '../widgets/powermenu/powermenu';
 @import '../widgets/notifications/notifications';
-@import '../widgets/notifications/notifications_tray';
+//@import '../widgets/notifications/notifications_tray';
 @import '../widgets/dock/dock';
 @import '../widgets/dock/systray';
+@import '../widgets/control_center/sliders';
+@import '../widgets/control_center/control_menu';
+

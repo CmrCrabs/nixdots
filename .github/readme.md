@@ -22,6 +22,7 @@
 - [ ] redesign hyprlock to follow options
 - [ ] import / convert refind-minimal to nix
 - [ ] make so if toggle floating on kitty window it sets size to the floating size
+- [ ] fix sdhadow
 
 - [ ] AGS Setup
     - [ ] Wifi / Volume / Microphone
@@ -29,6 +30,8 @@
     - [ ] Horizontal Bar
     - [ ] rounded corners(?)
 - [ ] Rofi Wallpaper Selector
+- [ ] power profiles
+- [ ] ags vertical bar top and bottom margin fix
 - [ ] add overview button to dock for hyprspace
 - [ ] ags config file
 - [ ] rewrite ags to support config file
