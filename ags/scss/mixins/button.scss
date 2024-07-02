@@ -19,10 +19,18 @@
     //border: 1px solid red;
 }
 
+@mixin control_button_icon() {
+    background-color: transparent;
+    font-size: 1.5rem;
+    //border: 1px solid red;
+}
+
 @mixin control_button($col) {
     @include element;
     border-radius: if($rounding == 0, 0, if($rounding > $gap, $rounding - $gap, $rounding));
     padding: $padding;
+    padding-top: 1.5 * $padding;
+    padding-bottom: 1.5 * $padding;
     background-color: $col;
     border: $border solid saturate($col, 50);
     &:hover {

@@ -61,9 +61,12 @@ in {
   };
 
   services.libinput.enable = true;
+  console.keyMap = "uk";
+
+  # AGS Dependencies
   services.upower.enable = true;
   services.gvfs.enable = true;
-  console.keyMap = "uk";
+  services.power-profiles-daemon.enable = true;
 
   # Services
   services.tlp = {
@@ -230,6 +233,8 @@ in {
     alsa-lib
 
     hyprcursor
+
+    wlsunset
 
     # WGPU
     vulkan-loader
