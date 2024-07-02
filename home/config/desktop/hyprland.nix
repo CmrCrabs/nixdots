@@ -31,6 +31,7 @@
         "sudo tlp start" 
         "hypridle"
         "ags"
+        "wlsunset -l 52.2 -L 0.13"
       ];
       exec = [
       ];
@@ -145,6 +146,7 @@
         "ignorezero,^(powermenu)$"
         "blur,^(control_center)$"
         "ignorezero,^(control_center)$"
+        "animation slide left,^(control_center)$"
       ];
       windowrulev2 = [
         "tile, class:^(firefox)$,title:^(Firefox)$"

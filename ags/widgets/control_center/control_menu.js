@@ -1,4 +1,7 @@
-function ControlButton(icon, name, header_text, label = "epic", on_click = () => print("real")) {
+const notifications = await Service.import("notifications")
+const audio = await Service.import("audio")
+
+function ControlButton(icon, header_text, name, label, on_click = () => print("real")) {
     const icon_widget = Widget.Icon({
         hpack: "center",
         vpack: "center",
@@ -55,12 +58,16 @@ export function ControlMenu() {
         children: [
             WifiButton(),
             Widget.Box({
+                hpack: "center",
+                vpack: "center",
                 children: [
                     DNDButton(),
                     BluetoothButton(),
                 ]
             }),
             Widget.Box({
+                hpack: "center",
+                vpack: "center",
                 children: [
                     PowerProfilesButton(),
                     RedShiftButton(),
@@ -74,25 +81,29 @@ export function ControlMenu() {
 function WifiButton() {
     return ControlButton(
         "wifi",
-        "wifi",
         "Wifi",
+        "wifi",
         "VM2907828",
     );
 }
 function DNDButton() {
     return ControlButton(
         "alert",
-        "dnd",
         "Do Not Disturb",
-        "Off",
+        "dnd",
+        notifications.bind("dnd").transform(a => a ? "On" : "Off"),
+        self => {
+            notifications.dnd = !notifications.dnd;
+            self.toggleClassName("on", notifications.dnd);
+        },
     );
 }
 
 function BluetoothButton() {
     return ControlButton(
         "bluetooth",
-        "bluetooth",
         "Bluetooth",
+        "bluetooth",
         "0 Devices Connected",
     );
 }
@@ -100,8 +111,8 @@ function BluetoothButton() {
 function PowerProfilesButton() {
     return ControlButton(
         "chip",
-        "power_profiles",
         "Performance Mode",
+        "power_profiles",
         "On",
     );
 }
@@ -114,7 +125,22 @@ function RedShiftButton() {
     })
 
     return Widget.Button({
-        onClicked: () => print("test"),
+        onClicked: self => {
+            if (Utils.exec('pidof wlsunset').length == 0) {
+                Utils.execAsync("wlsunset")
+                    .then(out => print(out))
+                    .catch(err => print(err));
+                self.toggleClassName("on", true);
+            } else {
+                Utils.execAsync("pkill wlsunset")
+                    .then(out => print(out))
+                    .catch(err => print(err));
+                self.toggleClassName("on", false);
+            }
+        },
+        setup: self => {
+            self.toggleClassName("on",!(Utils.exec('pidof wlsunset').length == 0));
+        }, 
         hpack: "center",
         tooltip_text: "Night Light",
         vpack: "center",
@@ -132,12 +158,16 @@ function MuteButton() {
     })
 
     return Widget.Button({
-        onClicked: () => print("test"),
+        onClicked: () => {
+            audio.speaker.isMuted = !audio.speaker.isMuted
+        },
         hpack: "center",
         tooltip_text: "Mute",
         vpack: "center",
         cursor: "pointer",
         class_name: `mute_button`,
         child: icon_widget,
-    })
+    }).hook(audio, self => {
+        self.toggleClassName("on", audio.speaker.isMuted);
+    });
 }
