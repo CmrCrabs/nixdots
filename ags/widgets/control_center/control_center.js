@@ -7,7 +7,8 @@ export function ControlCenter(monitor = 0) {
         name: WINDOW_NAME,
         monitor,
         anchor: ["left", "bottom"],
-        exclusivity: "normal",
+        exclusivity: "ignore",
+        //layer: "overlay",
         visible: false,
         child: Widget.Box({
             class_name: 'control_center',

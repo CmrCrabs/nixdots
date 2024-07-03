@@ -7,8 +7,9 @@ export function ControlSlider() {
         hpack: "center",
         vpack: "center",
         hexpand: true,
-        vexpand: true,
         vertical: true,
+        vpack: "center",
+        hpack: "center",
         class_name: "control_sliders",
         children: [
             volume_slider(),

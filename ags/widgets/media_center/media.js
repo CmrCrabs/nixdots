@@ -24,14 +24,16 @@ function Player(player) {
     const title = Widget.Label({
         class_name: "title",
         wrap: true,
-        hpack: "center",
+        hpack: "start",
+        vpack: "end",
         label: player.bind("track_title").transform(a => a.length > 18 ? a.substring(0,18).concat("..") : a),
     })
 
     const artist = Widget.Label({
         class_name: "artist",
         wrap: true,
-        hpack: "center",
+        vpack: "start",
+        hpack: "start",
         label: player.bind("track_artists").transform(a => a.join(", ").length > 20 ? a.join(", ").substring(0,20).concat("...") : a.join(", ")),
     })
 
@@ -40,6 +42,7 @@ function Player(player) {
         on_clicked: () => player.playPause(),
         visible: player.bind("can_play"),
         vpack: "center",
+        hpack: "center",
         child: Widget.Icon({
             class_name: "play-pause-icon",
             cursor: "pointer",
@@ -59,6 +62,7 @@ function Player(player) {
         on_clicked: () => player.previous(),
         visible: player.bind("can_go_prev"),
         vpack: "center",
+        hpack: "center",
         child: Widget.Icon({
             class_name: "prev-icon",
             vpack: "center",
@@ -70,6 +74,7 @@ function Player(player) {
     const next = Widget.Button({
         class_name: "next",
         vpack: "center",
+        hpack: "center",
         on_clicked: () => player.next(),
         visible: player.bind("can_go_next"),
         child: Widget.Icon({
@@ -127,25 +132,18 @@ function Player(player) {
         }),
     })
 
-    return  Widget.CenterBox({
+    const music_box = Widget.CenterBox({
         class_name: "player",
-        vpack: "center",
-        hpack: "center",
-        hexpand: true,
-        vexpand: true,
         css: player.bind("cover_path").transform(p => `
             background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${p}');
         `),
         vertical: true,
-        start_widget: Widget.CenterBox({
+        start_widget: Widget.Box({
             vertical: true,
-            start_widget: title,
-            center_widget: artist,
-        }),
-        center_widget: Widget.CenterBox({
-            start_widget: prev,
-            center_widget: playPause,
-            end_widget: next,
+            children: [
+                title,
+                artist,
+            ]
         }),
         end_widget: Widget.CenterBox({
             vertical: true,
@@ -158,6 +156,21 @@ function Player(player) {
                 end_widget: lengthLabel,
             })
         }),
+    })
+
+    const controls_box = Widget.CenterBox({
+        class_name: "player_controls",
+        vertical: true,
+        start_widget: prev,
+        center_widget: playPause,
+        end_widget: next,
+    })
+
+    return Widget.Box({
+        children: [
+            music_box,
+            controls_box,
+        ]
     })
 }
 

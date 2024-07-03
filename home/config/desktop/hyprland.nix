@@ -28,14 +28,13 @@
 
       exec-once = [
         "swww init &"
-        "sudo tlp start" 
+        # "sudo tlp start" 
         "hypridle"
         "ags"
         "wlsunset -l 52.2 -L 0.13"
       ];
       exec = [
       ];
-
 
       monitor = [
         "eDP-1, 1920x1080@60, 0x0, 1"
@@ -147,6 +146,9 @@
         "blur,^(control_center)$"
         "ignorezero,^(control_center)$"
         "animation slide left,^(control_center)$"
+        "blur,^(media_center)$"
+        "ignorezero,^(media_center)$"
+        "animation slide left,^(media_center)$"
       ];
       windowrulev2 = [
         "tile, class:^(firefox)$,title:^(Firefox)$"
@@ -240,8 +242,6 @@
       gaps_in = $outer_gap
       gaps_out = $outer_gap
     }
-
-    monitor = eDP-1,addreserved,0, 90 + $outer_gap, 0, 0
     '';
   };
 }

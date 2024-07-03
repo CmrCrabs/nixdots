@@ -1,6 +1,7 @@
 .vertical_bar {
     @include widget;
-    min-height: $screen_height - (4 * $outer_gap);
+    margin: 0;
+    min-height: $screen_height - (2 * $outer_gap) - 20px;
     margin-left: $outer_gap;
     background-color: $background-t;
     color: $on_background;
@@ -79,7 +80,7 @@ circular-progress {
 
 .notification_icon {
     @include button_icon($color3);
-    margin-bottom: $gap;
+    margin-bottom: 1.5 * $gap;
 }
 .music_icon {
     @include button_icon($color1);
@@ -91,11 +92,11 @@ circular-progress {
 
 .slider_icon {
     @include button_icon($color4);
-    margin-bottom: $gap;
+    margin-bottom: 1.5 * $gap;
 }
 .wifi_icon {
     @include button_icon($color2);
-    margin-bottom: $gap;
+    margin-bottom: 1.5 * $gap;
 }
 .bluetooth_icon {
     @include button_icon($color1);

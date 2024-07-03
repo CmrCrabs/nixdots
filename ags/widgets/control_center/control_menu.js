@@ -1,7 +1,8 @@
 const notifications = await Service.import("notifications")
 const audio = await Service.import("audio")
+const powerprofiles = await Service.import("powerprofiles");
 
-function ControlButton(icon, header_text, name, label, on_click = () => print("real")) {
+function ControlButton(icon, header_text, name, label, on_click = () => print("real"), setup = () => {}) {
     const icon_widget = Widget.Icon({
         hpack: "center",
         vpack: "center",
@@ -30,6 +31,7 @@ function ControlButton(icon, header_text, name, label, on_click = () => print("r
         vpack: "center",
         cursor: "pointer",
         class_name: `${name}_button`,
+        setup: setup,
         child: Widget.Box({
             hpack: "start",
             vpack: "center",
@@ -52,7 +54,6 @@ export function ControlMenu() {
         hpack: "center",
         vpack: "center",
         hexpand: true,
-        vexpand: true,
         vertical: true,
         class_name: "control_menu",
         children: [
@@ -111,9 +112,38 @@ function BluetoothButton() {
 function PowerProfilesButton() {
     return ControlButton(
         "chip",
-        "Performance Mode",
+        "Power Mode",
         "power_profiles",
-        "On",
+        powerprofiles.bind('active_profile').transform(a => a.charAt(0).toUpperCase() + a.slice(1)),
+        self => {
+            switch (powerprofiles.active_profile) {
+                case 'balanced':
+                    powerprofiles.active_profile = 'performance';
+                    self.toggleClassName("bal", false);
+                    self.toggleClassName("perf", true);
+                    break;
+                case 'performance':
+                    powerprofiles.active_profile = 'power-saver';
+                    self.toggleClassName("perf", false);
+                    break;
+                default:
+                    powerprofiles.active_profile = 'balanced';
+                    self.toggleClassName("bal", true);
+                    break;
+            };
+        },
+        self => {
+            switch (powerprofiles.active_profile) {
+                case 'balanced':
+                    self.toggleClassName("bal", true);
+                    self.toggleClassName("perf", false);
+                    break;
+                case 'performance':
+                    self.toggleClassName("perf", true);
+                    self.toggleClassName("bal", false);
+                    break;
+            };
+        }
     );
 }
 

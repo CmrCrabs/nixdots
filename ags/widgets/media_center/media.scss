@@ -1,29 +1,37 @@
+.media {
+    min-height: $left_menu_height * 2 / 10;
+}
+
 .player {
     @include widget;
-    border: $gap solid $background-t;
+    border: (2 * $gap) solid $background-t;
     background-color: $surface_container-t;
     background-size: cover;
     background-position: center;
-    min-height: 200px - $gap - $gap;
-    min-width: 200px - $gap - $gap;
-    margin-top: $outer_gap;
+    margin-left: $outer_gap;
+    margin-right: $outer_gap;
 }
 
-.media {
-    @include widget;
-    min-height: 200px;
+.player_controls {
+    @include element;
+    padding: 2 * $gap;
+    background-color: $background-t;
 }
+
 
 .title {
     @include common;
-    margin-top: 10px;
-    font-size: 14px;
+    margin-left: $gap;
+    margin-top: $gap;
+    font-size: 1rem;
     color: $on_surface;
     opacity: 1.0;
+    font-weight: bold;
 }
 .artist {
     @include common;
-    font-size: 10px;
+    margin-left: $gap;
+    font-size: 0.75rem;
     color: $on_surface;
     opacity: 1.0;
 }
@@ -83,8 +91,8 @@
 
 .position-slider {
     all: unset;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: $gap;
+    margin-right: $gap;
 
     trough{
         border-radius: $rounding;

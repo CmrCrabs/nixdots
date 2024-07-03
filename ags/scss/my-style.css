@@ -1,8 +1,8 @@
 tooltip {
-  background-color: #333530;
+  background-color: #2b2c2b;
   padding: 3px;
-  color: #ffffff;
-  border-radius: 30px; }
+  color: #e4e2e1;
+  border-radius: 0px; }
   tooltip * {
     font-family: Jetbrains Mono, sans-serif; }
 
@@ -11,19 +11,20 @@ tooltip {
 
 .vertical_bar {
   padding: 10px;
-  border-radius: 30px;
-  min-height: 1040px;
-  margin-left: 10px;
-  background-color: #12140f;
-  color: #e2e3db; }
+  border-radius: 0;
+  margin: 0;
+  min-height: 1020px;
+  margin-left: 20px;
+  background-color: #131313;
+  color: #e4e2e1; }
   .vertical_bar * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .clock {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 11px;
@@ -36,15 +37,15 @@ tooltip {
 
 .batbox {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
   padding: 4.7619047619px; }
   .batbox * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .bat_icon {
-  color: #ffffff;
+  color: #e4e2e1;
   background-color: transparent;
   font-size: 1.5rem;
   font-size: 1.5em; }
@@ -54,27 +55,27 @@ circular-progress {
   margin: 0.2rem; }
 
 .bat_progress {
-  color: #ab802a; }
+  color: #e6a89c; }
 
 .bat_progress_charging {
-  color: #d58e00;
+  color: #ff9783;
   transition: ease-in 0.5s; }
 
 .workspaces {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
   padding: 20px; }
   .workspaces * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .workspace_unfocused {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  background-color: #ffffff;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  background-color: #e4e2e1;
   margin-top: 10px;
   padding-top: 12.5px;
   padding-bottom: 12.5px;
@@ -83,15 +84,15 @@ circular-progress {
   .workspace_unfocused * {
     font-family: Jetbrains Mono, sans-serif; }
   .workspace_unfocused:hover {
-    background-color: #85a429;
+    background-color: #e6b29e;
     transition: ease-in 0.1s; }
 
 .workspace_focused {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  background-color: #85a429;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  background-color: #e6b29e;
   margin-top: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -101,218 +102,104 @@ circular-progress {
   .workspace_focused * {
     font-family: Jetbrains Mono, sans-serif; }
   .workspace_focused:hover {
-    background-color: #8fb915;
+    background-color: #f2ad92;
     transition: ease-in 0.1s; }
 
 .theme_icon {
-  color: #ab802a;
+  color: #e6a89c;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .theme_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282a25;
-  border: 0rem solid #d58e00; }
+  background-color: #212121;
+  border: 0rem solid #ff9783; }
   .theme_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .theme_button:hover {
-    background-color: #43493d;
+    background-color: #434846;
     transition: ease-in 0.3s; }
 
 .notification_icon {
-  color: #8d8223;
+  color: #dc9176;
   background-color: transparent;
   font-size: 1.5rem;
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
 
 .music_icon {
-  color: #5a741d;
+  color: #72dba7;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .notification_music_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282a25;
-  border: 0rem solid #669100;
+  background-color: #212121;
+  border: 0rem solid #4effa7;
   margin: 0; }
   .notification_music_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .notification_music_button:hover {
-    background-color: #43493d;
+    background-color: #434846;
     transition: ease-in 0.3s; }
 
 .slider_icon {
-  color: #ab802a;
+  color: #e6a89c;
   background-color: transparent;
   font-size: 1.5rem;
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
 
 .wifi_icon {
-  color: #627c1f;
+  color: #7add9f;
   background-color: transparent;
   font-size: 1.5rem;
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
 
 .bluetooth_icon {
-  color: #5a741d;
+  color: #72dba7;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .misc_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282a25;
-  border: 0rem solid #669100; }
+  background-color: #212121;
+  border: 0rem solid #4effa7; }
   .misc_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .misc_button:hover {
-    background-color: #43493d;
+    background-color: #434846;
     transition: ease-in 0.3s; }
-
-.player {
-  padding: 10px;
-  border-radius: 30px;
-  border: 10px solid #12140f;
-  background-color: #282a25;
-  background-size: cover;
-  background-position: center;
-  min-height: 180px;
-  min-width: 180px;
-  margin-top: 10px; }
-  .player * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.media {
-  padding: 10px;
-  border-radius: 30px;
-  min-height: 200px; }
-  .media * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.title {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #ffffff;
-  opacity: 1.0; }
-  .title * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.artist {
-  font-size: 10px;
-  color: #ffffff;
-  opacity: 1.0; }
-  .artist * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.play-pause {
-  background-color: transparent; }
-  .play-pause:hover {
-    color: #5a741d;
-    transition: ease-in 0.3s; }
-
-.play-pause-icon {
-  background-color: transparent;
-  font-size: 30px; }
-
-.prev {
-  background-color: transparent;
-  margin-top: 6px; }
-  .prev:hover {
-    color: #5a741d;
-    transition: ease-in 0.3s; }
-
-.prev-icon {
-  background-color: transparent;
-  font-size: 20px; }
-
-.next {
-  background-color: transparent;
-  margin-top: 6px; }
-  .next:hover {
-    color: #5a741d;
-    transition: ease-in 0.3s; }
-
-.next-icon {
-  background-color: transparent;
-  font-size: 20px; }
-
-.position {
-  font-size: 10px;
-  color: #ffffff;
-  margin-left: 10px;
-  margin-bottom: 10px; }
-  .position * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.length {
-  font-size: 10px;
-  color: #ffffff;
-  margin-right: 10px;
-  margin-bottom: 10px; }
-  .length * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.position-slider {
-  all: unset;
-  margin-left: 10px;
-  margin-right: 10px; }
-  .position-slider trough {
-    border-radius: 30px;
-    background-color: #282a25;
-    min-height: 8px;
-    min-width: 50px; }
-    .position-slider trough highlight, .position-slider trough progress {
-      background-color: #5a741d;
-      border-radius: 30px; }
-  .position-slider slider {
-    background-color: #5a741d;
-    border-radius: 30px; }
-  .position-slider:hover trough {
-    transition: ease-in 0.3s;
-    background-color: #2a321d; }
-  .position-slider:hover slider {
-    transition: ease-in 0.3s;
-    background-color: #648d04; }
-  .position-slider:hover highlight, .position-slider:hover progress {
-    transition: ease-in 0.3s;
-    background-color: #60830f; }
-  .position-slider:disabled highlight, .position-slider:disabled progress {
-    background-color: #ffd7d2; }
-  .position-slider trough:focus {
-    background-color: #627c1f; }
-    .position-slider trough:focus slider {
-      background-color: #627c1f; }
 
 .start_menu {
   min-width: 570px;
   min-height: 600px;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
 
 .app_launcher {
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 0;
   background-color: transparent;
-  color: #e2e3db;
+  color: #e4e2e1;
   min-width: 320px;
   min-height: 600px; }
   .app_launcher * {
@@ -322,9 +209,9 @@ circular-progress {
 
 .scrollable {
   padding: 10px;
-  border-radius: 30px;
-  background-color: #1c1f1a;
-  border: 10px solid #12140f;
+  border-radius: 0;
+  background-color: #1c1c1c;
+  border: 10px solid #131313;
   font-size: 16px;
   padding-left: 10px;
   padding-right: 10px;
@@ -337,15 +224,15 @@ circular-progress {
 
 .app_item_button {
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 0;
   padding: 3px; }
   .app_item_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .app_item_button:hover {
-    background-color: #3e403a;
+    background-color: #363636;
     transition: ease-in 0.3s; }
   .app_item_button:focus {
-    background-color: #3e403a;
+    background-color: #363636;
     transition: ease-in 0.3s; }
 
 .list_icon {
@@ -354,12 +241,12 @@ circular-progress {
 
 .search_bar {
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 0;
   font-size: 20px;
-  margin-bottom: 10px;
-  background-color: #1c1f1a;
-  border: 10px solid #12140f;
-  color: #ffffff;
+  margin-bottom: 20px;
+  background-color: #1c1c1c;
+  border: 10px solid #131313;
+  color: #e4e2e1;
   padding-top: 10px;
   padding-bottom: 10px; }
   .search_bar * {
@@ -374,68 +261,68 @@ circular-progress {
 
 .start_widgets {
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 0;
   min-width: 200px;
   min-height: 600px;
-  margin-left: 10px; }
+  margin-left: 20px; }
   .start_widgets * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .powermenu {
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 0;
   padding: 10px;
-  margin-top: 10px;
-  background-color: #12140f; }
+  margin-top: 20px;
+  background-color: #131313; }
   .powermenu * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .sleep_icon {
   background-color: transparent;
-  color: #282a25;
+  color: #212121;
   font-size: 30px; }
 
 .sleep_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282a25;
-  border: 0rem solid #669100;
+  background-color: #212121;
+  border: 0rem solid #4effa7;
   margin-right: 20px;
   padding: 8px;
-  background-color: #627c1f; }
+  background-color: #7add9f; }
   .sleep_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .sleep_button:hover {
-    background-color: #43493d;
+    background-color: #434846;
     transition: ease-in 0.3s; }
   .sleep_button:hover {
-    background-color: #698c10;
+    background-color: #69ee9b;
     transition: ease-in 0.3s; }
 
 .lock_icon {
   background-color: transparent;
-  color: #282a25;
+  color: #212121;
   font-size: 30px; }
 
 .lock_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282a25;
-  border: 0rem solid #669100;
+  background-color: #212121;
+  border: 0rem solid #4effa7;
   margin-right: 20px;
-  background-color: #5a741d;
+  background-color: #72dba7;
   padding-left: 11px;
   padding-right: 5px;
   padding-top: 7px;
@@ -443,30 +330,30 @@ circular-progress {
   .lock_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .lock_button:hover {
-    background-color: #43493d;
+    background-color: #434846;
     transition: ease-in 0.3s; }
   .lock_button:hover {
-    background-color: #60830f;
+    background-color: #60eda7;
     transition: ease-in 0.3s; }
 
 .logout_icon {
   background-color: transparent;
-  color: #282a25;
+  color: #212121;
   font-size: 30px; }
 
 .logout_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282a25;
-  border: 0rem solid #669100;
+  background-color: #212121;
+  border: 0rem solid #4effa7;
   margin-right: 20px;
-  background-color: #8d8223;
+  background-color: #dc9176;
   padding-top: 10px;
   padding-bottom: 6px;
   padding-left: 8px;
@@ -474,30 +361,30 @@ circular-progress {
   .logout_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .logout_button:hover {
-    background-color: #43493d;
+    background-color: #434846;
     transition: ease-in 0.3s; }
   .logout_button:hover {
-    background-color: #9f9011;
+    background-color: #ed8965;
     transition: ease-in 0.3s; }
 
 .reboot_icon {
   background-color: transparent;
-  color: #282a25;
+  color: #212121;
   font-size: 35px; }
 
 .reboot_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282a25;
-  border: 0rem solid #669100;
+  background-color: #212121;
+  border: 0rem solid #4effa7;
   margin-right: 20px;
-  background-color: #789826;
+  background-color: #dd9d7b;
   padding-top: 6px;
   padding-bottom: 10px;
   padding-left: 11px;
@@ -505,186 +392,45 @@ circular-progress {
   .reboot_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .reboot_button:hover {
-    background-color: #43493d;
+    background-color: #434846;
     transition: ease-in 0.3s; }
   .reboot_button:hover {
-    background-color: #80ab13;
+    background-color: #ee986a;
     transition: ease-in 0.3s; }
 
 .shutdown_icon {
   background-color: transparent;
-  color: #282a25;
+  color: #212121;
   font-size: 35px; }
 
 .shutdown_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282a25;
-  border: 0rem solid #669100;
-  background-color: #85a429; }
+  background-color: #212121;
+  border: 0rem solid #4effa7;
+  background-color: #e6b29e; }
   .shutdown_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .shutdown_button:hover {
-    background-color: #43493d;
+    background-color: #434846;
     transition: ease-in 0.3s; }
   .shutdown_button:hover {
-    background-color: #8fb915;
+    background-color: #f2ad92;
     transition: ease-in 0.3s; }
-
-window.notification-popups box.notifications {
-  padding: 10px; }
-
-.noti_icon {
-  min-width: 100px;
-  min-height: 100px;
-  margin-right: 10px; }
-
-.placeholder_icon {
-  padding: 10px;
-  border-radius: 30px;
-  min-width: 100px;
-  min-height: 100px;
-  background-color: #cbc0a2; }
-  .placeholder_icon * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.noti_icon image {
-  font-size: 100px;
-  color: #cbc0a2; }
-
-.noti_icon box {
-  padding: 10px;
-  border-radius: 30px;
-  min-width: 100px;
-  min-height: 100px; }
-  .noti_icon box * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.notification {
-  padding: 10px;
-  border-radius: 30px;
-  min-width: 400px;
-  min-height: 100px;
-  padding: 10px;
-  margin: 10px;
-  margin-bottom: 0;
-  background-color: #282a25; }
-  .notification * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.notification.critical {
-  border: 5px solid #ffd7d2; }
-
-.noti_title {
-  color: #5a741d;
-  font-size: 1.2em;
-  font-weight: 500; }
-  .noti_title * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.noti_time {
-  color: #8e8671;
-  font-size: 1.0em;
-  font-weight: 300;
-  margin-bottom: 1px; }
-  .noti_time * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.body {
-  margin-bottom: 10px;
-  color: #ffffff;
-  font-size: 0.8em; }
-  .body * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.action-button {
-  padding: 10px;
-  border-radius: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  background-color: #789826;
-  margin-left: 10px; }
-  .action-button * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.action_button_text {
-  font-weight: 500; }
-
-.action-button:first-child {
-  margin-left: 0; }
-
-.action-button:last-child {
-  margin-right: 0; }
-
-.notifications_tray {
-  padding: 10px;
-  border-radius: 30px;
-  min-height: 1060px;
-  min-width: 450px;
-  margin-top: 103px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  background-color: #12140f; }
-  .notifications_tray * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.notifications_header {
-  padding: 10px;
-  border-radius: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 2em; }
-  .notifications_header * {
-    font-family: Jetbrains Mono, sans-serif; }
-
-.clear_icon {
-  background-color: transparent;
-  color: #282a25;
-  font-size: 35px; }
-
-.clear_button {
-  padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 13px;
-  background-color: #282a25;
-  border: 0rem solid #669100;
-  background-color: #8d8223; }
-  .clear_button * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .clear_button:hover {
-    background-color: #43493d;
-    transition: ease-in 0.3s; }
-  .clear_button:hover {
-    background-color: #9f9011;
-    transition: ease-in 0.3s; }
-
-.placeholder {
-  font-size: 1.5em;
-  margin-bottom: 100px; }
 
 .dock {
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 0;
   padding-top: 5px;
   padding-bottom: 5px;
-  min-width: 480px;
-  margin-bottom: 10px;
-  background-color: #12140f; }
+  margin-bottom: 20px;
+  background-color: #131313; }
   .dock * {
     font-family: Jetbrains Mono, sans-serif; }
 
@@ -692,11 +438,11 @@ window.notification-popups box.notifications {
   -gtk-icon-theme: "WhiteSur"; }
 
 .separator {
-  background-color: #333530;
+  background-color: #2b2c2b;
   padding-left: 0.5px;
   padding-right: 0.5px;
-  margin-top: 0.4rem;
-  margin-bottom: 0.4rem; }
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem; }
 
 .taskbar_icon_box {
   padding-left: 10px;
@@ -706,62 +452,62 @@ window.notification-popups box.notifications {
   padding: 0.25rem;
   margin-right: 0.15rem;
   margin-left: 0.15rem;
-  border-radius: 30px;
-  background-color: #ffffff; }
+  border-radius: 0px;
+  background-color: #e4e2e1; }
 
 .start_menu_icon {
-  color: #789826;
+  color: #dd9d7b;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .start_menu_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282a25;
-  border: 0rem solid #89be00;
+  background-color: #212121;
+  border: 0rem solid #ff9359;
   margin-left: 10px; }
   .start_menu_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .start_menu_button:hover {
-    background-color: #43493d;
+    background-color: #434846;
     transition: ease-in 0.3s; }
 
 .systray_icon {
-  color: #ab802a;
+  color: #e6a89c;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .systray_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282a25;
-  border: 0rem solid #d58e00;
+  background-color: #212121;
+  border: 0rem solid #ff9783;
   margin-left: 10px; }
   .systray_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .systray_button:hover {
-    background-color: #43493d;
+    background-color: #434846;
     transition: ease-in 0.3s; }
 
 .systray_box {
   padding: 10px;
-  border-radius: 30px;
-  background-color: #12140f;
+  border-radius: 0;
+  background-color: #131313;
   padding: 20px;
-  margin-right: 10px;
-  margin-bottom: 10px; }
+  margin-right: 20px;
+  margin-bottom: 20px; }
   .systray_box * {
     font-family: Jetbrains Mono, sans-serif; }
   .systray_box image {
@@ -777,15 +523,15 @@ window.notification-popups box.notifications {
 
 menu {
   padding: 10px;
-  border-radius: 30px;
-  background-color: #282a25;
+  border-radius: 0;
+  background-color: #212121;
   padding: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
   menu * {
     font-family: Jetbrains Mono, sans-serif; }
   menu menuitem {
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 0;
     margin-top: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -794,15 +540,16 @@ menu {
     menu menuitem * {
       font-family: Jetbrains Mono, sans-serif; }
     menu menuitem:hover {
-      background-color: #3e403a;
+      background-color: #363636;
       transition: ease-in 0.3s; }
 
 .control_sliders {
   padding: 10px;
-  border-radius: 30px;
-  margin-left: 10px;
-  min-width: 375px;
-  background-color: #12140f;
+  border-radius: 0;
+  min-height: 102px;
+  margin-left: 110px;
+  min-width: 425px;
+  background-color: #131313;
   padding-top: 20px;
   padding-bottom: 20px; }
   .control_sliders * {
@@ -812,214 +559,251 @@ menu {
   margin-bottom: 20px; }
 
 .volume_slider {
-  min-width: 331px; }
+  min-width: 381px; }
   .volume_slider trough {
-    border-radius: 30px;
-    background-color: #3e403a;
+    border-radius: 0px;
+    background-color: #363636;
     min-height: 15px;
     min-width: 20px;
     margin-left: 10px;
     margin-right: 10px; }
     .volume_slider trough highlight, .volume_slider trough progress {
-      background-color: #5a741d;
-      border-radius: 30px; }
+      background-color: #72dba7;
+      border-radius: 0px; }
   .volume_slider slider {
-    background-color: #5a741d;
-    border-radius: 30px; }
+    background-color: #72dba7;
+    border-radius: 0px; }
   .volume_slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: #424c2e; }
+    background-color: #412b2b; }
   .volume_slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: #455525; }
+    background-color: #492323; }
   .volume_slider:hover highlight, .volume_slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #60830f; }
+    background-color: #60eda7; }
   .volume_slider:disabled highlight, .volume_slider:disabled progress {
-    background-color: #ffd7d2; }
+    background-color: #ffb4ab; }
 
 .volume_icon {
   background-color: transparent;
-  color: #5a741d;
+  color: #72dba7;
   font-size: 1.5rem; }
 
 .brightness {
   margin-bottom: 20px; }
 
 .brightness_slider {
-  min-width: 331px; }
+  min-width: 381px; }
   .brightness_slider trough {
-    border-radius: 30px;
-    background-color: #3e403a;
+    border-radius: 0px;
+    background-color: #363636;
     min-height: 15px;
     min-width: 20px;
     margin-left: 10px;
     margin-right: 10px; }
     .brightness_slider trough highlight, .brightness_slider trough progress {
-      background-color: #cbc0a2;
-      border-radius: 30px; }
+      background-color: #dbd3c9;
+      border-radius: 0px; }
   .brightness_slider slider {
-    background-color: #cbc0a2;
-    border-radius: 30px; }
+    background-color: #dbd3c9;
+    border-radius: 0px; }
   .brightness_slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: #424c2e; }
+    background-color: #412b2b; }
   .brightness_slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: #455525; }
+    background-color: #492323; }
   .brightness_slider:hover highlight, .brightness_slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #dac794; }
+    background-color: #e4d4c0; }
   .brightness_slider:disabled highlight, .brightness_slider:disabled progress {
-    background-color: #ffd7d2; }
+    background-color: #ffb4ab; }
 
 .brightness_icon {
   background-color: transparent;
-  color: #cbc0a2;
+  color: #dbd3c9;
   font-size: 1.5rem; }
 
 .microphone_slider {
-  min-width: 331px; }
+  min-width: 381px; }
   .microphone_slider trough {
-    border-radius: 30px;
-    background-color: #3e403a;
+    border-radius: 0px;
+    background-color: #363636;
     min-height: 15px;
     min-width: 20px;
     margin-left: 10px;
     margin-right: 10px; }
     .microphone_slider trough highlight, .microphone_slider trough progress {
-      background-color: #8d8223;
-      border-radius: 30px; }
+      background-color: #dc9176;
+      border-radius: 0px; }
   .microphone_slider slider {
-    background-color: #8d8223;
-    border-radius: 30px; }
+    background-color: #dc9176;
+    border-radius: 0px; }
   .microphone_slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: #424c2e; }
+    background-color: #412b2b; }
   .microphone_slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: #455525; }
+    background-color: #492323; }
   .microphone_slider:hover highlight, .microphone_slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #9f9011; }
+    background-color: #ed8965; }
   .microphone_slider:disabled highlight, .microphone_slider:disabled progress {
-    background-color: #ffd7d2; }
+    background-color: #ffb4ab; }
 
 .microphone_icon {
   background-color: transparent;
-  color: #8d8223;
+  color: #dc9176;
   font-size: 1.5rem; }
 
 .control_menu {
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 0;
+  min-height: 195.5px;
+  margin-left: 110px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  background-color: #12140f;
-  min-width: 375px; }
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #131313;
+  min-width: 425px; }
   .control_menu * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .wifi_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #5a741d;
-  border: 0rem solid #669100;
-  min-width: 335px;
+  background-color: #72dba7;
+  border: 0rem solid #4effa7;
+  min-width: 385px;
   margin-bottom: 20px;
-  color: #12140f; }
+  color: #131313; }
   .wifi_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .wifi_button:hover {
-    background-color: #638a07;
+    background-color: #57f6a7;
     transition: ease-in 0.3s; }
 
 .dnd_button.on {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #85a429;
-  border: 0rem solid #99cd00;
-  color: #12140f; }
+  background-color: #e6b29e;
+  border: 0rem solid #ffa785;
+  color: #131313; }
   .dnd_button.on * {
     font-family: Jetbrains Mono, sans-serif; }
   .dnd_button.on:hover {
-    background-color: #94c30a;
+    background-color: #f8aa8c;
     transition: ease-in 0.3s; }
 
 .dnd_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #282a25;
-  border: 0rem solid #2c3e11;
-  min-width: 152.5px;
+  background-color: #212121;
+  border: 0rem solid #321111;
+  min-width: 177.5px;
   margin-right: 10px;
   margin-bottom: 20px;
-  color: #ffffff; }
+  color: #e4e2e1; }
   .dnd_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .dnd_button:hover {
-    background-color: #2a3619;
+    background-color: #2b1717;
     transition: ease-in 0.3s; }
 
 .bluetooth_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #cbc0a2;
-  border: 0rem solid #efd17e;
-  min-width: 152.5px;
+  background-color: #dbd3c9;
+  border: 0rem solid #f2d6b3;
+  min-width: 177.5px;
   margin-bottom: 20px;
-  color: #12140f; }
+  color: #131313; }
   .bluetooth_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .bluetooth_button:hover {
-    background-color: #e1ca8c;
+    background-color: #e9d5bc;
     transition: ease-in 0.3s; }
 
 .power_profiles_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #8d8223;
-  border: 0rem solid #b09e00;
-  min-width: 152.5px;
+  background-color: #212121;
+  border: 0rem solid #321111;
+  min-width: 177.5px;
   margin-right: 10px;
-  color: #12140f; }
+  color: #e4e2e1; }
   .power_profiles_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .power_profiles_button:hover {
-    background-color: #a79709;
+    background-color: #2b1717;
+    transition: ease-in 0.3s; }
+
+.power_profiles_button.perf {
+  padding: 10px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #ff8153;
+  border: 0rem solid #ff8153;
+  color: #131313; }
+  .power_profiles_button.perf * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .power_profiles_button.perf:hover {
+    background-color: #ff8153;
+    transition: ease-in 0.3s; }
+
+.power_profiles_button.bal {
+  padding: 10px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #c29d90;
+  border: 0rem solid #ed8965;
+  color: #131313; }
+  .power_profiles_button.bal * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .power_profiles_button.bal:hover {
+    background-color: #dc9176;
     transition: ease-in 0.3s; }
 
 .control_button_icon {
@@ -1037,28 +821,28 @@ menu {
 
 .redshift_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
   margin-right: 10px;
-  min-width: 53.75px;
-  border-radius: 20px;
+  min-width: 66.25px;
+  border-radius: 0;
   padding: 13px;
   padding-top: 18px;
   padding-bottom: 18px;
-  border: 0rem solid #2c3e11;
-  background-color: #282a25;
-  color: #ffffff; }
+  border: 0rem solid #321111;
+  background-color: #212121;
+  color: #e4e2e1; }
   .redshift_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .redshift_button:hover {
-    background-color: #43493d;
+    background-color: #434846;
     transition: ease-in 0.3s; }
 
 .redshift_button.on {
-  border: 0rem solid #669100;
-  background-color: #5a741d;
-  color: #ffffff; }
+  border: 0rem solid #4effa7;
+  background-color: #72dba7;
+  color: #e4e2e1; }
 
 .redshift_icon {
   background-color: transparent;
@@ -1066,29 +850,293 @@ menu {
 
 .mute_button {
   padding: 10px;
-  border-radius: 20px;
-  background-color: #282a25;
-  border: 0rem solid #3e403a;
-  min-width: 53.75px;
-  border-radius: 20px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  min-width: 66.25px;
+  border-radius: 0;
   padding: 13px;
   padding-top: 18px;
   padding-bottom: 18px;
-  border: 0rem solid #2c3e11;
-  background-color: #282a25;
-  color: #ffffff;
+  border: 0rem solid #321111;
+  background-color: #212121;
+  color: #e4e2e1;
   transition: ease-in 0.3s; }
   .mute_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .mute_button:hover {
-    background-color: #43493d;
+    background-color: #434846;
     transition: ease-in 0.3s; }
 
 .mute_button.on {
-  border: 0rem solid #99cd00;
-  background-color: #85a429;
-  color: #12140f; }
+  border: 0rem solid #ffa785;
+  background-color: #e6b29e;
+  color: #131313; }
 
 .mute_icon {
   background-color: transparent;
   font-size: 1.5rem; }
+
+.media {
+  min-height: 170px; }
+
+.player {
+  padding: 10px;
+  border-radius: 0;
+  border: 20px solid #131313;
+  background-color: #212121;
+  background-size: cover;
+  background-position: center;
+  margin-left: 20px;
+  margin-right: 20px; }
+  .player * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.player_controls {
+  padding: 10px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  padding: 20px;
+  background-color: #131313; }
+  .player_controls * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.title {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #e4e2e1;
+  opacity: 1.0;
+  font-weight: bold; }
+  .title * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.artist {
+  margin-left: 10px;
+  font-size: 0.75rem;
+  color: #e4e2e1;
+  opacity: 1.0; }
+  .artist * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.play-pause {
+  background-color: transparent; }
+  .play-pause:hover {
+    color: #72dba7;
+    transition: ease-in 0.3s; }
+
+.play-pause-icon {
+  background-color: transparent;
+  font-size: 30px; }
+
+.prev {
+  background-color: transparent;
+  margin-top: 6px; }
+  .prev:hover {
+    color: #72dba7;
+    transition: ease-in 0.3s; }
+
+.prev-icon {
+  background-color: transparent;
+  font-size: 20px; }
+
+.next {
+  background-color: transparent;
+  margin-top: 6px; }
+  .next:hover {
+    color: #72dba7;
+    transition: ease-in 0.3s; }
+
+.next-icon {
+  background-color: transparent;
+  font-size: 20px; }
+
+.position {
+  font-size: 10px;
+  color: #e4e2e1;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+  .position * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.length {
+  font-size: 10px;
+  color: #e4e2e1;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+  .length * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.position-slider {
+  all: unset;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .position-slider trough {
+    border-radius: 0px;
+    background-color: #212121;
+    min-height: 8px;
+    min-width: 50px; }
+    .position-slider trough highlight, .position-slider trough progress {
+      background-color: #72dba7;
+      border-radius: 0px; }
+  .position-slider slider {
+    background-color: #72dba7;
+    border-radius: 0px; }
+  .position-slider:hover trough {
+    transition: ease-in 0.3s;
+    background-color: #281a1a; }
+  .position-slider:hover slider {
+    transition: ease-in 0.3s;
+    background-color: #53faa7; }
+  .position-slider:hover highlight, .position-slider:hover progress {
+    transition: ease-in 0.3s;
+    background-color: #60eda7; }
+  .position-slider:disabled highlight, .position-slider:disabled progress {
+    background-color: #ffb4ab; }
+  .position-slider trough:focus {
+    background-color: #7add9f; }
+    .position-slider trough:focus slider {
+      background-color: #7add9f; }
+
+.notification {
+  padding: 10px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  min-width: 25rem;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 0;
+  background-color: #212121; }
+  .notification * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+window.notification-popups box.notifications {
+  padding: 10px; }
+
+.noti_icon {
+  min-width: 6.25rem;
+  min-height: 6.25rem;
+  margin-right: 10px; }
+
+.placeholder_icon {
+  padding: 10px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  background-color: #dbd3c9;
+  color: #dbd3c9;
+  min-width: 6.25rem;
+  min-height: 6.25rem; }
+  .placeholder_icon * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.noti_icon image {
+  font-size: 6.25rem;
+  color: #dbd3c9; }
+
+.noti_icon box {
+  padding: 10px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  min-width: 6.25rem;
+  min-height: 6.25rem;
+  background-color: #dbd3c9;
+  color: #dbd3c9; }
+  .noti_icon box * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.notification.critical {
+  background-color: #321111; }
+
+.noti_title {
+  color: #72dba7;
+  font-size: 1.2em;
+  font-weight: 500; }
+  .noti_title * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.noti_time {
+  color: #99938c;
+  font-size: 1.0em;
+  font-weight: 300; }
+  .noti_time * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.body {
+  margin-bottom: 10px;
+  color: #e4e2e1;
+  font-size: 0.8em; }
+  .body * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.action-button {
+  padding: 10px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  padding: 10px;
+  background-color: #dd9d7b;
+  margin-left: 10px; }
+  .action-button * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.action_button_text {
+  font-weight: 500; }
+
+.action-button:first-child {
+  margin-left: 0; }
+
+.action-button:last-child {
+  margin-right: 0; }
+
+.notifications_tray {
+  padding: 10px;
+  border-radius: 0;
+  min-width: 425px;
+  min-height: 382.5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: #131313; }
+  .notifications_tray * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.notifications_header {
+  padding: 10px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 2em; }
+  .notifications_header * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.clear_icon {
+  color: #72dba7;
+  background-color: transparent;
+  font-size: 1.5rem; }
+
+.clear_button {
+  padding: 10px;
+  border-radius: 0;
+  background-color: #212121;
+  border: 0rem solid #363636;
+  border-radius: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 13px;
+  background-color: #212121;
+  border: 0rem solid #4effa7; }
+  .clear_button * {
+    font-family: Jetbrains Mono, sans-serif; }
+  .clear_button:hover {
+    background-color: #434846;
+    transition: ease-in 0.3s; }
+
+.placeholder {
+  margin-top: 7rem;
+  font-size: 1.5em; }
