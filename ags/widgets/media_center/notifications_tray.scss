@@ -10,8 +10,9 @@
 
 .notifications_header {
     @include element;
-    margin-left: $gap;
-    margin-right: $gap;
+    background-color: $background-t;
+    padding-top: 0;
+    padding-bottom: 0;
     font-size: 2em;
 }
 
@@ -20,6 +21,7 @@
 }
 .clear_button {
     @include button($color1);
+    margin: 0;
 }
 
 .placeholder {
