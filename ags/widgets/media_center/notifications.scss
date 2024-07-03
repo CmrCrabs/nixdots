@@ -1,41 +1,45 @@
-window.notification-popups box.notifications {
-    padding: $gap;
-}
-
-.noti_icon {
-    min-width: 100px;
-    min-height: 100px;
-    margin-right: $gap;
-}
-.placeholder_icon {
-    @include widget;
-    min-width: 100px;
-    min-height: 100px;
-    background-color: $color7;
-}
-
-.noti_icon image {
-    font-size: 100px;
-    color: $color7;
-}
-
-.noti_icon box {
-    @include widget;
-    min-width: 100px;
-    min-height: 100px;
-}
-
 .notification {
-    @include widget;
-    min-width: 400px;
-    min-height: 100px;
+    @include element;
+    min-width: 25rem;
     padding: $gap;
     margin: $gap;
     margin-bottom: 0;
     background-color: $surface-container-t;
 }
+
+window.notification-popups box.notifications {
+    padding: $gap;
+}
+
+.noti_icon {
+    min-width: 6.25rem;
+    min-height: 6.25rem;
+    margin-right: $gap;
+}
+.placeholder_icon {
+    @include element;
+    background-color: $color7;
+    color: $color7;
+    min-width: 6.25rem;
+    min-height: 6.25rem;
+}
+
+.noti_icon image {
+    font-size: 6.25rem;
+    color: $color7;
+}
+
+.noti_icon box {
+    @include element;
+    min-width: 6.25rem;
+    min-height: 6.25rem;
+    background-color: $color7;
+    color: $color7;
+}
+
+
 .notification.critical {
-    border: 5px solid $error;
+    background-color: saturate($surface_container, 50);
 }
 
 .noti_title {
@@ -50,12 +54,11 @@ window.notification-popups box.notifications {
     color: $color8;
     font-size: 1.0em;
     font-weight: 300;
-    margin-bottom: 1px;
 }
 
 .body {
     @include common;
-    margin-bottom: 10px;
+    margin-bottom: $gap;
     color: $on_surface;
     font-size: 0.8em;
 }
@@ -64,11 +67,8 @@ window.notification-popups box.notifications {
 }
 
 .action-button {
-    @include widget;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: $gap;
+    @include element;
+    padding: $gap;
     background-color: $color5;
     margin-left: $gap;
 }

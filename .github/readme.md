@@ -11,6 +11,8 @@
 ![Preview](./temp_prev3.png)
 
 ## TODO: 
+- [ ] Get shadows working for all ags widgets + fix shadows for hyprland windows (for visibility)
+
 - [ ] Matugen / Wal Config Rewrite
     - [ ] nvim (prism)
     - [ ] hypr colors for lockscreen & hyprbars

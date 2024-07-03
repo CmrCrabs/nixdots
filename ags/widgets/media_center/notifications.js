@@ -109,13 +109,16 @@ export function Notification(n) {
             child: Widget.Box({
                 children: [
                     icon,
-                    Widget.Box({ 
+                    Widget.CenterBox({ 
                         vertical: true,
-                        children: [
-                            header,
-                            body,
-                            actions,
-                        ]
+                        start_widget: Widget.Box({
+                            vertical: true,
+                            children: [
+                                header,
+                                body,
+                            ],
+                        }),
+                        end_widget: actions,
                     }),
                 ]
             }),
@@ -124,7 +127,6 @@ export function Notification(n) {
 }
 
 export function NotificationPopups(monitor = 0) {
-    //notifications.dnd = true;
     const list = Widget.Box({
         vertical: true,
         children: notifications.popups.map(Notification),
@@ -147,6 +149,7 @@ export function NotificationPopups(monitor = 0) {
         monitor,
         name: `notifications`,
         class_name: "notification-popups",
+        exclusivity: "ignore",
         anchor: ["top"],
         child: Widget.Box({
             css: "min-width: 2px; min-height: 2px;",

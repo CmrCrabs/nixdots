@@ -15,7 +15,7 @@ export function NotificationMusicButton() {
         class_name: "music_icon"
     })
     return Widget.Button({
-        onClicked: () => App.toggleWindow("notification_tray"),
+        onClicked: () => App.toggleWindow("media_center"),
         tooltip_text: "Notification Menu",
         hpack: "center",
         vpack: "center",

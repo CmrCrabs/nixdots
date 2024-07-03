@@ -1,14 +1,14 @@
 {config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/tropical_leaves.png";
-  wal-l = "${dotfilesDir}/wallpapers/tropical_leaves.png";
+  wal =   "${dotfilesDir}/wallpapers/mountain_poly.png";
+  wal-l = "${dotfilesDir}/wallpapers/mountain_poly.png";
   style = "dark";
-  rounding = "30";
+  rounding = "0";
   scheme = "fidelity";
-  bg-contrast = "0.6";
+  bg-contrast = "0.1";
   fg-contrast = "0.6";
   transparency = "1.0";
-  outer_gap = "10";
+  outer_gap = "20";
 
   dotfilesDir = "${config.home.homeDirectory}/limitless";
   templateDir = "${dotfilesDir}/home/templates";

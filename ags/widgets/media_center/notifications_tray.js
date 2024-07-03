@@ -4,7 +4,7 @@ import { timeout } from 'resource:///com/github/Aylur/ags/utils.js';
 
 const ClearButton = () => Widget.Button({
     class_name: "clear_button",
-    hpack: "center",
+    hpack: "end",
     vpack: "center",
     tooltip_text: "Clear All",
     cursor: "pointer",
@@ -29,6 +29,8 @@ const Header = () => Widget.CenterBox({
 const NotificationList = () => Widget.Box({
     vertical: true,
     vexpand: true,
+    vpack: "center",
+    hpack: "center",
     class_name: "notifications_list",
     children: Notifications.bind('notifications').transform(n => n.reverse().map(Notification)),
     visible: Notifications.bind('notifications').transform(n => n.length > 0),
@@ -49,31 +51,24 @@ const Placeholder = () => Widget.Box({
 });
 
 export function NotificationCenter(monitor = 0) {
-    return Widget.Window({
-        name: `notification_tray`,
-        cursor: "default",
-        monitor,
-        keymode: "normal",
-        anchor: ["right"],
-        exclusivity: "normal",
-        visible: false,
-        child: Widget.Box({
-            class_name: 'notifications_tray',
-            vertical: true,
-            children: [
-                Header(),
-                Widget.Scrollable({
-                    class_name: 'notification-scrollable',
-                    child: Widget.Box({
-                        class_name: 'notification-list',
-                        vertical: true,
-                        children: [
-                            Placeholder(),
-                            NotificationList(),
-                        ],
-                    }),
+    return  Widget.Box({
+        class_name: 'notifications_tray',
+        vertical: true,
+        children: [
+            Header(),
+            Widget.Scrollable({
+                class_name: 'notification-scrollable',
+                child: Widget.Box({
+                    class_name: 'notification-list',
+                    vpack: 'start',
+                    hpack: 'center',
+                    vertical: true,
+                    children: [
+                        NotificationList(),
+                        Placeholder(),
+                    ],
                 }),
-            ],
-        })
+            }),
+        ],
     })
 }
