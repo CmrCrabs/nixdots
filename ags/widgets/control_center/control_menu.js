@@ -73,33 +73,13 @@ export function ControlMenu() {
                 vpack: "center",
                 children: [
                     PowerProfilesButton(),
-                    RedShiftButton(),
+                   RedShiftButton(),
                     MuteButton(),
                 ]
             })
         ]
     })
 }
-
-function WifiButton() {
-    return ControlButton(
-        network.wifi.bind("internet").as(status => status === "connected" ? "wifi-enabled-symbolic" : "wifi-disabled-symbolic"),
-        "Wifi",
-        "wifi",
-        network.wifi.enabled ? network.wifi.bind('ssid').as(ssid => ssid || 'Unknown') : "Disabled",
-        self => {
-            network.toggleWifi();
-            self.toggleClassName("on", network.wifi.enabled);
-            print(network.wifi.enabled);
-        },
-        self => {
-            self.toggleClassName("on", network.wifi.enabled);
-            print("initial:");
-            print(network.wifi.enabled);
-        },
-    );
-}
-
 function DNDButton() {
     return ControlButton(
         "alert-symbolic",
@@ -110,6 +90,20 @@ function DNDButton() {
             notifications.dnd = !notifications.dnd;
             self.toggleClassName("on", notifications.dnd);
         },
+    );
+}
+
+function WifiButton() {
+    return ControlButton(
+        network.bind("connectivity").as(status => status == "full" ? "wifi-enabled-symbolic" : "wifi-warning-symbolic"),
+        "Wifi",
+        "wifi",
+        network.bind("connectivity").as(status => status == "full" ? network.wifi.ssid : "Disabled"),
+        self => {
+            network.toggleWifi();
+            self.toggleClassName("on", !network.wifi.enabled);
+        },
+        self => self.toggleClassName("on", network.wifi.enabled),
     );
 }
 

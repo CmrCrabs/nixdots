@@ -2,7 +2,7 @@
 {
   xdg.configFile."hypr/hyprlock.conf".text = ''
 
-  source = ~/.config/hypr/colors.conf
+  source = ~/.config/hypr/vars.conf
 
   general {
     no_fade_in = true

@@ -44,7 +44,7 @@ export function MiscButton() {
     })
 
     const wifi_icon = Widget.Icon({
-        icon: network.wifi.bind("internet").as(status => status === "connected" ? "wifi-enabled-symbolic" : "wifi-disabled-symbolic"),
+        icon: network.bind("connectivity").as(status => status == "full" ? "wifi-enabled-symbolic" : "wifi-warning-symbolic"),
         hpack: "center",
         vpack: "center",
         cursor: "pointer",

@@ -103,6 +103,11 @@
     - [ ] adjust hypridle & hypr binds for lower brightness
     - [ ] xdg-user-dirs
 
+- [ ] update cli env with:
+    - [ ] zsh
+    - [ ] tmux
+    - [ ] zoxide
+
 - [ ] Final package setup
     - [ ] move packages into corresponding home files
     - [ ] make hostname a variable
@@ -112,8 +117,7 @@
         - [ ] limitless gojo domain sign
         - [ ] steal catppuccin cat footer
     - [ ] Package whole rice as a derivation
-
-
+    - [ ] setup entire cli environment install script 
 
 ## Credits:
 for their great configs / learning resources / software
