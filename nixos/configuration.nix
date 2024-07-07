@@ -5,7 +5,22 @@ let
 in { 
   imports = [
     ./hardware-configuration.nix 
+    inputs.aagl.nixosModules.default
   ];
+
+  # misc gaming 
+  programs.sleepy-launcher.enable = true;
+
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
+
+  programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
+  programs.gamemode.enable = true;
+
 
   # Bootloader.
   boot.loader = {
@@ -45,9 +60,21 @@ in {
   nix.settings = { 
     experimental-features = [ "nix-command" "flakes"];
     auto-optimise-store = true;
-    substituters = ["https://hyprland.cachix.org"];
-    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+    substituters = [
+      "https://hyprland.cachix.org"
+      "https://ezkea.cachix.org"
+    ];
+    trusted-public-keys = [
+      "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
+      "ezkea.cachix.org-1:ioBmUbJTZIKsHmWWXPe1FSFbeVe+afhfgqgTSNd34eI="
+    ];
   };
+
+  # bluetooth
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+  services.blueman.enable = true;
+  hardware.bluetooth.package = pkgs.bluez;
 
   # Hyprland
   programs.hyprland = {
@@ -157,6 +184,13 @@ in {
     remnote
     gnome.nautilus
 
+    # gaming
+    mangohud
+    protonup
+    lutris
+    heroic
+    bottles
+    wine
     
     # Term
     vim
@@ -235,6 +269,10 @@ in {
     hyprcursor
 
     wlsunset
+
+    papirus-icon-theme
+
+    bluez
 
     # WGPU
     vulkan-loader

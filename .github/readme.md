@@ -17,6 +17,9 @@
     - [ ] nvim (prism)
     - [ ] hypr colors for lockscreen & hyprbars
 
+
+- [ ] fix gtk theme import
+- [ ] gtk theme better (gradience ? )
 - [ ] toggle hypr border
 - [ ] Switch to Unstable
 - [ ] hyprbars setup (windowrules & hyprbars) + use ags to change buttons to round / square
@@ -25,6 +28,8 @@
 - [ ] import / convert refind-minimal to nix
 - [ ] make so if toggle floating on kitty window it sets size to the floating size
 - [ ] fix sdhadow
+- [ ] fix control center margin so that it uses gaps in future
+- [ ] use gradience cli
 
 - [ ] AGS Setup
     - [ ] Wifi / Volume / Microphone

@@ -1,4 +1,5 @@
 import { AppLauncher } from "./app_launcher.js"
+import { PowerMenu } from "./powermenu.js"
 const WINDOW_NAME = "start_menu"
 
 export function StartMenu(monitor = 0) {
@@ -12,11 +13,11 @@ export function StartMenu(monitor = 0) {
         visible: false,
         child: Widget.Box({
             class_name: "start_menu",
-            vertical: false,
-            hpack: "start",
+            hpack: "center",
             vpack: "center",
             children: [
                 AppLauncher(),
+                PowerMenu(),
             ],
         }),
         setup: self => {

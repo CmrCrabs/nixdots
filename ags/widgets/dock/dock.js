@@ -123,14 +123,14 @@ function systray_button() {
     return Button("chevron-right", "systray", "System tray", () => App.toggleWindow("systray"));
 }
 export function Dock(monitor = 0) {
-
     return Widget.Window({
         name: 'dock',
         cursor: "default",
-        layer: "overlay",
+        layer: "top",
         monitor,
         exclusivity: "exclusive",
         anchor: ["bottom"],
+        class_name: "dock_window",
         child: Widget.CenterBox({
             class_name: 'dock',
             vertical: false,

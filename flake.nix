@@ -33,6 +33,10 @@
     };
 
     ags.url = "github:Aylur/ags";
+
+    aagl = {
+      url = "github:ezKEa/aagl-gtk-on-nix/release-24.05";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager,nur, ... }@inputs:

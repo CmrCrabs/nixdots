@@ -1,6 +1,6 @@
 @mixin button($col) {
     @include element;
-    border-radius: if($rounding == 0, 0, if($rounding > $gap, $rounding - $gap, $rounding));
+    border-radius: if($rounding == 0, 0, if($rounding > $gap, $rounding - $gap, $rounding - ($gap / 2)));
     margin-top: $gap;
     margin-bottom: $gap;
     padding: $padding * 1.3;
@@ -23,11 +23,12 @@
     background-color: transparent;
     font-size: 1.5rem;
     //border: 1px solid red;
+    transition: ease-in 0.3s;
 }
 
 @mixin control_button($col) {
     @include element;
-    border-radius: if($rounding == 0, 0, if($rounding > $gap, $rounding - $gap, $rounding));
+    border-radius: if($rounding == 0, 0, if($rounding > $gap, $rounding - $gap, $rounding - ($gap / 2)));
     padding: $padding;
     padding-top: 1.5 * $padding;
     padding-bottom: 1.5 * $padding;

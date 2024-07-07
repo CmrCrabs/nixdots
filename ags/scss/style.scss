@@ -16,6 +16,8 @@ $screen_width: 1920px;
 $dock_width: $screen_width / 4;
 $left_menu_width: 425px;
 $left_menu_height: $screen_height - (8 * $outer-gap) - 70px;
+$center_menu_width: $screen_width / 3;
+$center_menu_height: $screen_height / 2.1;
 
 * {
     all: unset;
@@ -23,7 +25,7 @@ $left_menu_height: $screen_height - (8 * $outer-gap) - 70px;
 
 @import '../widgets/vertical_bar/vertical_bar';
 @import '../widgets/start_menu/start_menu';
-@import '../widgets/powermenu/powermenu';
+@import '../widgets/start_menu/powermenu';
 @import '../widgets/dock/dock';
 @import '../widgets/dock/systray';
 @import '../widgets/control_center/sliders';

@@ -8,8 +8,11 @@ export function ControlCenter(monitor = 0) {
         monitor,
         anchor: ["left", "bottom"],
         exclusivity: "ignore",
-        //layer: "overlay",
+        class_name: "control_center",
+        layer: "overlay",
         visible: false,
+        margins: [0,0,0,90],
+        // 70 + $outer_gap
         child: Widget.Box({
             class_name: 'control_center',
             vertical: true,

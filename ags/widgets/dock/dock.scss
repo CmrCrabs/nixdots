@@ -5,6 +5,8 @@
     margin-bottom: $outer_gap;
     background-color: $background-t;
 }
+.dock_window {
+}
 .icons {
     image {
         -gtk-icon-theme: "WhiteSur";
@@ -33,10 +35,10 @@
 }
 
 .start_menu_icon {
-    @include button_icon($color5);
+    @include button_icon($color2);
 }
 .start_menu_button {
-    @include button($color5);
+    @include button($color2);
     margin-left: $gap;
 }
 

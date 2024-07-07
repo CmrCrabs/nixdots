@@ -1,3 +1,6 @@
+const bluetooth = await Service.import('bluetooth')
+const network = await Service.import('network')
+
 export function NotificationMusicButton() {
     const noti_icon = Widget.Icon({
         icon: "notification-symbolic",
@@ -41,7 +44,7 @@ export function MiscButton() {
     })
 
     const wifi_icon = Widget.Icon({
-        icon: "wifi-symbolic",
+        icon: network.wifi.bind("internet").as(status => status === "connected" ? "wifi-enabled-symbolic" : "wifi-disabled-symbolic"),
         hpack: "center",
         vpack: "center",
         cursor: "pointer",
@@ -49,7 +52,7 @@ export function MiscButton() {
     })
 
     const bluetooth_icon = Widget.Icon({
-        icon: "bluetooth-symbolic",
+        icon: bluetooth.bind('enabled').as(on => `bluetooth-${on ? 'enabled' : 'disabled'}-symbolic`),
         hpack: "center",
         vpack: "center",
         cursor: "pointer",

@@ -1,7 +1,8 @@
 .control_sliders {
     @include widget;
     min-height: $left_menu_height * 1.2 / 10;
-    margin-left: (2 * $outer_gap) + (7 * $gap);
+    //margin-left: (2 * $outer_gap) + (7 * $gap);
+    margin-left: $outer_gap;
     min-width: $left_menu_width;
     background-color: $background-t;
     padding-top: 2 * $padding;
@@ -23,19 +24,19 @@
     margin-bottom: 2 * $gap;
 }
 .brightness_slider {
-    @include slider($color7);
+    @include slider($color6);
     min-width:  $left_menu_width - 2 * $gap - 24px;
 }
 .brightness_icon {
-    @include slider_icon($color7);
+    @include slider_icon($color6);
 }
 
 .microphone {
 }
 .microphone_slider {
-    @include slider($color3);
+    @include slider($color4);
     min-width:  $left_menu_width - 2 * $gap - 24px;
 }
 .microphone_icon {
-    @include slider_icon($color3);
+    @include slider_icon($color4);
 }

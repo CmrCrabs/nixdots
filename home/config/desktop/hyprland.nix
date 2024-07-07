@@ -134,6 +134,7 @@
         "ignorezero,^(dock)$"
         "blur,^(start_menu)$"
         "ignorezero,^(start_menu)$"
+        "animation slide bottom, ^(start_menu)$"
         "blur,^(notification_tray)$"
         "ignorezero,^(notification_tray)$"
         "animation slide right,^(notification_tray)$"
@@ -141,8 +142,6 @@
         "ignorezero,^(notifications)$"
         "animation slide top,^(notifications)$"
         "animation slide right,^(systray)$"
-        "blur,^(powermenu)$"
-        "ignorezero,^(powermenu)$"
         "blur,^(control_center)$"
         "ignorezero,^(control_center)$"
         "animation slide left,^(control_center)$"
@@ -168,6 +167,8 @@
       ];
       bind = [
         # "$mainMod SHIFT, Q, overview, toggle"
+        "SUPER, SPACE, exec, ags -t control_center"
+        "SUPER, SPACE, exec, ags -t media_center"
         "$mainMod, Q, exec, $terminal"
         "$mainMod, E, exec, [float] $terminal"
         "$mainMod, C, killactive,"

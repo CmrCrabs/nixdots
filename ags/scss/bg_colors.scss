@@ -1,55 +1,55 @@
-  $rounding: 0px;
+  $rounding: 10px;
   $transparency: 1.0;
   $gap_var: 20px;
 
   
   $background-t: fade-out(
-    $color: #131313,
+    $color: #111413,
     $amount: 1.0 - 1.0,
   );
   
   $error-t: fade-out(
-    $color: #ffb4ab,
+    $color: #ffd2cc,
     $amount: 1.0 - 1.0,
   );
   
   $error_container-t: fade-out(
-    $color: #a7060f,
+    $color: #ff5449,
     $amount: 1.0 - 1.0,
   );
   
   $inverse_on_surface-t: fade-out(
-    $color: #303030,
+    $color: #282b2a,
     $amount: 1.0 - 1.0,
   );
   
   $inverse_primary-t: fade-out(
-    $color: #54615d,
+    $color: #1b504a,
     $amount: 1.0 - 1.0,
   );
   
   $inverse_surface-t: fade-out(
-    $color: #e4e2e1,
+    $color: #e2e3e1,
     $amount: 1.0 - 1.0,
   );
   
   $on_background-t: fade-out(
-    $color: #e4e2e1,
+    $color: #e2e3e1,
     $amount: 1.0 - 1.0,
   );
   
   $on_error-t: fade-out(
-    $color: #660004,
+    $color: #540003,
     $amount: 1.0 - 1.0,
   );
   
   $on_error_container-t: fade-out(
-    $color: #ffffff,
+    $color: #000000,
     $amount: 1.0 - 1.0,
   );
   
   $on_primary-t: fade-out(
-    $color: #25312e,
+    $color: #002b27,
     $amount: 1.0 - 1.0,
   );
   
@@ -59,47 +59,47 @@
   );
   
   $on_primary_fixed-t: fade-out(
-    $color: #121e1b,
+    $color: #001512,
     $amount: 1.0 - 1.0,
   );
   
   $on_primary_fixed_variant-t: fade-out(
-    $color: #3d4946,
+    $color: #013e38,
     $amount: 1.0 - 1.0,
   );
   
   $on_secondary-t: fade-out(
-    $color: #2b302e,
+    $color: #172926,
     $amount: 1.0 - 1.0,
   );
   
   $on_secondary_container-t: fade-out(
-    $color: #d6dad7,
+    $color: #ffffff,
     $amount: 1.0 - 1.0,
   );
   
   $on_secondary_fixed-t: fade-out(
-    $color: #181d1b,
+    $color: #031412,
     $amount: 1.0 - 1.0,
   );
   
   $on_secondary_fixed_variant-t: fade-out(
-    $color: #434846,
+    $color: #273a37,
     $amount: 1.0 - 1.0,
   );
   
   $on_surface-t: fade-out(
-    $color: #e4e2e1,
+    $color: #ffffff,
     $amount: 1.0 - 1.0,
   );
   
   $on_surface_variant-t: fade-out(
-    $color: #c3c8c5,
+    $color: #d5dedc,
     $amount: 1.0 - 1.0,
   );
   
   $on_tertiary-t: fade-out(
-    $color: #3b2b28,
+    $color: #401b0e,
     $amount: 1.0 - 1.0,
   );
   
@@ -109,42 +109,42 @@
   );
   
   $on_tertiary_fixed-t: fade-out(
-    $color: #261816,
+    $color: #260701,
     $amount: 1.0 - 1.0,
   );
   
   $on_tertiary_fixed_variant-t: fade-out(
-    $color: #55423f,
+    $color: #542b1d,
     $amount: 1.0 - 1.0,
   );
   
   $outline-t: fade-out(
-    $color: #8d9290,
+    $color: #abb4b1,
     $amount: 1.0 - 1.0,
   );
   
   $outline_variant-t: fade-out(
-    $color: #4e5351,
+    $color: #899290,
     $amount: 1.0 - 1.0,
   );
   
   $primary-t: fade-out(
-    $color: #bcc9c5,
+    $color: #b2e7de,
     $amount: 1.0 - 1.0,
   );
   
   $primary_container-t: fade-out(
-    $color: #86938f,
+    $color: #689a93,
     $amount: 1.0 - 1.0,
   );
   
   $primary_fixed-t: fade-out(
-    $color: #d8e5e1,
+    $color: #b8ede4,
     $amount: 1.0 - 1.0,
   );
   
   $primary_fixed_dim-t: fade-out(
-    $color: #bcc9c5,
+    $color: #9dd1c8,
     $amount: 1.0 - 1.0,
   );
   
@@ -154,22 +154,22 @@
   );
   
   $secondary-t: fade-out(
-    $color: #c3c7c5,
+    $color: #cce1dc,
     $amount: 1.0 - 1.0,
   );
   
   $secondary_container-t: fade-out(
-    $color: #4e5351,
+    $color: #819591,
     $amount: 1.0 - 1.0,
   );
   
   $secondary_fixed-t: fade-out(
-    $color: #dfe3e1,
+    $color: #d2e7e2,
     $amount: 1.0 - 1.0,
   );
   
   $secondary_fixed_dim-t: fade-out(
-    $color: #c3c7c5,
+    $color: #b6cbc7,
     $amount: 1.0 - 1.0,
   );
   
@@ -179,172 +179,172 @@
   );
   
   $source_color-t: fade-out(
-    $color: #86938f,
+    $color: #4f817a,
     $amount: 1.0 - 1.0,
   );
   
   $surface-t: fade-out(
-    $color: #131313,
+    $color: #111413,
     $amount: 1.0 - 1.0,
   );
   
   $surface_bright-t: fade-out(
-    $color: #3b3b3b,
+    $color: #424544,
     $amount: 1.0 - 1.0,
   );
   
   $surface_container-t: fade-out(
-    $color: #212121,
+    $color: #262828,
     $amount: 1.0 - 1.0,
   );
   
   $surface_container_high-t: fade-out(
-    $color: #2b2c2b,
+    $color: #303332,
     $amount: 1.0 - 1.0,
   );
   
   $surface_container_highest-t: fade-out(
-    $color: #363636,
+    $color: #3c3e3d,
     $amount: 1.0 - 1.0,
   );
   
   $surface_container_low-t: fade-out(
-    $color: #1c1c1c,
+    $color: #1b1e1d,
     $amount: 1.0 - 1.0,
   );
   
   $surface_container_lowest-t: fade-out(
-    $color: #0c0d0d,
+    $color: #060807,
     $amount: 1.0 - 1.0,
   );
   
   $surface_dim-t: fade-out(
-    $color: #131313,
+    $color: #111413,
     $amount: 1.0 - 1.0,
   );
   
   $surface_variant-t: fade-out(
-    $color: #434846,
+    $color: #404847,
     $amount: 1.0 - 1.0,
   );
   
   $tertiary-t: fade-out(
-    $color: #dbc1bc,
+    $color: #ffd3c5,
     $amount: 1.0 - 1.0,
   );
   
   $tertiary_container-t: fade-out(
-    $color: #a38c88,
+    $color: #bc8371,
     $amount: 1.0 - 1.0,
   );
   
   $tertiary_fixed-t: fade-out(
-    $color: #f8ddd8,
+    $color: #ffdbd0,
     $amount: 1.0 - 1.0,
   );
   
   $tertiary_fixed_dim-t: fade-out(
-    $color: #dbc1bc,
+    $color: #f8b7a3,
     $amount: 1.0 - 1.0,
   );
   
 
   
-  $background: #131313;
+  $background: #111413;
   
-  $error: #ffb4ab;
+  $error: #ffd2cc;
   
-  $error_container: #a7060f;
+  $error_container: #ff5449;
   
-  $inverse_on_surface: #303030;
+  $inverse_on_surface: #282b2a;
   
-  $inverse_primary: #54615d;
+  $inverse_primary: #1b504a;
   
-  $inverse_surface: #e4e2e1;
+  $inverse_surface: #e2e3e1;
   
-  $on_background: #e4e2e1;
+  $on_background: #e2e3e1;
   
-  $on_error: #660004;
+  $on_error: #540003;
   
-  $on_error_container: #ffffff;
+  $on_error_container: #000000;
   
-  $on_primary: #25312e;
+  $on_primary: #002b27;
   
   $on_primary_container: #000000;
   
-  $on_primary_fixed: #121e1b;
+  $on_primary_fixed: #001512;
   
-  $on_primary_fixed_variant: #3d4946;
+  $on_primary_fixed_variant: #013e38;
   
-  $on_secondary: #2b302e;
+  $on_secondary: #172926;
   
-  $on_secondary_container: #d6dad7;
+  $on_secondary_container: #ffffff;
   
-  $on_secondary_fixed: #181d1b;
+  $on_secondary_fixed: #031412;
   
-  $on_secondary_fixed_variant: #434846;
+  $on_secondary_fixed_variant: #273a37;
   
-  $on_surface: #e4e2e1;
+  $on_surface: #ffffff;
   
-  $on_surface_variant: #c3c8c5;
+  $on_surface_variant: #d5dedc;
   
-  $on_tertiary: #3b2b28;
+  $on_tertiary: #401b0e;
   
   $on_tertiary_container: #000000;
   
-  $on_tertiary_fixed: #261816;
+  $on_tertiary_fixed: #260701;
   
-  $on_tertiary_fixed_variant: #55423f;
+  $on_tertiary_fixed_variant: #542b1d;
   
-  $outline: #8d9290;
+  $outline: #abb4b1;
   
-  $outline_variant: #4e5351;
+  $outline_variant: #899290;
   
-  $primary: #bcc9c5;
+  $primary: #b2e7de;
   
-  $primary_container: #86938f;
+  $primary_container: #689a93;
   
-  $primary_fixed: #d8e5e1;
+  $primary_fixed: #b8ede4;
   
-  $primary_fixed_dim: #bcc9c5;
+  $primary_fixed_dim: #9dd1c8;
   
   $scrim: #000000;
   
-  $secondary: #c3c7c5;
+  $secondary: #cce1dc;
   
-  $secondary_container: #4e5351;
+  $secondary_container: #819591;
   
-  $secondary_fixed: #dfe3e1;
+  $secondary_fixed: #d2e7e2;
   
-  $secondary_fixed_dim: #c3c7c5;
+  $secondary_fixed_dim: #b6cbc7;
   
   $shadow: #000000;
   
-  $source_color: #86938f;
+  $source_color: #4f817a;
   
-  $surface: #131313;
+  $surface: #111413;
   
-  $surface_bright: #3b3b3b;
+  $surface_bright: #424544;
   
-  $surface_container: #212121;
+  $surface_container: #262828;
   
-  $surface_container_high: #2b2c2b;
+  $surface_container_high: #303332;
   
-  $surface_container_highest: #363636;
+  $surface_container_highest: #3c3e3d;
   
-  $surface_container_low: #1c1c1c;
+  $surface_container_low: #1b1e1d;
   
-  $surface_container_lowest: #0c0d0d;
+  $surface_container_lowest: #060807;
   
-  $surface_dim: #131313;
+  $surface_dim: #111413;
   
-  $surface_variant: #434846;
+  $surface_variant: #404847;
   
-  $tertiary: #dbc1bc;
+  $tertiary: #ffd3c5;
   
-  $tertiary_container: #a38c88;
+  $tertiary_container: #bc8371;
   
-  $tertiary_fixed: #f8ddd8;
+  $tertiary_fixed: #ffdbd0;
   
-  $tertiary_fixed_dim: #dbc1bc;
+  $tertiary_fixed_dim: #f8b7a3;
   

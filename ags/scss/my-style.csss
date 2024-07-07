@@ -191,23 +191,16 @@ circular-progress {
     transition: ease-in 0.3s; }
 
 .app_launcher {
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #111413;
-  min-width: 450px;
+  min-width: 460px;
   min-height: 514.2857142857px;
   margin-bottom: 20px;
   margin-right: 20px; }
-  .app_launcher * {
-    font-family: Jetbrains Mono, sans-serif; }
   .app_launcher image {
     -gtk-icon-theme: "WhiteSur"; }
 
 .scrollable {
   padding: 10px;
-  border-radius: 5px;
-  background-color: #262828;
-  border: 0rem solid #3c3e3d;
+  border-radius: 10px;
   background-color: #111413; }
   .scrollable * {
     font-family: Jetbrains Mono, sans-serif; }
@@ -218,7 +211,7 @@ circular-progress {
   background-color: #262828;
   border: 0rem solid #3c3e3d;
   background-color: #111413;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
   .app_item_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .app_item_button:hover {
@@ -228,11 +221,12 @@ circular-progress {
     background-color: #3c3e3d;
     transition: ease-in 0.3s; }
 
-.app_title {
-  font-weight: bold;
-  font-size: 1rem;
-  margin-left: 10px; }
-  .app_title * {
+.search_bar_box {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #111413;
+  margin-bottom: 10px; }
+  .search_bar_box * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .search_bar {
@@ -240,14 +234,19 @@ circular-progress {
   border-radius: 5px;
   background-color: #262828;
   border: 0rem solid #3c3e3d;
-  margin: 10px;
   font-size: 1.25rem;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin-bottom: 20px;
-  background-color: #1b1e1d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #262828;
   color: #ffffff; }
   .search_bar * {
+    font-family: Jetbrains Mono, sans-serif; }
+
+.app_title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 10px; }
+  .app_title * {
     font-family: Jetbrains Mono, sans-serif; }
 
 .powermenu {
@@ -275,7 +274,7 @@ circular-progress {
   padding: 13px;
   background-color: #262828;
   border: 0rem solid #f8e0d1;
-  margin-bottom: 0; }
+  margin: 0; }
   .limitless_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .limitless_button:hover {
@@ -649,32 +648,14 @@ menu {
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #262828;
-  border: 0rem solid #133c3c;
+  background-color: #30c258;
+  border: 0rem solid #00f242;
   min-width: 385px;
   margin-bottom: 20px;
-  color: #ffffff; }
+  color: #111413; }
   .wifi_button * {
     font-family: Jetbrains Mono, sans-serif; }
   .wifi_button:hover {
-    background-color: #1a3434;
-    transition: ease-in 0.3s; }
-
-.wifi_button.on {
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #262828;
-  border: 0rem solid #3c3e3d;
-  border-radius: 5px;
-  padding: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #30c258;
-  border: 0rem solid #00f242;
-  color: #111413; }
-  .wifi_button.on * {
-    font-family: Jetbrains Mono, sans-serif; }
-  .wifi_button.on:hover {
     background-color: #0ce648;
     transition: ease-in 0.3s; }
 
@@ -814,7 +795,6 @@ menu {
 .control_button_icon {
   background-color: transparent;
   font-size: 1.5rem;
-  transition: ease-in 0.3s;
   margin-right: 10px; }
 
 .control_button_header {
@@ -1014,7 +994,7 @@ menu {
   padding: 10px;
   margin: 10px;
   margin-bottom: 0;
-  background-color: #1b1e1d; }
+  background-color: #262828; }
   .notification * {
     font-family: Jetbrains Mono, sans-serif; }
 

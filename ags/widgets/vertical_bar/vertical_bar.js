@@ -46,7 +46,7 @@ export function VerticalBar(monitor = 0) {
     return Widget.Window({
         cursor: "default",
         name: `vertical_bar`,
-        layer: "overlay",
+        layer: "top",
         monitor,
         exclusivity: "exclusive",
         anchor: ["left"],
