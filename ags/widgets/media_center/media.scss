@@ -1,9 +1,9 @@
 .media {
-    min-height: $left_menu_height * 2.25 / 10;
 }
 
 .player {
     @include widget;
+    min-height: $left_menu_height * 2 / 10 - $outer_gap;
     margin-top: $outer_gap;
     border: (2 * $gap) solid $background-t;
     background-color: $surface_container-t;
@@ -15,6 +15,7 @@
 
 .player_controls {
     margin-top: $outer_gap;
+    min-height: $left_menu_height * 2 / 10 - $outer_gap;
     @include widget;
     padding: 2 * $gap;
     background-color: $background-t;

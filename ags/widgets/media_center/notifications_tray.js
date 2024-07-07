@@ -29,11 +29,12 @@ const Header = () => Widget.CenterBox({
 const NotificationList = () => Widget.Box({
     vertical: true,
     vexpand: true,
-    vpack: "center",
+    vpack: "start",
     hpack: "center",
     class_name: "notifications_list",
     children: Notifications.bind('notifications').transform(n => n.reverse().map(Notification)),
-    visible: Notifications.bind('notifications').transform(n => n.length > 0),
+    //visible: Notifications.bind('notifications').transform(n => n.length > 0),
+    visible: true,
 });
 
 const Placeholder = () => Widget.Box({
@@ -43,7 +44,8 @@ const Placeholder = () => Widget.Box({
     hpack: 'center',
     vexpand: true,
     hexpand: true,
-    visible: Notifications.bind('notifications').transform(n => n.length === 0),
+    //visible: Notifications.bind('notifications').transform(n => n.length === 0),
+    visible: true,
     children: [
         Widget.Icon({icon: "nixos-symbolic",}),
         Widget.Label('Your inbox is empty'),
@@ -60,13 +62,14 @@ export function NotificationCenter(monitor = 0) {
                 class_name: 'notification-scrollable',
                 child: Widget.Box({
                     class_name: 'notification-list',
-                    vpack: 'start',
-                    hpack: 'center',
-                    vertical: true,
-                    children: [
-                        NotificationList(),
-                        Placeholder(),
-                    ],
+                    child: Widget.Stack({
+                        children: {
+                            'list': NotificationList(),
+                            'placeholder': Placeholder(),
+                        },
+                        shown: Notifications.bind('notifications').transform(n => n.length > 0 ? "list" : "placeholder"),
+                        transition: "crossfade",
+                    })
                 }),
             }),
         ],

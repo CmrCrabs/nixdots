@@ -15,7 +15,7 @@ $screen_height: 1080px;
 $screen_width: 1920px;
 $dock_width: $screen_width / 4;
 $left_menu_width: 425px;
-$left_menu_height: $screen_height - (8 * $outer-gap) - 70px;
+$left_menu_height: $screen_height - (7.5 * $outer-gap) - 70px;
 $center_menu_width: $screen_width / 3;
 $center_menu_height: $screen_height / 2.1;
 
