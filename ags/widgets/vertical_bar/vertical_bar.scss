@@ -72,18 +72,18 @@ circular-progress {
 }
 
 .theme_icon {
-    @include button_icon($color4);
+    @include button_icon($color3);
 }
 .theme_button {
-    @include button($color4);
+    @include button($color3);
 }
 
 .notification_icon {
-    @include button_icon($color3);
+    @include button_icon($color6);
     margin-bottom: 1.5 * $gap;
 }
 .music_icon {
-    @include button_icon($color1);
+    @include button_icon($color4);
 }
 .notification_music_button {
     @include button($color1);
@@ -91,11 +91,11 @@ circular-progress {
 }
 
 .slider_icon {
-    @include button_icon($color4);
+    @include button_icon($color5);
     margin-bottom: 1.5 * $gap;
 }
 .wifi_icon {
-    @include button_icon($color2);
+    @include button_icon($color3);
     margin-bottom: 1.5 * $gap;
 }
 .bluetooth_icon {

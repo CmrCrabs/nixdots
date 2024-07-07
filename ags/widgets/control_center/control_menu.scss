@@ -1,7 +1,11 @@
+.control_center {
+}
+
 .control_menu {
     @include widget;
     min-height: $left_menu_height * 2.3 / 10;
-    margin-left: (2 * $outer_gap) + (7 * $gap);
+    //margin-left: (2 * $outer_gap) + (7 * $gap);
+    margin-left: $outer_gap;
     padding-top: 2 * $gap;
     padding-bottom: 2 * $gap;
     margin-top: $outer_gap;
@@ -11,14 +15,18 @@
 }
 
 .wifi_button {
-    @include control_button($color1);
+    @include control_button($surface_container);
     min-width: $left_menu_width - 4 * $gap;
     margin-bottom: 2 * $gap;
+    color: $on_surface;
+}
+.wifi_button.on {
+    @include control_button($color1);
     color: $background;
 }
 
 .dnd_button.on {
-    @include control_button($color6);
+    @include control_button($color2);
     color: $background;
 }
 .dnd_button {
@@ -30,9 +38,13 @@
 }
 
 .bluetooth_button {
-    @include control_button($color7);
+    @include control_button($surface_container);
     min-width: ($left_menu_width / 2) - 3.5 * $gap;
     margin-bottom: 2 * $gap;
+    color: $on_surface;
+}
+.bluetooth_button.on {
+    @include control_button($color3);
     color: $background;
 }
 
@@ -43,11 +55,11 @@
     color: $on_surface;
 }
 .power_profiles_button.perf {
-    @include control_button(saturate($color3,70));
+    @include control_button(saturate($color4,70));
     color: $background;
 }
 .power_profiles_button.bal {
-    @include control_button(desaturate($color3, 30));
+    @include control_button($color4);
     color: $background;
 }
 
@@ -81,8 +93,8 @@
     }
 }
 .redshift_button.on {
-    border: $border solid saturate($color1, 50);
-    background-color: $color1;    
+    border: $border solid saturate($color5, 50);
+    background-color: $color5;    
     color: $on_surface;
 }
 .redshift_icon {

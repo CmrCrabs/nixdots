@@ -1,8 +1,7 @@
 .notifications_tray {
     @include widget;
     min-width: $left_menu_width;
-    min-height: $left_menu_height * 4.5 / 10;
-    margin-bottom: $outer_gap;
+    min-height: $left_menu_height * 4.25 / 10;
     margin-top: $outer_gap;
     margin-left: $outer_gap;
     background-color: $background-t;
@@ -11,8 +10,6 @@
 .notifications_header {
     @include element;
     background-color: $background-t;
-    padding-top: 0;
-    padding-bottom: 0;
     font-size: 2em;
 }
 
@@ -25,9 +22,11 @@
 }
 
 .placeholder {
-    margin-top: 7rem;
+    margin-top: 8rem;
     font-size: 1.5em;
 }
 
-.notifications_list { }
-.notification_scrollable { }
+.notifications_list { 
+}
+.notification_scrollable { 
+}

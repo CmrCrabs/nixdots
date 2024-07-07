@@ -1,12 +1,14 @@
-const notifications = await Service.import("notifications")
-const audio = await Service.import("audio")
+const notifications = await Service.import("notifications");
+const audio = await Service.import("audio");
 const powerprofiles = await Service.import("powerprofiles");
+const bluetooth = await Service.import('bluetooth');
+const network = await Service.import('network')
 
 function ControlButton(icon, header_text, name, label, on_click = () => print("real"), setup = () => {}) {
     const icon_widget = Widget.Icon({
         hpack: "center",
         vpack: "center",
-        icon: `${icon}-symbolic`,
+        icon: icon,
         cursor: "pointer",
         class_name: `control_button_icon`
     })
@@ -81,15 +83,26 @@ export function ControlMenu() {
 
 function WifiButton() {
     return ControlButton(
-        "wifi",
+        network.wifi.bind("internet").as(status => status === "connected" ? "wifi-enabled-symbolic" : "wifi-disabled-symbolic"),
         "Wifi",
         "wifi",
-        "VM2907828",
+        network.wifi.enabled ? network.wifi.bind('ssid').as(ssid => ssid || 'Unknown') : "Disabled",
+        self => {
+            network.toggleWifi();
+            self.toggleClassName("on", network.wifi.enabled);
+            print(network.wifi.enabled);
+        },
+        self => {
+            self.toggleClassName("on", network.wifi.enabled);
+            print("initial:");
+            print(network.wifi.enabled);
+        },
     );
 }
+
 function DNDButton() {
     return ControlButton(
-        "alert",
+        "alert-symbolic",
         "Do Not Disturb",
         "dnd",
         notifications.bind("dnd").transform(a => a ? "On" : "Off"),
@@ -102,16 +115,23 @@ function DNDButton() {
 
 function BluetoothButton() {
     return ControlButton(
-        "bluetooth",
+        bluetooth.bind("enabled").as(on => on ? "bluetooth-enabled-symbolic" : "bluetooth-disabled-symbolic"),
         "Bluetooth",
         "bluetooth",
-        "0 Devices Connected",
+        bluetooth.bind("enabled").as(on => !on ? "Disabled" : bluetooth.devices.length == 1 ? "1 Device Connected" : `${bluetooth.devices.length.toString()} Devices Connected`),
+        self => { 
+            bluetooth.enabled = !bluetooth.enabled
+            self.toggleClassName("on", !bluetooth.enabled);
+        },
+        self => {
+            self.toggleClassName("on", bluetooth.enabled);
+        }
     );
 }
 
 function PowerProfilesButton() {
     return ControlButton(
-        "chip",
+        "chip-symbolic",
         "Power Mode",
         "power_profiles",
         powerprofiles.bind('active_profile').transform(a => a.charAt(0).toUpperCase() + a.slice(1)),

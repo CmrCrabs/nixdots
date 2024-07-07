@@ -1,71 +1,54 @@
 .start_menu {
-    min-width: 570px;
-    min-height: 600px;
-    margin-bottom: $outer_gap;
 }
 
 .app_launcher {
     @include widget;
+    background-color: $background-t;
     image {
         -gtk-icon-theme: "WhiteSur";
     }
-    background-color: transparent;
-    color: $on_background;
-    min-width: 320px;
-    min-height: 600px;
+    min-width: ($center_menu_width * 3/4) - $outer_gap - ($gap);
+    min-height: $center_menu_height;
+    margin-bottom: $outer_gap;
+    margin-right: $outer_gap;
 }
 
 .scrollable {
-    @include widget;
-    background-color: $surface_container_low-t;
-    border: $gap solid $background-t;
-    font-size: 16px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    min-width: 320px;
-    min-height: 465px;
+    @include element;
+    background-color: $background-t;
 }
 
 .app_item_button {
-    @include widget;
-    padding: 3px;
+    @include element;
+    background-color: $background-t;
+    margin-bottom: $gap;
     &:hover {
-        background-color: $surface-container-highest-t;
+        background-color: $surface_container_highest-t;
         transition: ease-in 0.3s;
     }
     &:focus {
-        background-color: $surface-container-highest-t;
+        background-color: $surface_container_highest-t;
         transition: ease-in 0.3s;
     }
 }
 
 .list_icon {
-    margin-left: 5px;
-    margin-right: 10px;
+}
+.app_title {
+    @include common;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: $gap;
 }
 
 .search_bar {
-    @include widget;
-    font-size: 20px;
-    margin-bottom: $outer_gap;
+    @include element;
+    margin: $gap;
+    font-size: 1.25rem;
+    padding-top: $gap * 1.2;
+    padding-bottom: $gap * 1.2;
+    margin-bottom: 2 * $gap;
     background-color: $surface_container_low-t;
-    border: $gap solid $background-t;
     color: $on_surface;
-    padding-top: $gap;
-    padding-bottom: $gap;
 }
 
-.title {
-    @include common;
-    font-weight: 500;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-.start_widgets {
-    @include widget;
-    min-width: 200px;
-    min-height: 600px;
-    margin-left: $outer_gap;
-}

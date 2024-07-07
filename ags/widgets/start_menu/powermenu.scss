@@ -1,0 +1,52 @@
+.powermenu {
+    @include widget;
+    //padding: 2 * $gap;
+    background-color: $background-t;
+    min-height: $center_menu_height;
+    margin-bottom: $outer_gap;
+}
+
+.limitless_icon {
+    @include button_icon($color7);
+}
+.limitless_button {
+    @include button($color7);
+    margin-bottom: 0;
+}
+.lock_icon {
+    @include button_icon($color1);
+}
+.lock_button {
+    @include button($color1);
+}
+
+.sleep_icon {
+    @include button_icon($color3);
+}
+.sleep_button {
+    @include button($color3);
+}
+
+.logout_icon {
+    @include button_icon($color4);
+}
+.logout_button {
+    @include button($color4);
+}
+
+
+.reboot_icon {
+    @include button_icon($color5);
+}
+.reboot_button {
+    @include button($color5);
+
+}
+
+.shutdown_icon {
+    @include button_icon($color6);
+}
+.shutdown_button {
+    @include button($color6);
+    margin-bottom: 0;
+}

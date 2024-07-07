@@ -27,15 +27,19 @@ const AppItem = app => Widget.Button({
     class_name: "app_item_button",
     attribute: { app },
     child: Widget.Box({
+        hpack: "start",
+        vpack: "center",
         class_name: "app_item_box",
         children: [
             Widget.Icon({
+                hpack: "start",
+                vpack: "center",
                 icon: app.icon_name || "",
                 size: 50,
                 class_name: "list_icon",
             }),
             Widget.Label({
-                class_name: "title",
+                class_name: "app_title",
                 label: app.name,
                 xalign: 0,
                 vpack: "center",
@@ -57,7 +61,7 @@ const Applauncher = () => {
     const list = Widget.Box({
         vertical: true,
         children: applications,
-        spacing: 30,
+        //spacing: 30,
     })
 
     function repopulate() {
