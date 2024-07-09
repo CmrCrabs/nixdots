@@ -13,8 +13,9 @@
 
 - [ ] AGS
     - [ ] rewrite to use header font & body font
-    - [ ] Horizontal Bar
+    - [X] Horizontal Bar Initial
     - [ ] Data Structure for config
+    - [ ] Rework widgets to work with horizontal bar 
     - [ ] Theming Bars
     - [ ] Theming Switches
     - [ ] Font Menu
@@ -22,6 +23,7 @@
     - [ ] Update Control center margin
     - [ ] rounded corners
     - [ ] Hyprspace Integration
+    - [ ] track with home manager
 
 - [ ] Hyprland
     - [ ] Window Shadows
@@ -39,6 +41,7 @@
     - [ ] Incl. Startup time on dash
     - [ ] optimise startup time
     - [ ] adjusting border shape to config
+    - [ ] readme for nvim config + previews (with colors)
 
 - [ ] TMUX
 
@@ -85,7 +88,8 @@
         - [ ] add to ags where specified
     - [ ] Preview Images
     - [ ] write script to install cli environmnent specifically
-
+    - [ ] readme for wallpaper repo
+    - [ ] editing of github settings for repo
 
 ## Credits:
 for their great configs / learning resources / software
