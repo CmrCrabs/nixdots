@@ -1,14 +1,3 @@
-# NixOS Flake
-> [!Caution]
-> under construction
-> old [dotfiles](https://github.com/cmrcrabs/dotfiles)
-
-## Temporary Preview:
-
-![Preview](./temp_prev1.png)
-![Preview](./temp_prev2.png)
-![Preview](./temp_prev3.png)
-
 ## TODO: 
 
 - [ ] AGS
@@ -85,18 +74,3 @@
         - [ ] add to ags where specified
     - [ ] Preview Images
     - [ ] write script to install cli environmnent specifically
-
-
-## Credits:
-for their great configs / learning resources / software
-
-- LibrePhoenix
-- Misterio77
-- InioX
-- datsfilipe
-- Aylur
-- HyprNova
-- ChadCat7
-- linuxmobile
-- kotontrion (ags help)
-- end4 
