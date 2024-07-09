@@ -1,15 +1,15 @@
 # NixOS Flake
 > [!Caution]
-> under construction
-> old [dotfiles](https://github.com/cmrcrabs/dotfiles)
+> under construction; 
+> [old dotfiles](https://github.com/cmrcrabs/dotfiles)
 
-## Temporary Preview:
-
+## Temporary Preview
+(very out of date)
 ![Preview](./temp_prev1.png)
 ![Preview](./temp_prev2.png)
 ![Preview](./temp_prev3.png)
 
-## TODO: 
+## TODO
 
 - [ ] AGS
     - [ ] rewrite to use header font & body font
