@@ -30,6 +30,9 @@
 - [ ] fix sdhadow
 - [ ] fix control center margin so that it uses gaps in future
 - [ ] use gradience cli
+- [ ] set up "header font" & "body font"
+    - [ ] implement thru config
+    - [ ] create ui for changing?
 
 - [ ] AGS Setup
     - [ ] Wifi / Volume / Microphone

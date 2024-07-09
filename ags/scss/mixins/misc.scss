@@ -9,5 +9,6 @@ tooltip {
     background-color: $surface-container-high-t;
     padding: 3px;
     color: $on_surface; 
-    border-radius: $rounding
+    border-radius: $rounding;
+    border: $border solid $on_surface-t;
 }
