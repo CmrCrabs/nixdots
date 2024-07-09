@@ -130,6 +130,8 @@
       layerrule = [
         "blur,^(vertical_bar)$"
         "ignorezero,^(vertical_bar)$"
+        "blur,^(horizontal_bar)$"
+        "ignorezero,^(horizontal_bar)$"
         "blur,^(dock)$"
         "ignorezero,^(dock)$"
         "blur,^(start_menu)$"

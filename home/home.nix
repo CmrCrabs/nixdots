@@ -1,9 +1,9 @@
 {config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/purple_city_stop.png";
-  wal-l = "${dotfilesDir}/wallpapers/purple_city_stop.png";
+  wal =   "${dotfilesDir}/wallpapers/long_shoreline.png";
+  wal-l = "${dotfilesDir}/wallpapers/long_shoreline.png";
   style = "dark";
-  rounding = "10";
+  rounding = "30";
   scheme = "fidelity";
   bg-contrast = "0.5";
   fg-contrast = "0.6";

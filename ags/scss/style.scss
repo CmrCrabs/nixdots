@@ -23,13 +23,14 @@ $center_menu_height: $screen_height / 2.1;
     all: unset;
 }
 
-@import '../widgets/vertical_bar/vertical_bar';
-@import '../widgets/start_menu/start_menu';
-@import '../widgets/start_menu/powermenu';
-@import '../widgets/dock/dock';
-@import '../widgets/dock/systray';
-@import '../widgets/control_center/sliders';
-@import '../widgets/control_center/control_menu';
-@import '../widgets/media_center/media';
-@import '../widgets/media_center/notifications';
-@import '../widgets/media_center/notifications_tray';
+@import './widgets/vertical_bar/vertical_bar';
+@import './widgets/horizontal_bar/horizontal_bar';
+@import './widgets/start_menu/start_menu';
+@import './widgets/start_menu/powermenu';
+@import './widgets/dock/dock';
+@import './widgets/dock/systray';
+@import './widgets/control_center/sliders';
+@import './widgets/control_center/control_menu';
+@import './widgets/media_center/media';
+@import './widgets/media_center/notifications';
+@import './widgets/media_center/notifications_tray';
