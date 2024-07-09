@@ -26,7 +26,7 @@ function Player(player) {
         wrap: true,
         hpack: "start",
         vpack: "end",
-        label: player.bind("track_title").transform(a => a.length > 18 ? a.substring(0,18).concat("..") : a),
+        label: player.bind("track_title").transform(a => a.length > 31 ? a.substring(0,28).concat("...") : a),
     })
 
     const artist = Widget.Label({
@@ -34,7 +34,7 @@ function Player(player) {
         wrap: true,
         vpack: "start",
         hpack: "start",
-        label: player.bind("track_artists").transform(a => a.join(", ").length > 20 ? a.join(", ").substring(0,20).concat("...") : a.join(", ")),
+        label: player.bind("track_artists").transform(a => a.join(", ").length > 40 ? a.join(", ").substring(0,37).concat("...") : a.join(", ")),
     })
 
     const playPause = Widget.Button({

@@ -1,20 +1,28 @@
 .systray_box {
     @include widget;
-    image {
-        -gtk-icon-theme: "WhiteSur";
-    }
     background-color: $background-t;
-    padding: $padding * 2;
     margin-right: $outer_gap;
     margin-bottom: $outer_gap;
 }
 .sys_app_icon {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    @include button_icon($on_surface);
 }
+
 .sys_app_button {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    @include button($on_surface);
+    margin: ($gap / 2) $gap ($gap / 2) $gap;
+}
+
+.empty_button {
+    @include button($color7);
+    margin: ($gap / 2) $gap ($gap / 2) $gap;
+    background-color: $background-t;
+    &:hover {
+        background-color: $background-t;
+    }
+}
+.empty_icon {
+    @include button_icon($color7);
 }
 
 menu {

@@ -31,6 +31,7 @@ export function Battery() {
 
     return Widget.Box({
         class_name: "batbox",
+        tooltip_text: battery.bind("percent").as(p => `${p}%`),
         child: Widget.Overlay({
             hpack: "center",
             vpack: "center",
