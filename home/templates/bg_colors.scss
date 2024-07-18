@@ -1,6 +1,8 @@
   $rounding: {{custom.rounding}}px;
   $transparency: {{custom.transparency}};
   $gap_var: {{custom.outer_gap}}px;
+  $font: "{{custom.font}}";
+  $header_font: "{{custom.header_font}}";
 
   <* for name, value in colors *>
   ${{name}}-t: fade-out(

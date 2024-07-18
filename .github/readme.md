@@ -12,9 +12,10 @@
 ## TODO
 
 - [ ] AGS
-    - [ ] rewrite to use header font & body font
+    - [X] rewrite to use header font & body font
+    - [X] kitty font declarative
     - [X] Horizontal Bar Initial
-    - [ ] Data Structure for config
+    - [X] Data Structure for config
     - [ ] Rework widgets to work with horizontal bar 
     - [ ] Theming Bars
     - [ ] Theming Switches
@@ -22,7 +23,9 @@
     - [ ] Wallpaper Selector
     - [ ] Update Control center margin
     - [ ] rounded corners
+    - [ ] stack for label with date & time
     - [ ] Hyprspace Integration
+    - [ ] update css to work with light mode
     - [ ] track with home manager
 
 - [ ] Hyprland
@@ -35,6 +38,7 @@
     - [ ] fix alt-k
 
 - [ ] Neovim
+    - [ ] migrate mason to nix / both 
     - [ ] Prism / Custom Theme
     - [ ] Custom Bufferline
     - [ ] Custom Statusline
@@ -47,6 +51,8 @@
 
 - [ ] zsh
     - [ ] migrate aliases + starship
+    - [ ] zsh colorscheme
+    - [ ] zsh light / dark mode
     - [ ] setup up to fish level
     - [ ] zoxide
 
@@ -55,8 +61,13 @@
 
 - [ ] Firefox
     - [ ] setup current to be fully declarative
+        - [ ] extensions
+        - [ ] extension configuration
+        - [ ] exceptions
+        - [ ] bookmarks?
     - [ ] Vertical Tabs
     - [ ] modify userChrome to follow colors
+    - [ ] setup font using ags
 
 - [ ] Thunderbird
     - [ ] lightning for google calendar integration

@@ -141,6 +141,7 @@ in {
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "JetBrainsMono" "Iosevka" ]; })
   ];
+
   fonts.fontconfig = {
     defaultFonts = {
       sansSerif = [ "Jetbrains Mono Nerd Font" ];
@@ -183,6 +184,7 @@ in {
     krita
     remnote
     gnome.nautilus
+    vlc
 
     # gaming
     mangohud
@@ -215,6 +217,8 @@ in {
     alsa-tools
     pywal
     cbonsai
+
+    wf-recorder
  
     # Libs / Utils
     cmake

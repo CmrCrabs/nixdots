@@ -1,6 +1,5 @@
-{ config, wal, style, rounding, transparency, outer_gap, templateDir, ... }:
+{ config, wal, style, rounding, transparency, outer_gap, font, header_font, templateDir, ... }:
 {
-
   xdg.configFile."matugen/config.toml".text = ''
     [config]
     jsonFormat = 'hex'
@@ -10,6 +9,8 @@
     rounding = "${rounding}"
     transparency = "${transparency}"
     outer_gap = "${outer_gap}"
+    font = "${font}"
+    header_font = "${header_font}"
 
     [templates.kitty]
     input_path = "${templateDir}/kitty.conf"

@@ -7,7 +7,7 @@
     
     plugins = [
       # inputs.hyprland-plugins.packages."${pkgs.system}".hyprbars
-      # inputs.hyprland-plugins.packages."${pkgs.system}".borders-plus-plus
+      inputs.hyprland-plugins.packages."${pkgs.system}".borders-plus-plus
       # inputs.hyprspace.packages.${pkgs.system}.Hyprspace
     ];
 
@@ -242,9 +242,21 @@
       rounding = $rounding
     }
     general {
-      gaps_in = $outer_gap
+      gaps_in = $outer_gap / 2
       gaps_out = $outer_gap
     }
+
+plugin {
+    hyprbars {
+        # example config
+        bar_height = 20
+
+        # example buttons (R -> L)
+        # hyprbars-button = color, size, on-click
+        hyprbars-button = rgb(ff4040), 10, 󰖭, hyprctl dispatch killactive
+        hyprbars-button = rgb(eeee11), 10, , hyprctl dispatch fullscreen 1
+    }
+}
     '';
   };
 }

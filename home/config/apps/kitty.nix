@@ -1,9 +1,8 @@
-{ config, outer_gap, ... }:
+{ config, outer_gap, font, ... }:
 {
   programs.kitty = {
     enable = true;
     settings = {
-      font_family = "Jetbrains Mono Nerd Font";
       italic_font = "auto";
       bold_font = "auto";
       bold_italic_font = "auto";
@@ -36,7 +35,6 @@
       
       include ~/.config/kitty/bg_colors.conf
       include ~/.cache/wal/fg_colors.conf
-
     '';
   };
 }
