@@ -6,7 +6,5 @@ pkgs.writeShellScriptBin "cgtheme" ''
     matugen image -m ${style} ${wal} -t scheme-${scheme} -v --contrast ${bg-contrast} --show-colors
     cp ~/.cache/wal/fg_colors.scss ~/.config/ags/scss/fg_colors.scss
     sassc ~/.config/ags/scss/style.scss ~/.config/ags/scss/my-style.css
-    pkill ags
-    ags &
 ''
 

@@ -1,9 +1,11 @@
 {config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/long_shoreline.png";
-  wal-l = "${dotfilesDir}/wallpapers/long_shoreline.png";
+  wal =   "${dotfilesDir}/wallpapers/colorful_palmtrees.png";
+  wal-l = "${dotfilesDir}/wallpapers/colorful_palmtrees.png";
+  font = "Iosevka Nerd Font";
+  header_font = "Jetbrains Mono Nerd Font";
   style = "dark";
-  rounding = "30";
+  rounding = "20";
   scheme = "fidelity";
   bg-contrast = "0.5";
   fg-contrast = "0.6";
@@ -26,13 +28,13 @@ in
     inputs.nix-colors.homeManagerModules.default
 
     # Files (w/ Inputs)
-    (import ./matugen.nix { inherit wal style rounding transparency outer_gap config templateDir; })
+    (import ./matugen.nix { inherit wal style rounding transparency outer_gap font header_font config templateDir; })
     (import ./config/desktop/hyprland.nix { inherit config inputs pkgs; })
     (import ./config/desktop/hyprlock.nix { inherit wal wal-l style rounding; })
     (import ./config/ags.nix { inherit config inputs pkgs rounding dotfilesDir; })
     (import ./config/nvim.nix { inherit config lib pkgs dotfilesDir; })
     (import ./config/cli/fish.nix { inherit style pkgs; })
-    (import ./config/apps/kitty.nix { inherit config outer_gap; })
+    (import ./config/apps/kitty.nix { inherit config outer_gap font; })
 
     # Files 
     ./config/desktop/hypridle.nix
