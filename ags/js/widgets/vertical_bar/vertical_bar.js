@@ -4,7 +4,7 @@ import { Workspaces } from "./workspaces.js"
 import { Button } from '../shared/button.js';
 
 function ThemeButton() {
-    return Button("wallpaper", "theme", "Limitless' Theming Menu", () => print("test"));
+    return Button("nixos", "theme", "Limitless' Theming Menu", () => App.toggleWindow("theming_menu"));
 }
 
 function Top() {

@@ -1,14 +1,15 @@
 .notifications_tray {
     @include widget;
     min-width: $left_menu_width;
-    min-height: $left_menu_height * 4.25 / 10;
+    min-height: $left_menu_height * 0.4;
     margin-top: $outer_gap;
     margin-left: $outer_gap;
     background-color: $background-t;
 }
 
 .notifications_header {
-    @include element;
+    @include header;
+    margin: $gap;
     background-color: $background-t;
     font-size: 2em;
 }

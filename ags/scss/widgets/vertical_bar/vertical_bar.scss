@@ -9,6 +9,7 @@
 
 .clock {
     @include element;
+    @include header;
     padding-top: $padding * 1.5;
     padding-bottom: $padding  * 1.5;
     padding-left: $padding * 1.1;

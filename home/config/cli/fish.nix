@@ -12,7 +12,7 @@ let
     "rbt" = "sudo reboot";
     "nm" = "sudo nmtui";
     "wft" = "ping gnu.org -c 1";
-    "nv" = "steam-run nvim";
+    "nv" = "nvim";
     # "nvim" = "steam-run nvim";
     "cpng" = "mogrify -format png *.jpg && rm *.jpg";
     "shell" = "nix-shell . --command \"fish\"";

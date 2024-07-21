@@ -9,6 +9,7 @@
 
 .clock_h {
     @include element;
+    @include header;
     font-size: 1.5rem;
     margin-right: $gap;
     font-weight: bold;

@@ -1,9 +1,10 @@
 const date = Variable("", {
     poll: [1000, 'date "+%H\n%M"'],
 })
+
 export function Clock() {
     return Widget.Label({
-        class_name: "clock_h",
+        class_name: "clock",
         hpack: "center",
         vpack: "center",
         label: date.bind(),
@@ -21,17 +22,17 @@ export function Battery() {
         value: value,
         rounded: true,
         startAt: 0.0,
-        class_name: 'bat_progress_h',
+        class_name: 'bat_progress',
         class_name: battery.bind('charging').as(ch => ch ? 'bat_progress_charging' : 'bat_progress'),
     })
 
     let icon = Widget.Icon({
-        class_name: "bat_icon_h",
+        class_name: "bat_icon",
         icon: battery.bind('charging').as(ch => ch ? 'battery-charging-symbolic' : 'battery1-symbolic'),
     })
 
     return Widget.Box({
-        class_name: "batbox_h",
+        class_name: "batbox",
         vexpand: false,
         tooltip_text: battery.bind("percent").as(p => `${p}%`),
         child: Widget.Overlay({

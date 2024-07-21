@@ -6,7 +6,6 @@ export function ControlSlider() {
     return Widget.Box({
         hpack: "center",
         vpack: "center",
-        hexpand: true,
         vertical: true,
         vpack: "center",
         hpack: "center",
@@ -49,7 +48,7 @@ function brightness_slider() {
         "sun", 
         "Brightness Control",
         ({ value }) => brightness.screen_value = value,
-        () => {},
+        self => self.on("scroll-event", () => true),
         brightness.bind("screen-value"),
     )
 }

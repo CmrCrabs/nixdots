@@ -1,0 +1,20 @@
+.theming_sliders {
+    @include widget;
+    margin-right: $outer_gap;
+    margin-top: $outer_gap;
+    min-width: $right_menu_width;
+    background-color: $background-t;
+    padding-top: 2 * $padding;
+    padding-bottom: 2 * $padding;
+}
+
+.rounding {
+    margin-bottom: 2 * $gap;
+}
+.rounding_slider {
+    @include slider($color1);
+    min-width:  $left_menu_width - 2 * $gap - 24px;
+}
+.rounding_icon {
+    @include slider_icon($color1);
+}

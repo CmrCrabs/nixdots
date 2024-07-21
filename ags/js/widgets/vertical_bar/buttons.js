@@ -1,5 +1,6 @@
 const bluetooth = await Service.import('bluetooth')
 const network = await Service.import('network')
+const mpris = await Service.import("mpris")
 
 export function NotificationMusicButton() {
     const noti_icon = Widget.Icon({
@@ -11,7 +12,7 @@ export function NotificationMusicButton() {
     })
 
     const music_icon = Widget.Icon({
-        icon: "music-symbolic",
+        icon: mpris.bind("players").as(p => p.length > 0 ? "media-enabled-symbolic" : "media-disabled-symbolic"),
         hpack: "center",
         vpack: "center",
         cursor: "pointer",

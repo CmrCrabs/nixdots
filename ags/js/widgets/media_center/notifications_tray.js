@@ -21,6 +21,7 @@ const ClearButton = () => Widget.Button({
 });
 
 const Header = () => Widget.CenterBox({
+    vpack: "center",
     class_name: 'notifications_header',
     start_widget: Widget.Label({ label: 'Notifications', xalign: 0}),
     end_widget: ClearButton(),
@@ -54,6 +55,8 @@ const Placeholder = () => Widget.Box({
 
 export function NotificationCenter(monitor = 0) {
     return  Widget.Box({
+        hpack: "center",
+        vpack: "center",
         class_name: 'notifications_tray',
         vertical: true,
         children: [

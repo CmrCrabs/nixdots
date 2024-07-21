@@ -10,7 +10,9 @@ $screen_height: 1080px;
 $screen_width: 1920px;
 $dock_width: $screen_width / 4;
 $left_menu_width: 425px;
-$left_menu_height: $screen_height - (7.5 * $outer-gap) - 70px;
+$right_menu_width: 425px;
+//$left_menu_height: $screen_height - (7.5 * $outer-gap) - 70px;
+$left_menu_height: $screen_height - (2 * $outer-gap) - 20px;
 $center_menu_width: $screen_width / 3;
 $center_menu_height: $screen_height / 2.1;
 
@@ -21,6 +23,7 @@ $center_menu_height: $screen_height / 2.1;
 
 * {
     all: unset;
+    font-family: $font;
 }
 
 @import './widgets/vertical_bar/vertical_bar';
@@ -34,3 +37,5 @@ $center_menu_height: $screen_height / 2.1;
 @import './widgets/media_center/media';
 @import './widgets/media_center/notifications';
 @import './widgets/media_center/notifications_tray';
+@import './widgets/theming_menu/theming_menu';
+@import './widgets/theming_menu/theming_sliders';

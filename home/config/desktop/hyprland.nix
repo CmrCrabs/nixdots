@@ -7,7 +7,7 @@
     
     plugins = [
       # inputs.hyprland-plugins.packages."${pkgs.system}".hyprbars
-      inputs.hyprland-plugins.packages."${pkgs.system}".borders-plus-plus
+      # inputs.hyprland-plugins.packages."${pkgs.system}".borders-plus-plus
       # inputs.hyprspace.packages.${pkgs.system}.Hyprspace
     ];
 
@@ -150,6 +150,9 @@
         "blur,^(media_center)$"
         "ignorezero,^(media_center)$"
         "animation slide left,^(media_center)$"
+        "blur,^(theming_menu)$"
+        "ignorezero,^(theming_menu)$"
+        "animation slide right,^(theming_menu)$"
       ];
       windowrulev2 = [
         "tile, class:^(firefox)$,title:^(Firefox)$"

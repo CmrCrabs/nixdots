@@ -43,7 +43,7 @@ window.notification-popups box.notifications {
 }
 
 .noti_title {
-    @include common;
+    @include header;
     color: $color1;
     font-size: 1.2em;
     font-weight: 500;
@@ -67,7 +67,7 @@ window.notification-popups box.notifications {
 }
 
 .action-button {
-    @include element;
+    @include header;
     padding: $gap;
     background-color: $color5;
     margin-left: $gap;
