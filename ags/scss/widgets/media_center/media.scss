@@ -3,7 +3,7 @@
 
 .player {
     @include widget;
-    min-height: $left_menu_height * 2 / 10 - $outer_gap;
+    min-height: ($left_menu_height * 0.14) - (2 * $outer_gap);
     margin-top: $outer_gap;
     border: (2 * $gap) solid $background-t;
     background-color: $surface_container-t;
@@ -15,7 +15,7 @@
 
 .player_controls {
     margin-top: $outer_gap;
-    min-height: $left_menu_height * 2 / 10 - $outer_gap;
+    //min-height: $left_menu_height * 2 / 10 - $outer_gap;
     @include widget;
     padding: 2 * $gap;
     background-color: $background-t;
@@ -23,7 +23,7 @@
 
 
 .title {
-    @include common;
+    @include header;
     margin-left: $gap;
     margin-top: $gap;
     font-size: 1rem;

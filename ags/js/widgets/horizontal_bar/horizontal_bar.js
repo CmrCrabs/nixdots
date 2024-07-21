@@ -4,7 +4,7 @@ import { Workspaces } from "./workspaces.js"
 import { Button } from '../shared/button.js';
 
 function ThemeButton() {
-    return Button("wallpaper", "theme_h", "Limitless' Theming Menu", () => print("test"));
+    return Button("wallpaper", "theme_h", "Limitless' Theming Menu", () => App.toggleWindow("theming_menu"));
 }
 
 function Top() {

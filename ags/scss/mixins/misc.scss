@@ -1,11 +1,15 @@
 @mixin common{
     * {
-        font-family: Jetbrains Mono, sans-serif;
+        //font-family: Jetbrains Mono, sans-serif;
+        font-family: $font;
     }
 }
 
+@mixin header{
+    font-family: $header_font;
+}
+
 tooltip {
-    @include common;
     background-color: $surface-container-high-t;
     padding: 3px;
     color: $on_surface; 

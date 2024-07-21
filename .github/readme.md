@@ -46,6 +46,7 @@
     - [ ] optimise startup time
     - [ ] adjusting border shape to config
     - [ ] readme for nvim config + previews (with colors)
+    - [ ] fix priority for cmp
 
 - [ ] TMUX
 

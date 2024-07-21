@@ -177,6 +177,8 @@ function Player(player) {
 export function Media() {
     return Widget.Box({
         vertical: true,
+        hpack: "center",
+        vpack: "center",
         class_name: "media",
         visible: players.as(p => p.length > 0),
         children: players.as(p => p.map(Player).slice(0,2)),

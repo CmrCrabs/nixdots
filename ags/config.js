@@ -8,6 +8,7 @@ import { StartMenu } from "./js/widgets/start_menu/start_menu.js";
 import { ControlCenter } from "./js/widgets/control_center/control_center.js";
 import { MediaCenter } from "./js/widgets/media_center/media_center.js";
 import { NotificationPopups } from "./js/widgets/media_center/notifications.js";
+import { ThemingMenu } from "./js/widgets/theming_menu/theming_menu.js";
 
 const css = `${App.configDir}/my-style.css`
 const scss = `${App.configDir}/scss/style.scss`
@@ -27,13 +28,14 @@ App.addIcons(`${App.configDir}/assets`)
 App.config({
     style: css,
     windows: [
-        //VerticalBar(0),
-        HorizontalBar(0),
+        VerticalBar(0),
+        //HorizontalBar(0),
         Dock(0),
         StartMenu(0),
         SysTray(0),
         ControlCenter(0),
         MediaCenter(0),
         NotificationPopups(0),
+        ThemingMenu(0),
     ],
 })

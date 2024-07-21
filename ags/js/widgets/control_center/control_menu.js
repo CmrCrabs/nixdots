@@ -55,7 +55,6 @@ export function ControlMenu() {
     return Widget.Box({
         hpack: "center",
         vpack: "center",
-        hexpand: true,
         vertical: true,
         class_name: "control_menu",
         children: [
@@ -98,7 +97,7 @@ function WifiButton() {
         network.bind("connectivity").as(status => status == "full" ? "wifi-enabled-symbolic" : "wifi-warning-symbolic"),
         "Wifi",
         "wifi",
-        network.bind("connectivity").as(status => status == "full" ? network.wifi.ssid : "Disabled"),
+        network.bind("connectivity").as(status => status == "full" ? network.wifi.ssid : network.wifi.enabled ? "Disconnected" : "Disabled"),
         self => {
             network.toggleWifi();
             self.toggleClassName("on", !network.wifi.enabled);

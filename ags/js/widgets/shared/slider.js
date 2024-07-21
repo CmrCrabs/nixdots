@@ -1,4 +1,4 @@
-export function Slider(name, icon,tooltip, on_change, setup, value = 0) {
+export function Slider(name, icon, tooltip, on_change, setup, value = 0, min = 0, max = 1) {
     const slider = Widget.Slider({
         class_name: `${name}_slider`,
         draw_value: false,
@@ -9,6 +9,8 @@ export function Slider(name, icon,tooltip, on_change, setup, value = 0) {
         on_change: on_change,
         setup: setup,
         value: value,
+        min: min,
+        max: max,
     })
 
     const slider_icon = Widget.Icon({

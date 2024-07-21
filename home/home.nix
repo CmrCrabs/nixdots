@@ -1,11 +1,11 @@
 {config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/colorful_palmtrees.png";
-  wal-l = "${dotfilesDir}/wallpapers/colorful_palmtrees.png";
+  wal =   "${dotfilesDir}/wallpapers/evening_sky.png";
+  wal-l = "${dotfilesDir}/wallpapers/evening_sky.png";
   font = "Iosevka Nerd Font";
   header_font = "Jetbrains Mono Nerd Font";
   style = "dark";
-  rounding = "20";
+  rounding = "40";
   scheme = "fidelity";
   bg-contrast = "0.5";
   fg-contrast = "0.6";

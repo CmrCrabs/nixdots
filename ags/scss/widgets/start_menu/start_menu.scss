@@ -35,8 +35,8 @@
 .list_icon {
 }
 .app_title {
-    @include common;
-    font-weight: bold;
+    @include header;
+    font-weight: 600;
     font-size: 1rem;
     margin-left: $gap;
 }
