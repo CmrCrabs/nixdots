@@ -20,7 +20,7 @@
 
 .app_item_button {
     @include element;
-    background-color: $background-t;
+    background-color: transparent;
     margin-bottom: $gap;
     &:hover {
         background-color: $surface_container_highest-t;

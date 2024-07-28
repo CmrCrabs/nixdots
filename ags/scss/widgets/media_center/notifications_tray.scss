@@ -10,7 +10,6 @@
 .notifications_header {
     @include header;
     margin: $gap;
-    background-color: $background-t;
     font-size: 2em;
 }
 
