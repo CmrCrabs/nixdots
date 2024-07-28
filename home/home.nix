@@ -1,16 +1,16 @@
 {config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/evening_sky.png";
-  wal-l = "${dotfilesDir}/wallpapers/evening_sky.png";
+  wal =   "${dotfilesDir}/wallpapers/leaves.png";
+  wal-l = "${dotfilesDir}/wallpapers/leaves.png";
   font = "Iosevka Nerd Font";
   header_font = "Jetbrains Mono Nerd Font";
   style = "dark";
-  rounding = "40";
+  rounding = "0";
   scheme = "fidelity";
   bg-contrast = "0.5";
   fg-contrast = "0.6";
   transparency = "1.0";
-  outer_gap = "20";
+  outer_gap = "0";
 
   dotfilesDir = "${config.home.homeDirectory}/limitless";
   templateDir = "${dotfilesDir}/home/templates";
