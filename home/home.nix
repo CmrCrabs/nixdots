@@ -1,7 +1,7 @@
 {config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/tropical_leaves.png";
-  wal-l = "${dotfilesDir}/wallpapers/tropical_leaves.png";
+  wal =   "${dotfilesDir}/wallpapers/red_colored_sand.png";
+  wal-l = "${dotfilesDir}/wallpapers/red_colored_sand.png";
   font = "Iosevka Nerd Font";
   header_font = "Jetbrains Mono Nerd Font";
   style = "dark";
@@ -9,7 +9,7 @@ let
   scheme = "fidelity";
   bg-contrast = "0.5";
   fg-contrast = "0.6";
-  transparency = "1.0";
+  transparency = "0.7";
   outer_gap = "20";
 
   dotfilesDir = "${config.home.homeDirectory}/limitless";
@@ -84,5 +84,14 @@ in
     TEST = "real";
     ADW_DISABLE_PORTAL=1;
     # KRITA_NO_STYLE_OVERRIDE=1;
+
+    XDG_SESSION_TYPE = "wayland";
+    XDG_CURRENT_DESKTOP = "Hyprland";
+    XDG_SESSION_DESKTOP = "Hyprland";
+    WLR_RENDERER = "vulkan";
+    GTK_USE_PORTAL = "1";
+    NIXOS_XDG_OPEN_USE_PORTAL = "1";
+    MOZ_ENABLE_WAYLAND = "1";
+    NIXOS_OZONE_WL = "1";
   };
 }

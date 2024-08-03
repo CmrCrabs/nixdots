@@ -82,9 +82,15 @@ in {
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
   };
   
-  xdg.portal = {
-    enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  xdg = {
+    autostart.enable = true;
+    portal = {
+      enable = true;
+      extraPortals = [
+        pkgs.xdg-desktop-portal
+        pkgs.xdg-desktop-portal-gtk
+      ];
+    };
   };
 
   services.libinput.enable = true;
@@ -261,6 +267,8 @@ in {
     nix-prefetch-git
     stdenv
 
+    xdg-utils
+
     unzip
     sassc
 
@@ -269,6 +277,8 @@ in {
 
     alsa-oss
     alsa-lib
+
+    bfg-repo-cleaner
 
     hyprcursor
 
