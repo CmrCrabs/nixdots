@@ -20,7 +20,6 @@ in
         "$os"
         "$directory"
         "$container"
-        "$git_branch $git_status"
         "$python"
         "$nodejs"
         "$lua"
@@ -41,11 +40,11 @@ in
       continuation_prompt = "∙  ┆ ";
       line_break = { disabled = false; };
       status = {
-        symbol = "✗";
-        not_found_symbol = "󰍉 Not Found";
-        not_executable_symbol = " Can't Execute E";
-        sigint_symbol = "󰂭 ";
-        signal_symbol = "󱑽 ";
+        symbol = " ✗";
+        not_found_symbol = " 󰍉 Not Found";
+        not_executable_symbol = "   Can't Execute E";
+        sigint_symbol = " 󰂭 ";
+        signal_symbol = " 󱑽 ";
         success_symbol = "";
         format = "[$symbol](fg:red)";
         map_symbol = true;
@@ -53,11 +52,11 @@ in
       };
       cmd_duration = {
         min_time = 1000;
-        format = "[$duration ](fg:yellow)";
+        format = "[ $duration ](fg:yellow)";
       };
       nix_shell = {
         disabled = false;
-        format = "[${pad.left}](fg:white)[ ](bg:white fg:black)[${pad.right}](fg:white) ";
+        format = "[${pad.left}](fg:white)[ ](bg:white fg:black)[${pad.right}](fg:white)   ";
       };
       container = {
         symbol = " 󰏖";
@@ -79,11 +78,6 @@ in
       #   ".config" = " ";
       #   "Vault" = "󱉽 ";
       # };
-      git_branch = {
-        symbol = "";
-        style = "";
-        format = "[ $symbol $branch](fg:purple)(:$remote_branch)";
-      };
       os = {
         disabled = false;
         format = "$symbol";
