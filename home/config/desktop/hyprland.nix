@@ -4,6 +4,7 @@
     enable = true;
     systemd.enable = true;
     xwayland.enable = true;
+    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
     
     plugins = [
       # inputs.hyprland-plugins.packages."${pkgs.system}".hyprbars
@@ -24,6 +25,8 @@
       "$screenshot" = "grim -g \"$(slurp -d)\" - | wl-copy -t image/png";
       "$browser" = "firefox";
       "$locker" = "hyprlock";
+      "$music" = "spotify";
+      "$messenger" = "discord";
 
 
       exec-once = [
@@ -43,6 +46,10 @@
       workspace = [
         "eDP-1, 1"
         "DP-1, 10"        
+        "10, default: DP-1"
+        "1, on-created-empty: $browser"
+        "4, on-created-empty: $music"
+        "5, on-created-empty: $messenger"
         # "1, persistent:true"
         # "2, persistent:true"
         # "3, persistent:true"
@@ -249,17 +256,17 @@
       gaps_out = $outer_gap
     }
 
-plugin {
-    hyprbars {
-        # example config
-        bar_height = 20
+    plugin {
+        hyprbars {
+            # example config
+            bar_height = 20
 
-        # example buttons (R -> L)
-        # hyprbars-button = color, size, on-click
-        hyprbars-button = rgb(ff4040), 10, 󰖭, hyprctl dispatch killactive
-        hyprbars-button = rgb(eeee11), 10, , hyprctl dispatch fullscreen 1
+            # example buttons (R -> L)
+            # hyprbars-button = color, size, on-click
+            hyprbars-button = rgb(ff4040), 10, 󰖭, hyprctl dispatch killactive
+            hyprbars-button = rgb(eeee11), 10, , hyprctl dispatch fullscreen 1
+        }
     }
-}
     '';
   };
 }

@@ -1,9 +1,9 @@
 tooltip {
-  background-color: #333232;
+  background-color: rgba(64, 46, 48, 0.7);
   padding: 3px;
   color: #ffffff;
-  border-radius: 0px;
-  border: 0rem solid white; }
+  border-radius: 20px;
+  border: 0rem solid rgba(255, 255, 255, 0.7); }
 
 * {
   all: unset;
@@ -11,18 +11,18 @@ tooltip {
 
 .vertical_bar {
   padding: 10px;
-  border-radius: 0;
+  border-radius: 20px;
   margin: 0;
-  min-height: 1060px;
-  margin-left: 0px;
-  background-color: #131313;
-  color: #e5e2e1; }
+  min-height: 1020px;
+  margin-left: 20px;
+  background-color: rgba(30, 15, 17, 0.7);
+  color: #f8dcdd; }
 
 .clock {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
   font-family: "Jetbrains Mono Nerd Font";
   padding-top: 15px;
   padding-bottom: 15px;
@@ -34,9 +34,9 @@ tooltip {
 
 .batbox {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
   padding: 4.7619047619px; }
 
 .bat_icon {
@@ -50,24 +50,24 @@ circular-progress {
   margin: 0.2rem; }
 
 .bat_progress {
-  color: #379224; }
+  color: #c83531; }
 
 .bat_progress_charging {
-  color: #1fb600;
+  color: #f90700;
   transition: ease-in 0.5s; }
 
 .workspaces {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
   padding: 20px; }
 
 .workspace_unfocused {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
   background-color: #ffffff;
   margin-top: 10px;
   padding-top: 12.5px;
@@ -75,15 +75,15 @@ circular-progress {
   padding-left: 5px;
   padding-right: 5px; }
   .workspace_unfocused:hover {
-    background-color: #7ebd2f;
+    background-color: #d98769;
     transition: ease-in 0.1s; }
 
 .workspace_focused {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  background-color: #7ebd2f;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  background-color: #d98769;
   margin-top: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -91,102 +91,102 @@ circular-progress {
   padding-right: 5px;
   transition: ease-in 0.1s; }
   .workspace_focused:hover {
-    background-color: #81d517;
+    background-color: #ec7e56;
     transition: ease-in 0.1s; }
 
 .theme_icon {
-  color: #1f7f25;
+  color: #cc3659;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .theme_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #1f7f25; }
+  background-color: #342425;
+  border: 0rem solid #cc3659; }
   .theme_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .notification_icon {
-  color: #7ebd2f;
+  color: #d98769;
   background-color: transparent;
   font-size: 1.5rem;
   margin-bottom: 15px; }
 
 .music_icon {
-  color: #379224;
+  color: #c83531;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .notification_music_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #3d741c;
+  background-color: #342425;
+  border: 0rem solid #c23040;
   margin: 0; }
   .notification_music_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .slider_icon {
-  color: #6ba729;
+  color: #d8656b;
   background-color: transparent;
   font-size: 1.5rem;
   margin-bottom: 15px; }
 
 .wifi_icon {
-  color: #1f7f25;
+  color: #cc3659;
   background-color: transparent;
   font-size: 1.5rem;
   margin-bottom: 15px; }
 
 .bluetooth_icon {
-  color: #3d741c;
+  color: #c23040;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .misc_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #3d741c; }
+  background-color: #342425;
+  border: 0rem solid #c23040; }
   .misc_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .horizontal_bar {
   padding: 10px;
-  border-radius: 0;
+  border-radius: 20px;
   margin: 0;
-  min-width: 1900px;
-  margin-top: 0px;
-  background-color: #131313;
-  color: #e5e2e1; }
+  min-width: 1860px;
+  margin-top: 20px;
+  background-color: rgba(30, 15, 17, 0.7);
+  color: #f8dcdd; }
 
 .clock_h {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
   font-family: "Jetbrains Mono Nerd Font";
   font-size: 1.5rem;
   margin-right: 10px;
@@ -194,9 +194,9 @@ circular-progress {
 
 .batbox_h {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
   padding: 4.7619047619px;
   margin-left: 10px; }
 
@@ -211,24 +211,24 @@ circular-progress {
   margin: 0.2rem; }
 
 .bat_progress_h {
-  color: #379224; }
+  color: #c83531; }
 
 .bat_progress_charging_h {
-  color: #1fb600;
+  color: #f90700;
   transition: ease-in 0.5s; }
 
 .workspaces_h {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
   padding: 20px; }
 
 .workspace_unfocused_h {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
   background-color: #ffffff;
   margin-left: 5px;
   margin-right: 5px;
@@ -237,15 +237,15 @@ circular-progress {
   padding-top: 5px;
   padding-bottom: 5px; }
   .workspace_unfocused_h:hover {
-    background-color: #7ebd2f;
+    background-color: #d98769;
     transition: ease-in 0.1s; }
 
 .workspace_focused_h {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  background-color: #7ebd2f;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  background-color: #d98769;
   margin-left: 5px;
   margin-right: 5px;
   padding-left: 12.5px;
@@ -254,119 +254,119 @@ circular-progress {
   padding-bottom: 5px;
   transition: ease-in 0.1s; }
   .workspace_focused_h:hover {
-    background-color: #81d517;
+    background-color: #ec7e56;
     transition: ease-in 0.1s; }
 
 .theme_h_icon {
-  color: #1f7f25;
+  color: #cc3659;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .theme_h_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-left: 10px;
   margin-right: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #1f7f25;
+  background-color: #342425;
+  border: 0rem solid #cc3659;
   margin-right: 0; }
   .theme_h_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .notification_icon_h {
-  color: #7ebd2f;
+  color: #d98769;
   background-color: transparent;
   font-size: 1.5rem;
   margin-right: 15px; }
 
 .music_icon_h {
-  color: #379224;
+  color: #c83531;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .notification_music_button_h {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-left: 10px;
   margin-right: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #3d741c;
+  background-color: #342425;
+  border: 0rem solid #c23040;
   margin: 0; }
   .notification_music_button_h:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .slider_icon_h {
-  color: #6ba729;
+  color: #d8656b;
   background-color: transparent;
   font-size: 1.5rem;
   margin-right: 15px; }
 
 .wifi_icon_h {
-  color: #1f7f25;
+  color: #cc3659;
   background-color: transparent;
   font-size: 1.5rem;
   margin-right: 15px; }
 
 .bluetooth_icon_h {
-  color: #3d741c;
+  color: #c23040;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .misc_button_h {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-left: 10px;
   margin-right: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #3d741c; }
+  background-color: #342425;
+  border: 0rem solid #c23040; }
   .misc_button_h:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .app_launcher {
   padding: 10px;
-  border-radius: 0;
-  background-color: #131313;
-  min-width: 470px;
+  border-radius: 20px;
+  background-color: rgba(30, 15, 17, 0.7);
+  min-width: 450px;
   min-height: 514.2857142857px;
-  margin-bottom: 0px;
-  margin-right: 0px; }
+  margin-bottom: 20px;
+  margin-right: 20px; }
   .app_launcher image {
     -gtk-icon-theme: "WhiteSur"; }
 
 .scrollable {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  background-color: #131313; }
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  background-color: rgba(30, 15, 17, 0.7); }
 
 .app_item_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
   background-color: transparent;
   margin-bottom: 10px; }
   .app_item_button:hover {
-    background-color: #3e3d3d;
+    background-color: rgba(76, 57, 58, 0.7);
     transition: ease-in 0.3s; }
   .app_item_button:focus {
-    background-color: #3e3d3d;
+    background-color: rgba(76, 57, 58, 0.7);
     transition: ease-in 0.3s; }
 
 .app_title {
@@ -377,159 +377,159 @@ circular-progress {
 
 .search_bar {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
   margin: 10px;
   font-size: 1.25rem;
   padding-top: 12px;
   padding-bottom: 12px;
   margin-bottom: 20px;
-  background-color: #1e1d1e;
+  background-color: rgba(41, 25, 27, 0.7);
   color: #ffffff; }
 
 .powermenu {
   padding: 10px;
-  border-radius: 0;
-  background-color: #131313;
+  border-radius: 20px;
+  background-color: rgba(30, 15, 17, 0.7);
   min-height: 514.2857142857px;
-  margin-bottom: 0px; }
+  margin-bottom: 20px; }
 
 .limitless_icon {
-  color: #babdaf;
+  color: #eaa8bf;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .limitless_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #babdaf;
+  background-color: #342425;
+  border: 0rem solid #eaa8bf;
   margin-bottom: 0; }
   .limitless_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .lock_icon {
-  color: #3d741c;
+  color: #c23040;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .lock_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #3d741c; }
+  background-color: #342425;
+  border: 0rem solid #c23040; }
   .lock_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .sleep_icon {
-  color: #1f7f25;
+  color: #cc3659;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .sleep_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #1f7f25; }
+  background-color: #342425;
+  border: 0rem solid #cc3659; }
   .sleep_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .logout_icon {
-  color: #379224;
+  color: #c83531;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .logout_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #379224; }
+  background-color: #342425;
+  border: 0rem solid #c83531; }
   .logout_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .reboot_icon {
-  color: #6ba729;
+  color: #d8656b;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .reboot_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #6ba729; }
+  background-color: #342425;
+  border: 0rem solid #d8656b; }
   .reboot_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .shutdown_icon {
-  color: #7ebd2f;
+  color: #d98769;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .shutdown_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #7ebd2f;
+  background-color: #342425;
+  border: 0rem solid #d98769;
   margin-bottom: 0; }
   .shutdown_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .dock {
   padding: 10px;
-  border-radius: 0;
+  border-radius: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-bottom: 0px;
-  background-color: #131313; }
+  margin-bottom: 20px;
+  background-color: rgba(30, 15, 17, 0.7); }
 
 .icons image {
   -gtk-icon-theme: "WhiteSur"; }
 
 .separator {
-  background-color: #333232;
+  background-color: rgba(64, 46, 48, 0.7);
   padding-left: 0.5px;
   padding-right: 0.5px;
   margin-top: 0.6rem;
@@ -543,57 +543,57 @@ circular-progress {
   padding: 0.25rem;
   margin-right: 0.15rem;
   margin-left: 0.15rem;
-  border-radius: 0px;
+  border-radius: 20px;
   background-color: #ffffff; }
 
 .start_menu_icon {
-  color: #1b6e3c;
+  color: #ac2b45;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .start_menu_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #1b6e3c;
+  background-color: #342425;
+  border: 0rem solid #ac2b45;
   margin-left: 10px; }
   .start_menu_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .systray_icon {
-  color: #379224;
+  color: #c83531;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .systray_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #379224;
+  background-color: #342425;
+  border: 0rem solid #c83531;
   margin-left: 10px; }
   .systray_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .systray_box {
   padding: 10px;
-  border-radius: 0;
-  background-color: #131313;
-  margin-right: 0px;
-  margin-bottom: 0px; }
+  border-radius: 20px;
+  background-color: rgba(30, 15, 17, 0.7);
+  margin-right: 20px;
+  margin-bottom: 20px; }
 
 .sys_app_icon {
   color: #ffffff;
@@ -602,69 +602,69 @@ circular-progress {
 
 .sys_app_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282828;
+  background-color: #342425;
   border: 0rem solid white;
   margin: 5px 10px 5px 10px; }
   .sys_app_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .empty_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #babdaf;
+  background-color: #342425;
+  border: 0rem solid #eaa8bf;
   margin: 5px 10px 5px 10px;
-  background-color: #131313; }
+  background-color: rgba(30, 15, 17, 0.7); }
   .empty_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
   .empty_button:hover {
-    background-color: #131313; }
+    background-color: rgba(30, 15, 17, 0.7); }
 
 .empty_icon {
-  color: #babdaf;
+  color: #eaa8bf;
   background-color: transparent;
   font-size: 1.5rem; }
 
 menu {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
+  border-radius: 20px;
+  background-color: rgba(52, 36, 37, 0.7);
   padding: 10px;
-  margin-bottom: 0px; }
+  margin-bottom: 20px; }
   menu menuitem {
     padding: 10px;
-    border-radius: 0;
+    border-radius: 20px;
     margin-top: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px; }
     menu menuitem:hover {
-      background-color: #3e3d3d;
+      background-color: rgba(76, 57, 58, 0.7);
       transition: ease-in 0.3s; }
 
 .control_sliders {
   padding: 10px;
-  border-radius: 0;
-  min-height: 106px;
-  margin-left: 0px;
+  border-radius: 20px;
+  min-height: 102px;
+  margin-left: 20px;
   min-width: 425px;
-  background-color: #131313;
+  background-color: rgba(30, 15, 17, 0.7);
   padding-top: 20px;
   padding-bottom: 20px; }
 
@@ -674,33 +674,33 @@ menu {
 .volume_slider {
   min-width: 381px; }
   .volume_slider trough {
-    border-radius: 0px;
-    background-color: #3e3d3d;
+    border-radius: 20px;
+    background-color: rgba(76, 57, 58, 0.7);
     min-height: 15px;
     min-width: 20px;
     margin-left: 10px;
     margin-right: 10px; }
     .volume_slider trough highlight, .volume_slider trough progress {
-      background-color: #3d741c;
-      border-radius: 0px; }
+      background-color: #c23040;
+      border-radius: 20px; }
   .volume_slider slider {
-    background-color: #3d741c;
-    border-radius: 0px; }
+    background-color: #c23040;
+    border-radius: 20px; }
   .volume_slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: #4a3131; }
+    background-color: rgba(89, 44, 46, 0.7); }
   .volume_slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: #542727; }
+    background-color: rgba(99, 34, 37, 0.7); }
   .volume_slider:hover highlight, .volume_slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #39820e; }
+    background-color: #da182d; }
   .volume_slider:disabled highlight, .volume_slider:disabled progress {
     background-color: #ffd2cc; }
 
 .volume_icon {
   background-color: transparent;
-  color: #3d741c;
+  color: #c23040;
   font-size: 1.5rem; }
 
 .brightness {
@@ -709,230 +709,230 @@ menu {
 .brightness_slider {
   min-width: 381px; }
   .brightness_slider trough {
-    border-radius: 0px;
-    background-color: #3e3d3d;
+    border-radius: 20px;
+    background-color: rgba(76, 57, 58, 0.7);
     min-height: 15px;
     min-width: 20px;
     margin-left: 10px;
     margin-right: 10px; }
     .brightness_slider trough highlight, .brightness_slider trough progress {
-      background-color: #7ebd2f;
-      border-radius: 0px; }
+      background-color: #d98769;
+      border-radius: 20px; }
   .brightness_slider slider {
-    background-color: #7ebd2f;
-    border-radius: 0px; }
+    background-color: #d98769;
+    border-radius: 20px; }
   .brightness_slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: #4a3131; }
+    background-color: rgba(89, 44, 46, 0.7); }
   .brightness_slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: #542727; }
+    background-color: rgba(99, 34, 37, 0.7); }
   .brightness_slider:hover highlight, .brightness_slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #81d517; }
+    background-color: #ec7e56; }
   .brightness_slider:disabled highlight, .brightness_slider:disabled progress {
     background-color: #ffd2cc; }
 
 .brightness_icon {
   background-color: transparent;
-  color: #7ebd2f;
+  color: #d98769;
   font-size: 1.5rem; }
 
 .microphone_slider {
   min-width: 381px; }
   .microphone_slider trough {
-    border-radius: 0px;
-    background-color: #3e3d3d;
+    border-radius: 20px;
+    background-color: rgba(76, 57, 58, 0.7);
     min-height: 15px;
     min-width: 20px;
     margin-left: 10px;
     margin-right: 10px; }
     .microphone_slider trough highlight, .microphone_slider trough progress {
-      background-color: #379224;
-      border-radius: 0px; }
+      background-color: #c83531;
+      border-radius: 20px; }
   .microphone_slider slider {
-    background-color: #379224;
-    border-radius: 0px; }
+    background-color: #c83531;
+    border-radius: 20px; }
   .microphone_slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: #4a3131; }
+    background-color: rgba(89, 44, 46, 0.7); }
   .microphone_slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: #542727; }
+    background-color: rgba(99, 34, 37, 0.7); }
   .microphone_slider:hover highlight, .microphone_slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #2ba412; }
+    background-color: #e11d18; }
   .microphone_slider:disabled highlight, .microphone_slider:disabled progress {
     background-color: #ffd2cc; }
 
 .microphone_icon {
   background-color: transparent;
-  color: #379224;
+  color: #c83531;
   font-size: 1.5rem; }
 
 .control_menu {
   padding: 10px;
-  border-radius: 0;
-  min-height: 227.9px;
-  margin-left: 0px;
+  border-radius: 20px;
+  min-height: 199.3px;
+  margin-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  background-color: #131313;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(30, 15, 17, 0.7);
   min-width: 425px; }
 
 .wifi_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #282828;
-  border: 0rem solid #3c1414;
+  background-color: #342425;
+  border: 0rem solid #4a0e12;
   min-width: 385px;
   margin-bottom: 20px;
   color: #ffffff; }
   .wifi_button:hover {
-    background-color: #341c1c;
+    background-color: #411719;
     transition: ease-in 0.3s; }
 
 .wifi_button.on {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #3d741c;
-  border: 0rem solid #369000;
-  color: #131313; }
+  background-color: #c23040;
+  border: 0rem solid #f2001b;
+  color: #1e0f11; }
   .wifi_button.on:hover {
-    background-color: #388a06;
+    background-color: #e60c24;
     transition: ease-in 0.3s; }
 
 .dnd_button.on {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #1b6e3c;
-  border: 0rem solid #008936;
-  color: #131313; }
+  background-color: #ac2b45;
+  border: 0rem solid #d7002b;
+  color: #1e0f11; }
   .dnd_button.on:hover {
-    background-color: #068338;
+    background-color: #cc0b32;
     transition: ease-in 0.3s; }
 
 .dnd_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #282828;
-  border: 0rem solid #3c1414;
+  background-color: #342425;
+  border: 0rem solid #4a0e12;
   min-width: 177.5px;
   margin-right: 10px;
   margin-bottom: 20px;
   color: #ffffff; }
   .dnd_button:hover {
-    background-color: #341c1c;
+    background-color: #411719;
     transition: ease-in 0.3s; }
 
 .bluetooth_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #282828;
-  border: 0rem solid #3c1414;
+  background-color: #342425;
+  border: 0rem solid #4a0e12;
   min-width: 177.5px;
   margin-bottom: 20px;
   color: #ffffff; }
   .bluetooth_button:hover {
-    background-color: #341c1c;
+    background-color: #411719;
     transition: ease-in 0.3s; }
 
 .bluetooth_button.on {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #1f7f25;
-  border: 0rem solid #009e0a;
-  color: #131313; }
+  background-color: #cc3659;
+  border: 0rem solid #ff033e;
+  color: #1e0f11; }
   .bluetooth_button.on:hover {
-    background-color: #079710;
+    background-color: #f21045;
     transition: ease-in 0.3s; }
 
 .power_profiles_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #282828;
-  border: 0rem solid #3c1414;
+  background-color: #342425;
+  border: 0rem solid #4a0e12;
   min-width: 177.5px;
   margin-right: 10px;
   color: #ffffff; }
   .power_profiles_button:hover {
-    background-color: #341c1c;
+    background-color: #411719;
     transition: ease-in 0.3s; }
 
 .power_profiles_button.perf {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #1fb600;
-  border: 0rem solid #1fb600;
-  color: #131313; }
+  background-color: #f90700;
+  border: 0rem solid #f90700;
+  color: #1e0f11; }
   .power_profiles_button.perf:hover {
-    background-color: #1fb600;
+    background-color: #f90700;
     transition: ease-in 0.3s; }
 
 .power_profiles_button.bal {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   padding: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #379224;
-  border: 0rem solid #1fb600;
-  color: #131313; }
+  background-color: #c83531;
+  border: 0rem solid #f90700;
+  color: #1e0f11; }
   .power_profiles_button.bal:hover {
-    background-color: #25ad09;
+    background-color: #ed120c;
     transition: ease-in 0.3s; }
 
 .control_button_icon {
@@ -954,25 +954,25 @@ menu {
 
 .redshift_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
   margin-right: 10px;
   min-width: 66.25px;
-  border-radius: 0;
+  border-radius: 10px;
   padding: 13px;
   padding-top: 18px;
   padding-bottom: 18px;
-  border: 0rem solid #3c1414;
-  background-color: #282828;
+  border: 0rem solid #4a0e12;
+  background-color: #342425;
   color: #ffffff; }
   .redshift_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .redshift_button.on {
-  border: 0rem solid #6dd000;
-  background-color: #6ba729;
+  border: 0rem solid #ff3e48;
+  background-color: #d8656b;
   color: #ffffff; }
 
 .redshift_icon {
@@ -981,26 +981,26 @@ menu {
 
 .mute_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
   min-width: 66.25px;
-  border-radius: 0;
+  border-radius: 10px;
   padding: 13px;
   padding-top: 18px;
   padding-bottom: 18px;
-  border: 0rem solid #3c1414;
-  background-color: #282828;
+  border: 0rem solid #4a0e12;
+  background-color: #342425;
   color: #ffffff;
   transition: ease-in 0.3s; }
   .mute_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .mute_button.on {
-  border: 0rem solid #83ec00;
-  background-color: #7ebd2f;
-  color: #131313; }
+  border: 0rem solid #ff7543;
+  background-color: #d98769;
+  color: #1e0f11; }
 
 .mute_icon {
   background-color: transparent;
@@ -1008,22 +1008,22 @@ menu {
 
 .player {
   padding: 10px;
-  border-radius: 0;
-  min-height: 148.4px;
-  margin-top: 0px;
-  border: 20px solid #131313;
-  background-color: #282828;
+  border-radius: 20px;
+  min-height: 102.8px;
+  margin-top: 20px;
+  border: 20px solid rgba(30, 15, 17, 0.7);
+  background-color: rgba(52, 36, 37, 0.7);
   background-size: cover;
   background-position: center;
-  margin-left: 0px;
-  margin-right: 0px; }
+  margin-left: 20px;
+  margin-right: 20px; }
 
 .player_controls {
-  margin-top: 0px;
+  margin-top: 20px;
   padding: 10px;
-  border-radius: 0;
+  border-radius: 20px;
   padding: 20px;
-  background-color: #131313; }
+  background-color: rgba(30, 15, 17, 0.7); }
 
 .title {
   font-family: "Jetbrains Mono Nerd Font";
@@ -1045,7 +1045,7 @@ menu {
 .play-pause {
   background-color: transparent; }
   .play-pause:hover {
-    color: #3d741c;
+    color: #c23040;
     transition: ease-in 0.3s; }
 
 .play-pause-icon {
@@ -1056,7 +1056,7 @@ menu {
   background-color: transparent;
   margin-top: 6px; }
   .prev:hover {
-    color: #3d741c;
+    color: #c23040;
     transition: ease-in 0.3s; }
 
 .prev-icon {
@@ -1067,7 +1067,7 @@ menu {
   background-color: transparent;
   margin-top: 6px; }
   .next:hover {
-    color: #3d741c;
+    color: #c23040;
     transition: ease-in 0.3s; }
 
 .next-icon {
@@ -1095,42 +1095,42 @@ menu {
   margin-left: 10px;
   margin-right: 10px; }
   .position-slider trough {
-    border-radius: 0px;
-    background-color: #282828;
+    border-radius: 20px;
+    background-color: rgba(52, 36, 37, 0.7);
     min-height: 8px;
     min-width: 50px; }
     .position-slider trough highlight, .position-slider trough progress {
-      background-color: #3d741c;
-      border-radius: 0px; }
+      background-color: #c23040;
+      border-radius: 20px; }
   .position-slider slider {
-    background-color: #3d741c;
-    border-radius: 0px; }
+    background-color: #c23040;
+    border-radius: 20px; }
   .position-slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: #302020; }
+    background-color: rgba(61, 27, 29, 0.7); }
   .position-slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: #378d03; }
+    background-color: #ec061f; }
   .position-slider:hover highlight, .position-slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #39820e; }
+    background-color: #da182d; }
   .position-slider:disabled highlight, .position-slider:disabled progress {
     background-color: #ffd2cc; }
   .position-slider trough:focus {
-    background-color: #1b6e3c; }
+    background-color: #ac2b45; }
     .position-slider trough:focus slider {
-      background-color: #1b6e3c; }
+      background-color: #ac2b45; }
 
 .notification {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
   min-width: 25rem;
   padding: 10px;
   margin: 10px;
   margin-bottom: 0;
-  background-color: #1e1d1e; }
+  background-color: rgba(41, 25, 27, 0.7); }
 
 window.notification-popups box.notifications {
   padding: 10px; }
@@ -1142,39 +1142,39 @@ window.notification-popups box.notifications {
 
 .placeholder_icon {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  background-color: #babdaf;
-  color: #babdaf;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  background-color: #eaa8bf;
+  color: #eaa8bf;
   min-width: 6.25rem;
   min-height: 6.25rem; }
 
 .noti_icon image {
   font-size: 6.25rem;
-  color: #babdaf; }
+  color: #eaa8bf; }
 
 .noti_icon box {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
   min-width: 6.25rem;
   min-height: 6.25rem;
-  background-color: #babdaf;
-  color: #babdaf; }
+  background-color: #eaa8bf;
+  color: #eaa8bf; }
 
 .notification.critical {
-  background-color: #3c1414; }
+  background-color: #4a0e12; }
 
 .noti_title {
   font-family: "Jetbrains Mono Nerd Font";
-  color: #3d741c;
+  color: #c23040;
   font-size: 1.2em;
   font-weight: 500; }
 
 .noti_time {
-  color: #82847a;
+  color: #a37585;
   font-size: 1.0em;
   font-weight: 300; }
   .noti_time * {
@@ -1190,7 +1190,7 @@ window.notification-popups box.notifications {
 .action-button {
   font-family: "Jetbrains Mono Nerd Font";
   padding: 10px;
-  background-color: #6ba729;
+  background-color: #d8656b;
   margin-left: 10px; }
 
 .action_button_text {
@@ -1204,12 +1204,12 @@ window.notification-popups box.notifications {
 
 .notifications_tray {
   padding: 10px;
-  border-radius: 0;
+  border-radius: 20px;
   min-width: 425px;
-  min-height: 424px;
-  margin-top: 0px;
-  margin-left: 0px;
-  background-color: #131313; }
+  min-height: 408px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: rgba(30, 15, 17, 0.7); }
 
 .notifications_header {
   font-family: "Jetbrains Mono Nerd Font";
@@ -1217,24 +1217,24 @@ window.notification-popups box.notifications {
   font-size: 2em; }
 
 .clear_icon {
-  color: #3d741c;
+  color: #c23040;
   background-color: transparent;
   font-size: 1.5rem; }
 
 .clear_button {
   padding: 10px;
-  border-radius: 0;
-  background-color: #282828;
-  border: 0rem solid #3e3d3d;
-  border-radius: 0;
+  border-radius: 10px;
+  background-color: rgba(52, 36, 37, 0.7);
+  border: 0rem solid rgba(76, 57, 58, 0.7);
+  border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 13px;
-  background-color: #282828;
-  border: 0rem solid #3d741c;
+  background-color: #342425;
+  border: 0rem solid #c23040;
   margin: 0; }
   .clear_button:hover {
-    background-color: #434749;
+    background-color: #5a4042;
     transition: ease-in 0.3s; }
 
 .placeholder {
@@ -1242,11 +1242,11 @@ window.notification-popups box.notifications {
 
 .theming_sliders {
   padding: 10px;
-  border-radius: 0;
-  margin-right: 0px;
-  margin-top: 0px;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
   min-width: 425px;
-  background-color: #131313;
+  background-color: rgba(30, 15, 17, 0.7);
   padding-top: 20px;
   padding-bottom: 20px; }
 
@@ -1256,31 +1256,31 @@ window.notification-popups box.notifications {
 .rounding_slider {
   min-width: 381px; }
   .rounding_slider trough {
-    border-radius: 0px;
-    background-color: #3e3d3d;
+    border-radius: 20px;
+    background-color: rgba(76, 57, 58, 0.7);
     min-height: 15px;
     min-width: 20px;
     margin-left: 10px;
     margin-right: 10px; }
     .rounding_slider trough highlight, .rounding_slider trough progress {
-      background-color: #3d741c;
-      border-radius: 0px; }
+      background-color: #c23040;
+      border-radius: 20px; }
   .rounding_slider slider {
-    background-color: #3d741c;
-    border-radius: 0px; }
+    background-color: #c23040;
+    border-radius: 20px; }
   .rounding_slider:hover trough {
     transition: ease-in 0.3s;
-    background-color: #4a3131; }
+    background-color: rgba(89, 44, 46, 0.7); }
   .rounding_slider:hover slider {
     transition: ease-in 0.3s;
-    background-color: #542727; }
+    background-color: rgba(99, 34, 37, 0.7); }
   .rounding_slider:hover highlight, .rounding_slider:hover progress {
     transition: ease-in 0.3s;
-    background-color: #39820e; }
+    background-color: #da182d; }
   .rounding_slider:disabled highlight, .rounding_slider:disabled progress {
     background-color: #ffd2cc; }
 
 .rounding_icon {
   background-color: transparent;
-  color: #3d741c;
+  color: #c23040;
   font-size: 1.5rem; }

@@ -31,11 +31,14 @@
 - [ ] Hyprland
     - [ ] Window Shadows
     - [ ] AGS Widget Shadows
-    - [ ] Setup Hyprspace
-    - [ ] Setup Hyprbars
     - [ ] Redesign Hyprlock
     - [ ] Floating Kitty Window Rule
     - [ ] fix alt-k
+    - [ ] add keybind to setup floating terminals for dev env
+
+- [ ] Hyprland Plugins
+    - [ ] Setup Hyprspace
+    - [ ] Setup Hyprbars
 
 - [ ] Neovim
     - [ ] migrate mason to nix / both 
@@ -56,6 +59,8 @@
     - [ ] zsh light / dark mode
     - [ ] setup up to fish level
     - [ ] zoxide
+    - [ ] update starship prompt
+    - [ ] potentially switch to jetpack
 
 - [ ] GTK
     - [ ] Gradience CLI Setup
@@ -102,6 +107,8 @@
     - [ ] write script to install cli environmnent specifically
     - [ ] readme for wallpaper repo
     - [ ] editing of github settings for repo
+
+- [ ] rewrite everything from scratch eventually
 
 ## Credits:
 for their great configs / learning resources / software
