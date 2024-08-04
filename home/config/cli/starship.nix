@@ -92,13 +92,13 @@ in
         SUSE = os "" "green";
         Ubuntu = os "" "bright-purple";
       };
-      python = lang "" "yellow";
-      nodejs = lang " " "yellow";
-      lua = lang "󰢱" "blue";
-      rust = lang "" "red";
-      java = lang "" "red";
-      c = lang "" "blue";
-      golang = lang "" "blue";
+      python = lang " " "yellow";
+      nodejs = lang "  " "yellow";
+      lua = lang " 󰢱" "blue";
+      rust = lang " " "red";
+      java = lang " " "red";
+      c = lang " " "blue";
+      golang = lang " " "blue";
     };
   };
 }
