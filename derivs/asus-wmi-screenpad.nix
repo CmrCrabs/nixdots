@@ -1,6 +1,5 @@
 { stdenv, lib, fetchFromGitHub, kernel, kmod }:
 
-
 stdenv.mkDerivation rec {
  pname = "asus-wmi-screenpad";
  version = "1.0";

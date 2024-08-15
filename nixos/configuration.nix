@@ -82,16 +82,14 @@ in {
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
   };
   
-  xdg = {
-    autostart.enable = true;
-    portal = {
-      enable = true;
-      extraPortals = [
-        pkgs.xdg-desktop-portal
-        pkgs.xdg-desktop-portal-gtk
-      ];
-    };
-  };
+  # xdg = {
+  #   autostart.enable = true;
+  #   portal = {
+  #     enable = true;
+  #     extraPortals = [
+  #     ];
+  #   };
+  # };
 
   services.libinput.enable = true;
   console.keyMap = "uk";
@@ -120,20 +118,25 @@ in {
 
   programs.nix-ld.enable = true;
 
-
   # Sound
-  hardware.pulseaudio.extraConfig = "load-module module-combine-sink"; 
-  sound.enable = true; 
-  hardware.pulseaudio.enable = true; 
-  security.rtkit.enable = true; 
+  # hardware.pulseaudio.extraConfig = "load-module module-combine-sink"; 
+  # sound.enable = true; 
+  # hardware.pulseaudio.enable = true; 
 
-  # services.pipewire = {
-  #   enable = true; 
-  #   alsa.enable = true; 
-  #   alsa.support32Bit = true; 
-  #   pulse.enable = true;
-  #   #media-session.enable = true;
-  # };
+  security.rtkit.enable = true; 
+  services.pipewire = {
+    enable = true; 
+    alsa.enable = true; 
+    alsa.support32Bit = true; 
+    pulse.enable = true;
+    #media-session.enable = true;
+  };
+  # options snd-hda-intel dmic_detect=0
+  boot.extraModprobeConfig = ''
+    options snd-hda-intel model=auto,dell-headset-multi,laptop-amic,laptop-dmic,alc294-lenovo-mic,asus-zenbook-ux31a,asus-zenbook,headset-mic
+    options snd-intel-dspcfg dsp_driver=1
+
+  '';
 
   # users
   users.users.zyn = { 
@@ -191,6 +194,10 @@ in {
     remnote
     gnome.nautilus
     vlc
+    aseprite
+    pureref
+    kicad
+    obsidian
 
     # gaming
     mangohud
@@ -221,6 +228,8 @@ in {
     brightnessctl
     pamixer
     alsa-tools
+    alsa-utils
+    sof-firmware
     pywal
     cbonsai
 

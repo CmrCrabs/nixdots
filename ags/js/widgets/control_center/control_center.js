@@ -11,7 +11,7 @@ export function ControlCenter(monitor = 0) {
         class_name: "control_center",
         layer: "overlay",
         visible: false,
-        margins: [0,0,0,70],
+        margins: [50,0,0,80],
         // 70 + $outer_gap
         child: Widget.Box({
             class_name: 'control_center',

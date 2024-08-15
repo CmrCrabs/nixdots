@@ -16,16 +16,16 @@
     - [X] kitty font declarative
     - [X] Horizontal Bar Initial
     - [X] Data Structure for config
-    - [ ] Rework widgets to work with horizontal bar 
     - [ ] Theming Bars
     - [ ] Theming Switches
     - [ ] Font Menu
     - [ ] Wallpaper Selector
     - [ ] Update Control center margin
+    - [ ] Rework widgets to work with horizontal bar 
     - [ ] rounded corners
     - [ ] stack for label with date & time
-    - [ ] Hyprspace Integration
     - [ ] update css to work with light mode
+    - [ ] Hyprspace Integration
     - [ ] track with home manager
 
 - [ ] Hyprland
@@ -35,10 +35,17 @@
     - [ ] Floating Kitty Window Rule
     - [ ] fix alt-k
     - [ ] add keybind to setup floating terminals for dev env
+    - [ ] color picker
+    - [ ] clipboard manager
+    - [ ] redo keybinds?
+    - [ ] screensharing
 
 - [ ] Hyprland Plugins
     - [ ] Setup Hyprspace
     - [ ] Setup Hyprbars
+    - [ ] setup hyprgrass
+    - [ ] Setup Hyprshade (wlsunset)
+
 
 - [ ] Neovim
     - [ ] migrate mason to nix / both 
@@ -84,6 +91,7 @@
     - [ ] cleanup unused files
     - [ ] make hostname a variable
     - [ ] make monitor names a variable
+    - [ ] screenpad kernel module
 
 - [ ] Misc
     - [ ] Headphone Jack

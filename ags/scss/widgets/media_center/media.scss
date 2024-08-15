@@ -1,40 +1,33 @@
-.media {
-}
-
 .player {
+    min-width: $left_menu_width - 2 * $outer_gap;
     @include widget;
     min-height: ($left_menu_height * 0.14) - (2 * $outer_gap);
     margin-top: $outer_gap;
-    border: (2 * $gap) solid $background-t;
+    margin-left: $outer_gap;
+    border: $outer_gap solid $background-t;
     background-color: $surface_container-t;
     background-size: cover;
     background-position: center;
-    margin-left: $outer_gap;
-    margin-right: $outer_gap;
 }
 
 .player_controls {
-    margin-top: $outer_gap;
-    //min-height: $left_menu_height * 2 / 10 - $outer_gap;
-    @include widget;
-    padding: 2 * $gap;
-    background-color: $background-t;
+    margin-top: $gap;
+    margin-bottom: $gap;
 }
 
 
 .title {
     @include header;
     margin-left: $gap;
-    margin-top: $gap;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: $on_surface;
     opacity: 1.0;
     font-weight: bold;
 }
 .artist {
-    @include common;
     margin-left: $gap;
-    font-size: 0.75rem;
+    @include common;
+    font-size: 1.0rem;
     color: $on_surface;
     opacity: 1.0;
 }
@@ -53,7 +46,6 @@
 
 .prev {
     background-color: transparent;
-    margin-top: 6px;
     &:hover {
         color: $color1;
         transition: ease-in 0.3s;
@@ -65,7 +57,6 @@
 }
 .next {
     background-color: transparent;
-    margin-top: 6px;
     &:hover {
         color: $color1;
         transition: ease-in 0.3s;
@@ -78,18 +69,18 @@
 
 .position {
     @include common;
-    font-size: 10px;
+    font-size: 1.0rem;
     color: $on_surface;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin-left: $gap;
+    margin-bottom: $gap;
 }
 
 .length {
     @include common;
-    font-size: 10px;
+    font-size: 1.0rem;
     color: $on_surface;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin-right: $gap;
+    margin-bottom: $gap;
 }
 
 .position-slider {

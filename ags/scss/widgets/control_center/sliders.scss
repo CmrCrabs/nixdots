@@ -1,7 +1,5 @@
 .control_sliders {
     @include widget;
-    min-height: $left_menu_height * 0.1;
-    //margin-left: (2 * $outer_gap) + (7 * $gap);
     margin-left: $outer_gap;
     min-width: $left_menu_width;
     background-color: $background-t;

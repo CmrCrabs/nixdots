@@ -13,6 +13,10 @@
       name = "WhiteSur";
       package = pkgs.whitesur-icon-theme;
     };
+    font = {
+      name = "Jetbrains Mono Nerd Font";
+      size = 11;
+    }
   };
 
   xdg.configFile."wal/templates" = {

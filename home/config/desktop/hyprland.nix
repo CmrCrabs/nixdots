@@ -1,5 +1,15 @@
 { config, inputs, pkgs, ...}:
 {
+  xdg.portal = {
+    enable = true;
+    extraPortals = [
+      config.wayland.windowManager.hyprland.package
+      pkgs.xdg-desktop-portal
+      pkgs.xdg-desktop-portal-gtk
+    ];
+    configPackages = [config.wayland.windowManager.hyprland.package];
+  };
+
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = true;
@@ -12,8 +22,6 @@
       # inputs.hyprspace.packages.${pkgs.system}.Hyprspace
     ];
 
-    
-        
     settings = {
       source = [
         "~/.config/hypr/vars.conf"

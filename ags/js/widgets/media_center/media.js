@@ -32,8 +32,8 @@ function Player(player) {
     const artist = Widget.Label({
         class_name: "artist",
         wrap: true,
-        vpack: "start",
         hpack: "start",
+        vpack: "start",
         label: player.bind("track_artists").transform(a => a.join(", ").length > 40 ? a.join(", ").substring(0,37).concat("...") : a.join(", ")),
     })
 
@@ -145,10 +145,15 @@ function Player(player) {
                 artist,
             ]
         }),
+        center_widget: Widget.CenterBox({
+            class_name: "player_controls",
+            start_widget: prev,
+            center_widget: playPause,
+            end_widget: next,
+        }),
         end_widget: Widget.CenterBox({
+            vpack: "end",
             vertical: true,
-            hexpand: true,
-            vexpand: true,
             center_widget: positionSlider,
             end_widget: Widget.CenterBox({
                 class_name: "time_box",
@@ -158,27 +163,14 @@ function Player(player) {
         }),
     })
 
-    const controls_box = Widget.CenterBox({
-        class_name: "player_controls",
-        vertical: true,
-        start_widget: prev,
-        center_widget: playPause,
-        end_widget: next,
-    })
-
-    return Widget.Box({
-        children: [
-            music_box,
-            controls_box,
-        ]
-    })
+    return music_box
 }
 
 export function Media() {
     return Widget.Box({
         vertical: true,
-        hpack: "center",
-        vpack: "center",
+        //hpack: "center",
+        //vpack: "center",
         class_name: "media",
         visible: players.as(p => p.length > 0),
         children: players.as(p => p.map(Player).slice(0,2)),

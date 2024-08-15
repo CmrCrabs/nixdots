@@ -43,7 +43,8 @@
     lib = nixpkgs.lib;
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
-  in {
+    in {
+
     nixosConfigurations = {
       zyn-nixos = lib.nixosSystem {
         inherit system;
@@ -57,7 +58,9 @@
     homeConfigurations = {
       zyn = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ ./home/home.nix ]; 
+          modules = [
+            ./home/home.nix 
+          ]; 
         extraSpecialArgs = { inherit inputs; };
       };
     };

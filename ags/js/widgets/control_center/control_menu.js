@@ -170,7 +170,7 @@ function RedShiftButton() {
     return Widget.Button({
         onClicked: self => {
             if (Utils.exec('pidof wlsunset').length == 0) {
-                Utils.execAsync("wlsunset")
+                Utils.execAsync("wlsunset -l 52.2 -L 0.13")
                     .then(out => print(out))
                     .catch(err => print(err));
                 self.toggleClassName("on", true);

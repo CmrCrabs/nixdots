@@ -3,7 +3,6 @@
 
 .control_menu {
     @include widget;
-    min-height: $left_menu_height * 0.215 - $outer_gap;
     margin-left: $outer_gap;
     padding-top: 2 * $gap;
     padding-bottom: 2 * $gap;
