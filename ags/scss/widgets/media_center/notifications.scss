@@ -68,6 +68,7 @@ window.notification-popups box.notifications {
 
 .action-button {
     @include header;
+    border-radius: if($rounding == 0, 0, if($rounding > $gap, $rounding - $gap, $rounding - ($gap / 2)));
     padding: $gap;
     background-color: $color5;
     margin-left: $gap;

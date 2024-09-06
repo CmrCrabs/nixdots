@@ -83,6 +83,15 @@ circular-progress {
     @include button_icon($color6);
     margin-bottom: 1.5 * $gap;
 }
+.badge {
+    @include header;
+    margin-left: 0.5rem;
+    margin-bottom: 1.0rem;
+    color: $on_surface;
+    font-size: 1.0rem;
+
+}
+
 .music_icon {
     @include button_icon($color4);
 }

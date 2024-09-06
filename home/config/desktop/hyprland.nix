@@ -14,10 +14,10 @@
     enable = true;
     systemd.enable = true;
     xwayland.enable = true;
-    # package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    # package = inputs.hyprland.packages."${pkgs.system}".hyprland;
     
     plugins = [
-      # inputs.hyprland-plugins.packages."${pkgs.system}".hyprbars
+      # inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
       # inputs.hyprland-plugins.packages."${pkgs.system}".borders-plus-plus
       # inputs.hyprspace.packages.${pkgs.system}.Hyprspace
     ];
@@ -28,14 +28,14 @@
       ];
       "$mainMod" = "ALT";
       "$terminal" = "kitty";
-      "$filebrowser" = "ranger";
-      "$launcher" = "ags --toggle-window start_menu";
+      "$filebrowser" = "yazi";
+      "$launcher" = "ags --t start_menu";
       "$screenshot" = "grim -g \"$(slurp -d)\" - | wl-copy -t image/png";
       "$browser" = "firefox";
       "$locker" = "hyprlock";
+      "$pkms" = "obsidian";
       "$music" = "spotify";
       "$messenger" = "discord";
-
 
       exec-once = [
         "swww init &"
@@ -54,10 +54,14 @@
       workspace = [
         "eDP-1, 1"
         "DP-1, 10"        
-        "10, default: DP-1"
+        "1, monitor: eDP-1, default: true"
+        "9, monitor: DP-1, default: true"
         "1, on-created-empty: $browser"
-        "4, on-created-empty: $music"
+        "2, on-created-empty: $terminal"
+        "3, on-created-empty: $pkms"
         "5, on-created-empty: $messenger"
+        "6, on-created-empty: $music"
+        "9, on-created-empty: $music"
         # "1, persistent:true"
         # "2, persistent:true"
         # "3, persistent:true"

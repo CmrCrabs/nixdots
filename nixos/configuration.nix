@@ -79,7 +79,7 @@ in {
   # Hyprland
   programs.hyprland = {
     enable = true;
-    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
   
   # xdg = {
@@ -198,6 +198,7 @@ in {
     pureref
     kicad
     obsidian
+    zathura
 
     # gaming
     mangohud
@@ -218,6 +219,7 @@ in {
     starship
     btop
     ranger
+    typst
 
     eza
     yazi

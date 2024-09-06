@@ -11,23 +11,17 @@
     nix-colors.url = "github:misterio77/nix-colors";
     matugen.url = "github:InioX/matugen";
 
-    hyprland = {
-      type = "git";
-      url = "https://github.com/hyprwm/Hyprland";
-      submodules = true;
-    };
-    hyprlock = {
-      url = "github:hyprwm/hyprlock";
-    };
-    hypridle = {
-      url = "github:hyprwm/hypridle";
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+
+    hyprlock.url = "github:hyprwm/hyprlock";
+    hypridle.url = "github:hyprwm/hypridle";
+
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
     };
     hyprspace = {
       url = "github:KZDKM/Hyprspace";
-      inputs.hyprland.follows = "hyprland";
-    };
-    hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
 
@@ -45,24 +39,25 @@
     pkgs = nixpkgs.legacyPackages.${system};
     in {
 
-    nixosConfigurations = {
-      zyn-nixos = lib.nixosSystem {
-        inherit system;
-        modules = [ 
-          nur.nixosModules.nur
-          ./nixos/configuration.nix
-        ];
-        specialArgs = { inherit inputs; };
-      };
+    nixosConfigurations.zyn-nixos = lib.nixosSystem {
+      inherit system;
+      modules = [ 
+        nur.nixosModules.nur
+        ./nixos/configuration.nix
+      ];
+      specialArgs = { inherit inputs; };
     };
-    homeConfigurations = {
-      zyn = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-          modules = [
-            ./home/home.nix 
-          ]; 
-        extraSpecialArgs = { inherit inputs; };
-      };
+
+    homeConfigurations.zyn = home-manager.lib.homeManagerConfiguration {
+      inherit pkgs;
+      modules = [
+          # hyprland.homeManagerModules.default
+          # {
+          #   wayland.windowManager.hyprland.enable = true;
+          # }
+        ./home/home.nix 
+      ]; 
+      extraSpecialArgs = { inherit inputs; };
     };
   };
 }

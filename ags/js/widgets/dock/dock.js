@@ -7,11 +7,10 @@ import { Button } from '../shared/button.js';
 const pinned_apps_list = [
         'firefox',
         'kitty',
+        'obsidian',
         'spotify',
         'discord',
-        'obsidian',
         'krita',
-        'blender',
 ];
 
 function range(length, start = 1) {

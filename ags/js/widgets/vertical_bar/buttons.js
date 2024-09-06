@@ -1,6 +1,7 @@
 const bluetooth = await Service.import('bluetooth')
 const network = await Service.import('network')
 const mpris = await Service.import("mpris")
+const notifications = await Service.import("notifications")
 
 export function NotificationMusicButton() {
     const noti_icon = Widget.Icon({
@@ -9,6 +10,18 @@ export function NotificationMusicButton() {
         vpack: "center",
         cursor: "pointer",
         class_name: "notification_icon"
+    })
+
+    const noti_indicator = Widget.Overlay({
+        child: noti_icon,
+        overlays: [
+            Widget.Box({
+                child: Widget.Label({
+                    class_name: "badge",
+                    label: notifications.bind("notifications").transform(a => a.length > 0 ? a.length.toString() : "")
+                })
+            })
+        ]
     })
 
     const music_icon = Widget.Icon({
@@ -27,7 +40,7 @@ export function NotificationMusicButton() {
         child: Widget.Box({
             vertical: true,
             children: [
-                noti_icon,
+                noti_indicator,
                 music_icon,
             ]
         }),

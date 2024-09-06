@@ -26,7 +26,7 @@ function Player(player) {
         wrap: true,
         hpack: "start",
         vpack: "end",
-        label: player.bind("track_title").transform(a => a.length > 31 ? a.substring(0,28).concat("...") : a),
+        label: player.bind("track_title").transform(a => a.length > 31 ? a.substring(0,24).concat("...") : a),
     })
 
     const artist = Widget.Label({

@@ -11,11 +11,16 @@
 
 ## TODO
 
+- [ ] pipe pywal colors into matugen to generate surface colors?
+- [ ] redesign in spec with material design
+
 - [ ] AGS
     - [X] rewrite to use header font & body font
     - [X] kitty font declarative
     - [X] Horizontal Bar Initial
     - [X] Data Structure for config
+    - [ ] add button for hypridle toggle
+    - [ ] change noti icon to update if no notifications
     - [ ] Theming Bars
     - [ ] Theming Switches
     - [ ] Font Menu
@@ -25,6 +30,8 @@
     - [ ] rounded corners
     - [ ] stack for label with date & time
     - [ ] update css to work with light mode
+    - [ ] rewrite horizontal bar
+    - [ ] integrate dock into bar?
     - [ ] Hyprspace Integration
     - [ ] track with home manager
 
@@ -45,6 +52,7 @@
     - [ ] Setup Hyprbars
     - [ ] setup hyprgrass
     - [ ] Setup Hyprshade (wlsunset)
+    - [ ] hyprchroma
 
 
 - [ ] Neovim
@@ -60,7 +68,7 @@
 
 - [ ] TMUX
 
-- [ ] zsh
+- [ ] zsh / nushell
     - [ ] migrate aliases + starship
     - [ ] zsh colorscheme
     - [ ] zsh light / dark mode
@@ -71,6 +79,17 @@
 
 - [ ] GTK
     - [ ] Gradience CLI Setup
+
+- [ ] Obsidian
+    - [ ] setup as git submodule
+    - [ ] track with git
+    - [X] setup file structure
+    - [ ] setup pywal theme
+    - [ ] setup tagging system
+    - [ ] translate notes over
+
+- [ ] Krita
+    - [ ] 
 
 - [ ] Firefox
     - [ ] setup current to be fully declarative
@@ -119,7 +138,7 @@
 - [ ] rewrite everything from scratch eventually
 
 ## Credits:
-for their great configs / learning resources / software
+for their great configs / learning resources / software / help
 
 - LibrePhoenix
 - Misterio77
@@ -131,3 +150,5 @@ for their great configs / learning resources / software
 - linuxmobile
 - kotontrion (ags help)
 - end4 
+- fufexan
+- noamsto

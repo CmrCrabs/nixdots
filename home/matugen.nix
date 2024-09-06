@@ -1,4 +1,4 @@
-{ config, wal, style, rounding, transparency, outer_gap, font, header_font, templateDir, ... }:
+{ config, wal, style, rounding, transparency, outer_gap, font, header_font, templateDir, obsidianDir, ... }:
 {
   xdg.configFile."matugen/config.toml".text = ''
     [config]
@@ -19,6 +19,10 @@
     [templates.hypr-vars]
     input_path = "${templateDir}/hypr.conf"
     output_path = "${config.home.homeDirectory}/.config/hypr/vars.conf"
+
+    [templates.obsidian]
+    input_path = "${templateDir}/bg_colors.scss"
+    output_path = "${obsidianDir}/.obsidian/themes/wal-matugen/scss/bg_colors.scss"
 
     [config.reload_apps_list]
     kitty = true
