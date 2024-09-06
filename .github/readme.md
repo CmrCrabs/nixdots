@@ -4,10 +4,10 @@
 > [old dotfiles](https://github.com/cmrcrabs/dotfiles)
 
 ## Temporary Preview
-(very unfinished, esp media widget)
-![Preview](./temp_preview_1.png)
-![Preview](./temp_preview_2.png)
-![Preview](./temp_preview_3.png)
+(forever unfinished)
+![Preview](./temp_preview1.png)
+![Preview](./temp_preview2.png)
+![Preview](./temp_preview3.png)
 
 ## TODO
 
