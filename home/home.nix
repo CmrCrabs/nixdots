@@ -1,15 +1,16 @@
 {config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/aenami_river.png";
-  wal-l = "${dotfilesDir}/wallpapers/aenami_river.png";
+  wal =   "${dotfilesDir}/wallpapers/aenami_tracks.png";
+  wal-l = "${dotfilesDir}/wallpapers/aenami_tracks.png";
   font = "Iosevka Nerd Font";
   header_font = "Jetbrains Mono Nerd Font";
   style = "dark";
   rounding = "20";
   scheme = "fidelity";
-  bg-contrast = "0.9";
+  bg-contrast = "0.2";
   fg-contrast = "0.6";
-  transparency = "0.8";
+  transparency = "1.0";
+  transparency_hex = "ff";
   outer_gap = "10";
 
   dotfilesDir = "${config.home.homeDirectory}/limitless";
@@ -24,12 +25,12 @@ in
   home.homeDirectory = "/home/zyn";
 
   imports = [
-    # flake inputs
+    # frange inputs
     inputs.matugen.nixosModules.default
     inputs.nix-colors.homeManagerModules.default
 
     # Files (w/ Inputs)
-    (import ./matugen.nix { inherit wal style rounding transparency outer_gap font header_font config templateDir obsidianDir; })
+    (import ./matugen.nix { inherit wal style rounding transparency outer_gap font header_font transparency_hex config templateDir obsidianDir; })
     (import ./config/desktop/hyprland.nix { inherit config inputs pkgs; })
     (import ./config/desktop/hyprlock.nix { inherit wal wal-l style rounding; })
     (import ./config/ags.nix { inherit config inputs pkgs rounding dotfilesDir; })

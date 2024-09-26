@@ -256,7 +256,10 @@ in {
     nodePackages.npm
     
     dotnet-sdk_7
+    dotnet-sdk_6
+    dotnet-runtime_6
     dotnet-sdk
+    dotnetCorePackages.sdk_6_0_1xx
     mono
     mono4
     dotnet-runtime_7

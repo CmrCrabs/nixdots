@@ -61,7 +61,6 @@
         "3, on-created-empty: $pkms"
         "5, on-created-empty: $messenger"
         "6, on-created-empty: $music"
-        "9, on-created-empty: $music"
         # "1, persistent:true"
         # "2, persistent:true"
         # "3, persistent:true"
@@ -71,9 +70,6 @@
       general = { 
         layout = "dwindle";
         resize_on_border = "yes";
-        border_size = 0;
-        "col.active_border" = "rgba(ffffffcc)";
-        "col.inactive_border" = "rgba(ffffffcc)";
       };
       
       misc = {
@@ -132,17 +128,16 @@
           "md3_accel, 0.3, 0, 0.8, 0.15"
         ];
         animation = [
-          "windows, 1, 3, md3_decel, popin 60%"
-          "windowsIn, 1, 3, md3_decel, popin 60%"
-          "windowsOut, 1, 3, md3_accel, popin 60%"
+          "windows, 1, 1, md3_decel, popin 60%"
+          "windowsIn, 1, 1, md3_decel, popin 60%"
+          "windowsOut, 1, 1, md3_accel, popin 60%"
           "border, 1, 10, default"
-          "fade, 1, 3, md3_decel"
-          "layersIn, 1, 3, default, popin 80%"
-          "layersIn, 1, 3, menu_decel, slide"
-          "layersOut, 1, 1.6, menu_accel"
-          "fadeLayersIn, 1, 2, menu_decel"
-          "fadeLayersOut, 1, 4.5, menu_accel"
-          "workspaces, 1, 3, menu_decel, slide"
+          "fade, 1, 2, md3_decel"
+          "layersIn, 1, 1, menu_decel, slide"
+          "layersOut, 1, 1, menu_accel"
+          "fadeLayersIn, 1, 1, menu_decel"
+          "fadeLayersOut, 1, 1, menu_accel"
+          "workspaces, 1, 2, menu_decel, slide"
         ];
       };
       
@@ -176,6 +171,7 @@
       windowrulev2 = [
         "tile, class:^(firefox)$,title:^(Firefox)$"
         "maxsize 1920 1080, class:.*"
+        "bordersize 0, class:^(kitty)$"
         # "nofullscreenrequest, class:firefox), title:(Picture-in-Picture)"
         "float, class:(firefox), title:(Picture-in-Picture)"
         "pin, class:(firefox), title:(Picture-in-Picture)" 
@@ -198,7 +194,6 @@
         "$mainMod, C, killactive,"
         "$mainMod SHIFT, E, exit,"
         "$mainMod, F, togglefloating,"
-        "$mainMod, D, exec, $launcher"
         "$mainMod, P, pseudo, # dwindle"
         "$mainMod, B, togglesplit, # dwindle"
         "$mainMod, M, fullscreen"
@@ -266,6 +261,9 @@
     general {
       gaps_in = $outer_gap / 2
       gaps_out = $outer_gap
+      border_size = 10
+      col.active_border = $background_border;
+      col.inactive_border = $background_border;
     }
 
     plugin {
@@ -279,6 +277,8 @@
             hyprbars-button = rgb(eeee11), 10, , hyprctl dispatch fullscreen 1
         }
     }
+
+
     '';
   };
 }

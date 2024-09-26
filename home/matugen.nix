@@ -1,4 +1,4 @@
-{ config, wal, style, rounding, transparency, outer_gap, font, header_font, templateDir, obsidianDir, ... }:
+{ config, wal, style, rounding, transparency, transparency_hex, outer_gap, font, header_font, templateDir, obsidianDir, ... }:
 {
   xdg.configFile."matugen/config.toml".text = ''
     [config]
@@ -8,6 +8,7 @@
     [config.custom_keywords]
     rounding = "${rounding}"
     transparency = "${transparency}"
+    transparency_hex = "${transparency_hex}"
     outer_gap = "${outer_gap}"
     font = "${font}"
     header_font = "${header_font}"
