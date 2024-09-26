@@ -6,7 +6,8 @@
 ## Temporary Preview
 (forever unfinished)
 ![Preview](./temp_preview1.png)
-![Preview](./temp_preview2.png)
+![Preview](./temp_preview4.png)
+![Preview](./temp_preview5.png)
 ![Preview](./temp_preview3.png)
 
 ## TODO
@@ -32,6 +33,7 @@
     - [ ] update css to work with light mode
     - [ ] rewrite horizontal bar
     - [ ] integrate dock into bar?
+    - [ ] create float -> hex fn and use for border transparency
     - [ ] Hyprspace Integration
     - [ ] track with home manager
 
