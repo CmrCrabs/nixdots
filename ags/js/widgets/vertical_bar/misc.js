@@ -35,10 +35,7 @@ export function Battery() {
         class_name: "batbox",
         vexpand: false,
         tooltip_text: battery.bind("percent").as(p => {
-            if (p == 20) {
-                Utils.execAsync(`notify-send \"Battery at ${p}%\"`);
-            }
-            if (p <= 10 && p % 2 == 0) {
+            if (p == 20 || (p <= 10 && p % 2 == 0)) {
                 Utils.execAsync(`notify-send \"Battery at ${p}%\"`);
             }
             return `${p}%`
