@@ -34,7 +34,15 @@ export function Battery() {
     return Widget.Box({
         class_name: "batbox",
         vexpand: false,
-        tooltip_text: battery.bind("percent").as(p => `${p}%`),
+        tooltip_text: battery.bind("percent").as(p => {
+            if (p == 20) {
+                Utils.execAsync(`notify-send \"Battery at ${p}%\"`);
+            }
+            if (p <= 10 && p % 2 == 0) {
+                Utils.execAsync(`notify-send \"Battery at ${p}%\"`);
+            }
+            return `${p}%`
+        }),
         child: Widget.Overlay({
             vexpand: false,
             hpack: "center",

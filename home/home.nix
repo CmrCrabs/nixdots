@@ -1,16 +1,16 @@
 {config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/aenami_space.png";
-  wal-l = "${dotfilesDir}/wallpapers/aenami_space.png";
+  wal =   "${dotfilesDir}/wallpapers/aenami_river.png";
+  wal-l = "${dotfilesDir}/wallpapers/aenami_river.png";
   font = "Iosevka Nerd Font";
   header_font = "Jetbrains Mono Nerd Font";
   style = "dark";
-  rounding = "20";
+  rounding = "10";
   scheme = "fidelity";
   bg-contrast = "0.2";
   fg-contrast = "0.6";
-  transparency = "0.8";
-  transparency_hex = "cd";
+  transparency = "0.85";
+  transparency_hex = "ff";
   outer_gap = "10";
 
   dotfilesDir = "${config.home.homeDirectory}/limitless";

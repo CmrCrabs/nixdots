@@ -28,6 +28,7 @@ in {
     grub = { 
       enable = true;
       efiSupport = true;
+      useOSProber = true;
       device = "nodev";
       configurationLimit = 3;
     };
