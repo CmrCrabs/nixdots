@@ -58,9 +58,9 @@
         "9, monitor: DP-1, default: true"
         "1, on-created-empty: $browser"
         "2, on-created-empty: $terminal"
-        "3, on-created-empty: $pkms"
-        "5, on-created-empty: $messenger"
-        "6, on-created-empty: $music"
+        #"3, on-created-empty: $pkms"
+        #"5, on-created-empty: $messenger"
+        #"6, on-created-empty: $music"
         # "1, persistent:true"
         # "2, persistent:true"
         # "3, persistent:true"
@@ -142,7 +142,7 @@
       };
       
       layerrule = [
-        "noanim, ^(slurp)$"
+        # "noanim, ^(slurp)$"
         "blur,^(vertical_bar)$"
         "ignorezero,^(vertical_bar)$"
         "blur,^(horizontal_bar)$"

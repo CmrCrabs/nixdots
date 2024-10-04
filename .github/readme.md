@@ -86,12 +86,18 @@
     - [ ] setup as git submodule
     - [ ] track with git
     - [X] setup file structure
-    - [ ] setup pywal theme
-    - [ ] setup tagging system
+    - [X] setup pywal theme
+    - [X] setup tagging system
     - [ ] translate notes over
+    - [ ] syntax highlighing for code blocks
 
 - [ ] Krita
     - [ ] 
+
+- [ ] Aseprite
+    - [ ] theme the xml file
+    - [ ] track with matugen
+    - [ ] track with nix
 
 - [ ] Firefox
     - [ ] setup current to be fully declarative

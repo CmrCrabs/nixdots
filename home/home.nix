@@ -1,15 +1,15 @@
 {config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/aenami_river.png";
-  wal-l = "${dotfilesDir}/wallpapers/aenami_river.png";
+  wal =   "${dotfilesDir}/wallpapers/long_shoreline.png";
+  wal-l = "${dotfilesDir}/wallpapers/long_shoreline.png";
   font = "Iosevka Nerd Font";
   header_font = "Jetbrains Mono Nerd Font";
   style = "dark";
-  rounding = "10";
+  rounding = "20";
   scheme = "fidelity";
   bg-contrast = "0.2";
   fg-contrast = "0.6";
-  transparency = "0.85";
+  transparency = "1.0";
   transparency_hex = "ff";
   outer_gap = "10";
 
