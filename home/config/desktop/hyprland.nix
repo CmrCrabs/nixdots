@@ -142,7 +142,7 @@
       };
       
       layerrule = [
-        # "noanim, ^(slurp)$"
+        "noanim, ^(slurp)$"
         "blur,^(vertical_bar)$"
         "ignorezero,^(vertical_bar)$"
         "blur,^(horizontal_bar)$"

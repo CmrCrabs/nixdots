@@ -12,14 +12,11 @@
 
 ## TODO
 
-- [ ] pipe pywal colors into matugen to generate surface colors?
-- [ ] redesign in spec with material design
-
 - [ ] AGS
     - [X] rewrite to use header font & body font
     - [X] kitty font declarative
-    - [X] Horizontal Bar Initial
     - [X] Data Structure for config
+    - [ ] redesign in spec with material design (?)
     - [ ] add button for hypridle toggle
     - [ ] change noti icon to update if no notifications
     - [ ] Theming Bars
@@ -36,6 +33,8 @@
     - [ ] create float -> hex fn and use for border transparency
     - [ ] Hyprspace Integration
     - [ ] track with home manager
+    - [ ] horizontal bar rewrite
+    - [ ] shift other widgets for horizontal bar
 
 - [ ] Hyprland
     - [ ] Window Shadows
@@ -69,6 +68,10 @@
     - [ ] fix priority for cmp
 
 - [ ] TMUX
+    - [ ] setup
+    - [ ] vim integration
+    - [ ] keybinds
+    - [ ] 
 
 - [ ] zsh / nushell
     - [ ] migrate aliases + starship
@@ -92,7 +95,8 @@
     - [ ] syntax highlighing for code blocks
 
 - [ ] Krita
-    - [ ] 
+    - [ ] color theming
+    - [ ] ui customizations saved
 
 - [ ] Aseprite
     - [ ] theme the xml file
@@ -119,6 +123,8 @@
     - [ ] make hostname a variable
     - [ ] make monitor names a variable
     - [ ] screenpad kernel module
+    - [ ] modularise config
+    - [ ] split into laptop, cli modules
 
 - [ ] Misc
     - [ ] Headphone Jack
@@ -142,8 +148,7 @@
     - [ ] write script to install cli environmnent specifically
     - [ ] readme for wallpaper repo
     - [ ] editing of github settings for repo
-
-- [ ] rewrite everything from scratch eventually
+    - [ ] cleanup wallpapers
 
 ## Credits:
 for their great configs / learning resources / software / help

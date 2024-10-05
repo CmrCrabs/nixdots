@@ -1,7 +1,7 @@
 {config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/long_shoreline.png";
-  wal-l = "${dotfilesDir}/wallpapers/long_shoreline.png";
+  wal =   "${dotfilesDir}/wallpapers/ae86.png";
+  wal-l = "${dotfilesDir}/wallpapers/ae86.png";
   font = "Iosevka Nerd Font";
   header_font = "Jetbrains Mono Nerd Font";
   style = "dark";
@@ -35,6 +35,7 @@ in
     (import ./config/desktop/hyprlock.nix { inherit wal wal-l style rounding; })
     (import ./config/ags.nix { inherit config inputs pkgs rounding dotfilesDir; })
     (import ./config/nvim.nix { inherit config lib pkgs dotfilesDir; })
+    #(import ./config/apps/aseprite.nix { inherit config lib pkgs dotfilesDir; })
     (import ./config/cli/fish.nix { inherit style pkgs; })
     (import ./config/apps/kitty.nix { inherit config outer_gap font; })
 

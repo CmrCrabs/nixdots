@@ -11,6 +11,8 @@ const pinned_apps_list = [
         'spotify',
         'discord',
         'krita',
+        'aseprite',
+        'blender',
 ];
 
 function range(length, start = 1) {
