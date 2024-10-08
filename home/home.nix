@@ -1,15 +1,15 @@
 {config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/ae86.png";
-  wal-l = "${dotfilesDir}/wallpapers/ae86.png";
+  wal =   "${dotfilesDir}/wallpapers/painterly_plane.png";
+  wal-l = "${dotfilesDir}/wallpapers/painterly_plane.png";
   font = "Iosevka Nerd Font";
   header_font = "Jetbrains Mono Nerd Font";
   style = "dark";
-  rounding = "20";
+  rounding = "5";
   scheme = "fidelity";
   bg-contrast = "0.2";
   fg-contrast = "0.6";
-  transparency = "1.0";
+  transparency = "0.8";
   transparency_hex = "ff";
   outer_gap = "10";
 

@@ -15,10 +15,17 @@
 - [ ] AGS
     - [X] rewrite to use header font & body font
     - [X] kitty font declarative
-    - [X] Data Structure for config
+    - [ ] matugen scheme dropdown
+    - [ ] redesign in pseudo spec with material you (icons, scaling)
+    - [ ] redesign dock
+    - [ ] volume / brightness notifications
+    - [ ] Data Structure for config
+    - [ ] toggleable screen rounded corners
+    - [ ] volume mixer
     - [ ] redesign in spec with material design (?)
     - [ ] add button for hypridle toggle
     - [ ] change noti icon to update if no notifications
+    - [ ] make sure light mode looks good
     - [ ] Theming Bars
     - [ ] Theming Switches
     - [ ] Font Menu
@@ -71,7 +78,9 @@
     - [ ] setup
     - [ ] vim integration
     - [ ] keybinds
-    - [ ] 
+    - [ ] matugen linking
+    - [ ] bar theming
+    - [ ] other theming
 
 - [ ] zsh / nushell
     - [ ] migrate aliases + starship
@@ -111,7 +120,7 @@
         - [ ] bookmarks?
     - [ ] Vertical Tabs
     - [ ] modify userChrome to follow colors
-    - [ ] setup font using ags
+    - [ ] setup font using matugen
 
 - [ ] Thunderbird
     - [ ] lightning for google calendar integration
