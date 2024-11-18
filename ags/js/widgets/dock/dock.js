@@ -8,11 +8,12 @@ const pinned_apps_list = [
         'firefox',
         'kitty',
         'obsidian',
-        'spotify',
         'discord',
+        'spotify',
         'krita',
         'aseprite',
         'blender',
+        //godot, perforce?
 ];
 
 function range(length, start = 1) {

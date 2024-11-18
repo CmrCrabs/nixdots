@@ -1,15 +1,16 @@
 {config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/painterly_plane.png";
-  wal-l = "${dotfilesDir}/wallpapers/painterly_plane.png";
+  wal =   "${dotfilesDir}/wallpapers/lone_boat.png";
+  wal-l = "${dotfilesDir}/wallpapers/lone_boat.png";
   font = "Iosevka Nerd Font";
+  #font = "Jetbrains Mono Nerd Font";
   header_font = "Jetbrains Mono Nerd Font";
   style = "dark";
-  rounding = "5";
+  rounding = "10";
   scheme = "fidelity";
-  bg-contrast = "0.2";
+  bg-contrast = "0.4";
   fg-contrast = "0.6";
-  transparency = "0.8";
+  transparency = "1.00";
   transparency_hex = "ff";
   outer_gap = "10";
 
@@ -96,5 +97,11 @@ in
     NIXOS_XDG_OPEN_USE_PORTAL = "1";
     MOZ_ENABLE_WAYLAND = "1";
     NIXOS_OZONE_WL = "1";
+
+    # perforce
+    P4EDITOR = "${pkgs.neovim}";
+    P4IGNORE = ".p4ignore";
+    P4PORT = "ssl:vault.jahleelabraham.com:1666";
+    P4USER = "zayaanazam";
   };
 }

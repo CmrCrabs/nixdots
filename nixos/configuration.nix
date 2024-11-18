@@ -150,6 +150,7 @@ in {
   # visual
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "JetBrainsMono" "Iosevka" ]; })
+    eb-garamond
   ];
 
   fonts.fontconfig = {
@@ -302,6 +303,9 @@ in {
     papirus-icon-theme
 
     bluez
+
+    p4
+
 
     # WGPU
     vulkan-loader

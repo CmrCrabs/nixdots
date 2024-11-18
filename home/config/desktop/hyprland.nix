@@ -26,6 +26,8 @@
       source = [
         "~/.config/hypr/vars.conf"
       ];
+      "$screen1" = "eDP-1";
+      "$screen2" = "DP-1";
       "$mainMod" = "ALT";
       "$terminal" = "kitty";
       "$filebrowser" = "yazi";
@@ -48,19 +50,19 @@
       ];
 
       monitor = [
-        "eDP-1, 1920x1080@60, 0x0, 1"
-        "DP-1, 1920x515@60, 0x1080, 1"
+        "$screen1, 1920x1080@60, 0x0, 1"
+        "$screen2, 1920x515@60, 0x1080, 1"
       ];
       workspace = [
-        "eDP-1, 1"
-        "DP-1, 10"        
+        "$screen1, 1"
+        "$screen2, 9"
         "1, monitor: eDP-1, default: true"
         "9, monitor: DP-1, default: true"
         "1, on-created-empty: $browser"
         "2, on-created-empty: $terminal"
-        #"3, on-created-empty: $pkms"
-        #"5, on-created-empty: $messenger"
-        #"6, on-created-empty: $music"
+        "4, on-created-empty: $pkms"
+        "5, on-created-empty: $messenger"
+        "6, on-created-empty: $music"
         # "1, persistent:true"
         # "2, persistent:true"
         # "3, persistent:true"
@@ -177,7 +179,7 @@
         "float, class:(firefox), title:(Picture-in-Picture)"
         "pin, class:(firefox), title:(Picture-in-Picture)" 
       ];
-      windowrule = "size 880 690,^(kitty)$";
+      windowrule = "size 1230 960,^(kitty)$";
       bindm = [
         "$mainMod, mouse:272, movewindow"
         "$mainMod, mouse:273, resizewindow"
@@ -188,28 +190,27 @@
       ];
       bind = [
         # "$mainMod SHIFT, Q, overview, toggle"
-        "SUPER, SPACE, exec, ags -t control_center"
         "SUPER, SPACE, exec, ags -t media_center"
+        "SUPER SHIFT, SPACE, exec, ags -t control_center"
         "$mainMod, Q, exec, $terminal"
         "$mainMod, E, exec, [float] $terminal"
         "$mainMod, C, killactive,"
-        "$mainMod SHIFT, E, exit,"
+        "$mainMod SHIFT, P, exit,"
         "$mainMod, F, togglefloating,"
-        "$mainMod, P, pseudo, # dwindle"
         "$mainMod, B, togglesplit, # dwindle"
         "$mainMod, M, fullscreen"
-        "$mainMod SHIFT, P, exec, $locker"
+        "$mainMod, P, exec, $locker"
 
         "$mainMod SHIFT, S, exec, $screenshot"
         "$mainMod SHIFT, W, exec, $screenshotsave"
         "$mainMod, H, movefocus, l"
         "$mainMod, L, movefocus, r"
-        "$mainMod, , movefocus, u"
+        "$mainMod, K, movefocus, u"
         "$mainMod, J, movefocus, d"
         
         "$mainMod, H, bringactivetotop"
         "$mainMod, L, bringactivetotop"
-        "$mainMod, , bringactivetotop"
+        "$mainMod, K, bringactivetotop"
         "$mainMod, J, bringactivetotop"
         "ALT, Tab, cyclenext"
         "SHIFT ALT, Tab, cyclenext, prev"
@@ -259,9 +260,11 @@
     decoration {
       rounding = $rounding
     }
+    monitor = $screen1, addreserved, $outer_gap, $outer_gap, $outer_gap, $outer_gap
+    monitor = $screen2, addreserved, $outer_gap, $outer_gap, $outer_gap, $outer_gap
     general {
-      gaps_in = $outer_gap / 2
-      gaps_out = $outer_gap
+      gaps_in = $outer_gap
+      gaps_out = 0
       border_size = 10
       col.active_border = $background_border;
       col.inactive_border = $background_border;
@@ -278,8 +281,6 @@
             hyprbars-button = rgb(eeee11), 10, , hyprctl dispatch fullscreen 1
         }
     }
-
-
     '';
   };
 }

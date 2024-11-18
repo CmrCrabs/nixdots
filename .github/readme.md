@@ -10,6 +10,22 @@
 ![Preview](./temp_preview5.png)
 ![Preview](./temp_preview3.png)
 
+## Credits:
+for their great configs / learning resources / software / help
+
+- LibrePhoenix
+- Misterio77
+- InioX
+- datsfilipe
+- Aylur
+- HyprNova
+- ChadCat7
+- linuxmobile
+- kotontrion (ags help)
+- end4 
+- fufexan
+- noamsto
+
 ## TODO
 
 - [ ] AGS
@@ -18,6 +34,7 @@
     - [ ] matugen scheme dropdown
     - [ ] redesign in pseudo spec with material you (icons, scaling)
     - [ ] redesign dock
+    - [ ] dock auto hide toggle
     - [ ] volume / brightness notifications
     - [ ] Data Structure for config
     - [ ] toggleable screen rounded corners
@@ -26,6 +43,7 @@
     - [ ] add button for hypridle toggle
     - [ ] change noti icon to update if no notifications
     - [ ] make sure light mode looks good
+    - [ ] click anywhere to close widget
     - [ ] Theming Bars
     - [ ] Theming Switches
     - [ ] Font Menu
@@ -42,6 +60,7 @@
     - [ ] track with home manager
     - [ ] horizontal bar rewrite
     - [ ] shift other widgets for horizontal bar
+    - [ ] include wal --theme as dropdown option, pipe wal bg color to matugen
 
 - [ ] Hyprland
     - [ ] Window Shadows
@@ -81,6 +100,7 @@
     - [ ] matugen linking
     - [ ] bar theming
     - [ ] other theming
+    - [ ] tmux & nvim floating style widget toggle
 
 - [ ] zsh / nushell
     - [ ] migrate aliases + starship
@@ -159,18 +179,3 @@
     - [ ] editing of github settings for repo
     - [ ] cleanup wallpapers
 
-## Credits:
-for their great configs / learning resources / software / help
-
-- LibrePhoenix
-- Misterio77
-- InioX
-- datsfilipe
-- Aylur
-- HyprNova
-- ChadCat7
-- linuxmobile
-- kotontrion (ags help)
-- end4 
-- fufexan
-- noamsto

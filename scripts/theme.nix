@@ -8,5 +8,7 @@ pkgs.writeShellScriptBin "cgtheme" ''
     cp ~/.cache/wal/fg_colors.scss ~/Obsidian/.obsidian/themes/wal-matugen/scss/fg_colors.scss
     sassc ~/.config/ags/scss/style.scss ~/.config/ags/scss/my-style.css
     sassc ~/Obsidian/.obsidian/themes/wal-matugen/scss/style.scss ~/Obsidian/.obsidian/themes/wal-matugen/theme.css
+
+
 ''
 
