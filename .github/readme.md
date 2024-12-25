@@ -6,9 +6,9 @@
 ## Temporary Preview
 (forever unfinished)
 ![Preview](./temp_preview1.png)
-![Preview](./temp_preview4.png)
-![Preview](./temp_preview5.png)
+![Preview](./temp_preview2.png)
 ![Preview](./temp_preview3.png)
+![Preview](./temp_preview4.png)
 
 ## Credits:
 for their great configs / learning resources / software / help

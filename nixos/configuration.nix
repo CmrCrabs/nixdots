@@ -179,7 +179,8 @@ in {
     inputs.ags.packages.${system}.default
 
     # NUR
-    config.nur.repos.nltch.spotify-adblock
+    # config.nur.repos.nltch.spotify-adblock
+    spotify
     
     # Apps
     firefox
@@ -201,6 +202,7 @@ in {
     kicad
     obsidian
     zathura
+    geekbench
 
     # gaming
     mangohud
@@ -222,6 +224,7 @@ in {
     btop
     ranger
     typst
+    ghc
 
     eza
     yazi
@@ -238,7 +241,11 @@ in {
     cbonsai
 
     wf-recorder
- 
+
+    #webdev
+    bun
+    stripe-cli
+
     # Libs / Utils
     cmake
     gnumake
