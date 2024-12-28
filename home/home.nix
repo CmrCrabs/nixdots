@@ -1,16 +1,16 @@
 {config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/anime_train_snow.png";
-  wal-l = "${dotfilesDir}/wallpapers/anime_train_snow.png";
+  wal =   "${dotfilesDir}/wallpapers/minimal_pink.png";
+  wal-l = "${dotfilesDir}/wallpapers/minimal_pink.png";
   font = "Iosevka Nerd Font";
   #font = "Jetbrains Mono Nerd Font";
   header_font = "Jetbrains Mono Nerd Font";
   style = "dark";
-  rounding = "40";
-  scheme = "fidelity";
+  rounding = "20";
+  scheme = "tonal-spot";
   bg-contrast = "0.4";
   fg-contrast = "0.6";
-  transparency = "1.00";
+  transparency = "0.75";
   transparency_hex = "ff";
   outer_gap = "10";
 

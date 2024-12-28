@@ -2,10 +2,10 @@
 {
     home.packages = with pkgs; [
         lua-language-server
-        nodePackages_latest.typescript-language-server
+        typescript-language-server
         rust-analyzer
         vimPlugins.omnisharp-extended-lsp-nvim
-        typst-lsp
+        tinymist
     ];
 
     xdg.configFile = {
