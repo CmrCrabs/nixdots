@@ -28,7 +28,7 @@
     [config.reload_apps_list]
     kitty = true
     waybar = false
-    gtk_theme = false
+    gtk_theme = true
     dunst = false
 
     [templates.GTK4]

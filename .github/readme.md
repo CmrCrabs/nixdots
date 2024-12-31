@@ -5,10 +5,10 @@
 
 ## Temporary Preview
 (forever unfinished)
-![Preview](./temp_preview1.png)
-![Preview](./temp_preview2.png)
+![Preview](./preview1.png)
+![Preview](./preview2.png)
 ![Preview](./temp_preview3.png)
-![Preview](./temp_preview4.png)
+![Preview](./temp_preview2.png)
 
 ## Credits:
 for their great configs / learning resources / software / help

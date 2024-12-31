@@ -1,16 +1,16 @@
 {config, pkgs, inputs, lib, ... }:
 let
-  wal =   "${dotfilesDir}/wallpapers/minimal_pink.png";
-  wal-l = "${dotfilesDir}/wallpapers/minimal_pink.png";
+  wal =   "${dotfilesDir}/wallpapers/kanagawa_ocean.png";
+  wal-l = "${dotfilesDir}/wallpapers/kanagawa_ocean.png";
   font = "Iosevka Nerd Font";
   #font = "Jetbrains Mono Nerd Font";
   header_font = "Jetbrains Mono Nerd Font";
   style = "dark";
-  rounding = "20";
-  scheme = "tonal-spot";
+  rounding = "0";
+  scheme = "neutral";
   bg-contrast = "0.4";
-  fg-contrast = "0.6";
-  transparency = "0.75";
+  fg-contrast = "0.5";
+  transparency = "1.00";
   transparency_hex = "ff";
   outer_gap = "10";
 
@@ -20,7 +20,8 @@ let
 in
 {
   programs.home-manager.enable = true;
-  home.stateVersion = "24.05";
+  home.stateVersion = "24.11";
+  nixpkgs.config.allowUnfree = true;
 
   home.username = "zyn";
   home.homeDirectory = "/home/zyn";
@@ -81,12 +82,15 @@ in
     BROWSER = "firefox";
     GTK_THEME = "matugen";
     DOTNET_CLI_TELEMETRY_OPTOUT = "1";
-    NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM = 1;
-    XCURSOR_THEME = "macOS-BigSur";
+    NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM = "1";
+    NIXPKGS_ALLOW_INSECURE = "1";
+    NIXPKGS_ALLOW_UNFREE = "1";
     XCURSOR_SIZE = "24";
+    HYPRCURSOR_THEME = "McMojave";
+    HYPRCURSOR_SIZE = "24";
     CMAKE_MAKE_PROGRAM = "${pkgs.cmake}";
     TEST = "real";
-    ADW_DISABLE_PORTAL=1;
+    ADW_DISABLE_PORTAL="1";
     # KRITA_NO_STYLE_OVERRIDE=1;
 
     XDG_SESSION_TYPE = "wayland";

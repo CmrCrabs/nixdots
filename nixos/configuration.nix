@@ -5,16 +5,12 @@ let
 in { 
   imports = [
     ./hardware-configuration.nix 
-    inputs.aagl.nixosModules.default
   ];
 
   # misc gaming 
-  programs.sleepy-launcher.enable = true;
 
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
   };
 
   programs.steam.enable = true;
@@ -177,11 +173,12 @@ in {
     inputs.hyprlock.packages.${system}.default
     inputs.hypridle.packages.${system}.default
     inputs.ags.packages.${system}.default
+    inputs.mcmojave-hyprcursor.packages.${system}.default
 
     # NUR
     # config.nur.repos.nltch.spotify-adblock
-    spotify
-    
+spotify
+
     # Apps
     firefox
     chromium
@@ -195,21 +192,19 @@ in {
     spotify
     krita
     remnote
-    gnome.nautilus
+    nautilus
     vlc
     aseprite
     pureref
     kicad
     obsidian
     zathura
-    geekbench
+    renderdoc
+    bitwig-studio
 
     # gaming
     mangohud
     protonup
-    lutris
-    heroic
-    bottles
     wine
     
     # Term
@@ -264,14 +259,11 @@ in {
     yarn
     nodePackages.npm
     
-    dotnet-sdk_7
-    dotnet-sdk_6
-    dotnet-runtime_6
+    dotnet-sdk_8
     dotnet-sdk
-    dotnetCorePackages.sdk_6_0_1xx
     mono
     mono4
-    dotnet-runtime_7
+    dotnet-runtime_8
     vimPlugins.omnisharp-extended-lsp-nvim
 
     rustup
@@ -325,5 +317,5 @@ in {
     spirv-tools
   ];
 
-  system.stateVersion = "24.05";
+  system.stateVersion = "24.11";
 }

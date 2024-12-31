@@ -2,9 +2,10 @@
 {
   home.pointerCursor = {
     package = pkgs.apple-cursor;
-    name = "macOS-BigSur";
+    name = "macOS";
     size = 16;
     x11.enable = true;
+    gtk.enable = true;
   };
 
   gtk = {
@@ -13,6 +14,10 @@
       name = "WhiteSur";
       package = pkgs.whitesur-icon-theme;
     };
+    cursorTheme = {
+      package = pkgs.apple-cursor;
+      name = "macOS";
+    }
     font = {
       name = "Jetbrains Mono Nerd Font";
       size = 11;

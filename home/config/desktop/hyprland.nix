@@ -45,6 +45,8 @@
         "hypridle"
         "ags"
         "wlsunset -l 52.2 -L 0.13"
+        # "hyprctl setcursor McMojave 24"
+        # "dconf write /org/gnome/desktop/interface/cursor-theme \"macOS\""
       ];
       exec = [
       ];
@@ -60,7 +62,6 @@
         "9, monitor: DP-1, default: true"
         "1, on-created-empty: $browser"
         "2, on-created-empty: $terminal"
-        "4, on-created-empty: $pkms"
         "5, on-created-empty: $messenger"
         "6, on-created-empty: $music"
         # "1, persistent:true"
@@ -98,11 +99,12 @@
       };
     
       decoration = {
-        drop_shadow = "no";
-        shadow_range = "10";
-        shadow_render_power = "3";
-        shadow_offset = "0, 0";
-        "col.shadow" = "rgba(000000cc)";
+        shadow = {
+          enabled = "yes";
+          range = "10";
+          color = "rgba(111111cc)";
+          color_inactive = "rgba(000000cc)";
+        };
         dim_inactive = "yes";
         dim_strength = "0.15";
 
@@ -172,6 +174,7 @@
         "animation slide right,^(theming_menu)$"
       ];
       windowrulev2 = [
+        # "float,floating:0,class:^(ide*)"
         "tile, class:^(firefox)$,title:^(Firefox)$"
         "maxsize 1920 1080, class:.*"
         "bordersize 0, class:^(kitty)$"
@@ -179,7 +182,10 @@
         "float, class:(firefox), title:(Picture-in-Picture)"
         "pin, class:(firefox), title:(Picture-in-Picture)" 
       ];
-      windowrule = "size 1230 960,^(kitty)$";
+      windowrule = [
+        "size 1230 960,^(kitty)$"
+        "size 1230 960,^(nea)$"
+      ];
       bindm = [
         "$mainMod, mouse:272, movewindow"
         "$mainMod, mouse:273, resizewindow"
