@@ -27,6 +27,8 @@
     extraConfig = ''
       cursor_shape beam
       cursor_blink_interval -1
+      cursor_trail 3
+      cursor_trail_decay 0.05 0.2
       resize_in_steps no
       shell fish
       dynamic_background_opacity yes

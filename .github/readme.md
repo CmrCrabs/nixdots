@@ -24,7 +24,7 @@ for their great configs / learning resources / software / help
 - kotontrion (ags help)
 - end4 
 - fufexan
-- noamsto
+- notusknot
 
 ## TODO
 
@@ -62,6 +62,8 @@ for their great configs / learning resources / software / help
     - [ ] shift other widgets for horizontal bar
     - [ ] include wal --theme as dropdown option, pipe wal bg color to matugen
 
+- [ ] update to unstable
+- [ ] tinymist installed imperatively
 - [ ] Hyprland
     - [ ] Window Shadows
     - [ ] AGS Widget Shadows

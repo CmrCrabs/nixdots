@@ -9,7 +9,7 @@ let
   rounding = "0";
   scheme = "neutral";
   bg-contrast = "0.4";
-  fg-contrast = "0.5";
+  fg-contrast = "0.3";
   transparency = "1.00";
   transparency_hex = "ff";
   outer_gap = "10";

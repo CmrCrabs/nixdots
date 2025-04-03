@@ -6,6 +6,7 @@
       config.wayland.windowManager.hyprland.package
       pkgs.xdg-desktop-portal
       pkgs.xdg-desktop-portal-gtk
+      pkgs.xdg-desktop-portal-hyprland
     ];
     configPackages = [config.wayland.windowManager.hyprland.package];
   };
@@ -32,7 +33,7 @@
       "$terminal" = "kitty";
       "$filebrowser" = "yazi";
       "$launcher" = "ags --t start_menu";
-      "$screenshot" = "grim -g \"$(slurp -d)\" - | wl-copy -t image/png";
+      "$screenshot" = "grim -g \"$(slurp -d -w 0)\" - | wl-copy -t image/png";
       "$browser" = "firefox";
       "$locker" = "hyprlock";
       "$pkms" = "obsidian";
@@ -147,6 +148,7 @@
       
       layerrule = [
         "noanim, ^(slurp)$"
+        "noanim, selection"
         "blur,^(vertical_bar)$"
         "ignorezero,^(vertical_bar)$"
         "blur,^(horizontal_bar)$"
@@ -174,7 +176,6 @@
         "animation slide right,^(theming_menu)$"
       ];
       windowrulev2 = [
-        # "float,floating:0,class:^(ide*)"
         "tile, class:^(firefox)$,title:^(Firefox)$"
         "maxsize 1920 1080, class:.*"
         "bordersize 0, class:^(kitty)$"

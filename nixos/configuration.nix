@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, unstablePkgs, inputs, ... }:
 let
   system = "x86_64-linux";
   asus-wmi-screenpad = config.boot.kernelPackages.callPackage ../derivs/asus-wmi-screenpad.nix {};
@@ -165,7 +165,7 @@ in {
   #boot.extraModulePackages = with config.boot.kernelPackages; [
   #  asus-wmi-screenpad
   #];
-  
+
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     # Flake imports
@@ -177,16 +177,18 @@ in {
 
     # NUR
     # config.nur.repos.nltch.spotify-adblock
-spotify
+    spotify
+    unstablePkgs.neovim
+    unstablePkgs.tinymist
 
     # Apps
+    obs-studio
+    obs-studio-plugins.wlrobs
     firefox
     chromium
     blender
     discord
     kitty
-    rofi-wayland
-    waybar
     feh
     inkscape
     spotify
@@ -194,13 +196,14 @@ spotify
     remnote
     nautilus
     vlc
-    aseprite
+    # aseprite
     pureref
-    kicad
+    # kicad
     obsidian
+    syncthing
     zathura
     renderdoc
-    bitwig-studio
+    filezilla
 
     # gaming
     mangohud
@@ -209,7 +212,8 @@ spotify
     
     # Term
     vim
-    neovim
+    scc
+    # neovim
     helix
     wget
     git
@@ -267,6 +271,7 @@ spotify
     vimPlugins.omnisharp-extended-lsp-nvim
 
     rustup
+    lld
 
     gcc
     zip

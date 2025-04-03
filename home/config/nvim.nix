@@ -5,7 +5,7 @@
         typescript-language-server
         rust-analyzer
         vimPlugins.omnisharp-extended-lsp-nvim
-        tinymist
+        # tinymist
     ];
 
     xdg.configFile = {
